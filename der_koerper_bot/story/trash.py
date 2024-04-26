@@ -6,29 +6,35 @@ from dataclasses import dataclass, field
 class Trash:
 
     data: list[str] = field(default_factory=list)
-    max_values: int = 10
+    max_items: int | None = None
 
     def add(self, value: str):
+        """
+        Fügt einen Wert zu data hinzu. Wenn mehr als max_items Einträge gespeichert wurden, werden die ältesten Einträge gelöscht.
+        """
         self.data.append(value)
+
+        if self.max_items:
+            self.clean()
+
+    def clean(self):
+        """
+        Löscht die ältesten Einträge in data, wenn mehr als max_items
+        Einträge gespeichert wurden.
+        """
+        if self.max_items and len(self.data) > self.max_items:
+            self.data = self.data[-self.max_items :]
 
     def has(self, value: str):
         return value in self.data
 
-    def clean(self):
-        """
-        Löscht die ältesten Einträge in data, wenn mehr als max_values
-        Einträge gespeichert wurden.
-        """
-        if len(self.data) > self.max_values:
-            self.data = self.data[-self.max_values :]
-
     @classmethod
-    def from_file(cls, file_path: str, max_values: int):
+    def from_file(cls, file_path: str, max_items: int):
         """
         Liest die Daten aus einer Datei und speichert sie in self.data.
         """
         with open(file_path, "r") as file:
-            return cls(data=[line.strip() for line in file], max_values=max_values)
+            return cls(data=[line.strip() for line in file], max_items=max_items)
 
     def save_to_file(self, file_path: str):
         """

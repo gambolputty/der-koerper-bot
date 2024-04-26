@@ -3,7 +3,7 @@ import json
 import random
 import sys
 
-from der_koerper_bot.story import Sentence, Story, Trash
+from der_koerper_bot.story import Sentence, Story
 
 csv.field_size_limit(sys.maxsize)
 
@@ -13,8 +13,7 @@ def init():
         sentences = [Sentence(**sent) for sent in json.load(file)]
         random.shuffle(sentences)
 
-    trash = Trash([], max_values=100)
-    story = Story(sentences=sentences, trash=trash)
+    story = Story(sentences=sentences)
 
     with open("story.txt", "w") as file:
         for text in story.start(500):

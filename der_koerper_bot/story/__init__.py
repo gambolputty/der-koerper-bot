@@ -1,7 +1,7 @@
 # %%
 import random
 import textwrap
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 from pydantic import BaseModel
 
@@ -26,7 +26,14 @@ class Story:
     """
 
     sentences: list[Sentence]
-    trash: Trash
+    verb_trash: Trash = field(init=False)
+    noun_trash: Trash = field(init=False)
+    sentence_trash: Trash = field(init=False)
+
+    def __post_init__(self):
+        self.verb_trash = Trash(max_items=10)
+        self.noun_trash = Trash(max_items=25)
+        self.sentence_trash = Trash()
 
     def pick_random_sentences(
         self, count: int, selected_verb: str | None = None
@@ -36,20 +43,29 @@ class Story:
         found_verbs = set()
 
         for sent in self.sentences:
-            # checke Verb
-            if selected_verb and sent.verb != selected_verb:
+            if selected_verb:
+                # checke Verb
+                if sent.verb != selected_verb:
+                    continue
+            else:
+                # checke Verb-Trash
+                if self.verb_trash.has(sent.verb):
+                    continue
+
+                # Nicht die selben Verben im Satz
+                if sent.verb in found_verbs:
+                    continue
+
+            # checke Satz-Trash
+            if self.sentence_trash.has(sent.id):
                 continue
 
             # Nicht die selben Nomen im Satz
             if found_nouns.intersection(sent.nouns):
                 continue
 
-            # Nicht die selben Verben im Satz
-            if not selected_verb and sent.verb in found_verbs:
-                continue
-
-            # checke Trash
-            if not selected_verb and self.trash.has(sent.verb):
+            # checke Nomen-Trash
+            if any(self.noun_trash.has(noun) for noun in sent.nouns):
                 continue
 
             # Keine Einwort-Sätze
@@ -84,14 +100,6 @@ class Story:
         sent_count = random.randint(1, 15)
         sents = self.pick_random_sentences(sent_count)
 
-        if sents is None:
-            return
-
-        # Speichere die Ids der Sätze im Trash-Objekt.
-        for sent in sents:
-            self.trash.add(sent.verb)
-        # self.trash.clean()
-
         return sents
 
     def get_sentences_with_same_verb(self) -> list[Sentence] | None:
@@ -102,14 +110,6 @@ class Story:
         verb = random.choice(self.sentences).verb
         sents = self.pick_random_sentences(sent_count, selected_verb=verb)
 
-        if not sents:
-            return
-
-        # Speichere die Ids der Sätze im Trash-Objekt.
-        for sent in sents:
-            self.trash.add(sent.verb)
-        self.trash.clean()
-
         # Entferne das erste Wort aus jedem Satz, außer dem ersten Satz.
         # for i, sent in enumerate(sents):
         #     if i == 0:
@@ -119,21 +119,33 @@ class Story:
         #     )
 
         # Join the items with commas.
+
         return sents
 
     def start(self, times: int = 1):
         """
         Fängt an eine Geschichte zu erzählen.
         """
-        for _ in range(times):
-
-            sents = self.get_sentences()
-            # sents = self.get_sentences_with_same_verb()
+        for n in range(times):
+            # chceck if n is divisible by 10
+            if n % 3 == 0:
+                sents = self.get_sentences_with_same_verb()
+            else:
+                sents = self.get_sentences()
 
             if not sents:
                 continue
 
             sents = self.sort_sentences(sents)
+
+            # Speichere die Sätze im Trash
+            for sent in sents:
+                self.sentence_trash.add(sent.id)
+                self.verb_trash.add(sent.verb)
+                for noun in sent.nouns:
+                    self.noun_trash.add(noun)
+
+            # Füge die Sätze zusammen
             sents_len = len(sents)
             text_list = []
 
