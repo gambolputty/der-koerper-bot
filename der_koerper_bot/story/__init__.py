@@ -1,7 +1,6 @@
-# %%
 import random
-import textwrap
 from dataclasses import dataclass, field
+from pathlib import Path
 
 from pydantic import BaseModel
 
@@ -25,15 +24,32 @@ class Story:
     Beim Hinzuügen einer neuen Id wird geprüft, ob sie bereits im Trash-Objekt ist. Wenn ja, wird der Satz nicht hinzugefügt. Wenn nein, wird der Satz hinzugefügt und die Id im Trash-Objekt gespeichert.
     """
 
-    sentences: list[Sentence]
-    verb_trash: Trash = field(init=False)
-    noun_trash: Trash = field(init=False)
-    sentence_trash: Trash = field(init=False)
+    sentences: list[Sentence] = field(default_factory=list)
+    from_file: bool = False
+    verb_trash: Trash = field(default_factory=Trash)
+    noun_trash: Trash = field(default_factory=Trash)
+    sentence_trash: Trash = field(default_factory=Trash)
+    trash_files_path: Path = field(default=Path("der_koerper_bot/trash_files"))
 
     def __post_init__(self):
-        self.verb_trash = Trash(max_items=10)
-        self.noun_trash = Trash(max_items=25)
-        self.sentence_trash = Trash()
+        if self.from_file:
+            self.load_trash_from_file()
+
+        self.verb_trash.max_items = 10
+        self.noun_trash.max_items = 25
+        self.trash_files_path.mkdir(exist_ok=True)
+
+    def load_trash_from_file(self):
+        self.verb_trash = Trash.from_file(self.trash_files_path / "verb_trash.txt")
+        self.noun_trash = Trash.from_file(self.trash_files_path / "noun_trash.txt")
+        self.sentence_trash = Trash.from_file(
+            self.trash_files_path / "sentence_trash.txt"
+        )
+
+    def save_trash_files(self):
+        self.verb_trash.save_to_file(self.trash_files_path / "verb_trash.txt")
+        self.noun_trash.save_to_file(self.trash_files_path / "noun_trash.txt")
+        self.sentence_trash.save_to_file(self.trash_files_path / "sentence_trash.txt")
 
     def pick_random_sentences(
         self, count: int, selected_verb: str | None = None
@@ -41,6 +57,7 @@ class Story:
         result = []
         found_nouns = set()
         found_verbs = set()
+        random.shuffle(self.sentences)
 
         for sent in self.sentences:
             if selected_verb:

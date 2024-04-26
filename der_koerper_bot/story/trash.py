@@ -1,5 +1,6 @@
 # %%
 from dataclasses import dataclass, field
+from pathlib import Path
 
 
 @dataclass
@@ -29,14 +30,14 @@ class Trash:
         return value in self.data
 
     @classmethod
-    def from_file(cls, file_path: str, max_items: int):
+    def from_file(cls, file_path: Path | str, max_items: int | None = None):
         """
         Liest die Daten aus einer Datei und speichert sie in self.data.
         """
         with open(file_path, "r") as file:
             return cls(data=[line.strip() for line in file], max_items=max_items)
 
-    def save_to_file(self, file_path: str):
+    def save_to_file(self, file_path: Path | str):
         """
         Speichert die Daten in self.data in einer Datei.
         """
