@@ -39,10 +39,15 @@ class Trash:
             return value in self.data
 
     @classmethod
-    def from_file(cls, file_path: Path | str, max_items: int | None = None):
+    def from_file(
+        cls, file_path: Path | str, max_items: int | None = None, create: bool = False
+    ):
         """
         Liest die Daten aus einer Datei und speichert sie in self.data.
         """
+        if create and not Path(file_path).exists():
+            return cls(max_items=max_items)
+
         with open(file_path, "r") as file:
             return cls(data=[line.strip() for line in file], max_items=max_items)
 

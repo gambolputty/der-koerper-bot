@@ -2,13 +2,14 @@ import random
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
+from venv import create
 
 from pydantic import BaseModel, computed_field, field_validator
 
 from der_koerper_bot.story.trash import Trash
 
-VERB_TRASH_MAX_ITEMS = 15
-NOUN_TRASH_MAX_ITEMS = 25
+VERB_TRASH_MAX_ITEMS = 10
+NOUN_TRASH_MAX_ITEMS = 20
 
 
 class Sentence(BaseModel):
@@ -33,11 +34,9 @@ class Sentence(BaseModel):
 @dataclass
 class Story:
     """
-    Eine Klasse die eine Geschichte erzählen kann.
-    Sie nimmt eine Liste von Sätzen entgegen und kann daraus eine Geschichte generieren.
-    Für jeden Satz ist auch jedes Verb hinterlegt. Wir wollen einen ausgeglichenen Text generieren, in dem die Verben nicht zu oft wiederholt werden.
-    Deshalb speichern wir id Ids der Sätze, die wir bereits verwendet haben, in einem Trash-Objekt:
-    Beim Hinzuügen einer neuen Id wird geprüft, ob sie bereits im Trash-Objekt ist. Wenn ja, wird der Satz nicht hinzugefügt. Wenn nein, wird der Satz hinzugefügt und die Id im Trash-Objekt gespeichert.
+    Eine Klasse, die Sätze mit "Der Körper" + [Verb] generiert. Die Sätze stammen
+    aus einer CSV.
+    Sätze können ein oder mehrere Verben und Nomen haben. Wir wollen einen ausgeglichenen Text generieren, in dem Verben und Nomen nicht zu oft wiederholt werden. Außerdem soll jeder Satz nur 1x vorkommen.
     """
 
     sentences: list[Sentence] = field(default_factory=list)
@@ -59,10 +58,14 @@ class Story:
         self.trash_files_path.mkdir(exist_ok=True)
 
     def load_trash_from_file(self):
-        self.verb_trash = Trash.from_file(self.trash_files_path / "verb_trash.txt")
-        self.noun_trash = Trash.from_file(self.trash_files_path / "noun_trash.txt")
+        self.verb_trash = Trash.from_file(
+            self.trash_files_path / "verb_trash.txt", create=True
+        )
+        self.noun_trash = Trash.from_file(
+            self.trash_files_path / "noun_trash.txt", create=True
+        )
         self.sentence_trash = Trash.from_file(
-            self.trash_files_path / "sentence_trash.txt"
+            self.trash_files_path / "sentence_trash.txt", create=True
         )
 
     def save_trash_files(self):
@@ -141,7 +144,12 @@ class Story:
         """
         Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält. Es wird ein Verb ausgewählt und nur Sätze mit diesem Verb werden verwendet.
         """
-        verb = random.choice(self.sentences).verb
+        # pick random Verb that is not in verb_trash
+        random.shuffle(self.sentences)
+        verb = next(
+            (sent.verb for sent in self.sentences if not self.verb_trash.has(sent.verb))
+        )
+
         sents = self.pick_random_sentences(sent_count, selected_verb=verb)
 
         # Entferne das erste Wort aus jedem Satz, außer dem ersten Satz.
@@ -163,7 +171,7 @@ class Story:
         for n in range(times):
 
             # chceck if n is divisible by 10
-            if n % 3 == 0:
+            if n % 5 == 0:
                 sent_count = random.randint(5, 15)
                 sents = self.get_sentences_with_same_verb(sent_count)
             else:
