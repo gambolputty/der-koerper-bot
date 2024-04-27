@@ -1,5 +1,4 @@
 import csv
-import json
 import sys
 
 from der_koerper_bot.story import Sentence, Story
@@ -8,8 +7,9 @@ csv.field_size_limit(sys.maxsize)
 
 
 def init():
-    with open("sentences.json", "r") as file:
-        sentences = [Sentence(**sent) for sent in json.load(file)]
+    with open("sentences.csv", "r") as file:
+        reader = csv.DictReader(file)
+        sentences = [Sentence(**row) for row in reader]  # type: ignore
 
     story = Story(sentences=sentences, from_file=True)
 

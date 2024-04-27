@@ -1,17 +1,33 @@
 import random
 from dataclasses import dataclass, field
 from pathlib import Path
+from typing import Any
 
-from pydantic import BaseModel
+from pydantic import BaseModel, computed_field, field_validator
 
 from der_koerper_bot.story.trash import Trash
+
+VERB_TRASH_MAX_ITEMS = 15
+NOUN_TRASH_MAX_ITEMS = 25
 
 
 class Sentence(BaseModel):
     id: str
     text: str
-    verb: str
-    nouns: set[str]
+    verbs: list[str] = []
+    verbs_lemma: list[str] = []
+    nouns: list[str] = []
+    nouns_lemma: list[str] = []
+
+    @computed_field
+    @property
+    def verb(self) -> str:
+        return self.verbs[0]
+
+    @field_validator("verbs", "verbs_lemma", "nouns", "nouns_lemma", mode="before")
+    @classmethod
+    def field_to_list(cls, v: Any):
+        return v.split(";")
 
 
 @dataclass
@@ -35,8 +51,11 @@ class Story:
         if self.from_file:
             self.load_trash_from_file()
 
-        self.verb_trash.max_items = 10
-        self.noun_trash.max_items = 25
+        # set Trash config
+        self.verb_trash.max_items = VERB_TRASH_MAX_ITEMS
+        self.noun_trash.max_items = NOUN_TRASH_MAX_ITEMS
+
+        # create trash_files_path if not exists
         self.trash_files_path.mkdir(exist_ok=True)
 
     def load_trash_from_file(self):
@@ -66,7 +85,7 @@ class Story:
                     continue
             else:
                 # checke Verb-Trash
-                if self.verb_trash.has(sent.verb):
+                if self.verb_trash.has(sent.verbs_lemma):
                     continue
 
                 # Nicht die selben Verben im Satz
@@ -82,7 +101,7 @@ class Story:
                 continue
 
             # checke Nomen-Trash
-            if any(self.noun_trash.has(noun) for noun in sent.nouns):
+            if self.noun_trash.has(sent.nouns_lemma):
                 continue
 
             # Keine Einwort-Sätze
@@ -110,20 +129,18 @@ class Story:
 
         return sentences
 
-    def get_sentences(self) -> list[Sentence] | None:
+    def get_sentences(self, sent_count: int) -> list[Sentence] | None:
         """
         Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
         """
-        sent_count = random.randint(1, 15)
         sents = self.pick_random_sentences(sent_count)
 
         return sents
 
-    def get_sentences_with_same_verb(self) -> list[Sentence] | None:
+    def get_sentences_with_same_verb(self, sent_count: int) -> list[Sentence] | None:
         """
         Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält. Es wird ein Verb ausgewählt und nur Sätze mit diesem Verb werden verwendet.
         """
-        sent_count = random.randint(1, 15)
         verb = random.choice(self.sentences).verb
         sents = self.pick_random_sentences(sent_count, selected_verb=verb)
 
@@ -144,11 +161,14 @@ class Story:
         Fängt an eine Geschichte zu erzählen.
         """
         for n in range(times):
+
             # chceck if n is divisible by 10
             if n % 3 == 0:
-                sents = self.get_sentences_with_same_verb()
+                sent_count = random.randint(5, 15)
+                sents = self.get_sentences_with_same_verb(sent_count)
             else:
-                sents = self.get_sentences()
+                sent_count = random.randint(1, 10)
+                sents = self.get_sentences(sent_count)
 
             if not sents:
                 continue
@@ -158,9 +178,8 @@ class Story:
             # Speichere die Sätze im Trash
             for sent in sents:
                 self.sentence_trash.add(sent.id)
-                self.verb_trash.add(sent.verb)
-                for noun in sent.nouns:
-                    self.noun_trash.add(noun)
+                self.verb_trash.add(sent.verbs_lemma)
+                self.noun_trash.add(sent.nouns_lemma)
 
             # Füge die Sätze zusammen
             sents_len = len(sents)

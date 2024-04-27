@@ -9,11 +9,14 @@ class Trash:
     data: list[str] = field(default_factory=list)
     max_items: int | None = None
 
-    def add(self, value: str):
+    def add(self, value: str | list[str]):
         """
         Fügt einen Wert zu data hinzu. Wenn mehr als max_items Einträge gespeichert wurden, werden die ältesten Einträge gelöscht.
         """
-        self.data.append(value)
+        if isinstance(value, list):
+            self.data.extend(value)
+        else:
+            self.data.append(value)
 
         if self.max_items:
             self.clean()
@@ -26,8 +29,14 @@ class Trash:
         if self.max_items and len(self.data) > self.max_items:
             self.data = self.data[-self.max_items :]
 
-    def has(self, value: str):
-        return value in self.data
+    def has(self, value: str | list[str]):
+        """
+        Prüft, ob ein Wert in data enthalten ist.
+        """
+        if isinstance(value, list):
+            return any(val in self.data for val in value)
+        else:
+            return value in self.data
 
     @classmethod
     def from_file(cls, file_path: Path | str, max_items: int | None = None):
