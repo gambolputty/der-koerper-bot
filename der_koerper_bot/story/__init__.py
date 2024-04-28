@@ -2,14 +2,14 @@ import random
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
-from venv import create
 
 from pydantic import BaseModel, computed_field, field_validator
 
 from der_koerper_bot.story.trash import Trash
 
 VERB_TRASH_MAX_ITEMS = 15
-NOUN_TRASH_MAX_ITEMS = 20
+NOUN_TRASH_MAX_ITEMS = 30
+SOURCE_TRASH_MAX_ITEMS = 50
 
 
 class Sentence(BaseModel):
@@ -19,6 +19,7 @@ class Sentence(BaseModel):
     verbs_lemma: list[str] = []
     nouns: list[str] = []
     nouns_lemma: list[str] = []
+    source: str
 
     @computed_field
     @property
@@ -44,6 +45,7 @@ class Story:
     verb_trash: Trash = field(default_factory=Trash)
     noun_trash: Trash = field(default_factory=Trash)
     sentence_trash: Trash = field(default_factory=Trash)
+    source_trash: Trash = field(default_factory=Trash)
     trash_files_path: Path = field(default=Path("der_koerper_bot/trash_files"))
 
     def __post_init__(self):
@@ -56,6 +58,7 @@ class Story:
         # set Trash config
         self.verb_trash.max_items = VERB_TRASH_MAX_ITEMS
         self.noun_trash.max_items = NOUN_TRASH_MAX_ITEMS
+        self.source_trash.max_items = SOURCE_TRASH_MAX_ITEMS
 
     def load_trash_from_file(self):
         self.verb_trash = Trash.from_file(
@@ -67,11 +70,15 @@ class Story:
         self.sentence_trash = Trash.from_file(
             self.trash_files_path / "sentence_trash.txt", create=True
         )
+        self.source_trash = Trash.from_file(
+            self.trash_files_path / "source_trash.txt", create=True
+        )
 
     def save_trash_files(self):
         self.verb_trash.save_to_file(self.trash_files_path / "verb_trash.txt")
         self.noun_trash.save_to_file(self.trash_files_path / "noun_trash.txt")
         self.sentence_trash.save_to_file(self.trash_files_path / "sentence_trash.txt")
+        self.source_trash.save_to_file(self.trash_files_path / "source_trash.txt")
 
     def pick_random_sentences(
         self, count: int, selected_verb: str | None = None
@@ -94,6 +101,10 @@ class Story:
                 # Nicht die selben Verben im Satz
                 if sent.verb in found_verbs:
                     continue
+
+            # checke Quelle-Trash
+            if self.source_trash.has(sent.source):
+                continue
 
             # checke Satz-Trash
             if self.sentence_trash.has(sent.id):
@@ -188,6 +199,7 @@ class Story:
                 self.sentence_trash.add(sent.id)
                 self.verb_trash.add(sent.verbs_lemma)
                 self.noun_trash.add(sent.nouns_lemma)
+                self.source_trash.add(sent.source)
 
             # Füge die Sätze zusammen
             sents_len = len(sents)
