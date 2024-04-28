@@ -7,9 +7,9 @@ from pydantic import BaseModel, computed_field, field_validator
 
 from der_koerper_bot.story.trash import Trash
 
-VERB_TRASH_MAX_ITEMS = 15
-NOUN_TRASH_MAX_ITEMS = 30
-SOURCE_TRASH_MAX_ITEMS = 50
+VERB_TRASH_MAX_ITEMS = 14
+NOUN_TRASH_MAX_ITEMS = 40
+SOURCE_TRASH_MAX_ITEMS = 70
 
 
 class Sentence(BaseModel):
