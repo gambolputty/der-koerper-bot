@@ -8,7 +8,7 @@ from pydantic import BaseModel, computed_field, field_validator
 
 from der_koerper_bot.story.trash import Trash
 
-VERB_TRASH_MAX_ITEMS = 10
+VERB_TRASH_MAX_ITEMS = 20
 NOUN_TRASH_MAX_ITEMS = 20
 
 
@@ -171,7 +171,7 @@ class Story:
         for n in range(times):
 
             # chceck if n is divisible by 10
-            if n % 5 == 0:
+            if n > 0 and n % 5 == 0:
                 sent_count = random.randint(5, 15)
                 sents = self.get_sentences_with_same_verb(sent_count)
             else:
