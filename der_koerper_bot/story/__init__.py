@@ -8,7 +8,7 @@ from pydantic import BaseModel, computed_field, field_validator
 
 from der_koerper_bot.story.trash import Trash
 
-VERB_TRASH_MAX_ITEMS = 20
+VERB_TRASH_MAX_ITEMS = 15
 NOUN_TRASH_MAX_ITEMS = 20
 
 
