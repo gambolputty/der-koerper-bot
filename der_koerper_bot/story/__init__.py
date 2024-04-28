@@ -125,10 +125,10 @@ class Story:
     @staticmethod
     def sort_sentences(sentences: list[Sentence]) -> list[Sentence]:
         # Stelle Sätze ans Ende, die ein Komma oder das Wort "und" enthalten.
-        sentences = sorted(
-            sentences,
-            key=lambda sent: "," in sent.text or " und " in sent.text,
-        )
+        # sentences = sorted(
+        #     sentences,
+        #     key=lambda sent: "," in sent.text or " und " in sent.text,
+        # )
 
         return sentences
 
