@@ -50,12 +50,12 @@ class Story:
         if self.from_file:
             self.load_trash_from_file()
 
+            # create trash_files_path if not exists
+            self.trash_files_path.mkdir(exist_ok=True)
+
         # set Trash config
         self.verb_trash.max_items = VERB_TRASH_MAX_ITEMS
         self.noun_trash.max_items = NOUN_TRASH_MAX_ITEMS
-
-        # create trash_files_path if not exists
-        self.trash_files_path.mkdir(exist_ok=True)
 
     def load_trash_from_file(self):
         self.verb_trash = Trash.from_file(

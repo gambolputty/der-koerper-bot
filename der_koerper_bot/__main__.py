@@ -11,14 +11,12 @@ def init():
         reader = csv.DictReader(file)
         sentences = [Sentence(**row) for row in reader]  # type: ignore
 
-    story = Story(sentences=sentences, from_file=True)
+    story = Story(sentences=sentences)
 
     with open("story.txt", "w") as file:
         for text in story.start(500):
             # for line in textwrap.wrap(text, 80):
             file.write(f"{text}\n")
-
-    story.save_trash_files()
 
 
 if __name__ == "__main__":
