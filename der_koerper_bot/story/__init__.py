@@ -161,7 +161,11 @@ class Story:
         """
         Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
         """
-        sent_count = random.randint(1, 10)
+        sent_count = self.get_random_sent_count(
+            start=1,
+            end=10,
+            weights=[2, 1, 5, 10, 10, 10, 5, 2, 2, 1],
+        )
         sents = self.pick_random_sentences(sent_count)
 
         return sents
@@ -171,7 +175,6 @@ class Story:
         Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält. Es wird ein Verb ausgewählt und nur Sätze mit diesem Verb werden ausgewählt.
         """
         # Generiere eine zufällige Anzahl von Sätzen.
-        # Manche Werte sollen häufiger vorkommen als andere.
         sent_count = self.get_random_sent_count(
             start=4,
             end=10,
