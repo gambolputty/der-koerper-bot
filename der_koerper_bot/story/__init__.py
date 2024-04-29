@@ -173,9 +173,9 @@ class Story:
         # Generiere eine zufällige Anzahl von Sätzen.
         # Manche Werte sollen häufiger vorkommen als andere.
         sent_count = self.get_random_sent_count(
-            4,
-            10,
-            [10, 10, 10, 10, 2, 2, 2],
+            start=4,
+            end=10,
+            weights=[10, 10, 10, 4, 2, 2, 1],
         )
 
         # Wähle ein Verb aus, das nicht im Trash liegt.
