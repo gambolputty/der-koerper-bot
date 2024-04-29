@@ -164,7 +164,7 @@ class Story:
         sent_count = self.get_random_sent_count(
             start=1,
             end=10,
-            weights=[2, 1, 5, 10, 10, 10, 5, 2, 2, 1],
+            weights=[2, 1, 5, 10, 10, 5, 3, 2, 2, 1],
         )
         sents = self.pick_random_sentences(sent_count)
 
