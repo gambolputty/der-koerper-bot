@@ -1,4 +1,3 @@
-# %%
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -63,11 +62,11 @@ class Trash:
                 file.write(f"{value}\n")
 
 
-trash = Trash([], 5)
+# trash = Trash([], 5)
 
-for x in range(10):
-    trash.add(f"value{x}")
+# for x in range(10):
+#     trash.add(f"value{x}")
 
-trash.data
-trash.clean()
-trash.data
+# trash.data
+# trash.clean()
+# trash.data

@@ -28,6 +28,14 @@ class Sentence(BaseModel):
         return v.split(";")
 
 
+class StoryConfig(BaseModel):
+    VERB_TRASH_MAX_ITEMS: int | None = 14
+    REPEATED_VERB_TRASH_MAX_ITEMS: int | None = 3
+    NOUN_TRASH_MAX_ITEMS: int | None = 40
+    SOURCE_TRASH_MAX_ITEMS: int | None = 70
+    SENTENCE_TRASH_MAX_ITEMS: int | None = None
+
+
 @dataclass
 class Story:
     """
@@ -36,10 +44,7 @@ class Story:
     Sätze können ein oder mehrere Verben und Nomen haben. Wir wollen einen ausgeglichenen Text generieren, in dem Verben und Nomen nicht zu oft wiederholt werden. Außerdem soll jeder Satz nur 1x vorkommen.
     """
 
-    VERB_TRASH_MAX_ITEMS = 14
-    REPEATED_VERB_TRASH_MAX_ITEMS = 3
-    NOUN_TRASH_MAX_ITEMS = 40
-    SOURCE_TRASH_MAX_ITEMS = 70
+    config: StoryConfig = field(default_factory=StoryConfig)
 
     sentences: list[Sentence] = field(default_factory=list)
     from_file: bool = False
@@ -58,10 +63,11 @@ class Story:
             self.trash_files_path.mkdir(exist_ok=True)
 
         # set Trash config
-        self.verb_trash.max_items = self.VERB_TRASH_MAX_ITEMS
-        self.repeated_verb_trash.max_items = self.REPEATED_VERB_TRASH_MAX_ITEMS
-        self.noun_trash.max_items = self.NOUN_TRASH_MAX_ITEMS
-        self.source_trash.max_items = self.SOURCE_TRASH_MAX_ITEMS
+        self.verb_trash.max_items = self.config.VERB_TRASH_MAX_ITEMS
+        self.repeated_verb_trash.max_items = self.config.REPEATED_VERB_TRASH_MAX_ITEMS
+        self.noun_trash.max_items = self.config.NOUN_TRASH_MAX_ITEMS
+        self.sentence_trash.max_items = self.config.SENTENCE_TRASH_MAX_ITEMS
+        self.source_trash.max_items = self.config.SOURCE_TRASH_MAX_ITEMS
 
     def load_trash_from_file(self):
         self.verb_trash = Trash.from_file(
@@ -79,6 +85,9 @@ class Story:
 
     def save_trash_files(self):
         self.verb_trash.save_to_file(self.trash_files_path / "verb_trash.txt")
+        self.repeated_verb_trash.save_to_file(
+            self.trash_files_path / "repeated_verb_trash.txt"
+        )
         self.noun_trash.save_to_file(self.trash_files_path / "noun_trash.txt")
         self.sentence_trash.save_to_file(self.trash_files_path / "sentence_trash.txt")
         self.source_trash.save_to_file(self.trash_files_path / "source_trash.txt")

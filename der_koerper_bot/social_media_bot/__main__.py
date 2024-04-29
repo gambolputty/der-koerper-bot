@@ -5,7 +5,7 @@ from mastodon import Mastodon
 from tenacity import retry, stop_after_attempt, wait_random
 
 from der_koerper_bot.config import config
-from der_koerper_bot.story import Sentence, Story
+from der_koerper_bot.story import Sentence, Story, StoryConfig
 
 csv.field_size_limit(sys.maxsize)
 
@@ -25,10 +25,22 @@ def init():
     with open("sentences.csv", "r") as file:
         reader = csv.DictReader(file)
         sentences = [Sentence(**row) for row in reader]  # type: ignore
-
-    story = Story(sentences=sentences)
+    story_config = StoryConfig(
+        VERB_TRASH_MAX_ITEMS=14,
+        REPEATED_VERB_TRASH_MAX_ITEMS=3,
+        NOUN_TRASH_MAX_ITEMS=40,
+        SOURCE_TRASH_MAX_ITEMS=70,
+        SENTENCE_TRASH_MAX_ITEMS=1000,
+    )
+    story = Story(
+        config=story_config,
+        sentences=sentences,
+        from_file=True,
+    )
     text = next(story.generate_text_in_loop(1))
+
     post_to_mastodon(text)
+    story.save_trash_files()
 
 
 if __name__ == "__main__":

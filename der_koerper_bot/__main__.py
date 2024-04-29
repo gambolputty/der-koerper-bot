@@ -1,7 +1,7 @@
 import csv
 import sys
 
-from der_koerper_bot.story import Sentence, Story
+from der_koerper_bot.story import Sentence, Story, StoryConfig
 
 csv.field_size_limit(sys.maxsize)
 
@@ -11,7 +11,16 @@ def init():
         reader = csv.DictReader(file)
         sentences = [Sentence(**row) for row in reader]  # type: ignore
 
-    story = Story(sentences=sentences)
+    story_config = StoryConfig(
+        VERB_TRASH_MAX_ITEMS=14,
+        REPEATED_VERB_TRASH_MAX_ITEMS=3,
+        NOUN_TRASH_MAX_ITEMS=40,
+        SOURCE_TRASH_MAX_ITEMS=70,
+    )
+    story = Story(
+        config=story_config,
+        sentences=sentences,
+    )
 
     with open("story.txt", "w") as file:
         for text in story.generate_text_in_loop(500):
