@@ -7,10 +7,6 @@ from pydantic import BaseModel, computed_field, field_validator
 
 from der_koerper_bot.story.trash import Trash
 
-VERB_TRASH_MAX_ITEMS = 14
-NOUN_TRASH_MAX_ITEMS = 40
-SOURCE_TRASH_MAX_ITEMS = 70
-
 
 class Sentence(BaseModel):
     id: str
@@ -40,9 +36,15 @@ class Story:
     Sätze können ein oder mehrere Verben und Nomen haben. Wir wollen einen ausgeglichenen Text generieren, in dem Verben und Nomen nicht zu oft wiederholt werden. Außerdem soll jeder Satz nur 1x vorkommen.
     """
 
+    VERB_TRASH_MAX_ITEMS = 14
+    REPEATED_VERB_TRASH_MAX_ITEMS = 3
+    NOUN_TRASH_MAX_ITEMS = 40
+    SOURCE_TRASH_MAX_ITEMS = 70
+
     sentences: list[Sentence] = field(default_factory=list)
     from_file: bool = False
     verb_trash: Trash = field(default_factory=Trash)
+    repeated_verb_trash: Trash = field(default_factory=Trash)
     noun_trash: Trash = field(default_factory=Trash)
     sentence_trash: Trash = field(default_factory=Trash)
     source_trash: Trash = field(default_factory=Trash)
@@ -56,9 +58,10 @@ class Story:
             self.trash_files_path.mkdir(exist_ok=True)
 
         # set Trash config
-        self.verb_trash.max_items = VERB_TRASH_MAX_ITEMS
-        self.noun_trash.max_items = NOUN_TRASH_MAX_ITEMS
-        self.source_trash.max_items = SOURCE_TRASH_MAX_ITEMS
+        self.verb_trash.max_items = self.VERB_TRASH_MAX_ITEMS
+        self.repeated_verb_trash.max_items = self.REPEATED_VERB_TRASH_MAX_ITEMS
+        self.noun_trash.max_items = self.NOUN_TRASH_MAX_ITEMS
+        self.source_trash.max_items = self.SOURCE_TRASH_MAX_ITEMS
 
     def load_trash_from_file(self):
         self.verb_trash = Trash.from_file(
@@ -81,7 +84,7 @@ class Story:
         self.source_trash.save_to_file(self.trash_files_path / "source_trash.txt")
 
     def pick_random_sentences(
-        self, count: int, selected_verb: str | None = None
+        self, count: int, repeated_verb: str | None = None
     ) -> list[Sentence] | None:
         result = []
         found_nouns = set()
@@ -89,13 +92,13 @@ class Story:
         random.shuffle(self.sentences)
 
         for sent in self.sentences:
-            if selected_verb:
+            if repeated_verb:
                 # checke Verb
-                if sent.verb != selected_verb:
+                if sent.verb != repeated_verb:
                     continue
             else:
                 # checke Verb-Trash
-                if self.verb_trash.has(sent.verbs_lemma):
+                if self.verb_trash.has_any(sent.verbs_lemma):
                     continue
 
                 # Nicht die selben Verben im Satz
@@ -115,7 +118,7 @@ class Story:
                 continue
 
             # checke Nomen-Trash
-            if self.noun_trash.has(sent.nouns_lemma):
+            if self.noun_trash.has_any(sent.nouns_lemma):
                 continue
 
             # Keine Einwort-Sätze
@@ -143,25 +146,53 @@ class Story:
 
         return sentences
 
-    def get_sentences(self, sent_count: int) -> list[Sentence] | None:
+    def get_sentences(self) -> list[Sentence] | None:
         """
         Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
         """
+        sent_count = random.randint(1, 10)
         sents = self.pick_random_sentences(sent_count)
 
         return sents
 
-    def get_sentences_with_same_verb(self, sent_count: int) -> list[Sentence] | None:
+    @staticmethod
+    def get_random_sent_count(start: int, end: int, weights: list[int]) -> int:
+        # Generiere eine zufällige Anzahl von Sätzen.
+        # Manche Werte sollen häufiger vorkommen als andere.
+
+        # Liste der möglichen Werte
+        values = list(range(start, end + 1))
+
+        if len(values) != len(weights):
+            raise ValueError("values and weights must have the same length.")
+
+        # Zufällige Auswahl unter Berücksichtigung der Gewichte
+        return random.choices(values, weights=weights, k=1)[0]
+
+    def get_sentences_with_same_verb(self) -> list[Sentence] | None:
         """
-        Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält. Es wird ein Verb ausgewählt und nur Sätze mit diesem Verb werden verwendet.
+        Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält. Es wird ein Verb ausgewählt und nur Sätze mit diesem Verb werden ausgewählt.
         """
-        # pick random Verb that is not in verb_trash
-        random.shuffle(self.sentences)
-        verb = next(
-            (sent.verb for sent in self.sentences if not self.verb_trash.has(sent.verb))
+        # Generiere eine zufällige Anzahl von Sätzen.
+        # Manche Werte sollen häufiger vorkommen als andere.
+        sent_count = self.get_random_sent_count(
+            4,
+            10,
+            [10, 10, 10, 10, 2, 2, 2],
         )
 
-        sents = self.pick_random_sentences(sent_count, selected_verb=verb)
+        # Wähle ein Verb aus, das nicht im Trash liegt.
+        # Das Verb wird über mehrere Sätze verwendet.
+        random.shuffle(self.sentences)
+        repeated_verb = next(
+            (
+                sent.verb
+                for sent in self.sentences
+                if not self.repeated_verb_trash.has(sent.verb)
+            )
+        )
+
+        sents = self.pick_random_sentences(sent_count, repeated_verb)
 
         # Entferne das erste Wort aus jedem Satz, außer dem ersten Satz.
         # for i, sent in enumerate(sents):
@@ -179,15 +210,16 @@ class Story:
         """
         Fängt an eine Geschichte zu erzählen.
         """
+        should_add_to_repeated_verb_trash = False
+
         for n in range(times):
 
             # chceck if n is divisible by 10
             if n > 0 and n % 5 == 0:
-                sent_count = random.randint(5, 15)
-                sents = self.get_sentences_with_same_verb(sent_count)
+                sents = self.get_sentences_with_same_verb()
+                should_add_to_repeated_verb_trash = True
             else:
-                sent_count = random.randint(1, 10)
-                sents = self.get_sentences(sent_count)
+                sents = self.get_sentences()
 
             if not sents:
                 continue
@@ -200,6 +232,9 @@ class Story:
                 self.verb_trash.add(sent.verbs_lemma)
                 self.noun_trash.add(sent.nouns_lemma)
                 self.source_trash.add(sent.source)
+
+                if should_add_to_repeated_verb_trash:
+                    self.repeated_verb_trash.add(sent.verbs_lemma)
 
             # Füge die Sätze zusammen
             sents_len = len(sents)

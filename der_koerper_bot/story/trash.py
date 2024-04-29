@@ -29,14 +29,17 @@ class Trash:
         if self.max_items and len(self.data) > self.max_items:
             self.data = self.data[-self.max_items :]
 
-    def has(self, value: str | list[str]):
+    def has(self, value: str):
         """
         Prüft, ob ein Wert in data enthalten ist.
         """
-        if isinstance(value, list):
-            return any(val in self.data for val in value)
-        else:
-            return value in self.data
+        return value in self.data
+
+    def has_any(self, values: list[str]):
+        """
+        Prüft, ob mindestens ein Wert in data enthalten ist.
+        """
+        return any(val in self.data for val in values)
 
     @classmethod
     def from_file(
