@@ -146,15 +146,6 @@ class Story:
 
         return sentences
 
-    def get_sentences(self) -> list[Sentence] | None:
-        """
-        Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
-        """
-        sent_count = random.randint(1, 10)
-        sents = self.pick_random_sentences(sent_count)
-
-        return sents
-
     @staticmethod
     def get_random_sent_count(start: int, end: int, weights: list[int]) -> int:
         # Generiere eine zufällige Anzahl von Sätzen.
@@ -163,13 +154,19 @@ class Story:
         # Liste der möglichen Werte
         values = list(range(start, end + 1))
 
-        if len(values) != len(weights):
-            raise ValueError("values and weights must have the same length.")
-
         # Zufällige Auswahl unter Berücksichtigung der Gewichte
         return random.choices(values, weights=weights, k=1)[0]
 
-    def get_sentences_with_same_verb(self) -> list[Sentence] | None:
+    def get_enumerated_sentences(self) -> list[Sentence] | None:
+        """
+        Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
+        """
+        sent_count = random.randint(1, 10)
+        sents = self.pick_random_sentences(sent_count)
+
+        return sents
+
+    def get_enumerated_sentences_and_repeat_verb(self) -> list[Sentence] | None:
         """
         Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält. Es wird ein Verb ausgewählt und nur Sätze mit diesem Verb werden ausgewählt.
         """
@@ -206,20 +203,36 @@ class Story:
 
         return sents
 
+    def get_sentences(self, current_index: int):
+        if current_index == 0:
+            return self.get_enumerated_sentences(), False
+
+        # Liste der Funktionen
+        functions = [
+            self.get_enumerated_sentences,
+            self.get_enumerated_sentences_and_repeat_verb,
+        ]
+
+        # Gewichte für die Funktionen
+        weights = [10, 5]
+
+        # Zufällige Auswahl unter Berücksichtigung der Gewichte
+        get_sentences_fn = random.choices(functions, weights=weights, k=1)[0]
+        should_add_to_repeated_verb_trash = False
+
+        if get_sentences_fn == "get_enumerated_sentences_and_repeat_verb":
+            should_add_to_repeated_verb_trash = True
+
+        # Aufrufen der ausgewählten Funktion
+        return get_sentences_fn(), should_add_to_repeated_verb_trash
+
     def start(self, times: int = 1):
         """
         Fängt an eine Geschichte zu erzählen.
         """
-        should_add_to_repeated_verb_trash = False
-
         for n in range(times):
 
-            # chceck if n is divisible by 10
-            if n > 0 and n % 5 == 0:
-                sents = self.get_sentences_with_same_verb()
-                should_add_to_repeated_verb_trash = True
-            else:
-                sents = self.get_sentences()
+            sents, should_add_to_repeated_verb_trash = self.get_sentences(n)
 
             if not sents:
                 continue
@@ -233,7 +246,7 @@ class Story:
                 self.noun_trash.add(sent.nouns_lemma)
                 self.source_trash.add(sent.source)
 
-                if should_add_to_repeated_verb_trash:
+                if should_add_to_repeated_verb_trash is True:
                     self.repeated_verb_trash.add(sent.verbs_lemma)
 
             # Füge die Sätze zusammen
