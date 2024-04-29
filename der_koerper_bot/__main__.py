@@ -20,6 +20,7 @@ def init():
     story = Story(
         config=story_config,
         sentences=sentences,
+        from_file=True,
     )
 
     with open("story.txt", "w") as file:

@@ -1,6 +1,23 @@
 from dataclasses import dataclass, field
 from pathlib import Path
 
+from pydantic import BaseModel
+
+
+class TrashConfig(BaseModel):
+    TRASH_KEYS: list[str] = [
+        "verbs",
+        "repeated_verbs",
+        "nouns",
+        "sentences",
+        "sources",
+    ]
+    VERBS_MAX_ITEMS: int | None = 14
+    REPEATED_VERBS_MAX_ITEMS: int | None = 3
+    NOUNS_MAX_ITEMS: int | None = 40
+    SOURCES_MAX_ITEMS: int | None = 70
+    SENTENCES_MAX_ITEMS: int | None = None
+
 
 @dataclass
 class Trash:
@@ -51,7 +68,10 @@ class Trash:
             return cls(max_items=max_items)
 
         with open(file_path, "r") as file:
-            return cls(data=[line.strip() for line in file], max_items=max_items)
+            return cls(
+                data=[line_strip for line in file if (line_strip := line.strip())],
+                max_items=max_items,
+            )
 
     def save_to_file(self, file_path: Path | str):
         """

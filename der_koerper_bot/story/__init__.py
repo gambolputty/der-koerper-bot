@@ -5,7 +5,7 @@ from typing import Any
 
 from pydantic import BaseModel, computed_field, field_validator
 
-from der_koerper_bot.story.trash import Trash
+from der_koerper_bot.story.trash import Trash, TrashConfig
 
 
 class Sentence(BaseModel):
@@ -29,11 +29,7 @@ class Sentence(BaseModel):
 
 
 class StoryConfig(BaseModel):
-    VERB_TRASH_MAX_ITEMS: int | None = 14
-    REPEATED_VERB_TRASH_MAX_ITEMS: int | None = 3
-    NOUN_TRASH_MAX_ITEMS: int | None = 40
-    SOURCE_TRASH_MAX_ITEMS: int | None = 70
-    SENTENCE_TRASH_MAX_ITEMS: int | None = None
+    trash: TrashConfig = TrashConfig()
 
 
 @dataclass
@@ -44,53 +40,44 @@ class Story:
     Sätze können ein oder mehrere Verben und Nomen haben. Wir wollen einen ausgeglichenen Text generieren, in dem Verben und Nomen nicht zu oft wiederholt werden. Außerdem soll jeder Satz nur 1x vorkommen.
     """
 
-    config: StoryConfig = field(default_factory=StoryConfig)
-
     sentences: list[Sentence] = field(default_factory=list)
     from_file: bool = False
-    verb_trash: Trash = field(default_factory=Trash)
-    repeated_verb_trash: Trash = field(default_factory=Trash)
-    noun_trash: Trash = field(default_factory=Trash)
-    sentence_trash: Trash = field(default_factory=Trash)
-    source_trash: Trash = field(default_factory=Trash)
     trash_files_path: Path = field(default=Path("der_koerper_bot/trash_files"))
 
-    def __post_init__(self):
-        if self.from_file:
-            self.load_trash_from_file()
+    config: StoryConfig = field(default_factory=StoryConfig)
+    trash_bins: dict[str, Trash] = field(init=False)
 
+    def __post_init__(self):
+        self.init_trash_bins()
+
+    def init_trash_bins(self):
+
+        # load trash files
+        if self.from_file:
             # create trash_files_path if not exists
             self.trash_files_path.mkdir(exist_ok=True)
 
-        # set Trash config
-        self.verb_trash.max_items = self.config.VERB_TRASH_MAX_ITEMS
-        self.repeated_verb_trash.max_items = self.config.REPEATED_VERB_TRASH_MAX_ITEMS
-        self.noun_trash.max_items = self.config.NOUN_TRASH_MAX_ITEMS
-        self.sentence_trash.max_items = self.config.SENTENCE_TRASH_MAX_ITEMS
-        self.source_trash.max_items = self.config.SOURCE_TRASH_MAX_ITEMS
-
-    def load_trash_from_file(self):
-        self.verb_trash = Trash.from_file(
-            self.trash_files_path / "verb_trash.txt", create=True
-        )
-        self.noun_trash = Trash.from_file(
-            self.trash_files_path / "noun_trash.txt", create=True
-        )
-        self.sentence_trash = Trash.from_file(
-            self.trash_files_path / "sentence_trash.txt", create=True
-        )
-        self.source_trash = Trash.from_file(
-            self.trash_files_path / "source_trash.txt", create=True
-        )
+            # load trash bins
+            self.trash_bins = {
+                key: Trash.from_file(
+                    self.trash_files_path / f"{key}.txt",
+                    max_items=getattr(self.config.trash, f"{key.upper()}_MAX_ITEMS"),
+                    create=True,
+                )
+                for key in self.config.trash.TRASH_KEYS
+            }
+        else:
+            # create new trash bins
+            self.trash_bins = {
+                key: Trash(
+                    max_items=getattr(self.config.trash, f"{key.upper()}_MAX_ITEMS")
+                )
+                for key in self.config.trash.TRASH_KEYS
+            }
 
     def save_trash_files(self):
-        self.verb_trash.save_to_file(self.trash_files_path / "verb_trash.txt")
-        self.repeated_verb_trash.save_to_file(
-            self.trash_files_path / "repeated_verb_trash.txt"
-        )
-        self.noun_trash.save_to_file(self.trash_files_path / "noun_trash.txt")
-        self.sentence_trash.save_to_file(self.trash_files_path / "sentence_trash.txt")
-        self.source_trash.save_to_file(self.trash_files_path / "source_trash.txt")
+        for key, trash in self.trash_bins.items():
+            trash.save_to_file(self.trash_files_path / f"{key}.txt")
 
     def pick_random_sentences(
         self, count: int, repeated_verb: str | None = None
@@ -107,7 +94,7 @@ class Story:
                     continue
             else:
                 # checke Verb-Trash
-                if self.verb_trash.has_any(sent.verbs_lemma):
+                if self.trash_bins["verbs"].has_any(sent.verbs_lemma):
                     continue
 
                 # Nicht die selben Verben im Satz
@@ -115,11 +102,11 @@ class Story:
                     continue
 
             # checke Quelle-Trash
-            if self.source_trash.has(sent.source):
+            if self.trash_bins["sources"].has(sent.source):
                 continue
 
             # checke Satz-Trash
-            if self.sentence_trash.has(sent.id):
+            if self.trash_bins["sentences"].has(sent.id):
                 continue
 
             # Nicht die selben Nomen im Satz
@@ -127,7 +114,7 @@ class Story:
                 continue
 
             # checke Nomen-Trash
-            if self.noun_trash.has_any(sent.nouns_lemma):
+            if self.trash_bins["nouns"].has_any(sent.nouns_lemma):
                 continue
 
             # Keine Einwort-Sätze
@@ -197,7 +184,7 @@ class Story:
             (
                 sent.verb
                 for sent in self.sentences
-                if not self.repeated_verb_trash.has(sent.verb)
+                if not self.trash_bins["repeated_verbs"].has(sent.verb)
             )
         )
 
@@ -250,13 +237,13 @@ class Story:
 
             # Speichere die Sätze im Trash
             for sent in sents:
-                self.sentence_trash.add(sent.id)
-                self.verb_trash.add(sent.verbs_lemma)
-                self.noun_trash.add(sent.nouns_lemma)
-                self.source_trash.add(sent.source)
+                self.trash_bins["sentences"].add(sent.id)
+                self.trash_bins["verbs"].add(sent.verbs_lemma)
+                self.trash_bins["nouns"].add(sent.nouns_lemma)
+                self.trash_bins["sources"].add(sent.source)
 
                 if should_add_to_repeated_verb_trash is True:
-                    self.repeated_verb_trash.add(sent.verbs_lemma)
+                    self.trash_bins["repeated_verbs"].add(sent.verbs_lemma)
 
             # Füge die Sätze zusammen
             sents_len = len(sents)
