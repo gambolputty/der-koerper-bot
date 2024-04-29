@@ -27,7 +27,7 @@ def init():
         sentences = [Sentence(**row) for row in reader]  # type: ignore
 
     story = Story(sentences=sentences)
-    text = next(story.start(1))
+    text = next(story.generate_text_in_loop(1))
     post_to_mastodon(text)
 
 

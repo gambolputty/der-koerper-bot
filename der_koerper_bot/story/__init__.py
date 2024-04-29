@@ -203,10 +203,7 @@ class Story:
 
         return sents
 
-    def get_sentences(self, current_index: int):
-        if current_index == 0:
-            return self.get_enumerated_sentences(), False
-
+    def get_sentences(self):
         # Liste der Funktionen
         functions = [
             self.get_enumerated_sentences,
@@ -214,7 +211,7 @@ class Story:
         ]
 
         # Gewichte für die Funktionen
-        weights = [10, 5]
+        weights = [10, 6]
 
         # Zufällige Auswahl unter Berücksichtigung der Gewichte
         get_sentences_fn = random.choices(functions, weights=weights, k=1)[0]
@@ -226,13 +223,13 @@ class Story:
         # Aufrufen der ausgewählten Funktion
         return get_sentences_fn(), should_add_to_repeated_verb_trash
 
-    def start(self, times: int = 1):
+    def generate_text_in_loop(self, times: int = 1):
         """
         Fängt an eine Geschichte zu erzählen.
         """
         for n in range(times):
 
-            sents, should_add_to_repeated_verb_trash = self.get_sentences(n)
+            sents, should_add_to_repeated_verb_trash = self.get_sentences()
 
             if not sents:
                 continue

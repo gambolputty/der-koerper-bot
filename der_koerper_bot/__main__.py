@@ -14,7 +14,7 @@ def init():
     story = Story(sentences=sentences)
 
     with open("story.txt", "w") as file:
-        for text in story.start(500):
+        for text in story.generate_text_in_loop(500):
             # for line in textwrap.wrap(text, 80):
             file.write(f"{text}\n")
 
