@@ -26,10 +26,6 @@ def init():
         reader = csv.DictReader(file)
         sentences = [Sentence(**row) for row in reader]  # type: ignore
     story_config = StoryConfig(
-        VERB_TRASH_MAX_ITEMS=14,
-        REPEATED_VERB_TRASH_MAX_ITEMS=3,
-        NOUN_TRASH_MAX_ITEMS=40,
-        SOURCE_TRASH_MAX_ITEMS=70,
         SENTENCE_TRASH_MAX_ITEMS=1000,
     )
     story = Story(
