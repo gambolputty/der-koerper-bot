@@ -90,13 +90,29 @@ class Story:
                 # checke Verb
                 if sent.verb != repeated_verb:
                     continue
-            else:
-                # checke Verb-Trash
-                if self.trash_bins["verbs"].has_any(sent.verbs_lemma):
+
+                # Hole lemma von sent.verb in sent.verbs_lemma
+                repeated_verb_lemma = sent.verbs_lemma[0]
+
+                # Vergleiche Verben, aber nehme verb_lemma aus
+                if found_verbs.difference({repeated_verb_lemma}).intersection(
+                    sent.verbs_lemma
+                ):
                     continue
 
+                # checke Verb-Trash, aber nehme verb_lemma aus
+                if self.trash_bins["verbs"].has_any(
+                    list(set(sent.verbs_lemma).difference({repeated_verb_lemma}))
+                ):
+                    continue
+
+            else:
                 # Nicht die selben Verben im Satz
                 if found_verbs.intersection(sent.verbs_lemma):
+                    continue
+
+                # checke Verb-Trash
+                if self.trash_bins["verbs"].has_any(sent.verbs_lemma):
                     continue
 
             # checke Quelle-Trash
@@ -149,7 +165,9 @@ class Story:
         values = list(range(start, end + 1))
 
         # Zufällige Auswahl unter Berücksichtigung der Gewichte
-        return random.choices(values, weights=weights, k=1)[0]
+        result = random.choices(values, weights=weights, k=1)[0]
+
+        return result
 
     def get_enumerated_sentences(self) -> list[Sentence] | None:
         """
@@ -158,7 +176,7 @@ class Story:
         sent_count = self.get_random_sent_count(
             start=1,
             end=10,
-            weights=[2, 1, 8, 10, 10, 5, 3, 2, 2, 1],
+            weights=[20, 10, 80, 100, 100, 50, 30, 10, 5, 5],
         )
         sents = self.pick_random_sentences(sent_count)
 
@@ -172,7 +190,7 @@ class Story:
         sent_count = self.get_random_sent_count(
             start=4,
             end=10,
-            weights=[10, 10, 10, 4, 2, 2, 1],
+            weights=[100, 100, 100, 40, 20, 20, 10],
         )
 
         # Wähle ein Verb aus, das nicht im Trash liegt.
@@ -208,7 +226,7 @@ class Story:
         ]
 
         # Gewichte für die Funktionen
-        weights = [10, 6]
+        weights = [100, 60]
 
         # Zufällige Auswahl unter Berücksichtigung der Gewichte
         get_sentences_fn = random.choices(functions, weights=weights, k=1)[0]
