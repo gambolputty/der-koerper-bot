@@ -11,16 +11,10 @@ def init():
         reader = csv.DictReader(file)
         sentences = [Sentence(**row) for row in reader]  # type: ignore
 
-    story_config = StoryConfig(
-        # VERB_TRASH_MAX_ITEMS=14,
-        # REPEATED_VERB_TRASH_MAX_ITEMS=3,
-        # NOUN_TRASH_MAX_ITEMS=40,
-        # SOURCE_TRASH_MAX_ITEMS=70,
-    )
+    story_config = StoryConfig()
     story = Story(
         config=story_config,
         sentences=sentences,
-        from_file=True,
     )
 
     with open("story.txt", "w") as file:

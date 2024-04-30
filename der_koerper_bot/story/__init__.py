@@ -51,12 +51,10 @@ class Story:
         self.init_trash_bins()
 
     def init_trash_bins(self):
+        # create trash_files_path if not exists
+        self.trash_files_path.mkdir(exist_ok=True)
 
-        # load trash files
         if self.from_file:
-            # create trash_files_path if not exists
-            self.trash_files_path.mkdir(exist_ok=True)
-
             # load trash bins
             self.trash_bins = {
                 key: Trash.from_file(
@@ -98,7 +96,7 @@ class Story:
                     continue
 
                 # Nicht die selben Verben im Satz
-                if sent.verb in found_verbs:
+                if found_verbs.intersection(sent.verbs_lemma):
                     continue
 
             # checke Quelle-Trash
@@ -109,12 +107,12 @@ class Story:
             if self.trash_bins["sentences"].has(sent.id):
                 continue
 
-            # Nicht die selben Nomen im Satz
-            if found_nouns.intersection(sent.nouns):
-                continue
-
             # checke Nomen-Trash
             if self.trash_bins["nouns"].has_any(sent.nouns_lemma):
+                continue
+
+            # Nicht die selben Nomen im Satz
+            if found_nouns.intersection(sent.nouns_lemma):
                 continue
 
             # Keine Einwort-Sätze
@@ -122,8 +120,8 @@ class Story:
                 continue
 
             result.append(sent)
-            found_nouns.update(sent.nouns)
-            found_verbs.add(sent.verb)
+            found_nouns.update(sent.nouns_lemma)
+            found_verbs.update(sent.verbs_lemma)
 
             if len(result) == count:
                 break
