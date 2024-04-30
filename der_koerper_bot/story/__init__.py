@@ -11,16 +11,13 @@ from der_koerper_bot.story.trash import Trash, TrashConfig
 class Sentence(BaseModel):
     id: str
     text: str
+    root_verb: str
+    root_verb_lemma: str
     verbs: list[str] = []
     verbs_lemma: list[str] = []
     nouns: list[str] = []
     nouns_lemma: list[str] = []
     source: str
-
-    @computed_field
-    @property
-    def verb(self) -> str:
-        return self.verbs[0]
 
     @field_validator("verbs", "verbs_lemma", "nouns", "nouns_lemma", mode="before")
     @classmethod
@@ -88,21 +85,20 @@ class Story:
         for sent in self.sentences:
             if repeated_verb:
                 # checke Verb
-                if sent.verb != repeated_verb:
+                if sent.root_verb != repeated_verb:
                     continue
 
-                # Hole lemma von sent.verb in sent.verbs_lemma
-                repeated_verb_lemma = sent.verbs_lemma[0]
+                root_verb_lemma = sent.root_verb_lemma
 
-                # Vergleiche Verben, aber nehme verb_lemma aus
-                if found_verbs.difference({repeated_verb_lemma}).intersection(
+                # Vergleiche Verben, aber nehme root_verb_lemma aus
+                if found_verbs.difference({root_verb_lemma}).intersection(
                     sent.verbs_lemma
                 ):
                     continue
 
-                # checke Verb-Trash, aber nehme verb_lemma aus
+                # checke Verb-Trash, aber nehme root_verb_lemma aus
                 if self.trash_bins["verbs"].has_any(
-                    list(set(sent.verbs_lemma).difference({repeated_verb_lemma}))
+                    list(set(sent.verbs_lemma).difference({root_verb_lemma}))
                 ):
                     continue
 
@@ -145,6 +141,16 @@ class Story:
             return
 
         return result
+
+    def pick_random_verb(self):
+        return next(
+            (
+                sent.root_verb
+                for sent in self.sentences
+                if not self.trash_bins["repeated_verbs"].has(sent.root_verb_lemma)
+                and not self.trash_bins["verbs"].has(sent.root_verb_lemma)
+            )
+        )
 
     @staticmethod
     def sort_sentences(sentences: list[Sentence]) -> list[Sentence]:
@@ -196,13 +202,7 @@ class Story:
         # Wähle ein Verb aus, das nicht im Trash liegt.
         # Das Verb wird über mehrere Sätze verwendet.
         random.shuffle(self.sentences)
-        repeated_verb = next(
-            (
-                sent.verb
-                for sent in self.sentences
-                if not self.trash_bins["repeated_verbs"].has(sent.verb)
-            )
-        )
+        repeated_verb = self.pick_random_verb()
 
         sents = self.pick_random_sentences(sent_count, repeated_verb)
 
@@ -226,7 +226,7 @@ class Story:
         ]
 
         # Gewichte für die Funktionen
-        weights = [100, 60]
+        weights = [100, 25]
 
         # Zufällige Auswahl unter Berücksichtigung der Gewichte
         get_sentences_fn = random.choices(functions, weights=weights, k=1)[0]
