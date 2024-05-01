@@ -3,7 +3,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from pydantic import BaseModel, computed_field, field_validator
+from pydantic import BaseModel, field_validator
 
 from der_koerper_bot.story.trash import Trash, TrashConfig
 
@@ -18,6 +18,7 @@ class Sentence(BaseModel):
     nouns: list[str] = []
     nouns_lemma: list[str] = []
     source: str
+    ends_with_colon: bool = False
 
     @field_validator("verbs", "verbs_lemma", "nouns", "nouns_lemma", mode="before")
     @classmethod
@@ -80,6 +81,7 @@ class Story:
         result = []
         found_nouns = set()
         found_verbs = set()
+        found_and = False
         random.shuffle(self.sentences)
 
         for sent in self.sentences:
@@ -111,6 +113,19 @@ class Story:
                 if self.trash_bins["verbs"].has_any(sent.verbs_lemma):
                     continue
 
+                # checke Verb-Trash
+                if self.trash_bins["repeated_verbs"].has_any(sent.verbs_lemma):
+                    continue
+
+            # checke "und"
+            # "und" darf nur einmal vorkommen
+            if found_and:
+                continue
+
+            # Doppelpunkt am Ende nicht erlaubt
+            if sent.ends_with_colon:
+                continue
+
             # checke Quelle-Trash
             if self.trash_bins["sources"].has(sent.source):
                 continue
@@ -135,6 +150,10 @@ class Story:
             found_nouns.update(sent.nouns_lemma)
             found_verbs.update(sent.verbs_lemma)
 
+            # checke "und"
+            if " und " in sent.text:
+                found_and = True
+
             if len(result) == count:
                 break
         else:
@@ -154,11 +173,17 @@ class Story:
 
     @staticmethod
     def sort_sentences(sentences: list[Sentence]) -> list[Sentence]:
-        # Stelle Sätze ans Ende, die ein Komma oder das Wort "und" enthalten.
-        # sentences = sorted(
-        #     sentences,
-        #     key=lambda sent: "," in sent.text or " und " in sent.text,
-        # )
+        # Stelle Sätze ans Ende, die das Wort "und" enthalten.
+        sentences.sort(key=lambda sent: " und " in sent.text)
+
+        # Sätze, die mit einem Doppelpunkt enden, müssen an den Anfang.
+        # sentences.sort(key=lambda sent: sent.ends_with_colon, reverse=True)
+
+        # Sätze, die einen Doppelpunkt beinhalten, aber mit ihm Enden,
+        # müssen ans Ende.
+        sentences.sort(
+            key=lambda sent: ":" in sent.text and not sent.ends_with_colon,
+        )
 
         return sentences
 
@@ -268,10 +293,24 @@ class Story:
             for i, sent in enumerate(sents):
                 # Füge vor jedem Satz ein Komma ein, außer vor dem letzten Satz.
                 # Vor dem letzten Satz kommt ein "und".
+                # Sätze mit ":" am Ende bekommen ihr Satzzeichen zurück.
                 text = sent.text
+
+                # if sent.ends_with_colon:
+                #     text = text + ":"
+
+                last_index = sents_len - 1
                 if sents_len > 1:
-                    if i == sents_len - 1:
+                    # Prüfe ob der Satz davor mit einem Doppeltpunkt endet
+                    # prev_sent_ends_with_colon = (
+                    #     sents[i - 1].ends_with_colon if i > 0 else False
+                    # )
+
+                    # Und, Komma, Doppelpunkt (Leerzeichen)
+                    if i == last_index:
                         text = f" und {text}"
+                    # elif prev_sent_ends_with_colon:
+                    #     text = f" {text}"
                     elif i != 0:
                         text = f", {text}"
 
