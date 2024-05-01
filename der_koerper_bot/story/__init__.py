@@ -207,7 +207,7 @@ class Story:
         sent_count = self.get_random_sent_count(
             start=1,
             end=10,
-            weights=[20, 10, 80, 100, 100, 50, 30, 10, 5, 5],
+            weights=[80, 10, 80, 100, 100, 50, 30, 10, 5, 5],
         )
         sents = self.pick_random_sentences(sent_count)
 
@@ -221,7 +221,7 @@ class Story:
         sent_count = self.get_random_sent_count(
             start=4,
             end=10,
-            weights=[100, 100, 100, 40, 20, 20, 10],
+            weights=[100, 100, 100, 40, 10, 10, 5],
         )
 
         # Wähle ein Verb aus, das nicht im Trash liegt.
@@ -251,7 +251,7 @@ class Story:
         ]
 
         # Gewichte für die Funktionen
-        weights = [100, 25]
+        weights = [100, 15]
 
         # Zufällige Auswahl unter Berücksichtigung der Gewichte
         get_sentences_fn = random.choices(functions, weights=weights, k=1)[0]
