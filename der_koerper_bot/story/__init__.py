@@ -206,8 +206,8 @@ class Story:
         """
         sent_count = self.get_random_sent_count(
             start=1,
-            end=10,
-            weights=[80, 10, 80, 100, 100, 50, 30, 10, 5, 5],
+            end=8,
+            weights=[80, 10, 80, 100, 100, 50, 30, 10],
         )
         sents = self.pick_random_sentences(sent_count)
 
