@@ -227,6 +227,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 569,sollte in einem basischen Milieu gehalten werden,sollte,sollen,sollte;gehalten;werden,sollen;halten;werden,Milieu,Milieu,www.keimling.at,False
 570,verliert an Widerstandskraft und Vitalität nach der ersten Nacht,verliert,verlieren,verliert,verlieren,Widerstandskraft;Vitalität;Nacht,Widerstandskraft;Vitalität;Nacht,www.rasant-zunehmen.de,False
 574,antwortet mit einer Entzündung auf die Fremdstoffe,antwortet,antworten,antwortet,antworten,Entzündung;Fremdstoffe,Entzündung;Fremdstoff,www.hr-fernsehen.de,False
+576,wird als,wird,werden,wird,werden,,,www.bkk-henschelplus.de,False
 580,benötigt B12 für mehr als 100 Vorgänge im Körper,benötigt,benötigen,benötigt,benötigen,B12;Vorgänge,B12;Vorgang,sportnahrung-bodybuilding.com,False
 581,kann beides gleichzeitig verarbeiten,kann,können,kann;verarbeiten,können;verarbeiten,,,www.aok.de,False
 582,braucht also Fett,braucht,brauchen,braucht,brauchen,Fett,Fett,justfitclub.de,False
@@ -2163,6 +2164,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 5663,wird auf Höchstleistungen vorbereitet,wird,werden,wird;vorbereitet,werden;vorbereiten,Höchstleistungen,Höchstleistung,www.apomio.de,False
 5666,ist gedrungen und mit runden Schuppen bedeckt,ist,sein,ist;gedrungen;bedeckt,sein;drungen;bedecken,Schuppen,Schuppe,de.wikipedia.org,False
 5668,soll gesunden in der frischen Luft und bei Sonnenbestrahlung,soll,sollen,soll;gesunden,sollen;gesunden,Luft;Sonnenbestrahlung,Luft;Sonnenbestrahlung,docplayer.org,False
+5669,gehorcht restlos,gehorcht,gehorchen,gehorcht,gehorchen,,,docplayer.org,False
 5670,muss folglich mehr „heizen“ als gewöhnlich,muss,muss,muss;heizen,muss;heizen,,,medipresse.de,False
 5673,braucht von seinen Bausteinen immer eine gewisse Menge,braucht,brauchen,braucht,brauchen,Bausteinen;Menge,Baustein;Menge,www.strasskind.com,False
 5674,benötigt täglich 90 Nährstoffe in ausreichender Dosierung,benötigt,benötigen,benötigt,benötigen,Nährstoffe;Dosierung,Nährstoff;Dosierung,www.strasskind.com,False
@@ -2931,6 +2933,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 7734,muss sich aus seinem Kern heraus erneuern,muss,muss,muss;erneuern,muss;erneuern,Kern,Kern,www.bioenergeticsberlin.com,False
 7736,besitzt eigene Kräfte sich zu versorgen und zu regenerieren,besitzt,besitzen,besitzt;versorgen;regenerieren,besitzen;versorgen;regenerieren,Kräfte,Kraft,www.yesirah.ch,False
 7737,wird schonend und nachweislich entgiftet,wird,werden,wird;entgiftet,werden;entgiften,,,steffi-brueck.de,False
+7738,ist entspannt,ist,sein,ist,sein,,,www.blicklicht-leben.de,False
 7741,ist nicht ausreichend hydriert,ist,sein,ist;hydriert,sein;hydrieren,,,bessergesundleben.de,False
 7744,kann entschlacken,kann,können,kann;entschlacken,können;entschlacken,,,www.msn.com,False
 7748,verwendet die chemische Energie in Form von Lebensmitteln,verwendet,verwenden,verwendet,verwenden,Energie;Form;Lebensmitteln,Energie;Form;Lebensmittel,baeckerei-siegwart.de,False
@@ -3059,6 +3062,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 8096,bildet Antikörper gegen die Bakterien,bildet,bilden,bildet,bilden,Antikörper;Bakterien,Antikörper;Bakterie,www.praxis-dr-buchholz.de,False
 8099,kann sich entspannen und die Symptome werden aufgelöst,kann,können,kann;entspannen;werden;aufgelöst,können;entspannen;werden;auflösen,Symptome,Symptom,52767947.swh.strato-hosting.eu,False
 8103,ist wiederum selbst ganz ausgefüllt von Schriftzeichen,ist,sein,ist;ausgefüllt,sein;ausfüllen,Schriftzeichen,Schriftzeichen,laenger.com,False
+8112,ist,ist,sein,ist,sein,,,www.lernhelfer.de,False
 8119,kann Vitamin D mit Hilfe der Sonne selbst produzieren,kann,können,kann;produzieren,können;produzieren,Vitamin;Hilfe;Sonne,Vitamin;Hilfe;Sonne,wiki.yoga-vidya.de,False
 8120,muss gekräftigt werden,muss,muss,muss;gekräftigt;werden,muss;kräftigen;werden,,,wiki.yoga-vidya.de,False
 8123,beugt sich,beugt,beugen,beugt,beugen,,,li.maldonado-medical.com,False
@@ -3233,6 +3237,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 8588,reagiert verstärkt auf Zucker und Fett,reagiert,reagieren,reagiert,reagieren,Zucker;Fett,Zucker;Fett,la-vita-e-bella.de,False
 8602,kommt nicht mehr zur Ruhe,kommt,kommen,kommt,kommen,Ruhe,Ruhe,www.sinndeslebens-tipps.de,False
 8604,verfügt über Selbstheilungsmechanismen,verfügt,verfügen,verfügt,verfügen,Selbstheilungsmechanismen,Selbstheilungsmechanismus,therapieraum-karlsruhe.de,False
+8605,kann Mineralien nicht selbst herstellen kann und,kann,können,kann;herstellen;kann,können;herstellen;können,Mineralien,Mineralium,www.fat2fit-nutrition.de,False
 8609,bittet also um Glukose,bittet,bitten,bittet,bitten,Glukose,Glukose,www.gesund-leben.mobi,False
 8611,muss sich erst an die Höhe gewöhnen,muss,muss,muss;gewöhnen,muss;gewöhnen,Höhe,Höhe,www.onmeda.de,False
 8615,kann 1-2 g Vitamin C speichern,kann,können,kann;speichern,können;speichern,g;Vitamin;C,g;Vitamin;C,www.heilpraktiker-friedrichsdorf.de,False
@@ -3733,6 +3738,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 10067,sackt schlagartig in sich zusammen und das System fährt herunter,sackt,sacken,sackt;fährt,sacken;fahren,System,System,schlafapnoe.tv,False
 10069,reagiert „eigentlich“ normal,reagiert,reagieren,reagiert,reagieren,,,www.weiss.de,False
 10070,verbraucht mehr Energie,verbraucht,verbrauchen,verbraucht,verbrauchen,Energie,Energie,www.woman.at,False
+10073,soll sich,soll,sollen,soll,sollen,,,10-tipps.com,False
 10074,ist die Situation,ist,sein,ist,sein,Situation,Situation,gh-h.ch,False
 10080,ist vibrierende Energie mit unterschiedlichen Frequenzen,ist,sein,ist,sein,Energie;Frequenzen,Energie;Frequenz,www.talidari.net,False
 10082,ist praktisch ständigschweißnass,ist,sein,ist,sein,,,pt.slideshare.net,False
@@ -4193,6 +4199,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 11370,ist in den Gedichten kein einfacher Ankerpunkt,ist,sein,ist,sein,Gedichten;Ankerpunkt,Gedicht;Ankerpunkt,www.deutschlandfunk.de,False
 11375,nimmt die Implantate wie eigenes Gewebe an,nimmt,nehmen,nimmt,nehmen,Implantate;Gewebe,Implantat;Gewebe,www.zahngesundheit-frechen.de,False
 11376,zeigt Folgen schwerer Misshandlung,zeigt,zeigen,zeigt,zeigen,Folgen;Misshandlung,Folge;Misshandlung,www.linkfang.de,False
+11377,kommt nicht zur Ruhe und Jugendliche wachen am nächsten,kommt,kommen,kommt;wachen,kommen;wachen,Ruhe;Jugendliche,Ruhe;jugendliche,www.presseanzeiger.de,False
 11380,beginnt dadurch schneller zu altern,beginnt,beginnen,beginnt;altern,beginnen;altern,,,brendle-naturheilkunde.de,False
 11385,ist ganz normal grau bis bräunlich gefärbt,ist,sein,ist;gefärbt,sein;färben,,,www.linkfang.de,False
 11395,ist wieder in der Lage ordnungsgemäß zu regulieren,ist,sein,ist;regulieren,sein;regulieren,Lage,Lage,www.allergie-immun.de,False
@@ -4604,7 +4611,6 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 12546,besitzt starke Werte,besitzt,besitzen,besitzt,besitzen,Werte,Wert,www.sitaasa.de,False
 12555,ist produktiver und weniger anfällig für Müdigkeit,ist,sein,ist,sein,Müdigkeit,Müdigkeit,man-spartanol.com,False
 12561,kann Vitamine nicht selbst herstellen,kann,können,kann;herstellen,können;herstellen,Vitamine,Vitamin,verla.de,False
-12566,ist,ist,sein,ist,sein,,,jf-wuerzburg.de,False
 12568,wird dadurch stark gekrümmt und hochgewölbt,wird,werden,wird;gekrümmt;hochgewölbt,werden;krümmn;hochwölben,,,schmetterlinge-in-deutschland.de,False
 12569,ist deutlich spürbar,ist,sein,ist,sein,,,annebremer.de,False
 12570,wird entgiftet und entschlackt und kurbelt den Stoffwechsel an,wird,werden,wird;entgiftet;entschlackt;kurbelt,werden;entgiften;entschlacken;kurbeln,Stoffwechsel,Stoffwechsel,drbachmann.de,False
@@ -4914,6 +4920,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 13408,hat die Fähigkeit zur Selbstheilung,hat,haben,hat,haben,Fähigkeit;Selbstheilung,Fähigkeit;Selbstheilung,www.osteos.de,False
 13409,wird anfällig und kraftlos,wird,werden,wird,werden,,,okeydoctors.com,False
 13410,kann das Eiweiß aus der Ernährung nicht verwerten,kann,können,kann;verwerten,können;verwerten,Eiweiß;Ernährung,Eiweiß;Ernährung,www.keac.de,False
+13416,reagiert mit Entzündungszeichen und der Bildung,reagiert,reagieren,reagiert,reagieren,Entzündungszeichen;Bildung,Entzündungszeichen;Bildung,www.dermatologie-tempelhof.de,False
 13424,stößt die melaninhaltigen Zellen ab,stößt,stoßen,stößt,stoßen,Zellen,Zelle,www.faz.net,False
 13426,ist also mehr wert als Hab und Gut,ist,sein,ist,sein,Hab;Gut,Habe;Gut,kirpalsingh-teachings.org,False
 13428,vergeudet keine Energien mehr für nichts nutzende Schmarotzer,vergeudet,vergeuden,vergeudet,vergeuden,Energien;Schmarotzer,Energie;Schmarotzer,osteopraktik.com,False
@@ -5126,6 +5133,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 14070,spült Giftstoffe aus,spült,spülen,spült,spülen,Giftstoffe,Giftstoff,erikakind.com,False
 14071,geht mit den frostigen Aussentemperaturen gelassener um,geht,gehen,geht,gehen,Aussentemperaturen,Aussentemperaturen,www.weiss.de,False
 14072,ist länglich und kräftig gebaut,ist,sein,ist;gebaut,sein;bauen,,,www.tiere-online.de,False
+14077,heilt sich,heilt,heilen,heilt,heilen,,,mysterienschule-muenchen.over-blog.de,False
 14080,setzt sich dagegen zur Wehr und das Immunsystem wird gestärkt,setzt,setzen,setzt;wird;gestärkt,setzen;werden;stärken,Wehr;Immunsystem,Wehr;Immunsystem,www.expertentexte.de,False
 14083,aktiviert im entspannten Zustand seine Selbstheilungskräfte,aktiviert,aktivieren,aktiviert,aktivieren,Zustand;Selbstheilungskräfte,Zustand;Selbstheilungskräfte,www.beruehren-lassen.at,False
 14093,wird im wahrsten Sinne zum Klangkörper,wird,werden,wird,werden,Sinne;Klangkörper,Sinn;Klangkörper,landesmusikakademie.de,False
@@ -5423,6 +5431,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 14870,ist im Dauerstress,ist,sein,ist,sein,Dauerstress,Dauerstress,www.pharmazeutische-zeitung.de,False
 14871,ist drehrund und nur der Schwanzstiel seitlich etwas abgeflacht,ist,sein,ist;abgeflacht,sein;abflachen,Schwanzstiel,Schwanzstiel,kis.ktn.gv.at,False
 14872,wird psychisch und physisch entgiftet,wird,werden,wird;entgiftet,werden;entgiften,,,praxis-kattenstroth.de,False
+14873,kann,kann,können,kann,können,,,www.abgeordnetenwatch.de,False
 14881,ist untrennbar mit dem Gehirn verbunden,ist,sein,ist;verbunden,sein;verbinden,Gehirn,Gehirn,dedelmatt.ch,False
 14889,ist als ein Ganzes in seinen kleinsten Teilen wiederzufinden,ist,sein,ist;wiederzufinden,sein;wiederfinden,Ganzes;Teilen,ganze;Teil,www.prana-massagen.com,False
 14890,befindet sich dadurch in einer kompakten Haltung,befindet,befinden,befindet,befinden,Haltung,Haltung,dr-daniel-gaertner.de,False
@@ -6816,6 +6825,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 18674,verändert sich das gesamte Leben über,verändert,verändern,verändert,verändern,Leben,Leben,www.50plus.ch,False
 18678,hat jeweils eine Höhe von ca. 30 mm,hat,haben,hat,haben,Höhe,Höhe,www.tabletop-onlineshop.eu,False
 18679,wird als angenehm leicht und frei schwingend erfahren,wird,werden,wird;erfahren,werden;erfahren,,,koerpermelodie.at,False
+18681,muss funktionieren und das,muss,muss,muss;funktionieren,muss;funktionieren,,,www.netz-magazin.com,False
 18684,muss sich umstellen und an den niedrigeren Blutdruck gewöhnen,muss,muss,muss;umstellen;gewöhnen,muss;umstellen;gewöhnen,Blutdruck,Blutdruck,www.citypraxen.de,False
 18686,hat mehr Funktion als einen eigenen Wert,hat,haben,hat,haben,Funktion;Wert,Funktion;Wert,www.fabach.at,False
 18687,stellt sich nach und nach auf die Schwangerschaft ein,stellt,stellen,stellt,stellen,Schwangerschaft,Schwangerschaft,www.frauenaerztin-cottbus.de,False
@@ -6845,6 +6855,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 18747,befindet sich eine sehr lange Zeit im Wachstum,befindet,befinden,befindet,befinden,Zeit;Wachstum,Zeit;Wachstum,xtreme-vital.com,False
 18749,ist die Manifestation von Seele und Geist,ist,sein,ist,sein,Manifestation;Seele;Geist,Manifestation;Seele;Geist,einwohlwollender.de,False
 18752,schläft tief und fest,schläft,schläfen,schläft,schläfen,,,www.sueddeutsche.de,False
+18753,ist lang um 120,ist,sein,ist,sein,,,www.zoocam.info,False
 18757,ist auffällig goldgelb behaart,ist,sein,ist;behaart,sein;behaart,,,www.kwizda-garten.at,False
 18758,ist trainierbar bis ins hohe Alter,ist,sein,ist,sein,Alter,Alter,healthnewsnet.de,False
 18764,produziert ACTH während der Nacht,produziert,produzieren,produziert,produzieren,ACTH;Nacht,ACTH;Nacht,www.newhopechapel.cc,False
@@ -7439,6 +7450,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 20391,hat eine intrinsische Methode zur Entfernung von Plaque,hat,haben,hat,haben,Methode;Entfernung;Plaque,Methode;Entfernung;Plaque,teratips.com,False
 20397,wandelt Weissmehl sehr schnell in Zucker um,wandelt,wandeln,wandelt,wandeln,Weissmehl;Zucker,Weissmehl;Zucker,www.boeglis-fit-rezepte.ch,False
 20404,wird mit speziellen Griffen und Massagetechniken gelockert,wird,werden,wird;gelockert,werden;lockern,Griffen;Massagetechniken,Griff;Massagetechnik,www.johannesbad-medizin.com,False
+20409,regeneriert in der 1,regeneriert,regenerieren,regeneriert,regenerieren,,,www.gesundeszentrum.de,False
 20416,kann Folsäure nicht selbst herstellen,kann,können,kann;herstellen,können;herstellen,Folsäure,Folsäure,silviahrouda.wordpress.com,False
 20422,kann offenbar auch ohne Gehirn viele Funktionen aufrechterhalten,kann,können,kann;aufrechterhalten,können;aufrechterhalten,Gehirn;Funktionen,Gehirn;Funktion,www.aepol.net,False
 20423,verbrennt weniger und speichert mehr,verbrennt,verbrennen,verbrennt;speichert,verbrennen;speichern,,,ayurvedaarzt.at,False
@@ -8987,6 +8999,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 24624,wird anfällig für andere Viren und Bakterien,wird,werden,wird,werden,Viren;Bakterien,Vira;Bakterie,naturalchoiceshealthcenter.com,False
 24630,zeigt sich füllig und harmonisch ausklingend,zeigt,zeigen,zeigt,zeigen,,,www.winzerblog.at,False
 24632,ist muskulös und kräftig,ist,sein,ist,sein,,,www.smart-animals.de,False
+24633,ist schon ein Rätsel,ist,sein,ist,sein,Rätsel,Rätsel,board.netdoktor.de,False
 24638,braucht täglich mindestens zwei Liter Flüssigkeit,braucht,brauchen,braucht,brauchen,Liter;Flüssigkeit,Liter;Flüssigkeit,www.gesundheitstrends.de,False
 24640,kann Lysin nicht selbst bilden,kann,können,kann;bilden,können;bilden,Lysin,Lysin,praxistipps.focus.de,False
 24641,verwertet und speichert nur eine begrenzte Menge Zucker,verwertet,verwerten,verwertet;speichert,verwerten;speichern,Menge;Zucker,Menge;Zucker,www.gerlosstein-apotheke.at,False
@@ -9568,10 +9581,12 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 26173,ist stark und robust,ist,sein,ist,sein,,,landwirtschaft.sel-hoz.com,False
 26174,ist angenehm entspannt,ist,sein,ist,sein,,,carla-janssen.com,False
 26176,kann nicht mehr als 200 Milligramm auf einmal aufnehmen,kann,können,kann;aufnehmen,können;aufnehmen,Milligramm,Milligramm,www.vitamindoctor.com,False
+26178,ist ein zuverlässiger Begleiter in die,ist,sein,ist,sein,Begleiter,Begleiter,netzwerk-meditation.de,False
 26179,bildet Harnsäure bei der Verarbeitung von Purin,bildet,bilden,bildet,bilden,Harnsäure;Verarbeitung;Purin,Harnsäure;Verarbeitung;Purin,www.bildderfrau.de,False
 26185,muss sich zunächst an die Therapie gewöhnen,muss,muss,muss;gewöhnen,muss;gewöhnen,Therapie,Therapie,www.vital-center-kroker.com,False
 26186,hat eine große Kapazität um Vitamin D3 zu produzieren,hat,haben,hat;produzieren,haben;produzieren,Kapazität;Vitamin,Kapazität;Vitamin,www.naturafoundation.de,False
 26190,kann aus L-Dopa Dopamin herstellen,kann,können,kann;herstellen,können;herstellen,L-Dopa;Dopamin,L-Dopa;Dopamin,www.dr-rath-foundation.org,False
+26191,muss jedes Mal aufs Neue auf,muss,muss,muss,muss,Mal;Neue,Mal;neu,www.marktspiegel.de,False
 26196,befindet sich in ständiger Wachsamkeit,befindet,befinden,befindet,befinden,Wachsamkeit,Wachsamkeit,de.seniorcare-e.com,False
 26198,reagiert also auf hormonelle Veränderungen,reagiert,reagieren,reagiert,reagieren,Veränderungen,Veränderung,ger.insideouthealthsolutions.com,False
 26208,schweigt nicht,schweigt,schweigen,schweigt,schweigen,,,weinbrandt.com,False
@@ -9741,6 +9756,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 26644,gleicht die Gelenkblockaden aus,gleicht,gleichen,gleicht,gleichen,Gelenkblockaden,Gelenkblockade,chiropraktor-haus.de,False
 26645,„merkt“ sich große physische Krafteinwirkungen,merkt,merken,merkt,merken,Krafteinwirkungen,Krafteinwirkung,chiropraktor-haus.de,False
 26650,speichert das fettlösliche Vitamin,speichert,speichern,speichert,speichern,Vitamin,Vitamin,www.gesundheit-adhoc.de,False
+26651,passt sich an den,passt,passen,passt,passen,,,www.bundesaerztekammer.de,False
 26652,wird zur natürlichen Regulation angeregt,wird,werden,wird;angeregt,werden;anregen,Regulation,Regulation,www.vollwerth-apotheke.de,False
 26654,ist nicht mehr in der Lage alle Bewegungen auszuführen,ist,sein,ist;auszuführen,sein;ausführen,Lage;Bewegungen,Lage;Bewegung,elemental-yoga.de,False
 26657,erhält nicht genügend lebenswichtige Hormone und Enzyme,erhält,erhalten,erhält,erhalten,Hormone;Enzyme,Hormon;Enzym,naturalchoiceshealthcenter.com,False
@@ -10134,6 +10150,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 27713,erholt sich danach schnell und die Haut wird auch wieder straff,erholt,erholen,erholt;wird,erholen;werden,Haut,Haut,www.doktornavi.de,False
 27721,wird auf eine angenehme Art und Weise erwärmt,wird,werden,wird;erwärmt,werden;erwärmen,Art;Weise,Art;Weise,bestvolunteer.org,False
 27727,kann aber keine unvollständigen Proteine zusammen bauen,kann,können,kann;bauen,können;bauen,Proteine,Protein,relast.de,False
+27730,wird,wird,werden,wird,werden,,,www.jameda.de,False
 27733,wird mit positiver Energie angefüllt,wird,werden,wird;angefüllt,werden;anfüllen,Energie,Energie,zeitschrift-fuer-spiritualitaet.de,False
 27736,baut Fettgewebe auf und legt an Gewicht zu,baut,bauen,baut;legt,bauen;legen,Fettgewebe;Gewicht,Fettgeweb;Gewicht,www.qualimedic.de,False
 27737,leidet unter Flüssigkeitsverlust und Wärmestau,leidet,leiden,leidet,leiden,Flüssigkeitsverlust;Wärmestau,Flüssigkeitsverlust;Wärmestau,malerbetriebborsch.wordpress.com,False
@@ -11178,6 +11195,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 30787,reagiert mit Durchfall,reagiert,reagieren,reagiert,reagieren,Durchfall,Durchfall,www.lw-heute.de,False
 30788,verbrennt Muskelmasse,verbrennt,verbrennen,verbrennt,verbrennen,Muskelmasse,Muskelmasse,paleo-lounge.de,False
 30789,wirkt rätselhaft maskiert,wirkt,wirken,wirkt,wirken,,,patrickniemann.de,False
+30790,spricht zu uns .,spricht,sprechen,spricht,sprechen,,,www.randomhouse.de,False
 30791,schaukelt hin und her,schaukelt,schaukeln,schaukelt,schaukeln,,,michael-titze.de,False
 30792,ist nicht in der Lage bestimmte Nährstoffe selbst herzustellen,ist,sein,ist;herzustellen,sein;herstellen,Lage;Nährstoffe,Lage;Nährstoff,www.gesundheit10.de,False
 30794,geht vom leichten Schlaf in die Tiefschlafphase über,geht,gehen,geht,gehen,Schlaf;Tiefschlafphase,Schlaf;Tiefschlafphase,www.inspiresleep.de,False
@@ -11411,6 +11429,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 31433,dient uns als ein Spiegel unserer persönlichen Geschichte,dient,dienen,dient,dienen,Spiegel;Geschichte,Spiegel;Geschichte,psychotherapie-schnorpfeil.de,False
 31435,wird nämlich aus Glasfasern gebildet,wird,werden,wird;gebildet,werden;bilden,Glasfasern,Glasfaser,cms.madametussauds.com,False
 31439,steht in ständiger Alarmbereitschaft,steht,stehen,steht,stehen,Alarmbereitschaft,Alarmbereitschaft,buerotipps.com,False
+31448,ist nicht in der,ist,sein,ist,sein,,,die-acai-beere.com,False
 31449,beginnt die Schleimablagerungen in den Lungen zu beseitigen,beginnt,beginnen,beginnt;beseitigen,beginnen;beseitigen,Schleimablagerungen;Lungen,Schleimablagerung;Lunge,www.suchpad.de,False
 31450,setzt ein Stopp und sendet das Warnsignal Schmerz,setzt,setzen,setzt;sendet,setzen;senden,Stopp;Warnsignal;Schmerz,Stopp;Warnsignal;Schmerz,www.europressmed.de,False
 31452,reagiert vielseitig,reagiert,reagieren,reagiert,reagieren,,,sivash.de,False
@@ -13048,6 +13067,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 36066,wird mit einem warmen Öl oder eine Lotion eingerieben,wird,werden,wird;eingerieben,werden;einrieben,Öl;Lotion,Öl;Lotion,massagen-mack.de,False
 36067,reagiert auf eine gehirngefährdende „Unterzuckerung“,reagiert,reagieren,reagiert,reagieren,Unterzuckerung,Unterzuckerung,www.runnersworld.de,False
 36068,ist als weiblicher Kopf ausgebildet,ist,sein,ist;ausgebildet,sein;ausbilden,Kopf,Kopf,aeria.phil.uni-erlangen.de,False
+36069,attackiert sozusagen die,attackiert,attackieren,attackiert,attackieren,,,arbeitskreis-krankenversicherungen.de,False
 36076,ist komplett ausgelaugt aber das Hirn will schon wieder loslegen,ist,sein,ist;ausgelaugt;will;loslegen,sein;auslaugen;wollen;loslegen,Hirn,Hirn,paymentandbanking.com,False
 36083,soll entschlackt und der Stoffwechsel entlastet werden,soll,sollen,soll;entschlackt;entlastet;werden,sollen;entschlacken;entlasten;werden,Stoffwechsel,Stoffwechsel,www.otto.de,False
 36084,verfügt über keine relevanten Wasserreserven,verfügt,verfügen,verfügt,verfügen,Wasserreserven,Wasserreserve,www.xn--gesnderleben-flb.at,False
@@ -13250,6 +13270,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 36613,wird gewissermaßen in flagranti ertappt und überführt,wird,werden,wird;ertappt;überführt,werden;ertappen;überführen,flagranti,flagranti,birgitjuergenssen.com,False
 36615,verändert sich dadurch zusehends,verändert,verändern,verändert,verändern,,,www.ratgeberschwangerschaft.com,True
 36622,schüttet vermehrt die Stresshormone Cortisol und Adrenalin aus,schüttet,schütten,schüttet,schütten,Stresshormone;Cortisol;Adrenalin,Stresshormon;Cortisol;Adrenalin,trauma-akut.de,False
+36624,muß sich separat halten,muß,müssen,muß;halten,müssen;halten,,,zukunftkino.com,False
 36626,ist von sich aus robust und gesund,ist,sein,ist,sein,,,www.heilung.pro,False
 36630,reagiert genau gleich auf jede Form von Stress,reagiert,reagieren,reagiert,reagieren,Form;Stress,Form;Stress,healthyhappy.de,False
 36635,passt sich an und fährt auf geringeren Stoffwechsel,passt,passen,passt;fährt,passen;fahren,Stoffwechsel,Stoffwechsel,www.places-and-stories.eu,False
@@ -13879,6 +13900,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 38345,benötigt aufzufüllen verbrauchten Energie,benötigt,benötigen,benötigt;aufzufüllen;verbrauchten,benötigen;auffüllen;verbraucht,Energie,Energie,beautywmn.com,False
 38356,kann im Extremfall 4 Liter Schweiß in der Stunde verlieren,kann,können,kann;verlieren,können;verlieren,Extremfall;Liter;Schweiß;Stunde,Extremfall;Liter;Schweiß;Stunde,praxis-weeber.de,False
 38357,muss die überschüssigen Säuren neutralisieren,muss,muss,muss;neutralisieren,muss;neutralisieren,Säuren,Säure,haarausfallinforum.blogspot.com,False
+38359,ist entweder,ist,sein,ist,sein,,,leserreporter.bergedorfer-zeitung.de,False
 38363,verfügt ebenfalls über Abwehrmittel gegen die Pein,verfügt,verfügen,verfügt,verfügen,Abwehrmittel;Pein,Abwehrmittel;Pein,derstandard.at,False
 38369,gewöhnt sich bei regelmäßiger Einnahme an Xylitol,gewöhnt,gewöhnen,gewöhnt,gewöhnen,Einnahme;Xylitol,Einnahme;Xylitol,www.schafschoki.de,False
 38373,geht in einen Vitamin K Mangel,geht,gehen,geht,gehen,Vitamin;K;Mangel,Vitamin;K;Mangel,biofungi-supplements.eu,False
@@ -14209,6 +14231,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 39277,fühlt sich träge an und der Kopf kann nicht mehr klar denken,fühlt,fühlen,fühlt;kann;denken,fühlen;können;denken,Kopf,Kopf,bueromoebel-blitz.de,False
 39281,kann sich nicht mehr gegen Krankheiten verteidigen,kann,können,kann;verteidigen,können;verteidigen,Krankheiten,Krankheit,www.zanzu.de,False
 39283,ist torpedoförmig und schlank,ist,sein,ist,sein,,,www.fjordkrone.de,False
+39286,unternimmt täglich,unternimmt,unternehmen,unternimmt,unternehmen,,,www.naturkosmetik-fuer-sie.de,False
 39289,kann die nötigen Reserven aus den Mahlzeiten am Tag ziehen,kann,können,kann;ziehen,können;ziehen,Reserven;Mahlzeiten;Tag,Reserve;Mahlzeit;Tag,www.vegan-fit.com,False
 39291,nutzt L-Arginin und Sauerstoff zu NO zu produzieren,nutzt,nutzen,nutzt;produzieren,nutzen;produzieren,L-Arginin;Sauerstoff;NO,L-Arginin;Sauerstoff;NO,www.thw-jugend-badberleburg.de,False
 39297,ersucht um Entzündung nach der Verletzung,ersucht,ersuchen,ersucht,ersuchen,Entzündung;Verletzung,Entzündung;Verletzung,fragenantworten.info,False
@@ -15229,6 +15252,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 42285,signalisiert Durst und schnell wird etwas getrunken,signalisiert,signalisieren,signalisiert;wird;getrunken,signalisieren;werden;trinken,Durst,Durst,www.herzundhandmuenchen.de,False
 42287,erfüllt seine Pflichten nicht,erfüllt,erfüllen,erfüllt,erfüllen,Pflichten,Pflicht,dasganzeselbst.de,False
 42289,löst sich nicht ständig auf,löst,lösen,löst,lösen,,,dasganzeselbst.de,False
+42291,verliert,verliert,verlieren,verliert,verlieren,,,www.delmed.de,False
 42294,benötigt hochwertiges Fett für seinen Stoffwechsel,benötigt,benötigen,benötigt,benötigen,Fett;Stoffwechsel,Fett;Stoffwechsel,paleo-aip.com,False
 42297,erwärmt das Wasser in der Zwischenschicht,erwärmt,erwärmen,erwärmt,erwärmen,Wasser;Zwischenschicht,Wasser;Zwischenschicht,kuehlweste.net,False
 42298,„schwitzt“ ohne selbst Schweiß zu produzieren,schwitzt,schwitzen,schwitzt;produzieren,schwitzen;produzieren,Schweiß,Schweiß,kuehlweste.net,False
@@ -15638,6 +15662,7 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 43447,verlangt deshalb wieder etwas „deftigere“ Kost,verlangt,verlangen,verlangt,verlangen,Kost,Kost,issuu.com,False
 43452,hat eine bestimmte Form,hat,haben,hat,haben,Form,Form,sportschule-whang.com,False
 43453,enthält rund 5 Liter Blut,enthält,enthalten,enthält,enthalten,Liter;Blut,Liter;Blut,www.msdmanuals.com,False
+43454,braucht Hilfe,braucht,brauchen,braucht,brauchen,Hilfe,Hilfe,dorfheilpraktikerin.myblog.de,False
 43463,greift daher auf weitere Quellen zur Energiegewinnung zurück,greift,greifen,greift,greifen,Quellen;Energiegewinnung,Quelle;Energiegewinnung,docplayer.org,False
 43471,kann erwärmte Lebensmittel besser verarbeiten,kann,können,kann;verarbeiten,können;verarbeiten,Lebensmittel,Lebensmittel,www.xn--gesnderleben-flb.at,False
 43479,produziert selber sehr viel Zucker,produziert,produzieren,produziert,produzieren,Zucker,Zucker,www.sofatutor.com,False
@@ -15903,7 +15928,6 @@ id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,end
 44215,wird als Litfasssäule verwendet,wird,werden,wird;verwendet,werden;verwenden,Litfasssäule,Litfasssäule,www.brueckerhoff.de,False
 44216,absorbiert über 90% von einer Dosis Vitamin C bis 300 mg,absorbiert,absorbieren,absorbiert,absorbieren,%;Dosis;Vitamin;C;mg,%;Dosis;Vitamin;C;mg,www.strunz.com,False
 44221,ist schwarz und stark behaart,ist,sein,ist;behaart,sein;behaart,,,tierdoku.com,False
-44222,wird,wird,werden,wird,werden,,,www.scribd.com,False
 44226,reagiert auf die drohende Gefahr mit wechselnder Stressreaktion,reagiert,reagieren,reagiert,reagieren,Gefahr;Stressreaktion,Gefahr;Stressreaktion,www.cosmopolitan.de,False
 44227,bedeutet Nahrung für jeden in der Gruppe,bedeutet,bedeuten,bedeutet,bedeuten,Nahrung;Gruppe,Nahrung;Gruppe,www.zdf.de,False
 44233,weist insgesamt eine leicht zylindrische Form auf,weist,weisen,weist,weisen,Form,Form,tierdoku.com,False
