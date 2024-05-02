@@ -22,12 +22,18 @@ class Sentence(BaseModel):
 
     @field_validator("verbs", "verbs_lemma", "nouns", "nouns_lemma", mode="before")
     @classmethod
-    def field_to_list(cls, v: Any):
+    def field_to_list(cls, v: str):
+        if not v:
+            return []
+
         return v.split(";")
 
 
 class StoryConfig(BaseModel):
     trash: TrashConfig = TrashConfig()
+
+
+GetSentenceReturnType = tuple[list[Sentence], dict | None] | None
 
 
 @dataclass
@@ -200,7 +206,7 @@ class Story:
 
         return result
 
-    def get_enumerated_sentences(self) -> list[Sentence] | None:
+    def get_enumerated_sentences(self) -> GetSentenceReturnType:
         """
         Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
         """
@@ -211,9 +217,14 @@ class Story:
         )
         sents = self.pick_random_sentences(sent_count)
 
-        return sents
+        if not sents:
+            return
 
-    def get_enumerated_sentences_and_repeat_verb(self) -> list[Sentence] | None:
+        return sents, None
+
+    def get_enumerated_sentences_and_repeat_verb(
+        self,
+    ) -> GetSentenceReturnType:
         """
         Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält. Es wird ein Verb ausgewählt und nur Sätze mit diesem Verb werden ausgewählt.
         """
@@ -231,6 +242,9 @@ class Story:
 
         sents = self.pick_random_sentences(sent_count, repeated_verb)
 
+        if not sents:
+            return
+
         # Entferne das erste Wort aus jedem Satz, außer dem ersten Satz.
         # for i, sent in enumerate(sents):
         #     if i == 0:
@@ -241,7 +255,7 @@ class Story:
 
         # Join the items with commas.
 
-        return sents
+        return sents, {"repeated_verb": repeated_verb}
 
     def get_sentences(self):
         # Liste der Funktionen
@@ -255,13 +269,9 @@ class Story:
 
         # Zufällige Auswahl unter Berücksichtigung der Gewichte
         get_sentences_fn = random.choices(functions, weights=weights, k=1)[0]
-        should_add_to_repeated_verb_trash = False
-
-        if get_sentences_fn == "get_enumerated_sentences_and_repeat_verb":
-            should_add_to_repeated_verb_trash = True
 
         # Aufrufen der ausgewählten Funktion
-        return get_sentences_fn(), should_add_to_repeated_verb_trash
+        return get_sentences_fn()
 
     def generate_text(self, times: int = 1):
         """
@@ -270,8 +280,11 @@ class Story:
         result: list[str] = []
 
         for n in range(len(self.sentences)):
+            get_sentences_result = self.get_sentences()
+            if not get_sentences_result:
+                continue
 
-            sents, should_add_to_repeated_verb_trash = self.get_sentences()
+            sents, info = get_sentences_result
 
             if not sents:
                 continue
@@ -282,11 +295,12 @@ class Story:
                 continue
 
             # Speichere die Sätze im Trash
+            repeated_verb = info.get("repeated_verb", None) if info else None
             for sent in sents:
                 self.trash_bins["sentences"].add(sent.id)
 
-                if should_add_to_repeated_verb_trash is True:
-                    self.trash_bins["repeated_verbs"].add(sent.verbs_lemma)
+                if repeated_verb:
+                    self.trash_bins["repeated_verbs"].add(repeated_verb)
                 if sent.verbs_lemma:
                     self.trash_bins["verbs"].add(sent.verbs_lemma)
                 if sent.nouns_lemma:
