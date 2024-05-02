@@ -1,4 +1,5 @@
 import random
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -32,8 +33,14 @@ class Sentence(BaseModel):
 class StoryConfig(BaseModel):
     trash: TrashConfig = TrashConfig()
 
+    # fmt: off
+    first_sentence_excluded_words: list[str] = [
+        "aber", "andererseits", "außerdem", "daher", "deshalb", "doch", "einerseits", "jedoch", "nichtsdestotrotz", "sondern", "sowohl", "stattdessen", "trotzdem", "weder noch", "weder", "zudem", "zwar" "dennoch", "denn", "infolgedessen", "folglich", "dementsprechend", "demzufolge", "somit",
+    ]
+    # fmt: on
 
-GetSentenceReturnType = tuple[list[Sentence], dict | None] | None
+
+GetSentencesReturnType = tuple[list[Sentence], dict | None] | None
 
 
 @dataclass
@@ -82,7 +89,9 @@ class Story:
             trash.save_to_file(self.trash_files_path / f"{key}.txt")
 
     def pick_random_sentences(
-        self, count: int, repeated_verb: str | None = None
+        self,
+        count: int,
+        repeated_verb: str | None = None,
     ) -> list[Sentence] | None:
         result = []
         found_nouns = set()
@@ -152,6 +161,14 @@ class Story:
             if len(sent.text.split()) == 1:
                 continue
 
+            # Wenn erster Satz, dann keine Sätze mit ausgeschlossenen Wörtern
+            if not result:
+                words = re.findall(r"\b\w+\b", sent.text)
+                if any(
+                    word in self.config.first_sentence_excluded_words for word in words
+                ):
+                    continue
+
             result.append(sent)
             found_nouns.update(sent.nouns_lemma)
             found_verbs.update(sent.verbs_lemma)
@@ -206,10 +223,11 @@ class Story:
 
         return result
 
-    def get_enumerated_sentences(self) -> GetSentenceReturnType:
+    def get_enumerated_sentences(self) -> GetSentencesReturnType:
         """
         Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
         """
+
         sent_count = self.get_random_sent_count(
             start=1,
             end=8,
@@ -222,12 +240,11 @@ class Story:
 
         return sents, None
 
-    def get_enumerated_sentences_and_repeat_verb(
-        self,
-    ) -> GetSentenceReturnType:
+    def get_enumerated_sentences_and_repeat_verb(self) -> GetSentencesReturnType:
         """
         Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält. Es wird ein Verb ausgewählt und nur Sätze mit diesem Verb werden ausgewählt.
         """
+
         # Generiere eine zufällige Anzahl von Sätzen.
         sent_count = self.get_random_sent_count(
             start=4,
@@ -257,7 +274,7 @@ class Story:
 
         return sents, {"repeated_verb": repeated_verb}
 
-    def get_sentences(self):
+    def get_sentences(self) -> GetSentencesReturnType:
         # Liste der Funktionen
         functions = [
             self.get_enumerated_sentences,
