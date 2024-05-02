@@ -3,21 +3,21 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from pydantic import BaseModel, field_validator
+from pydantic import BaseModel, Field, field_validator
 
 from der_koerper_bot.story.trash import Trash, TrashConfig
 
 
 class Sentence(BaseModel):
-    id: str
-    text: str
-    root_verb: str
-    root_verb_lemma: str
+    id: str = Field(min_length=1)
+    text: str = Field(min_length=1)
+    root_verb: str = Field(min_length=1)
+    root_verb_lemma: str = Field(min_length=1)
     verbs: list[str] = []
     verbs_lemma: list[str] = []
     nouns: list[str] = []
     nouns_lemma: list[str] = []
-    source: str
+    source: str = Field(min_length=1)
     ends_with_colon: bool = False
 
     @field_validator("verbs", "verbs_lemma", "nouns", "nouns_lemma", mode="before")
