@@ -30,8 +30,17 @@ class Trash:
         Fügt einen Wert zu data hinzu. Wenn mehr als max_items Einträge gespeichert wurden, werden die ältesten Einträge gelöscht.
         """
         if isinstance(value, list):
+            # Prüfe ob value eine leere Liste ist oder ein
+            # Element in der Liste eine leere Zeichenkette ist.
+            if not value or any(not val for val in value):
+                raise ValueError(
+                    "value must not be an empty list or contain empty strings"
+                )
+
             self.data.extend(value)
         else:
+            if not value:
+                raise ValueError("value must not be an empty string")
             self.data.append(value)
 
         if self.max_items:

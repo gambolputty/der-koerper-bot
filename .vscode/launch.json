@@ -5,10 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python-Debugger: Modul",
+            "name": "Main Bot",
             "type": "debugpy",
             "request": "launch",
             "module": "der_koerper_bot"
+        },
+        {
+            "name": "Social Media Bot",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "der_koerper_bot.social_media_bot"
         }
     ]
 }

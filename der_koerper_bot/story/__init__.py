@@ -284,12 +284,15 @@ class Story:
             # Speichere die Sätze im Trash
             for sent in sents:
                 self.trash_bins["sentences"].add(sent.id)
-                self.trash_bins["verbs"].add(sent.verbs_lemma)
-                self.trash_bins["nouns"].add(sent.nouns_lemma)
-                self.trash_bins["sources"].add(sent.source)
 
                 if should_add_to_repeated_verb_trash is True:
                     self.trash_bins["repeated_verbs"].add(sent.verbs_lemma)
+                if sent.verbs_lemma:
+                    self.trash_bins["verbs"].add(sent.verbs_lemma)
+                if sent.nouns_lemma:
+                    self.trash_bins["nouns"].add(sent.nouns_lemma)
+
+                self.trash_bins["sources"].add(sent.source)
 
             # Füge die Sätze zusammen
             sents_len = len(sents)
