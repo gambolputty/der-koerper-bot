@@ -39,7 +39,7 @@ def init():
         raise Exception("No lines generated")
 
     text = lines[0]
-    # post_to_mastodon(text)
+    post_to_mastodon(text)
     story.save_trash_files()
 
 
