@@ -16,9 +16,10 @@ def init():
         config=story_config,
         sentences=sentences,
     )
+    lines = story.generate_text(500)
 
     with open("story.txt", "w") as file:
-        for text in story.generate_text_in_loop(500):
+        for text in lines:
             # for line in textwrap.wrap(text, 80):
             file.write(f"{text}\n")
 

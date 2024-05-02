@@ -263,11 +263,13 @@ class Story:
         # Aufrufen der ausgewählten Funktion
         return get_sentences_fn(), should_add_to_repeated_verb_trash
 
-    def generate_text_in_loop(self, times: int = 1):
+    def generate_text(self, times: int = 1):
         """
         Fängt an eine Geschichte zu erzählen.
         """
-        for n in range(times):
+        result: list[str] = []
+
+        for n in range(len(self.sentences)):
 
             sents, should_add_to_repeated_verb_trash = self.get_sentences()
 
@@ -275,6 +277,9 @@ class Story:
                 continue
 
             sents = self.sort_sentences(sents)
+
+            if not sents:
+                continue
 
             # Speichere die Sätze im Trash
             for sent in sents:
@@ -319,4 +324,10 @@ class Story:
             # Satzanfang und Ende
             text = f"Der Körper {''.join(text_list)}."
 
-            yield text
+            # Füge den Text zur Liste hinzu
+            result.append(text)
+
+            if len(result) == times:
+                break
+
+        return result

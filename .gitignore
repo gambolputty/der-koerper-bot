@@ -53,3 +53,5 @@ profile_default/
 ipython_config.py
 
 **/trash_files
+
+.DS_Store

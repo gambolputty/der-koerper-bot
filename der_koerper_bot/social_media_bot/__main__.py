@@ -33,8 +33,12 @@ def init():
         sentences=sentences,
         from_file=True,
     )
-    text = next(story.generate_text_in_loop(1))
+    lines = story.generate_text(1)
 
+    if not lines:
+        raise Exception("No lines generated")
+
+    text = lines[0]
     post_to_mastodon(text)
     story.save_trash_files()
 
