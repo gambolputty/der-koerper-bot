@@ -8,7 +8,7 @@ export default function () {
   for (let i = 0; i < data.length; i++) {
     sentences.push(SentenceSchema.parse(data[i]));
   }
-
   const story = new Story(sentences);
-  story.generateText();
+  story.generateText(1);
+  console.log("Generated");
 }

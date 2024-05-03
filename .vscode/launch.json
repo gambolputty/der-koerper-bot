@@ -2,16 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Debug",
             "type": "node", // Ändern Sie "pwa-node" zu "node"
             "request": "launch",
-            "name": "Debug Rollup Library",
             "runtimeExecutable": "npm",
             "runtimeArgs": [
                 "run",
-                "watch"
+                "watch",
             ],
+            "cwd": "${workspaceRoot}",
             "console": "integratedTerminal",
-            "autoAttachChildProcesses": true
+            // "autoAttachChildProcesses": true,
         }
     ]
 }

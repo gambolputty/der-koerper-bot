@@ -2,6 +2,7 @@ import typescript from "@rollup/plugin-typescript";
 import { defineConfig } from "rollup";
 import dsv from "@rollup/plugin-dsv";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
+import packageJson from "./package.json" assert { type: "json" };
 
 const globals = {
   story: "story",
@@ -12,24 +13,29 @@ export default defineConfig({
   input: "src/main.ts",
   output: [
     {
+      file: packageJson.module,
       format: "es",
-      file: "dist/main.js",
       globals,
       sourcemap: true,
+      exports: "named",
+      name: packageJson.name,
     },
     {
       // For debugging
-      format: "es",
       file: "public/main.js",
+      format: "es",
       globals,
       sourcemap: true,
+      exports: "named",
+      name: packageJson.name,
     },
     {
+      file: packageJson.main,
       format: "umd",
-      file: "dist/main.umd.cjs",
       globals,
-      name: "der-koerper-bot",
       sourcemap: true,
+      exports: "named",
+      name: packageJson.name,
     },
   ],
   plugins: [typescript(), dsv(), nodeResolve()],

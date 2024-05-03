@@ -8,6 +8,9 @@ type GetSentencesReturnType =
   | undefined;
 
 const SeparatedCSVField = z.string().transform((val) => val.split(";"));
+const TransformBooleanString = z
+  .enum(["True", "False"])
+  .transform((value) => value === "True");
 
 export const SentenceSchema = z.object({
   id: z.string().min(1),
@@ -19,8 +22,8 @@ export const SentenceSchema = z.object({
   nouns: SeparatedCSVField,
   nouns_lemma: SeparatedCSVField,
   source: z.string().min(1),
-  ends_with_colon: z.coerce.boolean(),
-  has_and: z.coerce.boolean(),
+  ends_with_colon: TransformBooleanString,
+  has_and: TransformBooleanString,
 });
 
 type SentenceType = z.infer<typeof SentenceSchema>;
@@ -268,7 +271,7 @@ export class Story {
     return sentences;
   }
 
-  private getRandomSentCount(
+  private static getRandomSentCount(
     start: number,
     end: number,
     weights: number[]
@@ -292,8 +295,7 @@ export class Story {
     /**
      * Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
      */
-    console.log(this);
-    const sent_count: number = this.getRandomSentCount(
+    const sent_count: number = Story.getRandomSentCount(
       1,
       8,
       [80, 10, 80, 100, 100, 50, 30, 10]
@@ -314,7 +316,7 @@ export class Story {
      */
 
     // Generiere eine zufällige Anzahl von Sätzen.
-    const sent_count: number = this.getRandomSentCount(
+    const sent_count: number = Story.getRandomSentCount(
       4,
       10,
       [100, 100, 100, 40, 10, 10, 5]
@@ -340,8 +342,8 @@ export class Story {
   private getSentences(): GetSentencesReturnType {
     // Liste der Funktionen
     const functions: (() => GetSentencesReturnType)[] = [
-      this.getEnumeratedSentences,
-      this.getEnumeratedSentencesAndRepeatVerb,
+      this.getEnumeratedSentences.bind(this),
+      this.getEnumeratedSentencesAndRepeatVerb.bind(this),
     ];
 
     // Gewichte für die Funktionen
@@ -361,7 +363,6 @@ export class Story {
     /**
      * Fängt an eine Geschichte zu erzählen.
      */
-
     const result: string[] = [];
 
     for (let n = 0; n < this.sentences.length; n++) {
