@@ -1,20 +1,17 @@
 {
-    // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
-    // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
-    // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Main Bot",
-            "type": "debugpy",
+            "type": "node", // Ändern Sie "pwa-node" zu "node"
             "request": "launch",
-            "module": "der_koerper_bot"
-        },
-        {
-            "name": "Social Media Bot",
-            "type": "debugpy",
-            "request": "launch",
-            "module": "der_koerper_bot.social_media_bot"
+            "name": "Debug Rollup Library",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "watch"
+            ],
+            "console": "integratedTerminal",
+            "autoAttachChildProcesses": true
         }
     ]
 }
