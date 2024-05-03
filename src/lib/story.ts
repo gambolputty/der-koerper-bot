@@ -7,7 +7,12 @@ type GetSentencesReturnType =
   | [SentenceType[], Record<string, unknown> | undefined]
   | undefined;
 
-const SeparatedCSVField = z.string().transform((val) => val.split(";"));
+const SeparatedCSVField = z.string().transform((val) => {
+  if (!val || val === "") {
+    return [];
+  }
+  return val.split(";");
+});
 const TransformBooleanString = z
   .enum(["True", "False"])
   .transform((value) => value === "True");
@@ -28,58 +33,11 @@ export const SentenceSchema = z.object({
 
 type SentenceType = z.infer<typeof SentenceSchema>;
 
-// class SentenceType {
-//   // parameter properties
-//   constructor(
-//     public id: string,
-//     public text: string,
-//     public root_verb: string,
-//     public root_verb_lemma: string,
-//     public verbs: string[] = [],
-//     public verbs_lemma: string[] = [],
-//     public nouns: string[] = [],
-//     public nouns_lemma: string[] = [],
-//     public source: string,
-//     public ends_with_colon: boolean = false,
-//     public has_and: boolean = false
-//   ) {}
-
-//   static field_to_list(v: string): string[] {
-//     if (!v) {
-//       return [];
-//     }
-
-//     return v.split(";");
-//   }
-// }
-
 export class StoryConfig {
   readonly trash: typeof TrashConfig;
+  // prettier-ignore
   readonly first_sentence_excluded_words: Set<string> = new Set([
-    "aber",
-    "andererseits",
-    "außerdem",
-    "daher",
-    "deshalb",
-    "doch",
-    "einerseits",
-    "jedoch",
-    "nichtsdestotrotz",
-    "sondern",
-    "sowohl",
-    "stattdessen",
-    "trotzdem",
-    "weder noch",
-    "weder",
-    "zudem",
-    "zwar",
-    "dennoch",
-    "denn",
-    "infolgedessen",
-    "folglich",
-    "dementsprechend",
-    "demzufolge",
-    "somit",
+    "aber", "andererseits", "außerdem", "daher", "deshalb", "doch", "einerseits", "jedoch", "nichtsdestotrotz", "sondern", "sowohl", "stattdessen", "trotzdem", "weder noch", "weder", "zudem", "zwar", "dennoch", "denn", "infolgedessen", "folglich", "dementsprechend", "demzufolge", "somit", "beiden", "beide", "beides",
   ]);
 
   constructor(trash?: typeof TrashConfig) {
@@ -394,10 +352,10 @@ export class Story {
         if (repeated_verb) {
           this.trashBins.get("repeated_verbs")?.add(repeated_verb);
         }
-        if (sent.verbs_lemma) {
+        if (sent.verbs_lemma.length) {
           this.trashBins.get("verbs")?.add(sent.verbs_lemma);
         }
-        if (sent.nouns_lemma) {
+        if (sent.nouns_lemma.length) {
           this.trashBins.get("nouns")?.add(sent.nouns_lemma);
         }
 

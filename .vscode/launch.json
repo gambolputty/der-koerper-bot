@@ -2,17 +2,37 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug",
-            "type": "node", // Ändern Sie "pwa-node" zu "node"
+            "type": "node",
             "request": "launch",
+            "name": "Debug Run.ts",
+            "runtimeExecutable": "tsx",
+            "runtimeArgs": [
+                "watch"
+            ],
+            "args": [
+                "${workspaceFolder}/run.ts"
+            ],
+            "console": "integratedTerminal",
+            "restart": true,
+            "sourceMaps": true,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Rollup",
             "runtimeExecutable": "npm",
             "runtimeArgs": [
                 "run",
-                "watch",
+                "watch"
             ],
-            "cwd": "${workspaceRoot}",
             "console": "integratedTerminal",
+            "restart": true,
+            "sourceMaps": true
             // "autoAttachChildProcesses": true,
+            // "sourceMapPathOverrides": {
+            //     "webpack:///./*": "${workspaceRoot}/*"
+            // }
         }
     ]
 }

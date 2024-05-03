@@ -7,26 +7,18 @@ import packageJson from "./package.json" assert { type: "json" };
 const globals = {
   story: "story",
   zod: "Zod",
+  z: "z",
 };
 
 export default defineConfig({
-  input: "src/main.ts",
+  input: "src/index.ts",
   output: [
     {
       file: packageJson.module,
       format: "es",
       globals,
       sourcemap: true,
-      exports: "named",
-      name: packageJson.name,
-    },
-    {
-      // For debugging
-      file: "public/main.js",
-      format: "es",
-      globals,
-      sourcemap: true,
-      exports: "named",
+      // exports: "named",
       name: packageJson.name,
     },
     {
@@ -34,7 +26,7 @@ export default defineConfig({
       format: "umd",
       globals,
       sourcemap: true,
-      exports: "named",
+      //   exports: "named",
       name: packageJson.name,
     },
   ],

@@ -2,8 +2,8 @@
   "name": "der-koerper-bot",
   "version": "1.0.0",
   "type": "module",
-  "main": "dist/main.umd.cjs",
-  "module": "dist/main.js",
+  "main": "dist/index.umd.cjs",
+  "module": "dist/index.js",
   "scripts": {
     "watch": "rollup --config --watch",
     "serve": "serve public",
@@ -15,12 +15,14 @@
     "@rollup/plugin-typescript": "^11.1.6",
     "@typescript-eslint/eslint-plugin": "^7.8.0",
     "@typescript-eslint/parser": "^7.8.0",
+    "csv-parse": "^5.5.5",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.2.5",
     "rollup": "^4.17.2",
     "serve": "^14.2.3",
     "tslib": "^2.6.2",
+    "tsx": "^4.9.0",
     "typescript": "^5.4.5"
   },
   "dependencies": {
