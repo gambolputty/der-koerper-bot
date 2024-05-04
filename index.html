@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head lang='de'>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>Der Körper</title>
+
+</head>
+
+<body>
+    <script type="module">
+        import { Story, csv } from './dist/index.js';
+
+        const readCSVFile = async () => {
+            const url = new URL("./dist/sentences.csv", import.meta.url);
+            const response = await fetch(url);
+            return await response.text();
+        };
+
+        const generateText = (data, times = 1) => {
+            const sentences = Story.parseSentences(data);
+            const story = new Story(sentences);
+            const textArr = story.generateText(times);
+            const text = textArr.join("\n");
+            return text;
+        };
+
+
+        const csvText = await readCSVFile();
+        const csvData = csv.parseCSVText(csvText);
+        const result = generateText(csvData, 10);
+        console.clear();
+        console.log(result);
+    </script>
+</body>
+
+</html>

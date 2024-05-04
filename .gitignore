@@ -25,3 +25,4 @@ dist-ssr
 
 .old_python_code
 .old_js_code
+.env

@@ -5,13 +5,15 @@
             "type": "node",
             "request": "launch",
             "name": "Debug Run.ts",
-            "runtimeExecutable": "tsx",
+            "runtimeExecutable": "npm",
             "runtimeArgs": [
-                "watch"
+                "run",
+                "dev"
             ],
-            "args": [
-                "${workspaceFolder}/run.ts"
-            ],
+            // "args": [
+            //     "${workspaceFolder}/run.ts",
+            //     "--env-file=.env"
+            // ],
             "console": "integratedTerminal",
             "restart": true,
             "sourceMaps": true,

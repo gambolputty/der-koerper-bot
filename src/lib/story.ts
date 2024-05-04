@@ -2,7 +2,8 @@ import weightedRandom from "@/lib/weighted-random";
 import { Trash, TrashConfig } from "./trash";
 import { z } from "zod";
 
-// GetSentencesReturnType = tuple[list[Sentence], dict | None] | None
+import { parse } from "csv-parse/browser/esm/sync";
+
 type GetSentencesReturnType =
   | [SentenceType[], Record<string, unknown> | undefined]
   | undefined;
@@ -42,7 +43,7 @@ export class StoryConfig {
 
   constructor(trash?: typeof TrashConfig) {
     if (trash && trash instanceof Object) {
-      this.trash = trash;
+      this.trash = { ...TrashConfig, ...trash };
     } else {
       this.trash = { ...TrashConfig };
     }
@@ -54,7 +55,6 @@ export class Story {
   private readonly config: StoryConfig;
   private trashBins: Map<string, Trash>;
 
-  // parameter properties
   constructor(sentences: SentenceType[], config?: StoryConfig) {
     this.sentences = sentences;
     this.trashBins = new Map();
@@ -75,13 +75,38 @@ export class Story {
     }
   }
 
-  static isIntersecting<T>(setA: Set<T>, setB: Set<T>): boolean {
-    for (const elem of setA) {
-      if (setB.has(elem)) {
-        return true;
-      }
+  static parseSentences(data: any): SentenceType[] {
+    const sentences: SentenceType[] = [];
+
+    for (let i = 0; i < data.length; i++) {
+      sentences.push(SentenceSchema.parse(data[i]));
     }
-    return false;
+
+    return sentences;
+  }
+
+  static async loadSentencesFromCSV() {
+    let data;
+    const csvUrl = new URL("../assets/sentences.csv", import.meta.url);
+
+    // Check if code is running in Node.js
+    if (typeof window === "undefined") {
+      // In Node.js, use fs to read the file
+      const fs = await import("fs");
+      data = fs.readFileSync(csvUrl, "utf8");
+    } else {
+      // In the browser, use fetch to load the file
+      const response = await fetch(csvUrl.toString());
+      data = await response.text();
+    }
+
+    // parse text blob
+    const records = parse(data, {
+      columns: true,
+      skip_empty_lines: true,
+    });
+
+    return Story.parseSentences(records);
   }
 
   private pickRandomSentences(
@@ -211,7 +236,7 @@ export class Story {
 
   static sortSentences(sentences: SentenceType[]): SentenceType[] {
     // Stelle Sätze ans Ende, die das Wort "und" enthalten.
-    sentences.sort((sent1, _) => (sent1.has_and ? 1 : -1));
+    sentences.sort((sent1, _) => (sent1.has_and ? -1 : 1));
 
     // Sätze, die mit einem Doppelpunkt enden, müssen an den Anfang.
     // sentences.sort((sent1, sent2) => (sent1.ends_with_colon ? -1 : 1));
