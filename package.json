@@ -19,6 +19,8 @@
     "esbuild": "^0.20.2",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-simple-import-sort": "^12.1.0",
     "prettier": "^3.2.5",
     "rollup": "^4.17.2",
     "rollup-plugin-copy": "^3.5.0",

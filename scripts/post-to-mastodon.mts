@@ -1,4 +1,5 @@
 import { createRestAPIClient } from "masto";
+
 import { Story } from "../lib/story";
 
 const createClient = () =>

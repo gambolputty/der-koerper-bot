@@ -1,6 +1,10 @@
-export type TrashConfig = {
-  maxItems?: number;
-};
+import * as v from "valibot";
+
+export const TrashConfigSchema = v.object({
+  maxItems: v.optional(v.number([v.minValue(1)])),
+});
+
+export type TrashConfig = v.Output<typeof TrashConfigSchema>;
 
 const defaultTrashConfig: TrashConfig = {
   maxItems: undefined,
@@ -12,10 +16,17 @@ export class Trash extends Set<string> {
   constructor(initialValues?: string[], config?: TrashConfig) {
     super();
     // Setze die Konfigurationen für die Trash-Bins bevor die Werte hinzugefügt werden. Dadurch wird sichergestellt, dass this.config definiert ist, bevor this.add aufgerufen wird.
-    this.config = config || { ...defaultTrashConfig };
+    this.config = v.parse(TrashConfigSchema, config) || {
+      ...defaultTrashConfig,
+    };
 
     if (initialValues) {
-      initialValues.forEach((item) => this.add(item));
+      initialValues.forEach((item) => {
+        if (!item.length) {
+          throw new Error("initialValues must not contain empty strings");
+        }
+        this.add(item);
+      });
     }
     this.truncateItems();
   }

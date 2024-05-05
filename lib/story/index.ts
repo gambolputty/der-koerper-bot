@@ -1,10 +1,10 @@
-import weightedRandom from "./weighted-random";
-import { TrashMap } from "../trash";
+import { parse } from "csv-parse/sync";
 import * as v from "valibot";
 
-import { parse } from "csv-parse/sync";
-import { SentenceSchema } from "./sentence";
+import { TrashMap } from "../trash";
 import type { SentenceType } from "./sentence";
+import { SentenceSchema } from "./sentence";
+import weightedRandom from "./weighted-random";
 
 type GetSentencesReturnType =
   | [SentenceType[], Record<string, unknown> | undefined]
@@ -12,8 +12,8 @@ type GetSentencesReturnType =
 
 export class StoryConfig {
   // prettier-ignore
-  readonly first_sentence_excluded_words: Set<string> = new Set([
-    "aber", "andererseits", "außerdem", "daher", "deshalb", "doch", "einerseits", "jedoch", "nichtsdestotrotz", "sondern", "sowohl", "stattdessen", "trotzdem", "weder noch", "weder", "zudem", "zwar", "dennoch", "denn", "infolgedessen", "folglich", "dementsprechend", "demzufolge", "somit", "beiden", "beide", "beides",
+  readonly firstSentenceExcludedWords: Set<string> = new Set([
+    "aber", "also", "andererseits", "außerdem", "beide", "beiden", "beides", "dadurch", "daher", "damit", "danach", "daraufhin", "darum", "dementsprechend", "demnach", "demzufolge", "denn", "dennoch", "deshalb", "deswegen", "doch", "einerseits", "folglich", "hierdurch", "infolgedessen", "jedoch", "nichtsdestotrotz", "somit", "sondern", "sowohl", "stattdessen", "trotzdem", "weder", "zudem", "zwar",
   ]);
 }
 
@@ -42,7 +42,7 @@ export class Story {
     }
   }
 
-  static parseSentences(data: any): SentenceType[] {
+  static parseSentences(data: unknown[]): SentenceType[] {
     const sentences: SentenceType[] = [];
 
     for (let i = 0; i < data.length; i++) {
@@ -79,6 +79,18 @@ export class Story {
     return Story.parseSentences(records);
   }
 
+  private static *randomElementGenerator<T>(
+    array: T[]
+  ): Generator<T, void, void> {
+    const arrayLength = array.length;
+    const startIndex = Math.floor(Math.random() * arrayLength);
+    let index = startIndex;
+    do {
+      yield array[index];
+      index = (index + 1) % arrayLength;
+    } while (index !== startIndex);
+  }
+
   private pickRandomSentences(
     count: number,
     repeatedVerb?: string
@@ -87,41 +99,42 @@ export class Story {
     const foundNouns: Set<string> = new Set();
     const foundVerbs: Set<string> = new Set();
     let foundAnd = false;
-    this.sentences.sort(() => Math.random() - 0.5);
 
-    for (const sent of this.sentences) {
+    for (const sent of Story.randomElementGenerator(this.sentences)) {
       if (repeatedVerb) {
         // check Verb
-        if (sent.root_verb !== repeatedVerb) {
+        if (sent.rootVerb !== repeatedVerb) {
           continue;
         }
 
-        // Compare verbs, but exclude root_verb_lemma
-        const verbsLemmaWithoutRootVerb = sent.verbs_lemma.filter(
-          (v) => v !== sent.root_verb_lemma
+        // Compare verbs, but exclude rootVerbLemma
+        const verbsLemmaWithoutRootVerb = sent.verbsLemma.filter(
+          (v) => v !== sent.rootVerbLemma
         );
 
-        if (verbsLemmaWithoutRootVerb.some((v) => foundVerbs.has(v))) {
-          continue;
-        }
+        if (verbsLemmaWithoutRootVerb.length) {
+          if (verbsLemmaWithoutRootVerb.some((v) => foundVerbs.has(v))) {
+            continue;
+          }
 
-        // check Verb trash, but exclude root_verb_lemma
-        if (this.trash.get("verbs")?.hasAny(verbsLemmaWithoutRootVerb)) {
-          continue;
+          // check Verb trash, but exclude rootVerbLemma
+          if (this.trash.get("verbs")?.hasAny(verbsLemmaWithoutRootVerb)) {
+            continue;
+          }
         }
       } else {
         // Not the same verbs in the sentence
-        if (sent.verbs_lemma.some((v) => foundVerbs.has(v))) {
+        if (sent.verbsLemma.some((v) => foundVerbs.has(v))) {
           continue;
         }
 
         // check Verb trash
-        if (this.trash.get("verbs")?.hasAny(sent.verbs_lemma)) {
+        if (this.trash.get("verbs")?.hasAny(sent.verbsLemma)) {
           continue;
         }
 
         // check Verb trash
-        if (this.trash.get("repeatedVerbs")?.hasAny(sent.verbs_lemma)) {
+        if (this.trash.get("repeatedVerbs")?.hasAny(sent.verbsLemma)) {
           continue;
         }
       }
@@ -133,7 +146,7 @@ export class Story {
       }
 
       // No colon at the end allowed
-      if (sent.ends_with_colon) {
+      if (sent.endsWithColon) {
         continue;
       }
 
@@ -148,12 +161,12 @@ export class Story {
       }
 
       // check Noun trash
-      if (this.trash.get("nouns")?.hasAny(sent.nouns_lemma)) {
+      if (this.trash.get("nouns")?.hasAny(sent.nounsLemma)) {
         continue;
       }
 
       // Not the same nouns in the sentence
-      if (sent.nouns_lemma.some((n) => foundNouns.has(n))) {
+      if (sent.nounsLemma.some((n) => foundNouns.has(n))) {
         continue;
       }
 
@@ -167,20 +180,18 @@ export class Story {
         const words = sent.text.match(/\b\w+\b/g);
         if (
           words &&
-          words.some((word) =>
-            this.config.first_sentence_excluded_words.has(word)
-          )
+          words.some((word) => this.config.firstSentenceExcludedWords.has(word))
         ) {
           continue;
         }
       }
 
       result.push(sent);
-      sent.nouns_lemma.forEach((n) => foundNouns.add(n));
-      sent.verbs_lemma.forEach((v) => foundVerbs.add(v));
+      sent.nounsLemma.forEach((n) => foundNouns.add(n));
+      sent.verbsLemma.forEach((v) => foundVerbs.add(v));
 
       // check "and"
-      if (sent.text.includes(" und ")) {
+      if (sent.hasAnd) {
         foundAnd = true;
       }
 
@@ -193,12 +204,12 @@ export class Story {
   }
 
   private pickRandomVerb(): string | undefined {
-    for (let sent of this.sentences) {
+    for (const sent of Story.randomElementGenerator(this.sentences)) {
       if (
-        !this.trash.get("repeatedVerbs")?.has(sent.root_verb_lemma) &&
-        !this.trash.get("verbs")?.has(sent.root_verb_lemma)
+        !this.trash.get("repeatedVerbs")?.has(sent.rootVerbLemma) &&
+        !this.trash.get("verbs")?.has(sent.rootVerbLemma)
       ) {
-        return sent.root_verb;
+        return sent.rootVerb;
       }
     }
     return undefined;
@@ -206,15 +217,15 @@ export class Story {
 
   static sortSentences(sentences: SentenceType[]): SentenceType[] {
     // Stelle Sätze ans Ende, die das Wort "und" enthalten.
-    sentences.sort((sent1, _) => (sent1.has_and ? -1 : 1));
+    sentences.sort((sent1) => (sent1.hasAnd ? -1 : 1));
 
     // Sätze, die mit einem Doppelpunkt enden, müssen an den Anfang.
-    // sentences.sort((sent1, sent2) => (sent1.ends_with_colon ? -1 : 1));
+    // sentences.sort((sent1, sent2) => (sent1.endsWithColon ? -1 : 1));
 
     // Sätze, die einen Doppelpunkt beinhalten, aber mit ihm Enden,
     // müssen ans Ende.
-    sentences.sort((sent1, _) => {
-      if (sent1.text.includes(":") && !sent1.ends_with_colon) {
+    sentences.sort((sent1) => {
+      if (sent1.text.includes(":") && !sent1.endsWithColon) {
         return 1;
       } else {
         return -1;
@@ -248,13 +259,13 @@ export class Story {
     /**
      * Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
      */
-    const sent_count: number = Story.getRandomSentCount(
+    const sentCount: number = Story.getRandomSentCount(
       1,
       8,
       [80, 10, 80, 100, 100, 50, 30, 10]
     );
     const sents: SentenceType[] | undefined =
-      this.pickRandomSentences(sent_count);
+      this.pickRandomSentences(sentCount);
 
     if (!sents) {
       return;
@@ -269,7 +280,7 @@ export class Story {
      */
 
     // Generiere eine zufällige Anzahl von Sätzen.
-    const sent_count: number = Story.getRandomSentCount(
+    const sentCount: number = Story.getRandomSentCount(
       4,
       10,
       [100, 100, 100, 40, 10, 10, 5]
@@ -277,19 +288,17 @@ export class Story {
 
     // Wähle ein Verb aus, das nicht im Trash liegt.
     // Das Verb wird über mehrere Sätze verwendet.
-    this.sentences.sort(() => Math.random() - 0.5);
-    const repeated_verb: string | undefined = this.pickRandomVerb();
-
+    const repeatedVerb: string | undefined = this.pickRandomVerb();
     const sents: SentenceType[] | undefined = this.pickRandomSentences(
-      sent_count,
-      repeated_verb
+      sentCount,
+      repeatedVerb
     );
 
     if (!sents) {
       return;
     }
 
-    return [sents, { repeated_verb }];
+    return [sents, { repeatedVerb: repeatedVerb }];
   }
 
   private getSentences(): GetSentencesReturnType {
@@ -319,13 +328,13 @@ export class Story {
     const result: string[] = [];
 
     for (let n = 0; n < this.sentences.length; n++) {
-      const get_sentences_result: GetSentencesReturnType = this.getSentences();
+      const getSentencesResult: GetSentencesReturnType = this.getSentences();
 
-      if (!get_sentences_result) {
+      if (!getSentencesResult) {
         continue;
       }
 
-      const [sents, resultInfo] = get_sentences_result;
+      const [sents, resultInfo] = getSentencesResult;
 
       if (!sents) {
         continue;
@@ -337,48 +346,48 @@ export class Story {
         continue;
       }
 
-      const repeated_verb: string | undefined =
-        (resultInfo?.repeated_verb as string) || undefined;
+      const repeatedVerb: string | undefined =
+        (resultInfo?.repeatedVerb as string) || undefined;
 
       // Speichere die Sätze im Trash
       for (const sent of sortedSents) {
         this.trash.get("sentences")?.add(sent.id);
 
-        if (repeated_verb) {
-          this.trash.get("repeatedVerbs")?.add(repeated_verb);
+        if (repeatedVerb) {
+          this.trash.get("repeatedVerbs")?.add(repeatedVerb);
         }
-        if (sent.verbs_lemma.length) {
-          this.trash.get("verbs")?.addMany(sent.verbs_lemma);
+        if (sent.verbsLemma.length) {
+          this.trash.get("verbs")?.addMany(sent.verbsLemma);
         }
-        if (sent.nouns_lemma.length) {
-          this.trash.get("nouns")?.addMany(sent.nouns_lemma);
+        if (sent.nounsLemma.length) {
+          this.trash.get("nouns")?.addMany(sent.nounsLemma);
         }
 
         this.trash.get("sources")?.add(sent.source);
       }
 
       // Füge die Sätze zusammen
-      const sents_len: number = sortedSents.length;
-      const text_list: string[] = [];
+      const sentsLen: number = sortedSents.length;
+      const textList: string[] = [];
+      const lastIndex: number = sentsLen - 1;
 
-      for (let i = 0; i < sents_len; i++) {
+      for (let i = 0; i < sentsLen; i++) {
         const sent: SentenceType = sortedSents[i];
         let text: string = sent.text;
 
-        const last_index: number = sents_len - 1;
-        if (sents_len > 1) {
-          if (i === last_index) {
+        if (sentsLen > 1) {
+          if (i === lastIndex) {
             text = ` und ${text}`;
           } else if (i !== 0) {
             text = `, ${text}`;
           }
         }
 
-        text_list.push(text);
+        textList.push(text);
       }
 
       // Satzanfang und Ende
-      const text: string = `Der Körper ${text_list.join("")}.`;
+      const text: string = `Der Körper ${textList.join("")}.`;
 
       // Füge den Text zur Liste hinzu
       result.push(text);

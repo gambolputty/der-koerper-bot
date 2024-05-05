@@ -1,7 +1,9 @@
 import { Story, TrashMap } from "./lib";
 
 console.time("generated text");
-const trashMap = new TrashMap();
+const trashMap = new TrashMap({
+  nouns: { maxItems: 4 },
+});
 await trashMap.loadTrashBinsFromFile();
 const sentences = await Story.loadSentencesFromCSV();
 const story = new Story({

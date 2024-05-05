@@ -1,12 +1,17 @@
-import { Trash, TrashConfig } from "./trash";
+import * as v from "valibot";
+
+import { Trash, TrashConfigSchema } from "./trash";
 
 const STORY_TRASH_DIRECTORY = new URL(".storytrash", import.meta.url);
 
-export type TrashConfigs = {
-  [key: string]: TrashConfig;
-};
+const TrashMapConfigSchema = v.record(
+  v.picklist(["verbs", "repeatedVerbs", "nouns", "sentences", "sources"]),
+  TrashConfigSchema
+);
 
-const defaultTrashConfig: TrashConfigs = {
+type TrashMapConfig = v.Output<typeof TrashMapConfigSchema>;
+
+const DEFAULT_TRASH_CONFIG: TrashMapConfig = {
   verbs: { maxItems: 20 },
   repeatedVerbs: { maxItems: 5 },
   nouns: { maxItems: 40 },
@@ -15,17 +20,16 @@ const defaultTrashConfig: TrashConfigs = {
 };
 
 export class TrashMap extends Map<string, Trash> {
-  readonly configs: TrashConfigs;
+  readonly configs: TrashMapConfig;
 
-  constructor(configs?: TrashConfigs) {
+  constructor(configs?: TrashMapConfig) {
     super();
 
     // Setze die Konfigurationen für die Trash-Bins
-    if (configs && Object.keys(configs).length) {
-      this.configs = { ...defaultTrashConfig, ...configs };
-    } else {
-      this.configs = { ...defaultTrashConfig };
-    }
+    this.configs = v.parse(TrashMapConfigSchema, {
+      ...DEFAULT_TRASH_CONFIG,
+      ...(configs || {}),
+    });
 
     // Erstelle leere Trash-Bins
     for (const [key, config] of Object.entries(this.configs)) {
@@ -67,7 +71,7 @@ export class TrashMap extends Map<string, Trash> {
     }
 
     for (const file of files) {
-      const key = file.replace(".txt", "");
+      const key = file.replace(".txt", "") as keyof TrashMapConfig;
       const filePath = join(fileURLToPath(directory), file);
       const content = fs.readFileSync(filePath, "utf-8");
       const values = content.split("\n");

@@ -1,4 +1,4 @@
-id,text,root_verb,root_verb_lemma,verbs,verbs_lemma,nouns,nouns_lemma,source,ends_with_colon,has_and
+id,text,rootVerb,rootVerbLemma,verbs,verbsLemma,nouns,nounsLemma,source,endsWithColon,hasAnd
 0,wird übersäuert,wird,werden,wird;übersäuert,werden;übersäuern,,,www.medizinfo.de,False,False
 1,kann sich auf die Fettverbrennung konzentrieren,kann,können,kann;konzentrieren,können;konzentrieren,Fettverbrennung,Fettverbrennung,www.ackermann.ch,False,False
 5,ist auf Winterschlaf gestimmt,ist,sein,ist;gestimmt,sein;stimmen,Winterschlaf,Winterschlaf,www.medcom24.de,False,False
