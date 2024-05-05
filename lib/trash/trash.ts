@@ -10,10 +10,21 @@ const defaultTrashConfig: TrashConfig = {
   maxItems: undefined,
 };
 
+const TrashItemSchema = v.string([v.minLength(1)]);
+const TrashItemSetSchema = v.set(TrashItemSchema);
+type TrashItem = v.Output<typeof TrashItemSchema>;
+type TrashItemSet = v.Output<typeof TrashItemSetSchema>;
+
 export class Trash extends Set<string> {
   private readonly config: TrashConfig;
 
-  constructor(initialValues?: string[], config?: TrashConfig) {
+  constructor({
+    initialValues,
+    config,
+  }: {
+    initialValues?: TrashItemSet;
+    config?: TrashConfig;
+  }) {
     super();
     // Setze die Konfigurationen für die Trash-Bins bevor die Werte hinzugefügt werden. Dadurch wird sichergestellt, dass this.config definiert ist, bevor this.add aufgerufen wird.
     this.config = v.parse(TrashConfigSchema, config) || {
@@ -22,32 +33,22 @@ export class Trash extends Set<string> {
 
     if (initialValues) {
       initialValues.forEach((item) => {
-        if (!item.length) {
-          throw new Error("initialValues must not contain empty strings");
-        }
-        this.add(item);
+        this.add(v.parse(TrashItemSchema, item));
       });
     }
     this.truncateItems();
   }
 
-  add(value: string): this {
-    super.add(value);
+  add(value: TrashItem): this {
+    const valueParsed = v.parse(TrashItemSchema, value);
+    super.add(valueParsed);
     this.truncateItems();
     return this;
   }
 
-  public addMany(value: string[]): void {
-    if (!Array.isArray(value)) {
-      throw new Error("value must be an array");
-    }
-    if (!value.length || value.some((val) => !val.length)) {
-      throw new Error(
-        "value must not be an empty list or contain empty strings"
-      );
-    }
-
-    for (const val of value) {
+  public addMany(value: TrashItemSet): void {
+    const valueParsed = v.parse(TrashItemSetSchema, value);
+    for (const val of valueParsed) {
       this.add(val);
     }
   }
@@ -63,7 +64,12 @@ export class Trash extends Set<string> {
     }
   }
 
-  public hasAny(values: string[]): boolean {
-    return values.some((value) => this.has(value));
+  public hasAny(values: TrashItemSet): boolean {
+    for (const value of values) {
+      if (this.has(value)) {
+        return true;
+      }
+    }
+    return false;
   }
 }

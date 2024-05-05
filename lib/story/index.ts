@@ -101,43 +101,7 @@ export class Story {
     let foundAnd = false;
 
     for (const sent of Story.randomElementGenerator(this.sentences)) {
-      if (repeatedVerb) {
-        // check Verb
-        if (sent.rootVerb !== repeatedVerb) {
-          continue;
-        }
-
-        // Compare verbs, but exclude rootVerbLemma
-        const verbsLemmaWithoutRootVerb = sent.verbsLemma.filter(
-          (v) => v !== sent.rootVerbLemma
-        );
-
-        if (verbsLemmaWithoutRootVerb.length) {
-          if (verbsLemmaWithoutRootVerb.some((v) => foundVerbs.has(v))) {
-            continue;
-          }
-
-          // check Verb trash, but exclude rootVerbLemma
-          if (this.trash.get("verbs")?.hasAny(verbsLemmaWithoutRootVerb)) {
-            continue;
-          }
-        }
-      } else {
-        // Not the same verbs in the sentence
-        if (sent.verbsLemma.some((v) => foundVerbs.has(v))) {
-          continue;
-        }
-
-        // check Verb trash
-        if (this.trash.get("verbs")?.hasAny(sent.verbsLemma)) {
-          continue;
-        }
-
-        // check Verb trash
-        if (this.trash.get("repeatedVerbs")?.hasAny(sent.verbsLemma)) {
-          continue;
-        }
-      }
+      // Check boolean flags
 
       // check "and"
       // "and" should only appear once
@@ -150,6 +114,83 @@ export class Story {
         continue;
       }
 
+      // Check verbs
+      if (repeatedVerb) {
+        // must equal rootVerb
+        if (sent.rootVerb !== repeatedVerb) {
+          continue;
+        }
+
+        // Compare verbs, but exclude rootVerbLemma
+        let foundDuplicateVerb = false;
+        for (const verbLemma of sent.verbsLemma) {
+          if (verbLemma === sent.rootVerbLemma) {
+            continue;
+          }
+
+          if (foundVerbs.has(verbLemma)) {
+            foundDuplicateVerb = true;
+            break;
+          }
+
+          // check Verb trash
+          if (
+            this.trash.get("verbs")?.has(verbLemma) ||
+            this.trash.get("repeatedVerbs")?.has(verbLemma)
+          ) {
+            foundDuplicateVerb = true;
+            break;
+          }
+        }
+
+        if (foundDuplicateVerb) {
+          continue;
+        }
+      } else {
+        // Compare verbs
+        let foundDuplicateVerb = false;
+        for (const verbLemma of sent.verbsLemma) {
+          // Not the same verbs in the sentence
+          if (foundVerbs.has(verbLemma)) {
+            foundDuplicateVerb = true;
+            break;
+          }
+
+          // check Verb trash
+          if (
+            this.trash.get("verbs")?.has(verbLemma) ||
+            this.trash.get("repeatedVerbs")?.has(verbLemma)
+          ) {
+            foundDuplicateVerb = true;
+            break;
+          }
+        }
+
+        if (foundDuplicateVerb) {
+          continue;
+        }
+      }
+
+      // check nouns
+      let foundDuplicateNoun = false;
+      for (const nounLemma of sent.nounsLemma) {
+        // Not the same nouns in the sentence
+        if (foundNouns.has(nounLemma)) {
+          foundDuplicateNoun = true;
+          break;
+        }
+
+        // check Noun trash
+        if (this.trash.get("nouns")?.has(nounLemma)) {
+          foundDuplicateNoun = true;
+          break;
+        }
+      }
+
+      if (foundDuplicateNoun) {
+        continue;
+      }
+
       // check Source trash
       if (this.trash.get("sources")?.has(sent.source)) {
         continue;
@@ -157,16 +198,6 @@ export class Story {
 
       // check Sentence trash
       if (this.trash.get("sentences")?.has(sent.id)) {
-        continue;
-      }
-
-      // check Noun trash
-      if (this.trash.get("nouns")?.hasAny(sent.nounsLemma)) {
-        continue;
-      }
-
-      // Not the same nouns in the sentence
-      if (sent.nounsLemma.some((n) => foundNouns.has(n))) {
         continue;
       }
 
@@ -356,10 +387,10 @@ export class Story {
         if (repeatedVerb) {
           this.trash.get("repeatedVerbs")?.add(repeatedVerb);
         }
-        if (sent.verbsLemma.length) {
+        if (sent.verbsLemma.size) {
           this.trash.get("verbs")?.addMany(sent.verbsLemma);
         }
-        if (sent.nounsLemma.length) {
+        if (sent.nounsLemma.size) {
           this.trash.get("nouns")?.addMany(sent.nounsLemma);
         }
 

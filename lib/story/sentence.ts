@@ -1,10 +1,11 @@
 import * as v from "valibot";
 
-const SeparatedCSVField = v.transform(v.string(), (val) => {
+const SeparatedCSVField = v.transform(v.string(), (val): Set<string> => {
   if (!val || val === "") {
-    return [];
+    return new Set();
   }
-  return val.split(";");
+  const items = val.split(";");
+  return new Set(items);
 });
 
 const BooleanString = v.coerce(v.boolean(), (val) => val === "True");

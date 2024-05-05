@@ -33,7 +33,7 @@ export class TrashMap extends Map<string, Trash> {
 
     // Erstelle leere Trash-Bins
     for (const [key, config] of Object.entries(this.configs)) {
-      this.set(key, new Trash([], config));
+      this.set(key, new Trash({ config }));
     }
   }
 
@@ -76,7 +76,10 @@ export class TrashMap extends Map<string, Trash> {
       const content = fs.readFileSync(filePath, "utf-8");
       const values = content.split("\n");
 
-      this.set(key, new Trash(values, this.configs[key]));
+      this.set(
+        key,
+        new Trash({ initialValues: new Set(values), config: this.configs[key] })
+      );
     }
 
     return true;
