@@ -348,10 +348,10 @@ export class Story {
           this.trash.get("repeatedVerbs")?.add(repeated_verb);
         }
         if (sent.verbs_lemma.length) {
-          this.trash.get("verbs")?.add(sent.verbs_lemma);
+          this.trash.get("verbs")?.addMany(sent.verbs_lemma);
         }
         if (sent.nouns_lemma.length) {
-          this.trash.get("nouns")?.add(sent.nouns_lemma);
+          this.trash.get("nouns")?.addMany(sent.nouns_lemma);
         }
 
         this.trash.get("sources")?.add(sent.source);

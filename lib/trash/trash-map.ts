@@ -7,7 +7,7 @@ export type TrashConfigs = {
 };
 
 const defaultTrashConfig: TrashConfigs = {
-  verbs: { maxItems: 14 },
+  verbs: { maxItems: 20 },
   repeatedVerbs: { maxItems: 5 },
   nouns: { maxItems: 40 },
   sentences: { maxItems: 300 },
@@ -37,15 +37,20 @@ export class TrashMap extends Map<string, Trash> {
     // Prüfe, ob der Ordner STORY_TRASH_DIRECTORY existiert
     // Wenn nicht, erstelle ihn.
     const directory = STORY_TRASH_DIRECTORY;
-    const fs = await import("fs");
+    const fs = await import("node:fs");
+    const { join } = await import("node:path");
+    const { fileURLToPath } = await import("node:url");
+
     if (
       !fs ||
       !fs.existsSync ||
       !fs.mkdirSync ||
       !fs.readdirSync ||
-      !fs.readFileSync
+      !fs.readFileSync ||
+      !join ||
+      !fileURLToPath
     ) {
-      throw new Error("fs module not available");
+      throw new Error("Node modules not available");
     }
 
     if (!fs.existsSync(directory)) {
@@ -56,13 +61,7 @@ export class TrashMap extends Map<string, Trash> {
     // Eine Trash-Datei wird als Text-Datei gespeichert.
     // Die Einträge sind Strings, die durch einen Zeilenwechsel getrennt sind.
     // Die Dateinamen sind die Schlüssel der Trash-Map.
-    const { join } = await import("path");
-    const { fileURLToPath } = await import("url");
-    if (!join || !fileURLToPath) {
-      throw new Error("path module not available");
-    }
     const files = fs.readdirSync(directory);
-
     if (!files.length) {
       return false;
     }
@@ -82,16 +81,22 @@ export class TrashMap extends Map<string, Trash> {
   async saveTrashBinsToFile(): Promise<boolean> {
     // Prüfe, ob der Ordner STORY_TRASH_DIRECTORY existiert
     // Wenn nicht, erstelle ihn.
-    const { join } = await import("path");
-    const { fileURLToPath } = await import("url");
-    if (!join || !fileURLToPath) {
-      throw new Error("path module not available");
+    const { join } = await import("node:path");
+    const { fileURLToPath } = await import("node:url");
+    const fs = await import("node:fs");
+
+    if (
+      !fs ||
+      !fs.existsSync ||
+      !fs.mkdirSync ||
+      !fs.writeFileSync ||
+      !join ||
+      !fileURLToPath
+    ) {
+      throw new Error("Node modules not available");
     }
+
     const directory = STORY_TRASH_DIRECTORY;
-    const fs = await import("fs");
-    if (!fs || !fs.existsSync || !fs.mkdirSync || !fs.writeFileSync) {
-      throw new Error("fs module not available");
-    }
 
     if (!fs.existsSync(directory)) {
       fs.mkdirSync(directory);
@@ -99,8 +104,8 @@ export class TrashMap extends Map<string, Trash> {
 
     // Speichere alle Trash-Bins in Text-Dateien im Ordner.
     for (const [key, trash] of this.entries()) {
-      const filePath = join(directory.pathname, `${key}.txt`);
-      fs.writeFileSync(filePath, trash.data.join("\n"));
+      const filePath = join(fileURLToPath(directory), `${key}.txt`);
+      fs.writeFileSync(filePath, Array.from(trash).join("\n"));
     }
 
     return true;

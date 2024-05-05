@@ -6,50 +6,53 @@ const defaultTrashConfig: TrashConfig = {
   maxItems: undefined,
 };
 
-export class Trash {
-  constructor(
-    public data: string[] = [],
-    private readonly config: TrashConfig = defaultTrashConfig
-  ) {}
+export class Trash extends Set<string> {
+  private readonly config: TrashConfig;
 
-  public add(value: string | string[]): void {
-    if (Array.isArray(value)) {
-      if (!value.length || value.some((val) => !val.length)) {
-        throw new Error(
-          "value must not be an empty list or contain empty strings"
-        );
-      }
+  constructor(initialValues?: string[], config?: TrashConfig) {
+    super();
+    // Setze die Konfigurationen für die Trash-Bins bevor die Werte hinzugefügt werden. Dadurch wird sichergestellt, dass this.config definiert ist, bevor this.add aufgerufen wird.
+    this.config = config || { ...defaultTrashConfig };
 
-      // Filter values that are already in the trash
-      for (const val of value) {
-        if (!this.data.includes(val)) {
-          this.data.push(val);
-        }
-      }
-    } else {
-      if (!value.length) {
-        throw new Error("value must not be an empty string");
-      }
-      if (!this.data.includes(value)) {
-        this.data.push(value);
-      }
+    if (initialValues) {
+      initialValues.forEach((item) => this.add(item));
     }
-
-    this.clean();
+    this.truncateItems();
   }
 
-  private clean(): void {
-    const maxItems = this.config?.maxItems;
-    if (maxItems && this.data.length > maxItems) {
-      this.data = this.data.slice(-maxItems);
+  add(value: string): this {
+    super.add(value);
+    this.truncateItems();
+    return this;
+  }
+
+  public addMany(value: string[]): void {
+    if (!Array.isArray(value)) {
+      throw new Error("value must be an array");
+    }
+    if (!value.length || value.some((val) => !val.length)) {
+      throw new Error(
+        "value must not be an empty list or contain empty strings"
+      );
+    }
+
+    for (const val of value) {
+      this.add(val);
     }
   }
 
-  public has(value: string): boolean {
-    return this.data.includes(value);
+  private truncateItems(): void {
+    // Wenn maxItems definiert ist und die Anzahl der Elemente im Trash größer ist als maxItems, lösche die ältesten Elemente.
+    const maxItems = this.config.maxItems;
+    if (maxItems && this.size > maxItems) {
+      while (this.size > maxItems) {
+        const firstItem = this.values().next().value;
+        this.delete(firstItem);
+      }
+    }
   }
 
   public hasAny(values: string[]): boolean {
-    return values.some((val) => this.data.includes(val));
+    return values.some((value) => this.has(value));
   }
 }
