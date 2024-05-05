@@ -121,7 +121,7 @@ export class Story {
         }
 
         // check Verb trash
-        if (this.trash.get("repeated_verbs")?.hasAny(sent.verbs_lemma)) {
+        if (this.trash.get("repeatedVerbs")?.hasAny(sent.verbs_lemma)) {
           continue;
         }
       }
@@ -195,7 +195,7 @@ export class Story {
   private pickRandomVerb(): string | undefined {
     for (let sent of this.sentences) {
       if (
-        !this.trash.get("repeated_verbs")?.has(sent.root_verb_lemma) &&
+        !this.trash.get("repeatedVerbs")?.has(sent.root_verb_lemma) &&
         !this.trash.get("verbs")?.has(sent.root_verb_lemma)
       ) {
         return sent.root_verb;
@@ -345,7 +345,7 @@ export class Story {
         this.trash.get("sentences")?.add(sent.id);
 
         if (repeated_verb) {
-          this.trash.get("repeated_verbs")?.add(repeated_verb);
+          this.trash.get("repeatedVerbs")?.add(repeated_verb);
         }
         if (sent.verbs_lemma.length) {
           this.trash.get("verbs")?.add(sent.verbs_lemma);

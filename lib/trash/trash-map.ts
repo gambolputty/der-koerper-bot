@@ -10,7 +10,7 @@ const defaultTrashConfig: TrashConfigs = {
   verbs: { maxItems: 14 },
   repeatedVerbs: { maxItems: 3 },
   nouns: { maxItems: 40 },
-  sentence: {},
+  sentences: { maxItems: 300 },
   sources: { maxItems: 70 },
 };
 
