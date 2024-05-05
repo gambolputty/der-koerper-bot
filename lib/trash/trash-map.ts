@@ -8,7 +8,7 @@ export type TrashConfigs = {
 
 const defaultTrashConfig: TrashConfigs = {
   verbs: { maxItems: 14 },
-  repeatedVerbs: { maxItems: 3 },
+  repeatedVerbs: { maxItems: 5 },
   nouns: { maxItems: 40 },
   sentences: { maxItems: 300 },
   sources: { maxItems: 70 },
