@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Run.ts",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "dev"
+            ],
+            // "args": [
+            //     "${workspaceFolder}/run.ts",
+            //     "--env-file=.env"
+            // ],
+            "console": "integratedTerminal",
+            "restart": true,
+            "sourceMaps": true,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Rollup",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "watch"
+            ],
+            "console": "integratedTerminal",
+            "restart": true,
+            "sourceMaps": true
+            // "autoAttachChildProcesses": true,
+            // "sourceMapPathOverrides": {
+            //     "webpack:///./*": "${workspaceRoot}/*"
+            // }
+        }
+    ]
+}

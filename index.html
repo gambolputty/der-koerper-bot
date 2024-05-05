@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head lang='de'>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>Der Körper</title>
+
+</head>
+
+<body>
+    <script type="module">
+        import { Story } from './dist/index.js';
+
+
+        const generateText = (sentences, times = 1) => {
+            const story = new Story(sentences);
+            const textArr = story.generateText(times);
+            const text = textArr.join("\n");
+            return text;
+        };
+
+        const sentences = await Story.loadSentencesFromCSV();
+        const result = generateText(sentences, 10);
+        console.log(result);
+    </script>
+</body>
+
+</html>
