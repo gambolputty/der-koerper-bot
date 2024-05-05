@@ -1,16 +1,15 @@
-export const TrashConfig = {
-  TRASH_KEYS: ["verbs", "repeated_verbs", "nouns", "sentences", "sources"],
-  VERBS_MAX_ITEMS: 14,
-  REPEATED_VERBS_MAX_ITEMS: 3,
-  NOUNS_MAX_ITEMS: 40,
-  SOURCES_MAX_ITEMS: 70,
-  SENTENCES_MAX_ITEMS: undefined,
-} as const;
+export type TrashConfig = {
+  maxItems?: number;
+};
+
+const defaultTrashConfig: TrashConfig = {
+  maxItems: undefined,
+};
 
 export class Trash {
   constructor(
-    private data: string[] = [],
-    public maxItems?: number
+    public data: string[] = [],
+    private readonly config: TrashConfig = defaultTrashConfig
   ) {}
 
   public add(value: string | string[]): void {
@@ -21,20 +20,28 @@ export class Trash {
         );
       }
 
-      this.data.push(...value);
+      // Filter values that are already in the trash
+      for (const val of value) {
+        if (!this.data.includes(val)) {
+          this.data.push(val);
+        }
+      }
     } else {
       if (!value.length) {
         throw new Error("value must not be an empty string");
       }
-      this.data.push(value);
+      if (!this.data.includes(value)) {
+        this.data.push(value);
+      }
     }
 
     this.clean();
   }
 
   private clean(): void {
-    if (this.maxItems && this.data.length > this.maxItems) {
-      this.data = this.data.slice(-this.maxItems);
+    const maxItems = this.config?.maxItems;
+    if (maxItems && this.data.length > maxItems) {
+      this.data = this.data.slice(-maxItems);
     }
   }
 

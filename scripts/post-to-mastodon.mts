@@ -1,5 +1,5 @@
 import { createRestAPIClient } from "masto";
-import { Story } from "../src/lib/story";
+import { Story } from "../lib/story";
 
 const createClient = () =>
   createRestAPIClient({
@@ -28,3 +28,4 @@ export const generateText = async (sentences) => {
 
 const sentences = await Story.loadSentencesFromCSV();
 const text = await generateText(sentences);
+console.log(text);

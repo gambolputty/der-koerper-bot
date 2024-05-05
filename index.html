@@ -10,27 +10,18 @@
 
 <body>
     <script type="module">
-        import { Story, csv } from './dist/index.js';
+        import { Story } from './dist/index.js';
 
-        const readCSVFile = async () => {
-            const url = new URL("./dist/sentences.csv", import.meta.url);
-            const response = await fetch(url);
-            return await response.text();
-        };
 
-        const generateText = (data, times = 1) => {
-            const sentences = Story.parseSentences(data);
+        const generateText = (sentences, times = 1) => {
             const story = new Story(sentences);
             const textArr = story.generateText(times);
             const text = textArr.join("\n");
             return text;
         };
 
-
-        const csvText = await readCSVFile();
-        const csvData = csv.parseCSVText(csvText);
-        const result = generateText(csvData, 10);
-        console.clear();
+        const sentences = await Story.loadSentencesFromCSV();
+        const result = generateText(sentences, 10);
         console.log(result);
     </script>
 </body>

@@ -1,63 +1,38 @@
-import weightedRandom from "@/lib/weighted-random";
-import { Trash, TrashConfig } from "./trash";
-import { z } from "zod";
+import weightedRandom from "./weighted-random";
+import { TrashMap } from "../trash";
+import * as v from "valibot";
 
-import { parse } from "csv-parse/browser/esm/sync";
+import { parse } from "csv-parse/sync";
+import { SentenceSchema } from "./sentence";
+import type { SentenceType } from "./sentence";
 
 type GetSentencesReturnType =
   | [SentenceType[], Record<string, unknown> | undefined]
   | undefined;
 
-const SeparatedCSVField = z.string().transform((val) => {
-  if (!val || val === "") {
-    return [];
-  }
-  return val.split(";");
-});
-const TransformBooleanString = z
-  .enum(["True", "False"])
-  .transform((value) => value === "True");
-
-export const SentenceSchema = z.object({
-  id: z.string().min(1),
-  text: z.string().min(1),
-  root_verb: z.string().min(1),
-  root_verb_lemma: z.string().min(1),
-  verbs: SeparatedCSVField,
-  verbs_lemma: SeparatedCSVField,
-  nouns: SeparatedCSVField,
-  nouns_lemma: SeparatedCSVField,
-  source: z.string().min(1),
-  ends_with_colon: TransformBooleanString,
-  has_and: TransformBooleanString,
-});
-
-type SentenceType = z.infer<typeof SentenceSchema>;
-
 export class StoryConfig {
-  readonly trash: typeof TrashConfig;
   // prettier-ignore
   readonly first_sentence_excluded_words: Set<string> = new Set([
     "aber", "andererseits", "außerdem", "daher", "deshalb", "doch", "einerseits", "jedoch", "nichtsdestotrotz", "sondern", "sowohl", "stattdessen", "trotzdem", "weder noch", "weder", "zudem", "zwar", "dennoch", "denn", "infolgedessen", "folglich", "dementsprechend", "demzufolge", "somit", "beiden", "beide", "beides",
   ]);
-
-  constructor(trash?: typeof TrashConfig) {
-    if (trash && trash instanceof Object) {
-      this.trash = { ...TrashConfig, ...trash };
-    } else {
-      this.trash = { ...TrashConfig };
-    }
-  }
 }
 
 export class Story {
   protected sentences: SentenceType[];
   private readonly config: StoryConfig;
-  private trashBins: Map<string, Trash>;
+  private trash: TrashMap;
 
-  constructor(sentences: SentenceType[], config?: StoryConfig) {
+  constructor({
+    sentences,
+    trashMap,
+    config,
+  }: {
+    sentences: SentenceType[];
+    trashMap?: TrashMap;
+    config?: StoryConfig;
+  }) {
     this.sentences = sentences;
-    this.trashBins = new Map();
+    this.trash = trashMap || new TrashMap();
 
     // set config
     if (config instanceof StoryConfig) {
@@ -65,21 +40,13 @@ export class Story {
     } else {
       this.config = new StoryConfig();
     }
-
-    // create new trash bins
-    for (const key of this.config.trash.TRASH_KEYS) {
-      const configKey =
-        `${key.toUpperCase()}_MAX_ITEMS` as keyof typeof TrashConfig;
-      const maxItems = this.config.trash[configKey] as number;
-      this.trashBins.set(key, new Trash([], maxItems));
-    }
   }
 
   static parseSentences(data: any): SentenceType[] {
     const sentences: SentenceType[] = [];
 
     for (let i = 0; i < data.length; i++) {
-      sentences.push(SentenceSchema.parse(data[i]));
+      sentences.push(v.parse(SentenceSchema, data[i]));
     }
 
     return sentences;
@@ -93,6 +60,9 @@ export class Story {
     if (typeof window === "undefined") {
       // In Node.js, use fs to read the file
       const fs = await import("fs");
+      if (!fs || !fs.readFileSync) {
+        throw new Error("fs module not available");
+      }
       data = fs.readFileSync(csvUrl, "utf8");
     } else {
       // In the browser, use fetch to load the file
@@ -136,7 +106,7 @@ export class Story {
         }
 
         // check Verb trash, but exclude root_verb_lemma
-        if (this.trashBins.get("verbs")?.hasAny(verbsLemmaWithoutRootVerb)) {
+        if (this.trash.get("verbs")?.hasAny(verbsLemmaWithoutRootVerb)) {
           continue;
         }
       } else {
@@ -146,12 +116,12 @@ export class Story {
         }
 
         // check Verb trash
-        if (this.trashBins.get("verbs")?.hasAny(sent.verbs_lemma)) {
+        if (this.trash.get("verbs")?.hasAny(sent.verbs_lemma)) {
           continue;
         }
 
         // check Verb trash
-        if (this.trashBins.get("repeated_verbs")?.hasAny(sent.verbs_lemma)) {
+        if (this.trash.get("repeated_verbs")?.hasAny(sent.verbs_lemma)) {
           continue;
         }
       }
@@ -168,17 +138,17 @@ export class Story {
       }
 
       // check Source trash
-      if (this.trashBins.get("sources")?.has(sent.source)) {
+      if (this.trash.get("sources")?.has(sent.source)) {
         continue;
       }
 
       // check Sentence trash
-      if (this.trashBins.get("sentences")?.has(sent.id)) {
+      if (this.trash.get("sentences")?.has(sent.id)) {
         continue;
       }
 
       // check Noun trash
-      if (this.trashBins.get("nouns")?.hasAny(sent.nouns_lemma)) {
+      if (this.trash.get("nouns")?.hasAny(sent.nouns_lemma)) {
         continue;
       }
 
@@ -225,8 +195,8 @@ export class Story {
   private pickRandomVerb(): string | undefined {
     for (let sent of this.sentences) {
       if (
-        !this.trashBins.get("repeated_verbs")?.has(sent.root_verb_lemma) &&
-        !this.trashBins.get("verbs")?.has(sent.root_verb_lemma)
+        !this.trash.get("repeated_verbs")?.has(sent.root_verb_lemma) &&
+        !this.trash.get("verbs")?.has(sent.root_verb_lemma)
       ) {
         return sent.root_verb;
       }
@@ -372,19 +342,19 @@ export class Story {
 
       // Speichere die Sätze im Trash
       for (const sent of sortedSents) {
-        this.trashBins.get("sentences")?.add(sent.id);
+        this.trash.get("sentences")?.add(sent.id);
 
         if (repeated_verb) {
-          this.trashBins.get("repeated_verbs")?.add(repeated_verb);
+          this.trash.get("repeated_verbs")?.add(repeated_verb);
         }
         if (sent.verbs_lemma.length) {
-          this.trashBins.get("verbs")?.add(sent.verbs_lemma);
+          this.trash.get("verbs")?.add(sent.verbs_lemma);
         }
         if (sent.nouns_lemma.length) {
-          this.trashBins.get("nouns")?.add(sent.nouns_lemma);
+          this.trash.get("nouns")?.add(sent.nouns_lemma);
         }
 
-        this.trashBins.get("sources")?.add(sent.source);
+        this.trash.get("sources")?.add(sent.source);
       }
 
       // Füge die Sätze zusammen
@@ -421,3 +391,4 @@ export class Story {
     return result;
   }
 }
+export { SentenceSchema };
