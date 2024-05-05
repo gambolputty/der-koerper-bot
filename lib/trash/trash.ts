@@ -36,7 +36,6 @@ export class Trash extends Set<string> {
         this.add(v.parse(TrashItemSchema, item));
       });
     }
-    this.truncateItems();
   }
 
   add(value: TrashItem): this {

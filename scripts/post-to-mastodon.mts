@@ -1,5 +1,6 @@
 import { createRestAPIClient } from "masto";
 
+import { TrashMap } from "../lib";
 import { Story } from "../lib/story";
 
 const createClient = () =>
@@ -18,15 +19,22 @@ export const postToMastodon = async (text: string) => {
   return status;
 };
 
-export const generateText = async (sentences) => {
-  // // const trashConfig = { SENTENCES_MAX_ITEMS: 1000 };
-  // // const storyConfig = new StoryConfig(trashConfig);
-  const story = new Story(sentences);
+export const generateText = async () => {
+  const trashMap = new TrashMap({
+    nouns: { maxItems: 4 },
+  });
+  await trashMap.loadTrashBinsFromFile();
+  const sentences = await Story.loadSentencesFromCSV();
+  const story = new Story({
+    sentences,
+    trashMap,
+  });
   const textArr = story.generateText(1);
-  const text = textArr[0];
+  const text = textArr.join("\n");
+  await trashMap.saveTrashBinsToFile();
+
   return text;
 };
 
-const sentences = await Story.loadSentencesFromCSV();
-const text = await generateText(sentences);
-console.log(text);
+const text = await generateText();
+await postToMastodon(text);
