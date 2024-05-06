@@ -39,8 +39,4 @@ export const generateText = async () => {
 
 const text = await generateText();
 const status = await postToMastodon(text);
-
-// save status to file as json
-const fs = await import("node:fs");
-const statusPath = new URL("./status.json", import.meta.url);
-fs.writeFileSync(statusPath, JSON.stringify(status, null, 2));
+console.log("Post created: ", status.url);
