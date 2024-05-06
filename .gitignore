@@ -28,3 +28,4 @@ dist-ssr
 .env
 
 **/.storytrash
+scripts/status.json
