@@ -114,16 +114,15 @@ export class Story {
     return sentences;
   }
 
-  private static *randomElementGenerator<T>(
-    array: T[]
-  ): Generator<T, void, void> {
+  private *randomElementGenerator<T>(array: T[]): Generator<T, void, void> {
     const indices = [...Array(array.length).keys()];
     let remaining = array.length;
 
     while (remaining > 0) {
       const randomIndex = Math.floor(Math.random() * remaining);
       yield array[indices[randomIndex]];
-      indices[randomIndex] = indices[--remaining];
+      indices[randomIndex] = indices[remaining - 1];
+      remaining--;
     }
   }
 
@@ -138,7 +137,7 @@ export class Story {
 
     let foundAnd = false;
 
-    for (const sent of Story.randomElementGenerator(this.sentences)) {
+    for (const sent of this.randomElementGenerator(this.sentences)) {
       // Check boolean flags
 
       // "and" should only appear once
@@ -293,7 +292,7 @@ export class Story {
   }
 
   private pickRandomVerb(): string | undefined {
-    for (const sent of Story.randomElementGenerator(this.sentences)) {
+    for (const sent of this.randomElementGenerator(this.sentences)) {
       if (
         !this.trash.get("repeatedVerbs")?.has(sent.rootVerbLemma) &&
         !this.trash.get("verbs")?.has(sent.rootVerbLemma)
