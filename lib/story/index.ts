@@ -6,9 +6,18 @@ import type { SentenceType } from "./sentence";
 import { SentenceSchema } from "./sentence";
 import weightedRandom from "./weighted-random";
 
-type GetSentencesReturnType =
-  | [SentenceType[], Record<string, unknown> | undefined]
-  | undefined;
+const FiltersSchema = v.object({
+  // Modus der Textgenerierung
+  mode: v.optional(v.picklist(["normal", "repeatVerb"])),
+  // Anzahl der Sätze, die eine Iteration enthalten soll
+  sentCount: v.optional(v.number([v.minValue(1)])),
+  // Ein Verb, das in den Sätzen vorkommen soll
+  verb: v.optional(v.string()),
+  // Position des Verbs im Satz
+  verbPos: v.optional(v.picklist(["start"])),
+});
+
+export type Filters = v.Output<typeof FiltersSchema>;
 
 export type TextGenerationResult = {
   text: string;
@@ -27,6 +36,7 @@ export class Story {
   protected sentences: SentenceType[];
   private readonly config: StoryConfig;
   private trash: TrashMap;
+  private filters?: Filters;
 
   constructor({
     sentences,
@@ -50,6 +60,26 @@ export class Story {
 
   static parseSentence(data: unknown): SentenceType {
     return v.parse(SentenceSchema, data);
+  }
+
+  private setFilters(filters: Filters): void {
+    this.filters = filters;
+  }
+
+  private clearFilters(): void {
+    this.filters = undefined;
+  }
+
+  private addFilter<T extends keyof Filters>(key: T, value: Filters[T]): void {
+    if (!this.filters) {
+      this.filters = {};
+    }
+
+    this.filters[key] = value;
+  }
+
+  private getFilter<T extends keyof Filters>(key: T): Filters[T] | undefined {
+    return this.filters?.[key];
   }
 
   static async loadSentencesFromCSV(
@@ -96,13 +126,15 @@ export class Story {
     } while (index !== startIndex);
   }
 
-  private pickRandomSentences(
-    count: number,
-    repeatedVerb?: string
-  ): SentenceType[] | undefined {
+  private pickRandomSentences(): SentenceType[] | undefined {
     const result: SentenceType[] = [];
     const foundNouns: Set<string> = new Set();
     const foundVerbs: Set<string> = new Set();
+    const sentCount = this.filters!.sentCount;
+    const wantedVerb = this.filters!.verb;
+    const mode = this.filters!.mode;
+    const verbPos = this.filters?.verbPos;
+
     let foundAnd = false;
 
     for (const sent of Story.randomElementGenerator(this.sentences)) {
@@ -120,14 +152,15 @@ export class Story {
       }
 
       // Check verbs
-      if (repeatedVerb) {
+      if (mode === "repeatVerb") {
         // must equal rootVerb
-        if (sent.rootVerb !== repeatedVerb) {
+        if (sent.rootVerb !== wantedVerb) {
           continue;
         }
 
         // Compare verbs, but exclude rootVerbLemma
         let foundDuplicateVerb = false;
+
         for (const verbLemma of sent.verbsLemma) {
           if (verbLemma === sent.rootVerbLemma) {
             continue;
@@ -151,10 +184,28 @@ export class Story {
         if (foundDuplicateVerb) {
           continue;
         }
-      } else {
+      } else if (mode === "normal") {
+        let exludedLemma;
+
+        if (verbPos === "start" && wantedVerb) {
+          // Das Verb muss im ersten Satz stehen
+          if (!result.length && sent.rootVerb !== wantedVerb) {
+            continue;
+          }
+          // Hole reguläre Verbform anhand der Position des Lemmas für später
+          const verbIndex = Array.from(sent.verbs).findIndex(
+            (v) => v === wantedVerb
+          );
+          exludedLemma = Array.from(sent.verbsLemma)[verbIndex];
+        }
+
         // Compare verbs
         let foundDuplicateVerb = false;
         for (const verbLemma of sent.verbsLemma) {
+          if (exludedLemma && verbLemma === exludedLemma) {
+            continue;
+          }
+
           // Not the same verbs in the sentence
           if (foundVerbs.has(verbLemma)) {
             foundDuplicateVerb = true;
@@ -174,6 +225,8 @@ export class Story {
         if (foundDuplicateVerb) {
           continue;
         }
+      } else {
+        throw new Error("Invalid mode");
       }
 
       // check nouns
@@ -231,7 +284,7 @@ export class Story {
         foundAnd = true;
       }
 
-      if (result.length === count) {
+      if (result.length === sentCount) {
         break;
       }
     }
@@ -253,7 +306,7 @@ export class Story {
 
   static sortSentences(sentences: SentenceType[]): SentenceType[] {
     // Stelle Sätze ans Ende, die das Wort "und" enthalten.
-    sentences.sort((sent1) => (sent1.hasAnd ? -1 : 1));
+    sentences.sort((sent1) => (sent1.hasAnd ? 1 : 0));
 
     // Sätze, die mit einem Doppelpunkt enden, müssen an den Anfang.
     // sentences.sort((sent1, sent2) => (sent1.endsWithColon ? -1 : 1));
@@ -264,7 +317,7 @@ export class Story {
       if (sent1.text.includes(":") && !sent1.endsWithColon) {
         return 1;
       } else {
-        return -1;
+        return 0;
       }
     });
 
@@ -291,86 +344,80 @@ export class Story {
     return result;
   }
 
-  private getEnumeratedSentences(): GetSentencesReturnType {
+  private getSentences(): SentenceType[] | undefined {
+    // Liste der Funktionen
+    const modes: Required<Filters>["mode"][] = [
+      // Modus: normal
+      // Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
+      "normal",
+
+      // Modus: repeatVerb
+      // Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält. Es wird ein Verb ausgewählt und nur Sätze mit diesem Verb werden ausgewählt.
+      "repeatVerb",
+    ];
+
+    // Setze Filter, die einen Wert benötigen
+
+    // Wähle den Modus aus
+    if (!this.getFilter("mode")) {
+      // Wähle den Modus zufällig aus
+      const weights: number[] = [100, 15];
+      const mode = weightedRandom(modes, weights);
+      this.addFilter("mode", mode);
+    }
+
+    // Setze die Anzahl der Sätze, wenn der Modus "normal" ist
+    if (this.getFilter("mode") === "normal" && !this.getFilter("sentCount")) {
+      const sentCount = Story.getRandomSentCount(
+        1,
+        8,
+        [80, 10, 80, 100, 100, 50, 30, 10]
+      );
+      this.addFilter("sentCount", sentCount);
+    } else if (
+      // Setze das Verb, wenn der Modus "repeatVerb" ist
+      this.getFilter("mode") === "repeatVerb" &&
+      !this.getFilter("sentCount")
+    ) {
+      const sentCount = Story.getRandomSentCount(
+        4,
+        10,
+        [100, 100, 100, 40, 10, 10, 5]
+      );
+      this.addFilter("sentCount", sentCount);
+    }
+
+    // Setze sich wiederholendes Verb, wenn der Modus "repeatVerb" ist
+    if (this.getFilter("mode") === "repeatVerb" && !this.getFilter("verb")) {
+      const verb = this.pickRandomVerb();
+      if (verb) {
+        this.addFilter("verb", verb);
+      }
+    }
+
+    const sents = this.pickRandomSentences();
+
+    if (!sents) {
+      return;
+    }
+
+    return sents;
+  }
+
+  public generateText(times = 1, filters?: Filters): TextGenerationResult[] {
     /**
      * Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
      */
-    const sentCount: number = Story.getRandomSentCount(
-      1,
-      8,
-      [80, 10, 80, 100, 100, 50, 30, 10]
-    );
-    const sents: SentenceType[] | undefined =
-      this.pickRandomSentences(sentCount);
-
-    if (!sents) {
-      return;
-    }
-
-    return [sents, undefined];
-  }
-
-  private getEnumeratedSentencesAndRepeatVerb(): GetSentencesReturnType {
-    /**
-     * Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält. Es wird ein Verb ausgewählt und nur Sätze mit diesem Verb werden ausgewählt.
-     */
-
-    // Generiere eine zufällige Anzahl von Sätzen.
-    const sentCount: number = Story.getRandomSentCount(
-      4,
-      10,
-      [100, 100, 100, 40, 10, 10, 5]
-    );
-
-    // Wähle ein Verb aus, das nicht im Trash liegt.
-    // Das Verb wird über mehrere Sätze verwendet.
-    const repeatedVerb: string | undefined = this.pickRandomVerb();
-    const sents: SentenceType[] | undefined = this.pickRandomSentences(
-      sentCount,
-      repeatedVerb
-    );
-
-    if (!sents) {
-      return;
-    }
-
-    return [sents, { repeatedVerb: repeatedVerb }];
-  }
-
-  private getSentences(): GetSentencesReturnType {
-    // Liste der Funktionen
-    const functions: (() => GetSentencesReturnType)[] = [
-      this.getEnumeratedSentences.bind(this),
-      this.getEnumeratedSentencesAndRepeatVerb.bind(this),
-    ];
-
-    // Gewichte für die Funktionen
-    const weights: number[] = [100, 15];
-
-    // Zufällige Auswahl unter Berücksichtigung der Gewichte
-    const getSentencesFn: () => GetSentencesReturnType = weightedRandom(
-      functions,
-      weights
-    );
-
-    // Aufrufen der ausgewählten Funktion
-    return getSentencesFn();
-  }
-
-  public generateText(times: number = 1): TextGenerationResult[] {
-    /**
-     * Fängt an eine Geschichte zu erzählen.
-     */
     const result: TextGenerationResult[] = [];
+    const isRepeatedVerbMode = this.getFilter("mode") === "repeatVerb";
+    this.setFilters(filters || {});
 
     for (let n = 0; n < this.sentences.length; n++) {
-      const getSentencesResult: GetSentencesReturnType = this.getSentences();
+      const sents = this.getSentences();
 
-      if (!getSentencesResult) {
+      if (!sents) {
         continue;
       }
-
-      const [sents, resultInfo] = getSentencesResult;
 
       if (!sents) {
         continue;
@@ -382,15 +429,12 @@ export class Story {
         continue;
       }
 
-      const repeatedVerb: string | undefined =
-        (resultInfo?.repeatedVerb as string) || undefined;
-
       // Speichere die Sätze im Trash
       for (const sent of sortedSents) {
         this.trash.get("sentences")?.add(sent.id);
 
-        if (repeatedVerb) {
-          this.trash.get("repeatedVerbs")?.add(repeatedVerb);
+        if (isRepeatedVerbMode) {
+          this.trash.get("repeatedVerbs")?.add(this.getFilter("verb")!);
         }
         if (sent.verbsLemma.size) {
           this.trash.get("verbs")?.addMany(sent.verbsLemma);
@@ -428,7 +472,7 @@ export class Story {
       // Füge den Text zur Liste hinzu
       result.push({
         text,
-        repeatedVerb,
+        repeatedVerb: this.getFilter("verb"),
         usedSentences: sortedSents,
       });
 
@@ -436,6 +480,9 @@ export class Story {
         break;
       }
     }
+
+    // Reset filters
+    this.clearFilters();
 
     return result;
   }
