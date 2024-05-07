@@ -13,9 +13,9 @@ const story = new Story({
 });
 const textArr = story.generateText(10, {
   // sentCount: 2,
-  verb: "erzählt",
-  verbPos: "start",
-  mode: "normal",
+  // verb: "erzählt",
+  // verbPos: "start",
+  // mode: "normal",
 });
 const text = textArr.map((r) => r.text).join("\n");
 // await trashMap.saveTrashBinsToFile();

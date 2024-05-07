@@ -117,13 +117,14 @@ export class Story {
   private static *randomElementGenerator<T>(
     array: T[]
   ): Generator<T, void, void> {
-    const arrayLength = array.length;
-    const startIndex = Math.floor(Math.random() * arrayLength);
-    let index = startIndex;
-    do {
-      yield array[index];
-      index = (index + 1) % arrayLength;
-    } while (index !== startIndex);
+    const indices = [...Array(array.length).keys()];
+    let remaining = array.length;
+
+    while (remaining > 0) {
+      const randomIndex = Math.floor(Math.random() * remaining);
+      yield array[indices[randomIndex]];
+      indices[randomIndex] = indices[--remaining];
+    }
   }
 
   private pickRandomSentences(): SentenceType[] | undefined {
@@ -140,7 +141,6 @@ export class Story {
     for (const sent of Story.randomElementGenerator(this.sentences)) {
       // Check boolean flags
 
-      // check "and"
       // "and" should only appear once
       if (foundAnd) {
         continue;
