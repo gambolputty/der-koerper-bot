@@ -42,14 +42,8 @@ export class Story {
     }
   }
 
-  static parseSentences(data: unknown[]): SentenceType[] {
-    const sentences: SentenceType[] = [];
-
-    for (let i = 0; i < data.length; i++) {
-      sentences.push(v.parse(SentenceSchema, data[i]));
-    }
-
-    return sentences;
+  static parseSentence(data: unknown): SentenceType {
+    return v.parse(SentenceSchema, data);
   }
 
   static async loadSentencesFromCSV(
@@ -77,7 +71,11 @@ export class Story {
       skip_empty_lines: true,
     });
 
-    return Story.parseSentences(records);
+    const sentences = records.map((record: unknown) =>
+      Story.parseSentence(record)
+    );
+
+    return sentences;
   }
 
   private static *randomElementGenerator<T>(
