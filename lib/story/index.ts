@@ -10,6 +10,12 @@ type GetSentencesReturnType =
   | [SentenceType[], Record<string, unknown> | undefined]
   | undefined;
 
+type TextGenerationResult = {
+  text: string;
+  usedSentences: SentenceType[];
+  repeatedVerb?: string;
+};
+
 export class StoryConfig {
   // prettier-ignore
   readonly firstSentenceExcludedWords: Set<string> = new Set([
@@ -351,11 +357,11 @@ export class Story {
     return getSentencesFn();
   }
 
-  public generateText(times: number = 1): string[] {
+  public generateText(times: number = 1): TextGenerationResult[] {
     /**
      * Fängt an eine Geschichte zu erzählen.
      */
-    const result: string[] = [];
+    const result: TextGenerationResult[] = [];
 
     for (let n = 0; n < this.sentences.length; n++) {
       const getSentencesResult: GetSentencesReturnType = this.getSentences();
@@ -398,7 +404,7 @@ export class Story {
 
       // Füge die Sätze zusammen
       const sentsLen: number = sortedSents.length;
-      const textList: string[] = [];
+      const toBeJoinedTexts: string[] = [];
       const lastIndex: number = sentsLen - 1;
 
       for (let i = 0; i < sentsLen; i++) {
@@ -413,14 +419,18 @@ export class Story {
           }
         }
 
-        textList.push(text);
+        toBeJoinedTexts.push(text);
       }
 
       // Satzanfang und Ende
-      const text: string = `Der Körper ${textList.join("")}.`;
+      const text: string = `Der Körper ${toBeJoinedTexts.join("")}.`;
 
       // Füge den Text zur Liste hinzu
-      result.push(text);
+      result.push({
+        text,
+        repeatedVerb,
+        usedSentences: sortedSents,
+      });
 
       if (result.length === times) {
         break;

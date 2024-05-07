@@ -12,7 +12,7 @@ const story = new Story({
   trashMap,
 });
 const textArr = story.generateText(10);
-const text = textArr.join("\n");
+const text = textArr.map((r) => r.text).join("\n");
 await trashMap.saveTrashBinsToFile();
 console.timeEnd("generated text");
 

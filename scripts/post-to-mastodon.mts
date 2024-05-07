@@ -31,7 +31,7 @@ export const generateText = async () => {
     trashMap,
   });
   const textArr = story.generateText(1);
-  const text = textArr.join("\n");
+  const text = textArr.map((r) => r.text).join("\n");
   await trashMap.saveTrashBinsToFile();
 
   return text;
