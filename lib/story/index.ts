@@ -369,8 +369,8 @@ export class Story {
     if (this.getFilter("mode") === "normal" && !this.getFilter("sentCount")) {
       const sentCount = Story.getRandomSentCount(
         1,
-        8,
-        [80, 10, 80, 100, 100, 50, 30, 10]
+        7,
+        [100, 10, 100, 100, 50, 40, 10]
       );
       this.addFilter("sentCount", sentCount);
     } else if (
@@ -378,11 +378,7 @@ export class Story {
       this.getFilter("mode") === "repeatVerb" &&
       !this.getFilter("sentCount")
     ) {
-      const sentCount = Story.getRandomSentCount(
-        4,
-        10,
-        [100, 100, 100, 40, 10, 10, 5]
-      );
+      const sentCount = Story.getRandomSentCount(4, 8, [100, 100, 100, 40, 10]);
       this.addFilter("sentCount", sentCount);
     }
 
