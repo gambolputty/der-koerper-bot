@@ -10,7 +10,7 @@ type GetSentencesReturnType =
   | [SentenceType[], Record<string, unknown> | undefined]
   | undefined;
 
-type TextGenerationResult = {
+export type TextGenerationResult = {
   text: string;
   usedSentences: SentenceType[];
   repeatedVerb?: string;
