@@ -11,11 +11,11 @@ const story = new Story({
   trashMap,
 });
 console.time("generated text");
-const textArr = story.generateText(1, {
+const textArr = story.generateText(7, {
   // sentCount: 2,
-  verb: "erzählt",
+  // verb: "erzählt",
   // verbPos: "start",
-  mode: "repeatVerb",
+  // mode: "repeatVerb",
 });
 console.timeEnd("generated text");
 const text = textArr.map((r) => r.text).join("\n");

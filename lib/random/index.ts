@@ -1,10 +1,10 @@
-import { default as aimless } from "aimless.js";
-
 const buffer = new ArrayBuffer(8);
 const ints = new Int8Array(buffer);
 const view = new DataView(buffer);
 
-// From: https://github.com/ChrisCavs/aimless.js/blob/main/src/utils.ts
+// Reimplementing aimless.js, because build is broken
+// https://github.com/ChrisCavs/aimless.js
+
 const engine = (): number => {
   try {
     // Credit @ Tamás Sallai
@@ -23,11 +23,35 @@ const engine = (): number => {
 };
 
 export function weightedRandom<T extends number>(
-  items: T[],
+  nums: T[],
   weights: number[]
 ): T {
-  return aimless.weighted(items, weights, engine) as T;
+  if (nums.length !== weights.length) {
+    throw new Error("Every provided number must have a corresponding weight.");
+  }
+
+  const totalWeight = weights.reduce((sum, weight) => sum + weight, 0);
+
+  const rand = engine() * totalWeight;
+
+  let cumulativeWeight = 0;
+  let selectedIndex = 0;
+
+  for (let i = 0; i < nums.length; i++) {
+    cumulativeWeight += weights[i];
+
+    if (rand < cumulativeWeight) {
+      selectedIndex = i;
+      break;
+    }
+  }
+
+  return nums[selectedIndex];
 }
 
-export const randomFromRange = (start: number, end: number): number =>
-  aimless.intRange(start, end, engine);
+export const randomFromRange = (start: number, end: number): number => {
+  const min = Math.ceil(start);
+  const max = Math.floor(end);
+
+  return Math.floor(engine() * (max - min + 1)) + min;
+};
