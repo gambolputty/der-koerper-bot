@@ -6,6 +6,8 @@ import { TrashMap } from "../trash";
 import type { SentenceType } from "./sentence";
 import { SentenceSchema } from "./sentence";
 
+export { SentenceSchema };
+
 const FiltersSchema = v.object({
   // Modus der Textgenerierung
   mode: v.optional(v.picklist(["normal", "repeatVerb"])),
@@ -28,7 +30,7 @@ export type TextGenerationResult = {
 export class StoryConfig {
   // prettier-ignore
   readonly firstSentenceExcludedWords: Set<string> = new Set([
-    "aber", "also", "andererseits", "außerdem", "beide", "beiden", "beides", "dadurch", "daher", "damit", "danach", "daraufhin", "darum", "dementsprechend", "demnach", "demzufolge", "denn", "dennoch", "deshalb", "deswegen", "doch", "einerseits", "folglich", "hierdurch", "infolgedessen", "jedoch", "nichtsdestotrotz", "somit", "sondern", "sowohl", "stattdessen", "trotzdem", "weder", "zudem", "zwar", "nämlich", "obwohl", "weil", "wenn", "während", "währenddessen", "weshalb", "wie", "wieso", "wodurch", "wofür", "woher", "wohin", "womit", "woran", "worauf"
+    "aber", "also", "andererseits", "außerdem", "beide", "beiden", "beides", "dadurch", "daher", "damit", "danach", "daraufhin", "darum", "dementsprechend", "demnach", "demzufolge", "denn", "dennoch", "deshalb", "deswegen", "doch", "einerseits", "folglich", "hierdurch", "infolgedessen", "jedoch", "nichtsdestotrotz", "somit", "sondern", "sowohl", "stattdessen", "trotzdem", "weder", "zudem", "zwar", "nämlich", "obwohl", "weil", "wenn", "während", "währenddessen", "weshalb", "wie", "wieso", "wodurch", "wofür", "woher", "wohin", "womit", "woran", "worauf", "sonst", "sozusagen",
   ]);
 }
 
@@ -56,10 +58,6 @@ export class Story {
     } else {
       this.config = new StoryConfig();
     }
-  }
-
-  static parseSentence(data: unknown): SentenceType {
-    return v.parse(SentenceSchema, data);
   }
 
   private setFilters(filters: Filters): void {
@@ -107,11 +105,15 @@ export class Story {
       skip_empty_lines: true,
     });
 
-    const sentences = records.map((record: unknown) =>
+    const sentences = records.map((record: Record<string, unknown>) =>
       Story.parseSentence(record)
     );
 
     return sentences;
+  }
+
+  static parseSentence(data: Record<string, unknown>): SentenceType {
+    return v.parse(SentenceSchema, data);
   }
 
   private *randomElementGenerator<T>(array: T[]): Generator<T, void, void> {
@@ -259,14 +261,13 @@ export class Story {
       }
 
       // If it's the first sentence, exclude sentences with excluded words
-      if (result.length === 0) {
-        const words = sent.text.match(/\b\w+\b/g);
-        if (
-          words &&
-          words.some((word) => this.config.firstSentenceExcludedWords.has(word))
-        ) {
-          continue;
-        }
+      if (
+        result.length === 0 &&
+        sent.tokens.some((token) =>
+          this.config.firstSentenceExcludedWords.has(token)
+        )
+      ) {
+        continue;
       }
 
       result.push(sent);
@@ -337,8 +338,9 @@ export class Story {
     return result;
   }
 
-  private getSentences(filters?: Filters): SentenceType[] | undefined {
-    // Liste der Funktionen
+  private createFilters(filters?: Filters): void {
+    // Setze Filter, die einen Wert benötigen
+
     const modes: Required<Filters>["mode"][] = [
       // Modus: normal
       // Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
@@ -349,60 +351,43 @@ export class Story {
       "repeatVerb",
     ];
 
-    // Setze Filter
-    const hasFilters = filters && Object.keys(filters).length > 0;
-    this.setFilters(hasFilters ? filters : {});
+    this.clearFilters();
 
-    // Setze Filter, die einen Wert benötigen
+    if (filters) {
+      const validFilters = v.parse(FiltersSchema, filters);
+      this.setFilters(validFilters);
+    }
 
-    // Wähle den Modus aus
+    // Wähle den Modus zufällig aus, wenn er nicht gesetzt ist
     if (!this.getFilter("mode")) {
-      // Wähle den Modus zufällig aus
       const modeIndices = modes.map((_, i) => i);
       const weights = [100, 15];
       const mode = weightedRandom(modeIndices, weights);
       this.addFilter("mode", mode === 0 ? "normal" : "repeatVerb");
     }
 
-    if (
-      // Setze die Anzahl der Sätze, wenn der Modus "normal" ist
-      this.getFilter("mode") === "normal" &&
-      !this.getFilter("sentCount")
-    ) {
-      const sentCount = Story.getRandomSentCount(
-        1,
-        7,
-        [100, 10, 100, 100, 50, 40, 10]
-      );
-
-      this.addFilter("sentCount", sentCount);
-    } else if (
-      // Setze das Verb, wenn der Modus "repeatVerb" ist
-      this.getFilter("mode") === "repeatVerb" &&
-      !this.getFilter("sentCount")
-    ) {
-      const sentCount = Story.getRandomSentCount(4, 8, [100, 100, 100, 40, 10]);
+    // Lege die Anzahl der Sätze fest, wenn sie nicht gesetzt ist
+    if (!this.getFilter("sentCount")) {
+      let sentCount;
+      if (this.getFilter("mode") === "normal") {
+        sentCount = Story.getRandomSentCount(
+          1,
+          7,
+          [100, 10, 100, 100, 50, 40, 10]
+        );
+      } else if (this.getFilter("mode") === "repeatVerb") {
+        sentCount = Story.getRandomSentCount(4, 8, [100, 100, 100, 40, 10]);
+      }
       this.addFilter("sentCount", sentCount);
     }
 
-    // Setze sich wiederholendes Verb, wenn der Modus "repeatVerb" ist
+    // Setze sich wiederholendes Verb, wenn der Modus "repeatVerb" ist und das Verb nicht gesetzt ist
     if (this.getFilter("mode") === "repeatVerb" && !this.getFilter("verb")) {
       const verb = this.pickRandomVerb();
       if (verb) {
         this.addFilter("verb", verb);
       }
     }
-
-    const sents = this.pickRandomSentences();
-
-    // Reset filters
-    this.clearFilters();
-
-    if (!sents) {
-      return;
-    }
-
-    return sents;
   }
 
   public generateText(times = 1, filters?: Filters): TextGenerationResult[] {
@@ -413,11 +398,8 @@ export class Story {
     const isRepeatedVerbMode = this.getFilter("mode") === "repeatVerb";
 
     for (let n = 0; n < this.sentences.length; n++) {
-      const sents = this.getSentences(filters);
-
-      if (!sents) {
-        continue;
-      }
+      this.createFilters(filters);
+      const sents = this.pickRandomSentences();
 
       if (!sents) {
         continue;
@@ -484,4 +466,3 @@ export class Story {
     return result;
   }
 }
-export { SentenceSchema };
