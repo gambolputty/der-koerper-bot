@@ -127,14 +127,96 @@ export class Story {
     }
   }
 
+  private checkVerbs(
+    sent: SentenceType,
+    resultCount: number,
+    foundVerbs: Set<string>
+  ): boolean {
+    const wantedVerb = this.getFilter("verb");
+    const mode = this.getFilter("mode");
+    const verbPos = this.getFilter("verbPos");
+    let foundDuplicateVerb = false;
+    let exludedLemma;
+
+    switch (mode) {
+      case "repeatVerb":
+        if (sent.rootVerb !== wantedVerb) {
+          return false;
+        }
+        exludedLemma = sent.rootVerbLemma;
+        break;
+      case "normal":
+        if (verbPos === "start" && wantedVerb) {
+          if (!resultCount && sent.rootVerb !== wantedVerb) {
+            return false;
+          }
+          const verbIndex = Array.from(sent.verbs).findIndex(
+            (v) => v === wantedVerb
+          );
+          exludedLemma = Array.from(sent.verbsLemma)[verbIndex];
+        }
+        break;
+      default:
+        throw new Error("Invalid mode");
+    }
+
+    // Prüfe, ob das Verb bereits verwendet wurde
+    for (const verbLemma of sent.verbsLemma) {
+      if (exludedLemma && verbLemma === exludedLemma) {
+        continue;
+      }
+
+      if (foundVerbs.has(verbLemma)) {
+        foundDuplicateVerb = true;
+        break;
+      }
+
+      // check Verb trash
+      if (
+        this.trash.get("verbs")?.has(verbLemma) ||
+        this.trash.get("repeatedVerbs")?.has(verbLemma)
+      ) {
+        foundDuplicateVerb = true;
+        break;
+      }
+    }
+
+    if (foundDuplicateVerb) {
+      return false;
+    }
+
+    return true;
+  }
+
+  private checkNouns(sent: SentenceType, foundNouns: Set<string>): boolean {
+    let foundDuplicateNoun = false;
+    for (const nounLemma of sent.nounsLemma) {
+      // Not the same nouns in the sentence
+      if (foundNouns.has(nounLemma)) {
+        foundDuplicateNoun = true;
+        break;
+      }
+
+      // check Noun trash
+      if (this.trash.get("nouns")?.has(nounLemma)) {
+        foundDuplicateNoun = true;
+        break;
+      }
+    }
+
+    if (foundDuplicateNoun) {
+      return false;
+    }
+
+    return true;
+  }
+
   private pickRandomSentences(): SentenceType[] | undefined {
     const result: SentenceType[] = [];
     const foundNouns: Set<string> = new Set();
     const foundVerbs: Set<string> = new Set();
+
     const sentCount = this.filters!.sentCount;
-    const wantedVerb = this.filters!.verb;
-    const mode = this.filters!.mode;
-    const verbPos = this.filters?.verbPos;
 
     let foundAnd = false;
 
@@ -152,100 +234,12 @@ export class Story {
       }
 
       // Check verbs
-      if (mode === "repeatVerb") {
-        // must equal rootVerb
-        if (sent.rootVerb !== wantedVerb) {
-          continue;
-        }
-
-        // Compare verbs, but exclude rootVerbLemma
-        let foundDuplicateVerb = false;
-
-        for (const verbLemma of sent.verbsLemma) {
-          if (verbLemma === sent.rootVerbLemma) {
-            continue;
-          }
-
-          if (foundVerbs.has(verbLemma)) {
-            foundDuplicateVerb = true;
-            break;
-          }
-
-          // check Verb trash
-          if (
-            this.trash.get("verbs")?.has(verbLemma) ||
-            this.trash.get("repeatedVerbs")?.has(verbLemma)
-          ) {
-            foundDuplicateVerb = true;
-            break;
-          }
-        }
-
-        if (foundDuplicateVerb) {
-          continue;
-        }
-      } else if (mode === "normal") {
-        let exludedLemma;
-
-        if (verbPos === "start" && wantedVerb) {
-          // Das Verb muss im ersten Satz stehen
-          if (!result.length && sent.rootVerb !== wantedVerb) {
-            continue;
-          }
-          // Hole reguläre Verbform anhand der Position des Lemmas für später
-          const verbIndex = Array.from(sent.verbs).findIndex(
-            (v) => v === wantedVerb
-          );
-          exludedLemma = Array.from(sent.verbsLemma)[verbIndex];
-        }
-
-        // Compare verbs
-        let foundDuplicateVerb = false;
-        for (const verbLemma of sent.verbsLemma) {
-          if (exludedLemma && verbLemma === exludedLemma) {
-            continue;
-          }
-
-          // Not the same verbs in the sentence
-          if (foundVerbs.has(verbLemma)) {
-            foundDuplicateVerb = true;
-            break;
-          }
-
-          // check Verb trash
-          if (
-            this.trash.get("verbs")?.has(verbLemma) ||
-            this.trash.get("repeatedVerbs")?.has(verbLemma)
-          ) {
-            foundDuplicateVerb = true;
-            break;
-          }
-        }
-
-        if (foundDuplicateVerb) {
-          continue;
-        }
-      } else {
-        throw new Error("Invalid mode");
+      if (!this.checkVerbs(sent, result.length, foundVerbs)) {
+        continue;
       }
 
       // check nouns
-      let foundDuplicateNoun = false;
-      for (const nounLemma of sent.nounsLemma) {
-        // Not the same nouns in the sentence
-        if (foundNouns.has(nounLemma)) {
-          foundDuplicateNoun = true;
-          break;
-        }
-
-        // check Noun trash
-        if (this.trash.get("nouns")?.has(nounLemma)) {
-          foundDuplicateNoun = true;
-          break;
-        }
-      }
-
-      if (foundDuplicateNoun) {
+      if (!this.checkNouns(sent, foundNouns)) {
         continue;
       }
 
