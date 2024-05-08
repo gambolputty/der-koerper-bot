@@ -395,10 +395,11 @@ export class Story {
      * Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
      */
     const result: TextGenerationResult[] = [];
-    const isRepeatedVerbMode = this.getFilter("mode") === "repeatVerb";
 
     for (let n = 0; n < this.sentences.length; n++) {
+      // Bevor wir die Sätze auswählen, setzen wir die Filter
       this.createFilters(filters);
+      const isRepeatedVerbMode = this.getFilter("mode") === "repeatVerb";
       const sents = this.pickRandomSentences();
 
       if (!sents) {
