@@ -1,10 +1,10 @@
 import { parse } from "csv-parse/browser/esm/sync";
 import * as v from "valibot";
 
+import { randomFromRange, weightedRandom } from "../random";
 import { TrashMap } from "../trash";
 import type { SentenceType } from "./sentence";
 import { SentenceSchema } from "./sentence";
-import weightedRandom from "./weighted-random";
 
 const FiltersSchema = v.object({
   // Modus der Textgenerierung
@@ -119,7 +119,8 @@ export class Story {
     let remaining = array.length;
 
     while (remaining > 0) {
-      const randomIndex = Math.floor(Math.random() * remaining);
+      const randomIndex = randomFromRange(0, remaining - 1);
+      // const randomIndex = Math.floor(Math.random() * remaining);
       yield array[indices[randomIndex]];
       indices[randomIndex] = indices[remaining - 1];
       remaining--;
@@ -300,7 +301,6 @@ export class Story {
         return sent.rootVerb;
       }
     }
-    return undefined;
   }
 
   static sortSentences(sentences: SentenceType[]): SentenceType[] {
@@ -343,7 +343,7 @@ export class Story {
     return result;
   }
 
-  private getSentences(): SentenceType[] | undefined {
+  private getSentences(filters?: Filters): SentenceType[] | undefined {
     // Liste der Funktionen
     const modes: Required<Filters>["mode"][] = [
       // Modus: normal
@@ -355,23 +355,32 @@ export class Story {
       "repeatVerb",
     ];
 
+    // Setze Filter
+    const hasFilters = filters && Object.keys(filters).length > 0;
+    this.setFilters(hasFilters ? filters : {});
+
     // Setze Filter, die einen Wert benötigen
 
     // Wähle den Modus aus
     if (!this.getFilter("mode")) {
       // Wähle den Modus zufällig aus
-      const weights: number[] = [100, 15];
-      const mode = weightedRandom(modes, weights);
-      this.addFilter("mode", mode);
+      const modeIndices = modes.map((_, i) => i);
+      const weights = [100, 15];
+      const mode = weightedRandom(modeIndices, weights);
+      this.addFilter("mode", mode === 0 ? "normal" : "repeatVerb");
     }
 
-    // Setze die Anzahl der Sätze, wenn der Modus "normal" ist
-    if (this.getFilter("mode") === "normal" && !this.getFilter("sentCount")) {
+    if (
+      // Setze die Anzahl der Sätze, wenn der Modus "normal" ist
+      this.getFilter("mode") === "normal" &&
+      !this.getFilter("sentCount")
+    ) {
       const sentCount = Story.getRandomSentCount(
         1,
         7,
         [100, 10, 100, 100, 50, 40, 10]
       );
+
       this.addFilter("sentCount", sentCount);
     } else if (
       // Setze das Verb, wenn der Modus "repeatVerb" ist
@@ -392,6 +401,9 @@ export class Story {
 
     const sents = this.pickRandomSentences();
 
+    // Reset filters
+    this.clearFilters();
+
     if (!sents) {
       return;
     }
@@ -405,10 +417,9 @@ export class Story {
      */
     const result: TextGenerationResult[] = [];
     const isRepeatedVerbMode = this.getFilter("mode") === "repeatVerb";
-    this.setFilters(filters || {});
 
     for (let n = 0; n < this.sentences.length; n++) {
-      const sents = this.getSentences();
+      const sents = this.getSentences(filters);
 
       if (!sents) {
         continue;
@@ -475,9 +486,6 @@ export class Story {
         break;
       }
     }
-
-    // Reset filters
-    this.clearFilters();
 
     return result;
   }

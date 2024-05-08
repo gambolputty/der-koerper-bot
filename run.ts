@@ -1,6 +1,5 @@
 import { Story, TrashMap } from "./lib";
 
-console.time("generated text");
 const trashMap = new TrashMap({
   nouns: { maxItems: 4 },
 });
@@ -11,15 +10,16 @@ const story = new Story({
   sentences,
   trashMap,
 });
-const textArr = story.generateText(10, {
+console.time("generated text");
+const textArr = story.generateText(1, {
   // sentCount: 2,
-  // verb: "erzählt",
+  verb: "erzählt",
   // verbPos: "start",
-  // mode: "normal",
+  mode: "repeatVerb",
 });
+console.timeEnd("generated text");
 const text = textArr.map((r) => r.text).join("\n");
 // await trashMap.saveTrashBinsToFile();
-console.timeEnd("generated text");
 
 console.log(text);
 // console.log(trashMap);
