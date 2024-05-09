@@ -41,7 +41,10 @@ export default defineConfig({
       target: "esnext",
     }),
     copy({
-      targets: [{ src: "lib/assets/sentences.csv", dest: "dist" }],
+      targets: [
+        { src: "lib/assets/sentences.csv", dest: "dist" },
+        { src: "lib/assets/frequencies.json", dest: "dist" },
+      ],
     }),
     nodeResolve(),
     visualizer({

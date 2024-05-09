@@ -13,12 +13,11 @@ const story = new Story({
 console.time("generated text");
 const textArr = story.generateText({
   times: 7,
-  // filters: {
-  // sentCount: 2,
-  // verb: "erzählt",
-  // verbPos: "start",
-  // mode: "repeatVerb",
-  // },
+  filters: {
+    // sentCount: 2,
+    verb: "ist",
+    mode: "repeatVerb",
+  },
 });
 console.timeEnd("generated text");
 const text = textArr.map((r) => r.text).join("\n");

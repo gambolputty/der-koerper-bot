@@ -10,13 +10,11 @@ export { SentenceSchema };
 
 const FiltersSchema = v.object({
   // Modus der Textgenerierung
-  mode: v.optional(v.picklist(["normal", "repeatVerb"])),
+  mode: v.optional(v.picklist(["normal", "repeatVerb", "verbAtStart"])),
   // Anzahl der Sätze, die eine Iteration enthalten soll
   sentCount: v.optional(v.number([v.minValue(1)])),
   // Ein Verb, das in den Sätzen vorkommen soll
   verb: v.optional(v.string()),
-  // Position des Verbs im Satz
-  verbPos: v.optional(v.picklist(["start"])),
 });
 
 export type Filters = v.Output<typeof FiltersSchema>;
@@ -141,28 +139,34 @@ export class Story {
   ): boolean {
     const wantedVerb = this.getFilter("verb");
     const mode = this.getFilter("mode");
-    const verbPos = this.getFilter("verbPos");
     let foundDuplicateVerb = false;
     let exludedLemma;
 
     switch (mode) {
+      case "normal":
+        break;
       case "repeatVerb":
+        if (!wantedVerb) {
+          throw new Error("Verb not set");
+        }
         if (sent.rootVerb !== wantedVerb) {
           return false;
         }
         exludedLemma = sent.rootVerbLemma;
         break;
-      case "normal":
-        if (verbPos === "start" && wantedVerb) {
-          if (!resultCount && sent.rootVerb !== wantedVerb) {
-            return false;
-          }
-          const verbIndex = Array.from(sent.verbs).findIndex(
-            (v) => v === wantedVerb
-          );
-          exludedLemma = Array.from(sent.verbsLemma)[verbIndex];
+      case "verbAtStart": {
+        if (!wantedVerb) {
+          throw new Error("Verb not set");
         }
+        if (!resultCount && sent.rootVerb !== wantedVerb) {
+          return false;
+        }
+        const verbIndex = Array.from(sent.verbs).findIndex(
+          (v) => v === wantedVerb
+        );
+        exludedLemma = Array.from(sent.verbsLemma)[verbIndex];
         break;
+      }
       default:
         throw new Error("Invalid mode");
     }
