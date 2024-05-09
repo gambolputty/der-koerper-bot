@@ -21,7 +21,12 @@ const FiltersSchema = v.object({
 
 export type Filters = v.Output<typeof FiltersSchema>;
 
-export type TextGenerationResult = {
+export type GenerateTextProps = {
+  times?: number;
+  filters?: Filters;
+};
+
+export type GenerateTextResult = {
   text: string;
   usedSentences: SentenceType[];
   repeatedVerb?: string;
@@ -393,11 +398,11 @@ export class Story {
   public generateText({
     times = 1,
     filters,
-  }: { times?: number; filters?: Filters } = {}): TextGenerationResult[] {
+  }: GenerateTextProps = {}): GenerateTextResult[] {
     /**
      * Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
      */
-    const result: TextGenerationResult[] = [];
+    const result: GenerateTextResult[] = [];
 
     for (let n = 0; n < this.sentences.length; n++) {
       // Bevor wir die Sätze auswählen, setzen wir die Filter
