@@ -390,7 +390,10 @@ export class Story {
     }
   }
 
-  public generateText(times = 1, filters?: Filters): TextGenerationResult[] {
+  public generateText({
+    times = 1,
+    filters,
+  }: { times?: number; filters?: Filters } = {}): TextGenerationResult[] {
     /**
      * Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
      */
