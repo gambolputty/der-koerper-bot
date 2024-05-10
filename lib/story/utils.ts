@@ -1,4 +1,4 @@
-import { default as papa } from "papaparse";
+import papa from "papaparse";
 
 export const loadFile = async (fileUrl: URL | string) => {
   if (typeof window !== "undefined") {
