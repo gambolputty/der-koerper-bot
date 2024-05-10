@@ -22,7 +22,10 @@ const textArr = story.generateText({
 console.timeEnd("generated text");
 const text = textArr.map((r) => r.text).join("\n");
 // await trashMap.saveTrashBinsToFile();
-
 console.log(text);
+
+const freqUrl = new URL("./lib/assets/frequencies.json", import.meta.url);
+const frequencies = await Story.loadFrequenciesFromJSON(freqUrl);
+console.log(frequencies);
 // console.log(trashMap);
 // console.log(textArr);

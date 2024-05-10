@@ -1,10 +1,11 @@
-import { parse } from "csv-parse/browser/esm/sync";
+import { parse as parseCSV } from "csv-parse/browser/esm/sync";
 import * as v from "valibot";
 
 import { randomFromRange, weightedRandom } from "../random";
 import { TrashMap } from "../trash";
 import type { SentenceType } from "./sentence";
 import { SentenceSchema } from "./sentence";
+import { loadFile } from "./utils";
 
 export { SentenceSchema };
 
@@ -86,24 +87,10 @@ export class Story {
   static async loadSentencesFromCSV(
     csvUrl: URL | string
   ): Promise<SentenceType[]> {
-    let data;
-
-    // Check if code is running in Node.js
-    if (typeof window === "undefined") {
-      // In Node.js, use fs to read the file
-      const fs = await import("node:fs");
-      if (!fs || !fs.readFileSync) {
-        throw new Error("fs module not available");
-      }
-      data = fs.readFileSync(csvUrl, "utf8");
-    } else {
-      // In the browser, use fetch to load the file
-      const response = await fetch(csvUrl.toString());
-      data = await response.text();
-    }
+    const data = await loadFile(csvUrl);
 
     // parse text blob
-    const records = parse(data, {
+    const records = parseCSV(data, {
       columns: true,
       skip_empty_lines: true,
     });
@@ -113,6 +100,20 @@ export class Story {
     );
 
     return sentences;
+  }
+
+  static async loadFrequenciesFromJSON(
+    jsonUrl: URL | string
+  ): Promise<Record<string, Record<string, number>>> {
+    const data = await loadFile(jsonUrl);
+    const frequencies: Record<string, Record<string, number>> = {};
+
+    const records = JSON.parse(data);
+    for (const [key, value] of Object.entries(records)) {
+      frequencies[key] = value as Record<string, number>;
+    }
+
+    return frequencies;
   }
 
   static parseSentence(data: Record<string, unknown>): SentenceType {
