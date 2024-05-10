@@ -1,11 +1,10 @@
-import { parse as parseCSV } from "csv-parse/browser/esm/sync";
 import * as v from "valibot";
 
 import { randomFromRange, weightedRandom } from "../random";
 import { TrashMap } from "../trash";
 import type { SentenceType } from "./sentence";
 import { SentenceSchema } from "./sentence";
-import { loadFile } from "./utils";
+import { loadFile, parseCSVData } from "./utils";
 
 export { SentenceSchema };
 
@@ -90,14 +89,13 @@ export class Story {
     const data = await loadFile(csvUrl);
 
     // parse text blob
-    const records = parseCSV(data, {
-      columns: true,
-      skip_empty_lines: true,
-    });
+    const records = (await parseCSVData(data)) as Record<string, unknown>[];
 
-    const sentences = records.map((record: Record<string, unknown>) =>
-      Story.parseSentence(record)
-    );
+    // parse sentences
+    const sentences = records.map((record) => {
+      const parsed = Story.parseSentence(record);
+      return parsed;
+    });
 
     return sentences;
   }
