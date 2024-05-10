@@ -92,10 +92,7 @@ export class Story {
     const records = (await parseCSVData(data)) as Record<string, unknown>[];
 
     // parse sentences
-    const sentences = records.map((record) => {
-      const parsed = Story.parseSentence(record);
-      return parsed;
-    });
+    const sentences = records.map((record) => Story.parseSentence(record));
 
     return sentences;
   }

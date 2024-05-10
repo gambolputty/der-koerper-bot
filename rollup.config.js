@@ -1,3 +1,4 @@
+import commonjs from "@rollup/plugin-commonjs";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import { defineConfig } from "rollup";
 import copy from "rollup-plugin-copy";
@@ -47,6 +48,7 @@ export default defineConfig({
       ],
     }),
     nodeResolve(),
+    commonjs(),
     visualizer({
       emitFile: true,
       sourcemap: true,

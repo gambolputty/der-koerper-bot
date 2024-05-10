@@ -1,4 +1,4 @@
-import Papa from "papaparse";
+import { default as papa } from "papaparse";
 
 export const loadFile = async (fileUrl: URL | string) => {
   if (typeof window !== "undefined") {
@@ -17,7 +17,7 @@ export const loadFile = async (fileUrl: URL | string) => {
 
 export const parseCSVData = (csvData: string) => {
   return new Promise((resolve, reject) => {
-    Papa.parse(csvData, {
+    papa.parse(csvData, {
       header: true,
       skipEmptyLines: true,
       complete(results) {
@@ -29,15 +29,3 @@ export const parseCSVData = (csvData: string) => {
     });
   });
 };
-
-// import { parse } from 'papaparse';
-
-// function parseCSV(csvText: string): Record<string, string>[] {
-//   const { data, errors } = parse(csvText, { header: true });
-
-//   if (errors.length > 0) {
-//     throw new Error(`CSV parsing error: ${errors[0].message}`);
-//   }
-
-//   return data as Record<string, string>[];
-// }
