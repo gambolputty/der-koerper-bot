@@ -55,3 +55,43 @@ export const randomFromRange = (start: number, end: number): number => {
 
   return Math.floor(engine() * (max - min + 1)) + min;
 };
+
+const generateListFromRange = (min: number, max: number): number[] => {
+  const result: number[] = [];
+
+  for (let i = min; i <= max; i++) {
+    result.push(i);
+  }
+
+  return result;
+};
+
+const randIntRange = (i: number, j: number): number => {
+  const min = Math.ceil(i);
+  const max = Math.floor(j);
+
+  return Math.floor(engine() * (max - min + 1)) + min;
+};
+
+const sliceOut = <T>(arr: T[], i: number): T[] => {
+  return arr.slice(0, i).concat(arr.slice(i + 1));
+};
+
+const sequence = <T>(arr: T[]): T[] => {
+  const result: T[] = [];
+
+  let tempArr: T[] = arr;
+  let i: number;
+
+  while (result.length < arr.length) {
+    i = randIntRange(0, tempArr.length - 1);
+    result.push(tempArr[i]);
+    tempArr = sliceOut(tempArr, i);
+  }
+
+  return result;
+};
+
+export const intSequence = (min: number, max: number): number[] => {
+  return sequence(generateListFromRange(min, max));
+};

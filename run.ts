@@ -14,7 +14,7 @@ console.time("generated text");
 const textArr = story.generateText({
   times: 7,
   filters: {
-    // sentCount: 2,
+    sentCount: 1,
     verb: "ist",
     mode: "repeatVerb",
   },
@@ -24,8 +24,8 @@ const text = textArr.map((r) => r.text).join("\n");
 // await trashMap.saveTrashBinsToFile();
 console.log(text);
 
-const freqUrl = new URL("./lib/assets/frequencies.json", import.meta.url);
-const frequencies = await Story.loadFrequenciesFromJSON(freqUrl);
-console.log(frequencies);
+// const freqUrl = new URL("./lib/assets/frequencies.json", import.meta.url);
+// const frequencies = await Story.loadFrequenciesFromJSON(freqUrl);
+// console.log(frequencies);
 // console.log(trashMap);
 // console.log(textArr);
