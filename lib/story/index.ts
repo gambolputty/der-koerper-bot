@@ -15,6 +15,8 @@ const FiltersSchema = v.object({
   sentCount: v.optional(v.number([v.minValue(1)])),
   // Ein Verb, das in den Sätzen vorkommen soll
   verb: v.optional(v.string()),
+  // Soll der Trash ignoriert werden?
+  ignoreTrash: v.optional(v.boolean()),
 });
 
 export type Filters = v.Output<typeof FiltersSchema>;
@@ -154,6 +156,7 @@ export class Story {
         if (!wantedVerb) {
           throw new Error("Verb not set");
         }
+        // Wenn das Verb nicht am Anfang des Satzes steht, wird der Satz ignoriert
         if (!resultCount && sent.rootVerb !== wantedVerb) {
           return false;
         }
@@ -222,8 +225,7 @@ export class Story {
     const result: SentenceType[] = [];
     const foundNouns: Set<string> = new Set();
     const foundVerbs: Set<string> = new Set();
-
-    const sentCount = this.filters!.sentCount;
+    const sentCount = this.getFilter("sentCount")!;
 
     let foundAnd = false;
 
@@ -359,8 +361,7 @@ export class Story {
     this.clearFilters();
 
     if (filters) {
-      const validFilters = v.parse(FiltersSchema, filters);
-      this.setFilters(validFilters);
+      this.setFilters(filters);
     }
 
     // Wähle den Modus zufällig aus, wenn er nicht gesetzt ist
@@ -403,11 +404,13 @@ export class Story {
      * Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
      */
     const result: GenerateTextResult[] = [];
+    const validFilters = filters ? v.parse(FiltersSchema, filters) : undefined;
 
     for (let n = 0; n < this.sentences.length; n++) {
       // Bevor wir die Sätze auswählen, setzen wir die Filter
-      this.createFilters(filters);
+      this.createFilters(validFilters);
       const isRepeatedVerbMode = this.getFilter("mode") === "repeatVerb";
+      const ignoreTrash = this.getFilter("ignoreTrash");
       const sents = this.pickRandomSentences();
 
       if (!sents) {
@@ -417,20 +420,22 @@ export class Story {
       const sortedSents: SentenceType[] = Story.sortSentences(sents);
 
       // Speichere die Sätze im Trash
-      for (const sent of sortedSents) {
-        this.trash.get("sentences")?.add(sent.id);
+      if (!ignoreTrash) {
+        for (const sent of sortedSents) {
+          this.trash.get("sentences")?.add(sent.id);
 
-        if (isRepeatedVerbMode) {
-          this.trash.get("repeatedVerbs")?.add(this.getFilter("verb")!);
-        }
-        if (sent.verbsLemma.size) {
-          this.trash.get("verbs")?.addMany(sent.verbsLemma);
-        }
-        if (sent.nounsLemma.size) {
-          this.trash.get("nouns")?.addMany(sent.nounsLemma);
-        }
+          if (isRepeatedVerbMode) {
+            this.trash.get("repeatedVerbs")?.add(this.getFilter("verb")!);
+          }
+          if (sent.verbsLemma.size) {
+            this.trash.get("verbs")?.addMany(sent.verbsLemma);
+          }
+          if (sent.nounsLemma.size) {
+            this.trash.get("nouns")?.addMany(sent.nounsLemma);
+          }
 
-        this.trash.get("sources")?.add(sent.source);
+          this.trash.get("sources")?.add(sent.source);
+        }
       }
 
       // Füge die Sätze zusammen

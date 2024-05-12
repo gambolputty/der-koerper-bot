@@ -15,7 +15,7 @@ const textArr = story.generateText({
   times: 10,
   filters: {
     sentCount: 1,
-    verb: "metabolisiert",
+    verb: "beseitigt",
     mode: "repeatVerb",
   },
 });
