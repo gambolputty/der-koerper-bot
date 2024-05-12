@@ -12,10 +12,10 @@ const story = new Story({
 });
 console.time("generated text");
 const textArr = story.generateText({
-  times: 7,
+  times: 10,
   filters: {
     sentCount: 1,
-    verb: "ist",
+    verb: "metabolisiert",
     mode: "repeatVerb",
   },
 });

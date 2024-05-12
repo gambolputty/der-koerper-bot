@@ -411,14 +411,10 @@ export class Story {
       const sents = this.pickRandomSentences();
 
       if (!sents) {
-        continue;
+        break;
       }
 
       const sortedSents: SentenceType[] = Story.sortSentences(sents);
-
-      if (!sortedSents) {
-        continue;
-      }
 
       // Speichere die Sätze im Trash
       for (const sent of sortedSents) {
