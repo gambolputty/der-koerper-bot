@@ -422,7 +422,6 @@ export class Story {
       // Speichere die Sätze im Trash
       for (const sent of sortedSents) {
         this.trash.get("sentences")?.add(sent.id);
-        this.trash.get("sources")?.add(sent.source);
 
         if (!ignoreTrash) {
           if (isRepeatedVerbMode) {
@@ -434,6 +433,8 @@ export class Story {
           if (sent.nounsLemma.size) {
             this.trash.get("nouns")?.addMany(sent.nounsLemma);
           }
+
+          this.trash.get("sources")?.add(sent.source);
         }
       }
 
