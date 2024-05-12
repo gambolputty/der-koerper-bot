@@ -420,10 +420,11 @@ export class Story {
       const sortedSents: SentenceType[] = Story.sortSentences(sents);
 
       // Speichere die Sätze im Trash
-      if (!ignoreTrash) {
-        for (const sent of sortedSents) {
-          this.trash.get("sentences")?.add(sent.id);
+      for (const sent of sortedSents) {
+        this.trash.get("sentences")?.add(sent.id);
+        this.trash.get("sources")?.add(sent.source);
 
+        if (!ignoreTrash) {
           if (isRepeatedVerbMode) {
             this.trash.get("repeatedVerbs")?.add(this.getFilter("verb")!);
           }
@@ -433,8 +434,6 @@ export class Story {
           if (sent.nounsLemma.size) {
             this.trash.get("nouns")?.addMany(sent.nounsLemma);
           }
-
-          this.trash.get("sources")?.add(sent.source);
         }
       }
 
