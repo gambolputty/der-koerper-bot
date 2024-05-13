@@ -15,8 +15,6 @@ const FiltersSchema = v.object({
   sentCount: v.optional(v.number([v.minValue(1)])),
   // Ein Verb, das in den Sätzen vorkommen soll
   verb: v.optional(v.string()),
-  // Soll der Trash ignoriert werden?
-  ignoreTrash: v.optional(v.boolean()),
 });
 
 export type Filters = v.Output<typeof FiltersSchema>;
@@ -410,7 +408,6 @@ export class Story {
       // Bevor wir die Sätze auswählen, setzen wir die Filter
       this.createFilters(validFilters);
       const isRepeatedVerbMode = this.getFilter("mode") === "repeatVerb";
-      const ignoreTrash = this.getFilter("ignoreTrash");
       const sents = this.pickRandomSentences();
 
       if (!sents) {
@@ -423,19 +420,17 @@ export class Story {
       for (const sent of sortedSents) {
         this.trash.get("sentences")?.add(sent.id);
 
-        if (!ignoreTrash) {
-          if (isRepeatedVerbMode) {
-            this.trash.get("repeatedVerbs")?.add(this.getFilter("verb")!);
-          }
-          if (sent.verbsLemma.size) {
-            this.trash.get("verbs")?.addMany(sent.verbsLemma);
-          }
-          if (sent.nounsLemma.size) {
-            this.trash.get("nouns")?.addMany(sent.nounsLemma);
-          }
-
-          this.trash.get("sources")?.add(sent.source);
+        if (isRepeatedVerbMode) {
+          this.trash.get("repeatedVerbs")?.add(this.getFilter("verb")!);
         }
+        if (sent.verbsLemma.size) {
+          this.trash.get("verbs")?.addMany(sent.verbsLemma);
+        }
+        if (sent.nounsLemma.size) {
+          this.trash.get("nouns")?.addMany(sent.nounsLemma);
+        }
+
+        this.trash.get("sources")?.add(sent.source);
       }
 
       // Füge die Sätze zusammen
