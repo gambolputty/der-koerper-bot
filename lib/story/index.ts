@@ -168,12 +168,12 @@ export class Story {
         throw new Error("Invalid mode");
     }
 
-    // Prüfe, ob das Verb bereits verwendet wurde
     for (const verbLemma of sent.verbsLemma) {
       if (exludedLemma && verbLemma === exludedLemma) {
         continue;
       }
 
+      // Prüfe, ob das Verb bereits verwendet wurde
       if (foundVerbs.has(verbLemma)) {
         foundDuplicateVerb = true;
         break;
