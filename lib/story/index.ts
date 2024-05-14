@@ -13,8 +13,8 @@ const FiltersSchema = v.object({
   mode: v.optional(v.picklist(["normal", "repeatVerb", "verbAtStart"])),
   // Anzahl der Sätze, die eine Iteration enthalten soll
   sentCount: v.optional(v.number([v.minValue(1)])),
-  // Ein Verb, das in den Sätzen vorkommen soll
-  verb: v.optional(v.string()),
+  // Ein oder mehrere Verben, das in den Sätzen vorkommen soll(en)
+  verbs: v.optional(v.array(v.string([v.minLength(1)]))),
 });
 
 export type Filters = v.Output<typeof FiltersSchema>;
@@ -133,43 +133,54 @@ export class Story {
     resultCount: number,
     foundVerbs: Set<string>
   ): boolean {
-    const wantedVerb = this.getFilter("verb");
+    const wantedVerbs = this.getFilter("verbs");
     const mode = this.getFilter("mode");
     let foundDuplicateVerb = false;
-    let exludedLemma;
+    const exludedLemmas = [];
+
+    const getWantedVerbLemmas = () => {
+      const result = [];
+      for (const verb of sent.verbsParsed) {
+        if (wantedVerbs!.includes(verb.verb)) {
+          result.push(verb.lemma);
+        }
+      }
+      return result;
+    };
 
     switch (mode) {
-      case "normal":
+      case "normal": {
         break;
-      case "repeatVerb":
-        if (!wantedVerb) {
+      }
+      case "repeatVerb": {
+        if (!wantedVerbs || wantedVerbs.length === 0) {
           throw new Error("Verb not set");
         }
-        if (sent.rootVerb !== wantedVerb) {
+        // Prüfe, ob das root Verb in den gewünschten Verben enthalten ist
+        if (!wantedVerbs.includes(sent.rootVerb)) {
           return false;
         }
-        exludedLemma = sent.rootVerbLemma;
+        exludedLemmas.push(...getWantedVerbLemmas());
         break;
+      }
       case "verbAtStart": {
-        if (!wantedVerb) {
+        if (!wantedVerbs || wantedVerbs.length === 0) {
           throw new Error("Verb not set");
         }
         // Wenn das Verb nicht am Anfang des Satzes steht, wird der Satz ignoriert
-        if (!resultCount && sent.rootVerb !== wantedVerb) {
+        if (!resultCount && !wantedVerbs.includes(sent.rootVerb)) {
           return false;
         }
-        const verbIndex = Array.from(sent.verbs).findIndex(
-          (v) => v === wantedVerb
-        );
-        exludedLemma = Array.from(sent.verbsLemma)[verbIndex];
+        exludedLemmas.push(...getWantedVerbLemmas());
         break;
       }
-      default:
+      default: {
         throw new Error("Invalid mode");
+      }
     }
 
     for (const verbLemma of sent.verbsLemma) {
-      if (exludedLemma && verbLemma === exludedLemma) {
+      if (exludedLemmas.length && exludedLemmas.includes(verbLemma)) {
         continue;
       }
 
@@ -386,10 +397,10 @@ export class Story {
     }
 
     // Setze sich wiederholendes Verb, wenn der Modus "repeatVerb" ist und das Verb nicht gesetzt ist
-    if (this.getFilter("mode") === "repeatVerb" && !this.getFilter("verb")) {
+    if (this.getFilter("mode") === "repeatVerb" && !this.getFilter("verbs")) {
       const verb = this.pickRandomVerb();
       if (verb) {
-        this.addFilter("verb", verb);
+        this.addFilter("verbs", [verb]);
       }
     }
   }
@@ -421,7 +432,9 @@ export class Story {
         this.trash.get("sentences")?.add(sent.id);
 
         if (isRepeatedVerbMode) {
-          this.trash.get("repeatedVerbs")?.add(this.getFilter("verb")!);
+          this.getFilter("verbs")?.forEach((verb) => {
+            this.trash.get("repeatedVerbs")?.add(verb);
+          });
         }
         if (sent.verbsLemma.size) {
           this.trash.get("verbs")?.addMany(sent.verbsLemma);
@@ -459,7 +472,6 @@ export class Story {
       // Füge den Text zur Liste hinzu
       result.push({
         text,
-        repeatedVerb: this.getFilter("verb"),
         usedSentences: sortedSents,
       });
 

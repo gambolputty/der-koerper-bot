@@ -10,6 +10,25 @@ const SeparatedCSVField = v.transform(v.string(), (val): Set<string> => {
 
 const BooleanString = v.coerce(v.boolean(), (val) => val === "1");
 const getTokens = (text: string): string[] => text.match(/\b\w+\b/g) || [];
+const parseVerbs = (
+  rootVerb: string,
+  verbs: Set<string>,
+  verbsLemma: Set<string>
+) => {
+  const result: { verb: string; lemma: string | undefined; isRoot: boolean }[] =
+    [];
+  const lemmaArray = Array.from(verbsLemma);
+  const verbsArray = Array.from(verbs);
+
+  verbs.forEach((verb) => {
+    const verbIndex = verbsArray.findIndex((v) => v === verb);
+    const lemma = lemmaArray[verbIndex];
+    const isRoot = verb === rootVerb;
+    result.push({ verb, lemma, isRoot });
+  });
+
+  return result;
+};
 
 export const SentenceSchema = v.transform(
   v.object({
@@ -28,6 +47,7 @@ export const SentenceSchema = v.transform(
   (input) => ({
     ...input,
     tokens: getTokens(input.text),
+    verbsParsed: parseVerbs(input.rootVerb, input.verbs, input.verbsLemma),
   })
 );
 

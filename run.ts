@@ -14,8 +14,8 @@ console.time("generated text");
 const textArr = story.generateText({
   times: 10,
   filters: {
-    sentCount: 1,
-    verb: "beseitigt",
+    // sentCount: 1,
+    verbs: ["will", "soll"],
     mode: "repeatVerb",
   },
 });
