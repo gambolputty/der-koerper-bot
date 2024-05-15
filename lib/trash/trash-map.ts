@@ -5,7 +5,14 @@ import { Trash, TrashConfigSchema } from "./trash";
 const STORY_TRASH_DIRECTORY = new URL(".storytrash", import.meta.url);
 
 const TrashMapConfigSchema = v.record(
-  v.picklist(["verbs", "repeatedVerbs", "nouns", "sentences", "sources"]),
+  v.picklist([
+    "verbs",
+    "repeatedVerbs",
+    "nouns",
+    "repeatedNouns",
+    "sentences",
+    "sources",
+  ]),
   TrashConfigSchema
 );
 

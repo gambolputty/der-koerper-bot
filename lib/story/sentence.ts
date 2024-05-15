@@ -8,6 +8,16 @@ const SeparatedCSVField = v.transform(v.string(), (val): Set<string> => {
   return new Set(items);
 });
 
+export type ParseVerbResult = {
+  verb: string;
+  lemma: string | undefined;
+  isRoot: boolean;
+};
+export type ParseNounResult = {
+  noun: string;
+  lemma: string | undefined;
+};
+
 const BooleanString = v.coerce(v.boolean(), (val) => val === "1");
 const getTokens = (text: string): string[] => text.match(/\b\w+\b/g) || [];
 const parseVerbs = (
@@ -15,8 +25,7 @@ const parseVerbs = (
   verbs: Set<string>,
   verbsLemma: Set<string>
 ) => {
-  const result: { verb: string; lemma: string | undefined; isRoot: boolean }[] =
-    [];
+  const result: ParseVerbResult[] = [];
   const lemmaArray = Array.from(verbsLemma);
   const verbsArray = Array.from(verbs);
 
@@ -25,6 +34,19 @@ const parseVerbs = (
     const lemma = lemmaArray[verbIndex];
     const isRoot = verb === rootVerb;
     result.push({ verb, lemma, isRoot });
+  });
+
+  return result;
+};
+const parseNouns = (nouns: Set<string>, nounsLemma: Set<string>) => {
+  const result: ParseNounResult[] = [];
+  const lemmaArray = Array.from(nounsLemma);
+  const nounsArray = Array.from(nouns);
+
+  nouns.forEach((noun) => {
+    const index = nounsArray.findIndex((v) => v === noun);
+    const lemma = lemmaArray[index];
+    result.push({ noun, lemma });
   });
 
   return result;
@@ -48,6 +70,7 @@ export const SentenceSchema = v.transform(
     ...input,
     tokens: getTokens(input.text),
     verbsParsed: parseVerbs(input.rootVerb, input.verbs, input.verbsLemma),
+    nounsParsed: parseNouns(input.nouns, input.nounsLemma),
   })
 );
 

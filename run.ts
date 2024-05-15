@@ -15,8 +15,10 @@ const textArr = story.generateText({
   times: 10,
   filters: {
     // sentCount: 1,
-    verbs: ["will", "soll"],
-    mode: "repeatVerb",
+    verbs: ["verliert"],
+    nouns: ["Wasser"],
+    // verbs: ["will", "soll", "weiß"],
+    // mode: "repeatVerb",
   },
 });
 console.timeEnd("generated text");

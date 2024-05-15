@@ -15,6 +15,7 @@ const FiltersSchema = v.object({
   sentCount: v.optional(v.number([v.minValue(1)])),
   // Ein oder mehrere Verben, das in den Sätzen vorkommen soll(en)
   verbs: v.optional(v.array(v.string([v.minLength(1)]))),
+  nouns: v.optional(v.array(v.string([v.minLength(1)]))),
 });
 
 export type Filters = v.Output<typeof FiltersSchema>;
@@ -39,6 +40,7 @@ export class StoryConfig {
 
 export class Story {
   protected sentences: SentenceType[];
+  protected sentencesUsed: SentenceType[] = [];
   private readonly config: StoryConfig;
   private trash: TrashMap;
   private filters?: Filters;
@@ -128,72 +130,66 @@ export class Story {
     }
   }
 
+  private checkNouns(sent: SentenceType, foundNouns: Set<string>): boolean {
+    let foundDuplicateNoun = false;
+    const wantedNouns = this.getFilter("nouns");
+
+    for (const nounData of sent.nounsParsed) {
+      if (wantedNouns && wantedNouns.includes(nounData.noun)) {
+        continue;
+      }
+
+      // Not the same nouns in the sentence
+      if (nounData.lemma && foundNouns.has(nounData.lemma)) {
+        foundDuplicateNoun = true;
+        break;
+      }
+
+      // check Noun trash
+      if (
+        (nounData.lemma && this.trash.get("nouns")?.has(nounData.lemma)) ||
+        (nounData.lemma && this.trash.get("repeatedNouns")?.has(nounData.lemma))
+      ) {
+        foundDuplicateNoun = true;
+        break;
+      }
+    }
+
+    if (foundDuplicateNoun) {
+      return false;
+    }
+
+    return true;
+  }
+
   private checkVerbs(
     sent: SentenceType,
     resultCount: number,
     foundVerbs: Set<string>
   ): boolean {
     const wantedVerbs = this.getFilter("verbs");
-    const mode = this.getFilter("mode");
     let foundDuplicateVerb = false;
-    const exludedLemmas = [];
 
-    const getWantedVerbLemmas = () => {
-      const result = [];
-      for (const verb of sent.verbsParsed) {
-        if (wantedVerbs!.includes(verb.verb)) {
-          result.push(verb.lemma);
-        }
-      }
-      return result;
-    };
+    // // Wenn das Verb nicht am Anfang des Satzes steht, wird der Satz ignoriert
+    // if (!resultCount && !wantedVerbs.includes(sent.rootVerb)) {
+    //   return false;
+    // }
 
-    switch (mode) {
-      case "normal": {
-        break;
-      }
-      case "repeatVerb": {
-        if (!wantedVerbs || wantedVerbs.length === 0) {
-          throw new Error("Verb not set");
-        }
-        // Prüfe, ob das root Verb in den gewünschten Verben enthalten ist
-        if (!wantedVerbs.includes(sent.rootVerb)) {
-          return false;
-        }
-        exludedLemmas.push(...getWantedVerbLemmas());
-        break;
-      }
-      case "verbAtStart": {
-        if (!wantedVerbs || wantedVerbs.length === 0) {
-          throw new Error("Verb not set");
-        }
-        // Wenn das Verb nicht am Anfang des Satzes steht, wird der Satz ignoriert
-        if (!resultCount && !wantedVerbs.includes(sent.rootVerb)) {
-          return false;
-        }
-        exludedLemmas.push(...getWantedVerbLemmas());
-        break;
-      }
-      default: {
-        throw new Error("Invalid mode");
-      }
-    }
-
-    for (const verbLemma of sent.verbsLemma) {
-      if (exludedLemmas.length && exludedLemmas.includes(verbLemma)) {
+    for (const verbData of sent.verbsParsed) {
+      if (wantedVerbs && wantedVerbs.includes(verbData.verb)) {
         continue;
       }
 
       // Prüfe, ob das Verb bereits verwendet wurde
-      if (foundVerbs.has(verbLemma)) {
+      if (verbData.lemma && foundVerbs.has(verbData.lemma)) {
         foundDuplicateVerb = true;
         break;
       }
 
       // check Verb trash
       if (
-        this.trash.get("verbs")?.has(verbLemma) ||
-        this.trash.get("repeatedVerbs")?.has(verbLemma)
+        (verbData.lemma && this.trash.get("verbs")?.has(verbData.lemma)) ||
+        (verbData.lemma && this.trash.get("repeatedVerbs")?.has(verbData.lemma))
       ) {
         foundDuplicateVerb = true;
         break;
@@ -207,24 +203,45 @@ export class Story {
     return true;
   }
 
-  private checkNouns(sent: SentenceType, foundNouns: Set<string>): boolean {
-    let foundDuplicateNoun = false;
-    for (const nounLemma of sent.nounsLemma) {
-      // Not the same nouns in the sentence
-      if (foundNouns.has(nounLemma)) {
-        foundDuplicateNoun = true;
-        break;
+  private checkWantedNouns(nouns: SentenceType["nounsParsed"]): boolean {
+    const wantedNouns = this.getFilter("nouns");
+    if (wantedNouns && wantedNouns.length > 0) {
+      // If any of the wanted nouns are in the last sentence
+      // then don't include them in the current sentence
+      const sentencesUsed = this.sentencesUsed;
+      const nounIsInLastSentence =
+        sentencesUsed.length > 0 &&
+        sentencesUsed[sentencesUsed.length - 1].nounsParsed.some((n) =>
+          wantedNouns.includes(n.noun)
+        );
+
+      if (nounIsInLastSentence) {
+        return false;
       }
 
-      // check Noun trash
-      if (this.trash.get("nouns")?.has(nounLemma)) {
-        foundDuplicateNoun = true;
-        break;
-      }
+      return nouns.some((n) => wantedNouns.includes(n.noun));
     }
 
-    if (foundDuplicateNoun) {
-      return false;
+    return true;
+  }
+
+  private checkWantedVerbs(words: SentenceType["verbsParsed"]): boolean {
+    const wantedWords = this.getFilter("verbs");
+    if (wantedWords && wantedWords.length > 0) {
+      // If any of the wanted verbs are in the recently used verbs
+      // then don't include them in the current sentence
+      const sentencesUsed = this.sentencesUsed;
+      const verbIsInLastSentence =
+        sentencesUsed.length > 0 &&
+        sentencesUsed[sentencesUsed.length - 1].verbsParsed.some((v) =>
+          wantedWords.includes(v.verb)
+        );
+
+      if (verbIsInLastSentence) {
+        return false;
+      }
+
+      return words.some((v) => v.isRoot && wantedWords.includes(v.verb));
     }
 
     return true;
@@ -248,6 +265,13 @@ export class Story {
 
       // No colon at the end allowed
       if (sent.endsWithColon) {
+        continue;
+      }
+
+      // If wanted nouns or verbs are set, check if any of them are in the sentence
+      const wantedNounCheck = this.checkWantedNouns(sent.nounsParsed);
+      const wantedVerbCheck = this.checkWantedVerbs(sent.verbsParsed);
+      if (!wantedNounCheck && !wantedVerbCheck) {
         continue;
       }
 
@@ -303,7 +327,7 @@ export class Story {
     return result.length > 0 ? result : undefined;
   }
 
-  private pickRandomVerb(): string | undefined {
+  public getRandomVerb(): string | undefined {
     for (const sent of this.randomElementGenerator(this.sentences)) {
       if (
         !this.trash.get("repeatedVerbs")?.has(sent.rootVerbLemma) &&
@@ -398,7 +422,7 @@ export class Story {
 
     // Setze sich wiederholendes Verb, wenn der Modus "repeatVerb" ist und das Verb nicht gesetzt ist
     if (this.getFilter("mode") === "repeatVerb" && !this.getFilter("verbs")) {
-      const verb = this.pickRandomVerb();
+      const verb = this.getRandomVerb();
       if (verb) {
         this.addFilter("verbs", [verb]);
       }
@@ -418,8 +442,9 @@ export class Story {
     for (let n = 0; n < this.sentences.length; n++) {
       // Bevor wir die Sätze auswählen, setzen wir die Filter
       this.createFilters(validFilters);
-      const isRepeatedVerbMode = this.getFilter("mode") === "repeatVerb";
       const sents = this.pickRandomSentences();
+      const repeatedVerbs = new Set(this.getFilter("verbs"));
+      const repeatedNouns = new Set(this.getFilter("nouns"));
 
       if (!sents) {
         break;
@@ -431,19 +456,21 @@ export class Story {
       for (const sent of sortedSents) {
         this.trash.get("sentences")?.add(sent.id);
 
-        if (isRepeatedVerbMode) {
-          this.getFilter("verbs")?.forEach((verb) => {
-            this.trash.get("repeatedVerbs")?.add(verb);
-          });
-        }
         if (sent.verbsLemma.size) {
           this.trash.get("verbs")?.addMany(sent.verbsLemma);
         }
         if (sent.nounsLemma.size) {
           this.trash.get("nouns")?.addMany(sent.nounsLemma);
         }
-
         this.trash.get("sources")?.add(sent.source);
+
+        // add repeating verbs and nouns
+        if (repeatedVerbs) {
+          this.trash.get("repeatedVerbs")?.addMany(repeatedVerbs);
+        }
+        if (repeatedNouns) {
+          this.trash.get("repeatedNouns")?.addMany(repeatedNouns);
+        }
       }
 
       // Füge die Sätze zusammen
@@ -474,6 +501,9 @@ export class Story {
         text,
         usedSentences: sortedSents,
       });
+
+      // Speichere den Verlauf der verwendeten Sätze
+      this.sentencesUsed.push(...sortedSents);
 
       if (result.length === times) {
         break;
