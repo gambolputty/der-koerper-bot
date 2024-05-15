@@ -203,12 +203,15 @@ export class Story {
     return true;
   }
 
-  private checkWantedNouns(nouns: SentenceType["nounsParsed"]): boolean {
+  private checkWantedNouns(
+    nouns: SentenceType["nounsParsed"],
+    sentenceHistory: SentenceType[]
+  ): boolean {
     const wantedNouns = this.getFilter("nouns");
     if (wantedNouns && wantedNouns.length > 0) {
       // If any of the wanted nouns are in the last sentence
       // then don't include them in the current sentence
-      const sentencesUsed = this.sentencesUsed;
+      const sentencesUsed = sentenceHistory;
       const nounIsInLastSentence =
         sentencesUsed.length > 0 &&
         sentencesUsed[sentencesUsed.length - 1].nounsParsed.some((n) =>
@@ -225,12 +228,15 @@ export class Story {
     return true;
   }
 
-  private checkWantedVerbs(words: SentenceType["verbsParsed"]): boolean {
+  private checkWantedVerbs(
+    words: SentenceType["verbsParsed"],
+    sentenceHistory: SentenceType[]
+  ): boolean {
     const wantedWords = this.getFilter("verbs");
     if (wantedWords && wantedWords.length > 0) {
       // If any of the wanted verbs are in the recently used verbs
       // then don't include them in the current sentence
-      const sentencesUsed = this.sentencesUsed;
+      const sentencesUsed = sentenceHistory;
       const verbIsInLastSentence =
         sentencesUsed.length > 0 &&
         sentencesUsed[sentencesUsed.length - 1].verbsParsed.some((v) =>
@@ -269,9 +275,16 @@ export class Story {
       }
 
       // If wanted nouns or verbs are set, check if any of them are in the sentence
-      const wantedNounCheck = this.checkWantedNouns(sent.nounsParsed);
-      const wantedVerbCheck = this.checkWantedVerbs(sent.verbsParsed);
-      if (!wantedNounCheck && !wantedVerbCheck) {
+      if (
+        !this.checkWantedNouns(
+          sent.nounsParsed,
+          this.sentencesUsed.concat(result)
+        ) &&
+        !this.checkWantedVerbs(
+          sent.verbsParsed,
+          this.sentencesUsed.concat(result)
+        )
+      ) {
         continue;
       }
 
@@ -443,8 +456,6 @@ export class Story {
       // Bevor wir die Sätze auswählen, setzen wir die Filter
       this.createFilters(validFilters);
       const sents = this.pickRandomSentences();
-      const repeatedVerbs = new Set(this.getFilter("verbs"));
-      const repeatedNouns = new Set(this.getFilter("nouns"));
 
       if (!sents) {
         break;
@@ -458,19 +469,13 @@ export class Story {
 
         if (sent.verbsLemma.size) {
           this.trash.get("verbs")?.addMany(sent.verbsLemma);
+          this.trash.get("repeatedVerbs")?.add(sent.rootVerbLemma);
         }
         if (sent.nounsLemma.size) {
           this.trash.get("nouns")?.addMany(sent.nounsLemma);
+          this.trash.get("repeatedNouns")?.addMany(sent.nounsLemma);
         }
         this.trash.get("sources")?.add(sent.source);
-
-        // add repeating verbs and nouns
-        if (repeatedVerbs) {
-          this.trash.get("repeatedVerbs")?.addMany(repeatedVerbs);
-        }
-        if (repeatedNouns) {
-          this.trash.get("repeatedNouns")?.addMany(repeatedNouns);
-        }
       }
 
       // Füge die Sätze zusammen
