@@ -9,12 +9,11 @@ import { loadFile, parseCSVData } from "./utils";
 export { SentenceSchema };
 
 const FiltersSchema = v.object({
-  // Modus der Textgenerierung
-  mode: v.optional(v.picklist(["normal", "repeatVerb", "verbAtStart"])),
   // Anzahl der Sätze, die eine Iteration enthalten soll
   sentCount: v.optional(v.number([v.minValue(1)])),
-  // Ein oder mehrere Verben, das in den Sätzen vorkommen soll(en)
+  // Ein oder mehrere Verben, das in den Sätzen vorkommen sollen
   verbs: v.optional(v.array(v.string([v.minLength(1)]))),
+  // Ein oder mehrere Nomen, das in den Sätzen vorkommen sollen
   nouns: v.optional(v.array(v.string([v.minLength(1)]))),
 });
 
@@ -205,11 +204,12 @@ export class Story {
 
   private checkWantedNouns(
     nouns: SentenceType["nounsParsed"],
-    sentenceHistory: SentenceType[]
+    wantedNouns: string[],
+    sentenceHistory: SentenceType[],
+    checkInHistory = false
   ): boolean {
-    const wantedNouns = this.getFilter("nouns");
-    if (wantedNouns && wantedNouns.length > 0) {
-      // If any of the wanted nouns are in the last sentence
+    if (checkInHistory) {
+      // If any of the wanted nouns are in the recently used nouns
       // then don't include them in the current sentence
       const sentencesUsed = sentenceHistory;
       const nounIsInLastSentence =
@@ -221,36 +221,33 @@ export class Story {
       if (nounIsInLastSentence) {
         return false;
       }
-
-      return nouns.some((n) => wantedNouns.includes(n.noun));
     }
 
-    return true;
+    return nouns.some((n) => wantedNouns.includes(n.noun));
   }
 
   private checkWantedVerbs(
     words: SentenceType["verbsParsed"],
-    sentenceHistory: SentenceType[]
+    wantedVerbs: string[],
+    sentenceHistory: SentenceType[],
+    checkInHistory = false
   ): boolean {
-    const wantedWords = this.getFilter("verbs");
-    if (wantedWords && wantedWords.length > 0) {
+    if (checkInHistory) {
       // If any of the wanted verbs are in the recently used verbs
       // then don't include them in the current sentence
       const sentencesUsed = sentenceHistory;
       const verbIsInLastSentence =
         sentencesUsed.length > 0 &&
         sentencesUsed[sentencesUsed.length - 1].verbsParsed.some((v) =>
-          wantedWords.includes(v.verb)
+          wantedVerbs.includes(v.verb)
         );
 
       if (verbIsInLastSentence) {
         return false;
       }
-
-      return words.some((v) => v.isRoot && wantedWords.includes(v.verb));
     }
 
-    return true;
+    return words.some((v) => v.isRoot && wantedVerbs.includes(v.verb));
   }
 
   private pickRandomSentences(): SentenceType[] | undefined {
@@ -258,12 +255,16 @@ export class Story {
     const foundNouns: Set<string> = new Set();
     const foundVerbs: Set<string> = new Set();
     const sentCount = this.getFilter("sentCount")!;
+    const wantedNouns = this.getFilter("nouns");
+    const wantedVerbs = this.getFilter("verbs");
+    const wantedWordsCount =
+      (wantedNouns?.length || 0) + (wantedVerbs?.length || 0);
+    const checkInHistory = wantedWordsCount > 1;
 
     let foundAnd = false;
 
     for (const sent of this.randomElementGenerator(this.sentences)) {
       // Check boolean flags
-
       // "and" should only appear once
       if (foundAnd) {
         continue;
@@ -274,27 +275,39 @@ export class Story {
         continue;
       }
 
-      // If wanted nouns or verbs are set, check if any of them are in the sentence
-      if (
-        !this.checkWantedNouns(
-          sent.nounsParsed,
-          this.sentencesUsed.concat(result)
-        ) &&
-        !this.checkWantedVerbs(
-          sent.verbsParsed,
-          this.sentencesUsed.concat(result)
-        )
-      ) {
-        continue;
-      }
+      // If wanted nouns or verbs are set, only check if they are present in the sentence. Ootherwise fallback to regular checks.
 
       // Check verbs
-      if (!this.checkVerbs(sent, result.length, foundVerbs)) {
-        continue;
+      let verbCheck = true;
+      let nounCheck = true;
+
+      if (wantedWordsCount) {
+        verbCheck = wantedVerbs
+          ? this.checkWantedVerbs(
+              sent.verbsParsed,
+              wantedVerbs,
+              this.sentencesUsed.concat(result),
+              checkInHistory
+            )
+          : true;
+        nounCheck = wantedNouns
+          ? this.checkWantedNouns(
+              sent.nounsParsed,
+              wantedNouns,
+              this.sentencesUsed.concat(result),
+              checkInHistory
+            )
+          : true;
+      } else {
+        verbCheck = this.checkVerbs(sent, result.length, foundVerbs);
+        nounCheck = this.checkNouns(sent, foundNouns);
       }
 
-      // check nouns
-      if (!this.checkNouns(sent, foundNouns)) {
+      if (!wantedWordsCount && !nounCheck && !verbCheck) {
+        continue;
+      } else if (wantedWordsCount === 1 && (!nounCheck || !verbCheck)) {
+        continue;
+      } else if (wantedWordsCount > 1 && !nounCheck && !verbCheck) {
         continue;
       }
 
@@ -394,50 +407,35 @@ export class Story {
   private createFilters(filters?: Filters): void {
     // Setze Filter, die einen Wert benötigen
 
-    const modes: Required<Filters>["mode"][] = [
-      // Modus: normal
-      // Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
-      "normal",
-
-      // Modus: repeatVerb
-      // Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält. Es wird ein Verb ausgewählt und nur Sätze mit diesem Verb werden ausgewählt.
-      "repeatVerb",
-    ];
-
     this.clearFilters();
 
     if (filters) {
       this.setFilters(filters);
     }
 
-    // Wähle den Modus zufällig aus, wenn er nicht gesetzt ist
-    if (!this.getFilter("mode")) {
-      const modeIndices = modes.map((_, i) => i);
-      const weights = [100, 15];
-      const mode = weightedRandom(modeIndices, weights);
-      this.addFilter("mode", mode === 0 ? "normal" : "repeatVerb");
-    }
-
     // Lege die Anzahl der Sätze fest, wenn sie nicht gesetzt ist
     if (!this.getFilter("sentCount")) {
-      let sentCount;
-      if (this.getFilter("mode") === "normal") {
-        sentCount = Story.getRandomSentCount(
-          1,
-          7,
-          [100, 10, 100, 100, 50, 40, 10]
-        );
-      } else if (this.getFilter("mode") === "repeatVerb") {
-        sentCount = Story.getRandomSentCount(4, 8, [100, 100, 100, 40, 10]);
-      }
+      const sentCount = Story.getRandomSentCount(
+        1,
+        7,
+        [100, 10, 100, 100, 50, 40, 10]
+      );
+      // if (this.getFilter("mode") === "repeatVerb") {
+      //   sentCount = Story.getRandomSentCount(4, 8, [100, 100, 100, 40, 10]);
+      // }
       this.addFilter("sentCount", sentCount);
     }
 
-    // Setze sich wiederholendes Verb, wenn der Modus "repeatVerb" ist und das Verb nicht gesetzt ist
-    if (this.getFilter("mode") === "repeatVerb" && !this.getFilter("verbs")) {
-      const verb = this.getRandomVerb();
-      if (verb) {
-        this.addFilter("verbs", [verb]);
+    if (!(this.getFilter("nouns") && this.getFilter("verbs"))) {
+      // randomly choose a verb so every sentence will have the same verb
+      const weights = [100, 15];
+      const setRandomVerb = weightedRandom([0, 1], weights) === 1;
+
+      if (setRandomVerb) {
+        const verb = this.getRandomVerb();
+        if (verb) {
+          this.addFilter("verbs", [verb]);
+        }
       }
     }
   }
@@ -455,6 +453,8 @@ export class Story {
     for (let n = 0; n < this.sentences.length; n++) {
       // Bevor wir die Sätze auswählen, setzen wir die Filter
       this.createFilters(validFilters);
+      const wantedNouns = this.getFilter("nouns");
+      const wantedVerbs = this.getFilter("verbs");
       const sents = this.pickRandomSentences();
 
       if (!sents) {
@@ -469,11 +469,15 @@ export class Story {
 
         if (sent.verbsLemma.size) {
           this.trash.get("verbs")?.addMany(sent.verbsLemma);
-          this.trash.get("repeatedVerbs")?.add(sent.rootVerbLemma);
+          if (wantedVerbs) {
+            this.trash.get("repeatedVerbs")?.add(sent.rootVerbLemma);
+          }
         }
         if (sent.nounsLemma.size) {
           this.trash.get("nouns")?.addMany(sent.nounsLemma);
-          this.trash.get("repeatedNouns")?.addMany(sent.nounsLemma);
+          if (wantedNouns) {
+            this.trash.get("repeatedNouns")?.addMany(sent.nounsLemma);
+          }
         }
         this.trash.get("sources")?.add(sent.source);
       }
