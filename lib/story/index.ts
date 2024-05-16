@@ -426,7 +426,7 @@ export class Story {
       this.addFilter("sentCount", sentCount);
     }
 
-    if (!(this.getFilter("nouns") && this.getFilter("verbs"))) {
+    if (!(this.getFilter("nouns") && !this.getFilter("verbs"))) {
       // randomly choose a verb so every sentence will have the same verb
       const weights = [100, 15];
       const setRandomVerb = weightedRandom([0, 1], weights) === 1;
