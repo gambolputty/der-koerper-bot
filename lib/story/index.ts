@@ -129,14 +129,13 @@ export class Story {
     }
   }
 
-  private allWordsAreInLastNSentences(
-    wantedWords: string[],
+  private someWordsAreInLastNSentences(
+    word: string,
     type: "nouns" | "verbs",
     n: number,
     foundSentences?: SentenceType[]
   ): boolean {
     const sentences = this.sentencesUsed.concat(foundSentences || []);
-    const foundWordMap: Map<string, boolean> = new Map();
 
     if (sentences.length < n) {
       return false;
@@ -146,17 +145,10 @@ export class Story {
       const key = type === "nouns" ? "nounsParsed" : "verbsParsed";
       const words = sentences[sentences.length - 1 - i][key];
 
-      // check if any wanted word is in words
-      for (const wordData of words) {
-        if (wantedWords.includes(wordData.word)) {
-          foundWordMap.set(wordData.word, true);
-        }
+      // check if the wanted word is in words
+      if (words.find((w) => w.word === word)) {
+        return true;
       }
-    }
-
-    // check if all wanted words are in the last N sentences
-    if (wantedWords.every((word) => foundWordMap.has(word))) {
-      return true;
     }
 
     return false;
@@ -171,16 +163,21 @@ export class Story {
 
     if (wantedNouns && wantedNouns.length) {
       // Check if any of the wanted nouns are in the current sentence
-      if (!sent.nounsParsed.some((n) => wantedNouns.includes(n.word))) {
+      // get wanted noun
+      const wantedNoun = sent.nounsParsed.find((n) =>
+        wantedNouns.includes(n.word)
+      )?.word;
+
+      if (!wantedNoun) {
         return false;
       }
 
       // Check if all the wanted nouns are in the last N sentences
       if (
-        this.allWordsAreInLastNSentences(
-          wantedNouns,
+        this.someWordsAreInLastNSentences(
+          wantedNoun,
           "nouns",
-          1,
+          wantedNouns.length,
           foundSentences
         )
       ) {
@@ -229,18 +226,20 @@ export class Story {
 
     if (wantedVerbs && wantedVerbs.length) {
       // Check if any of the wanted verbs are in the current sentence
-      if (
-        !sent.verbsParsed.some((v) => v.isRoot && wantedVerbs.includes(v.word))
-      ) {
+      const wantedVerb = sent.verbsParsed.find((v) =>
+        wantedVerbs.includes(v.word)
+      )?.word;
+
+      if (!wantedVerb) {
         return false;
       }
 
-      // Check if all the wanted verbs are in the last N sentences
+      // Check if any of the wanted verbs are in the last N sentences
       if (
-        this.allWordsAreInLastNSentences(
-          wantedVerbs,
+        this.someWordsAreInLastNSentences(
+          wantedVerb,
           "verbs",
-          1,
+          wantedVerbs.length,
           foundSentences
         )
       ) {

@@ -15,7 +15,7 @@ const textArr = story.generateText({
   times: 10,
   filters: {
     // sentCount: 1,
-    verbs: ["soll", "weiß", "will"],
+    verbs: ["erzählt"],
     nouns: ["Haus"],
     // verbs: ["will", "soll", "weiß"],
     // mode: "repeatVerb",
