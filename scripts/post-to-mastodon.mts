@@ -29,8 +29,11 @@ export const generateText = async () => {
   const story = new Story({
     sentences,
     trashMap,
+    options: {
+      times: 1,
+    },
   });
-  const textArr = story.generateText({ times: 1 });
+  const textArr = story.generateText();
   const text = textArr.map((r) => r.text).join("\n");
   await trashMap.saveTrashBinsToFile();
 
