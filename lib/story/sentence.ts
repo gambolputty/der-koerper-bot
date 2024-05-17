@@ -9,12 +9,12 @@ const SeparatedCSVField = v.transform(v.string(), (val): Set<string> => {
 });
 
 export type ParseVerbResult = {
-  verb: string;
+  word: string;
   lemma: string | undefined;
   isRoot: boolean;
 };
 export type ParseNounResult = {
-  noun: string;
+  word: string;
   lemma: string | undefined;
 };
 
@@ -29,11 +29,11 @@ const parseVerbs = (
   const lemmaArray = Array.from(verbsLemma);
   const verbsArray = Array.from(verbs);
 
-  verbs.forEach((verb) => {
-    const verbIndex = verbsArray.findIndex((v) => v === verb);
+  verbs.forEach((word) => {
+    const verbIndex = verbsArray.findIndex((v) => v === word);
     const lemma = lemmaArray[verbIndex];
-    const isRoot = verb === rootVerb;
-    result.push({ verb, lemma, isRoot });
+    const isRoot = word === rootVerb;
+    result.push({ word, lemma, isRoot });
   });
 
   return result;
@@ -43,10 +43,10 @@ const parseNouns = (nouns: Set<string>, nounsLemma: Set<string>) => {
   const lemmaArray = Array.from(nounsLemma);
   const nounsArray = Array.from(nouns);
 
-  nouns.forEach((noun) => {
-    const index = nounsArray.findIndex((v) => v === noun);
+  nouns.forEach((word) => {
+    const index = nounsArray.findIndex((v) => v === word);
     const lemma = lemmaArray[index];
-    result.push({ noun, lemma });
+    result.push({ word, lemma });
   });
 
   return result;
