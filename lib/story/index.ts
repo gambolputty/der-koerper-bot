@@ -160,8 +160,11 @@ export class Story {
     foundSentences: SentenceType[]
   ): boolean {
     const wantedNouns = this.getFilter("nouns");
+    const wantedNounsCount = wantedNouns?.length || 0;
+    const wantedWordsCount =
+      (this.getFilter("verbs")?.length || 0) + wantedNounsCount;
 
-    if (wantedNouns && wantedNouns.length) {
+    if (wantedNouns && wantedNounsCount) {
       // Check if any of the wanted nouns are in the current sentence
       // get wanted noun
       const wantedNoun = sent.nounsParsed.find((n) =>
@@ -174,10 +177,11 @@ export class Story {
 
       // Check if all the wanted nouns are in the last N sentences
       if (
+        wantedWordsCount > 1 &&
         this.someWordsAreInLastNSentences(
           wantedNoun,
           "nouns",
-          wantedNouns.length,
+          wantedNounsCount,
           foundSentences
         )
       ) {
@@ -218,13 +222,16 @@ export class Story {
     foundSentences: SentenceType[]
   ): boolean {
     const wantedVerbs = this.getFilter("verbs");
+    const wantedVerbsCount = wantedVerbs?.length || 0;
+    const wantedWordsCount =
+      (this.getFilter("nouns")?.length || 0) + wantedVerbsCount;
 
     // // Wenn das Verb nicht am Anfang des Satzes steht, wird der Satz ignoriert
     // if (!resultCount && !wantedVerbs.includes(sent.rootVerb)) {
     //   return false;
     // }
 
-    if (wantedVerbs && wantedVerbs.length) {
+    if (wantedVerbs && wantedVerbsCount) {
       // Check if any of the wanted verbs are in the current sentence
       const wantedVerb = sent.verbsParsed.find((v) =>
         wantedVerbs.includes(v.word)
@@ -236,10 +243,11 @@ export class Story {
 
       // Check if any of the wanted verbs are in the last N sentences
       if (
+        wantedWordsCount > 1 &&
         this.someWordsAreInLastNSentences(
           wantedVerb,
           "verbs",
-          wantedVerbs.length,
+          wantedVerbsCount,
           foundSentences
         )
       ) {
