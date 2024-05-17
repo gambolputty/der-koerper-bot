@@ -83,7 +83,10 @@ export class Story {
 
   public updateOptions(options: Options): void {
     this.options = this.parseOptions(options);
-    this.filters = v.parse(FiltersSchema, this.getOption("filters"));
+    const filters = this.getOption("filters");
+    this.filters = filters
+      ? v.parse(FiltersSchema, this.getOption("filters"))
+      : {};
   }
 
   private getOption<T extends keyof Options>(key: T): Options[T] | undefined {
