@@ -11,16 +11,17 @@ const story = new Story({
   trashMap,
 });
 console.time("generated text");
-const textArr = story.generateText({
+story.updateOptions({
   times: 10,
   filters: {
     // sentCount: 1,
     verbs: ["weiß"],
-    // nouns: ["Haus"],
+    nouns: ["Haus"],
     // verbs: ["will", "soll", "weiß"],
     // mode: "repeatVerb",
   },
 });
+const textArr = story.generateText();
 console.timeEnd("generated text");
 const text = textArr.map((r) => r.text).join("\n");
 // await trashMap.saveTrashBinsToFile();

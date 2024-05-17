@@ -17,12 +17,15 @@ const FiltersSchema = v.object({
   nouns: v.optional(v.array(v.string([v.minLength(1)]))),
 });
 
-export type Filters = v.Output<typeof FiltersSchema>;
+const OptionsSchema = v.object({
+  // Anzahl der Iterationen
+  times: v.optional(v.number([v.minValue(1)])),
+  // Filter für die Generierung
+  filters: v.optional(FiltersSchema),
+});
 
-export type GenerateTextProps = {
-  times?: number;
-  filters?: Filters;
-};
+export type Filters = v.Output<typeof FiltersSchema>;
+export type Options = v.Output<typeof OptionsSchema>;
 
 export type GenerateTextResult = {
   text: string;
@@ -39,19 +42,22 @@ export class StoryConfig {
 
 export class Story {
   protected sentences: SentenceType[];
-  protected sentencesUsed: SentenceType[] = [];
+  protected usedSentences: SentenceType[] = [];
   private readonly config: StoryConfig;
   private trash: TrashMap;
-  private filters?: Filters;
+  private filters: Filters = {};
+  protected options?: Options = {};
 
   constructor({
     sentences,
     trashMap,
     config,
+    options,
   }: {
     sentences: SentenceType[];
     trashMap?: TrashMap;
     config?: StoryConfig;
+    options?: Options;
   }) {
     this.sentences = sentences;
     this.trash = trashMap || new TrashMap();
@@ -62,21 +68,29 @@ export class Story {
     } else {
       this.config = new StoryConfig();
     }
+
+    if (options) {
+      this.updateOptions(options);
+    }
   }
 
-  private setFilters(filters: Filters): void {
-    this.filters = filters;
+  private parseOptions(options?: Options) {
+    const defaults = {
+      times: 1,
+    };
+    return v.parse(OptionsSchema, { ...defaults, ...(options || {}) });
   }
 
-  private clearFilters(): void {
-    this.filters = undefined;
+  public updateOptions(options: Options): void {
+    this.options = this.parseOptions(options);
+    this.filters = v.parse(FiltersSchema, this.getOption("filters"));
+  }
+
+  private getOption<T extends keyof Options>(key: T): Options[T] | undefined {
+    return this.options?.[key];
   }
 
   private addFilter<T extends keyof Filters>(key: T, value: Filters[T]): void {
-    if (!this.filters) {
-      this.filters = {};
-    }
-
     this.filters[key] = value;
   }
 
@@ -135,7 +149,7 @@ export class Story {
     n: number,
     foundSentences?: SentenceType[]
   ): boolean {
-    const sentences = this.sentencesUsed.concat(foundSentences || []);
+    const sentences = this.usedSentences.concat(foundSentences || []);
 
     if (sentences.length < n) {
       return false;
@@ -414,17 +428,11 @@ export class Story {
     return result;
   }
 
-  private createFilters(filters?: Filters): void {
-    // Setze Filter, die einen Wert benötigen
-
-    this.clearFilters();
-
-    if (filters) {
-      this.setFilters(filters);
-    }
+  private updateFiltersIfNeeded(): void {
+    const filterOptions = this.getOption("filters");
 
     // Lege die Anzahl der Sätze fest, wenn sie nicht gesetzt ist
-    if (!this.getFilter("sentCount")) {
+    if (!filterOptions?.sentCount) {
       const sentCount = Story.getRandomSentCount(
         1,
         7,
@@ -436,8 +444,8 @@ export class Story {
       this.addFilter("sentCount", sentCount);
     }
 
-    if (!this.getFilter("nouns") && !this.getFilter("verbs")) {
-      // randomly choose a verb so every sentence will have the same verb
+    // Randomly choose a verb if no nouns or verbs are set
+    if (!filterOptions?.nouns && !filterOptions?.verbs) {
       const weights = [100, 15];
       const setRandomVerb = weightedRandom([0, 1], weights) === 1;
 
@@ -450,81 +458,88 @@ export class Story {
     }
   }
 
-  public generateText({
-    times = 1,
-    filters,
-  }: GenerateTextProps = {}): GenerateTextResult[] {
+  private generateTextOnce(): [string, SentenceType[]] | undefined {
+    const wantedNouns = this.getFilter("nouns");
+    const wantedVerbs = this.getFilter("verbs");
+    const sents = this.pickRandomSentences();
+
+    if (!sents) {
+      return;
+    }
+
+    const sortedSents: SentenceType[] = Story.sortSentences(sents);
+
+    // Speichere die Sätze im Trash
+    for (const sent of sortedSents) {
+      this.trash.get("sentences")?.add(sent.id);
+
+      if (sent.verbsLemma.size) {
+        this.trash.get("verbs")?.addMany(sent.verbsLemma);
+        if (wantedVerbs) {
+          this.trash.get("repeatedVerbs")?.add(sent.rootVerbLemma);
+        }
+      }
+      if (sent.nounsLemma.size) {
+        this.trash.get("nouns")?.addMany(sent.nounsLemma);
+        if (wantedNouns) {
+          this.trash.get("repeatedNouns")?.addMany(sent.nounsLemma);
+        }
+      }
+      this.trash.get("sources")?.add(sent.source);
+    }
+
+    // Füge die Sätze zusammen
+    const sentsLen: number = sortedSents.length;
+    const toBeJoinedTexts: string[] = [];
+    const lastIndex: number = sentsLen - 1;
+
+    for (let i = 0; i < sentsLen; i++) {
+      const sent: SentenceType = sortedSents[i];
+      let text: string = sent.text;
+
+      if (sentsLen > 1) {
+        if (i === lastIndex) {
+          text = ` und ${text}`;
+        } else if (i !== 0) {
+          text = `, ${text}`;
+        }
+      }
+
+      toBeJoinedTexts.push(text);
+    }
+
+    // Satzanfang und Ende
+    const text: string = `Der Körper ${toBeJoinedTexts.join("")}.`;
+
+    return [text, sortedSents];
+  }
+
+  public generateText(): GenerateTextResult[] {
     /**
      * Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
      */
     const result: GenerateTextResult[] = [];
-    const validFilters = filters ? v.parse(FiltersSchema, filters) : undefined;
+    const numberOfTimes = this.getOption("times") || 1;
 
     for (let n = 0; n < this.sentences.length; n++) {
       // Bevor wir die Sätze auswählen, setzen wir die Filter
-      this.createFilters(validFilters);
-      const wantedNouns = this.getFilter("nouns");
-      const wantedVerbs = this.getFilter("verbs");
-      const sents = this.pickRandomSentences();
+      this.updateFiltersIfNeeded();
+      const [text, sentences] = this.generateTextOnce() || [];
 
-      if (!sents) {
+      if (!text || !sentences) {
         break;
       }
-
-      const sortedSents: SentenceType[] = Story.sortSentences(sents);
-
-      // Speichere die Sätze im Trash
-      for (const sent of sortedSents) {
-        this.trash.get("sentences")?.add(sent.id);
-
-        if (sent.verbsLemma.size) {
-          this.trash.get("verbs")?.addMany(sent.verbsLemma);
-          if (wantedVerbs) {
-            this.trash.get("repeatedVerbs")?.add(sent.rootVerbLemma);
-          }
-        }
-        if (sent.nounsLemma.size) {
-          this.trash.get("nouns")?.addMany(sent.nounsLemma);
-          if (wantedNouns) {
-            this.trash.get("repeatedNouns")?.addMany(sent.nounsLemma);
-          }
-        }
-        this.trash.get("sources")?.add(sent.source);
-      }
-
-      // Füge die Sätze zusammen
-      const sentsLen: number = sortedSents.length;
-      const toBeJoinedTexts: string[] = [];
-      const lastIndex: number = sentsLen - 1;
-
-      for (let i = 0; i < sentsLen; i++) {
-        const sent: SentenceType = sortedSents[i];
-        let text: string = sent.text;
-
-        if (sentsLen > 1) {
-          if (i === lastIndex) {
-            text = ` und ${text}`;
-          } else if (i !== 0) {
-            text = `, ${text}`;
-          }
-        }
-
-        toBeJoinedTexts.push(text);
-      }
-
-      // Satzanfang und Ende
-      const text: string = `Der Körper ${toBeJoinedTexts.join("")}.`;
 
       // Füge den Text zur Liste hinzu
       result.push({
         text,
-        usedSentences: sortedSents,
+        usedSentences: sentences,
       });
 
       // Speichere den Verlauf der verwendeten Sätze
-      this.sentencesUsed.push(...sortedSents);
+      this.usedSentences.push(...sentences);
 
-      if (result.length === times) {
+      if (result.length === numberOfTimes) {
         break;
       }
     }
