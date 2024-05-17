@@ -6,9 +6,4 @@ import { Trash, TrashMap } from "./trash";
 
 // eslint-disable-next-line
 export { SentenceSchema, Story, Trash, TrashMap, random };
-export type {
-  Filters,
-  Options as GenerateTextProps,
-  GenerateTextResult,
-  SentenceType,
-};
+export type { Filters, GenerateTextResult, Options, SentenceType };
