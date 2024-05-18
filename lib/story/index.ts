@@ -18,8 +18,8 @@ const FiltersSchema = v.object({
 });
 
 const OptionsSchema = v.object({
-  // Anzahl der Iterationen
-  times: v.optional(v.number([v.minValue(1)])),
+  // Anzahl der Iterationen, wie oft generateText aufgerufen werden soll
+  generateTextTimes: v.optional(v.number([v.minValue(1)])),
   // Filter für die Generierung
   filters: v.optional(FiltersSchema),
 });
@@ -522,7 +522,7 @@ export class Story {
      * Generiert einen Text, der mit "Der Körper" beginnt und eine Aufzählung von Sätzen enthält.
      */
     const result: GenerateTextResult[] = [];
-    const numberOfTimes = this.getOption("times") || 1;
+    const numberOfTimes = this.getOption("generateTextTimes") || 1;
 
     for (let n = 0; n < this.sentences.length; n++) {
       // Bevor wir die Sätze auswählen, setzen wir die Filter

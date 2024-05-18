@@ -30,7 +30,7 @@ export const generateText = async () => {
     sentences,
     trashMap,
     options: {
-      times: 1,
+      generateTextTimes: 1,
     },
   });
   const textArr = story.generateText();

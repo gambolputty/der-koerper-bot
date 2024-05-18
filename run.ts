@@ -12,7 +12,7 @@ const story = new Story({
 });
 console.time("generated text");
 story.updateOptions({
-  times: 10,
+  generateTextTimes: 10,
   filters: {
     // sentCount: 1,
     verbs: ["weiß"],
