@@ -19,10 +19,14 @@ const FiltersSchema = v.object({
 
 const OptionsSchema = v.object({
   // Anzahl der Iterationen, wie oft generateText aufgerufen werden soll
-  generateTextTimes: v.optional(v.number([v.minValue(1)])),
+  generateTextTimes: v.number([v.minValue(1)]),
   // Filter für die Generierung
   filters: v.optional(FiltersSchema),
 });
+
+const defaultOptions: Options = {
+  generateTextTimes: 1,
+};
 
 export type Filters = v.Output<typeof FiltersSchema>;
 export type Options = v.Output<typeof OptionsSchema>;
@@ -46,7 +50,7 @@ export class Story {
   private readonly config: StoryConfig;
   private trash: TrashMap;
   private filters: Filters = {};
-  protected options?: Options = {};
+  protected options: Options = defaultOptions;
 
   constructor({
     sentences,
@@ -69,19 +73,14 @@ export class Story {
       this.config = new StoryConfig();
     }
 
-    if (options) {
-      this.updateOptions(options);
-    }
+    this.updateOptions(options);
   }
 
   private parseOptions(options?: Options) {
-    const defaults = {
-      times: 1,
-    };
-    return v.parse(OptionsSchema, { ...defaults, ...(options || {}) });
+    return v.parse(OptionsSchema, { ...defaultOptions, ...(options || {}) });
   }
 
-  public updateOptions(options: Options): void {
+  public updateOptions(options?: Options): void {
     this.options = this.parseOptions(options);
     const filters = this.getOption("filters");
     this.filters = filters
