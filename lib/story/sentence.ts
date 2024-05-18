@@ -19,7 +19,9 @@ export type ParseNounResult = {
 };
 
 const BooleanString = v.coerce(v.boolean(), (val) => val === "1");
-const getTokens = (text: string): string[] => text.match(/\b\w+\b/g) || [];
+// src: https://stackoverflow.com/a/11704228/5732518
+const getWords = (text: string): string[] =>
+  text.match(/(?<![\p{L}\p{N}_])[\p{L}\p{N}_]+(?![\p{L}\p{N}_])/gu) || [];
 const parseVerbs = (
   rootVerb: string,
   verbs: Set<string>,
@@ -68,7 +70,7 @@ export const SentenceSchema = v.transform(
   }),
   (input) => ({
     ...input,
-    tokens: getTokens(input.text),
+    words: getWords(input.text),
     verbsParsed: parseVerbs(input.rootVerb, input.verbs, input.verbsLemma),
     nounsParsed: parseNouns(input.nouns, input.nounsLemma),
   })

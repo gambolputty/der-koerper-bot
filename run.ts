@@ -15,8 +15,8 @@ story.updateOptions({
   generateTextTimes: 10,
   filters: {
     // sentCount: 1,
-    verbs: ["weiß"],
-    nouns: ["Haus"],
+    // verbs: ["weiß"],
+    wantedWords: ["weiß", "Haus", "grün"],
     // verbs: ["will", "soll", "weiß"],
     // mode: "repeatVerb",
   },
