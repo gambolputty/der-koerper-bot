@@ -89,6 +89,10 @@ export class Story {
       : {};
   }
 
+  public getOptions(): Options {
+    return this.options || {};
+  }
+
   private getOption<T extends keyof Options>(key: T): Options[T] | undefined {
     return this.options?.[key];
   }
