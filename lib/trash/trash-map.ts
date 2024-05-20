@@ -32,9 +32,18 @@ export class TrashMap extends Map<string, Trash> {
     });
 
     // Erstelle leere Trash-Bins
+    this.initTrashBins();
+  }
+
+  private initTrashBins(): void {
     for (const [key, config] of Object.entries(this.configs)) {
       this.set(key, new Trash({ config }));
     }
+  }
+
+  public reset(): void {
+    this.clear();
+    this.initTrashBins();
   }
 
   async loadTrashBinsFromFile(): Promise<boolean> {
