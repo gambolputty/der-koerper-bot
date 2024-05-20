@@ -102,6 +102,10 @@ export class Story {
     return this.filters?.[key];
   }
 
+  public resetTrash(): void {
+    this.trash.reset();
+  }
+
   static async loadSentencesFromCSV(
     csvUrl: URL | string
   ): Promise<SentenceType[]> {
