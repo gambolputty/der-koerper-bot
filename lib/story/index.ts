@@ -102,6 +102,10 @@ export class Story {
     return this.filters?.[key];
   }
 
+  private resetFilters(): void {
+    this.filters = {};
+  }
+
   public resetTrash(): void {
     this.trash.reset();
   }
@@ -187,16 +191,20 @@ export class Story {
     let foundDuplicateVerb = false;
 
     for (const verbData of sent.verbsParsed) {
+      if (!verbData.lemma) {
+        continue;
+      }
+
       // Prüfe, ob das Verb bereits verwendet wurde
-      if (verbData.lemma && foundVerbs.has(verbData.lemma)) {
+      if (foundVerbs.has(verbData.lemma)) {
         foundDuplicateVerb = true;
         break;
       }
 
       // check Verb trash
       if (
-        (verbData.lemma && this.trash.get("verbs")?.has(verbData.lemma)) ||
-        (verbData.lemma && this.trash.get("repeatedWords")?.has(verbData.word))
+        this.trash.get("verbs")?.has(verbData.lemma) ||
+        this.trash.get("repeatedWords")?.has(verbData.word)
       ) {
         foundDuplicateVerb = true;
         break;
@@ -251,18 +259,19 @@ export class Story {
     }
 
     // Check if any of the wanted words are in the last N sentences
-    const wantedWordsCount = wantedWords.length;
-    const sentenceCount = wantedWordsCount > 1 ? wantedWordsCount - 1 : 1;
-    const usedSentences = this.usedSentences.concat(foundSentences || []);
-    if (
-      wantedWords.length > 1 &&
-      this.hasWordsInRecentSentences(
-        wantedWordsInSentence,
-        sentenceCount,
-        usedSentences
-      )
-    ) {
-      return false;
+    if (wantedWords.length > 1) {
+      const wantedWordsCount = wantedWords.length;
+      const sentenceCount = wantedWordsCount > 1 ? wantedWordsCount - 1 : 1;
+      const usedSentences = this.usedSentences.concat(foundSentences || []);
+      if (
+        this.hasWordsInRecentSentences(
+          wantedWordsInSentence,
+          sentenceCount,
+          usedSentences
+        )
+      ) {
+        return false;
+      }
     }
 
     return true;
@@ -300,7 +309,7 @@ export class Story {
         const verbCheck = this.checkVerbs(sent, foundVerbs);
         const nounCheck = this.checkNouns(sent, foundNouns);
 
-        if (!nounCheck && !verbCheck) {
+        if (!nounCheck || !verbCheck) {
           continue;
         }
       }
@@ -492,6 +501,7 @@ export class Story {
 
     for (let n = 0; n < this.sentences.length; n++) {
       // Bevor wir die Sätze auswählen, setzen wir die Filter
+      this.resetFilters();
       this.updateFiltersIfNeeded();
       const [text, sentences] = this.generateTextOnce() || [];
 
