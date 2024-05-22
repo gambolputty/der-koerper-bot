@@ -409,10 +409,18 @@ export class Story {
   }
 
   private updateFiltersIfNeeded(): void {
-    const filterOptions = this.getOption("filters");
+    this.resetFilters();
+
+    const options = this.getOption("filters");
+    const wantedFilters: Filters = {
+      sentCount: undefined,
+      wantedWords: undefined,
+    };
 
     // Lege die Anzahl der Sätze fest, wenn sie nicht gesetzt ist
-    if (!filterOptions?.sentCount) {
+    if (options?.sentCount) {
+      wantedFilters.sentCount = options.sentCount;
+    } else {
       const sentCount = Story.getRandomSentCount(
         1,
         7,
@@ -421,21 +429,27 @@ export class Story {
       // if (this.getFilter("mode") === "repeatVerb") {
       //   sentCount = Story.getRandomSentCount(4, 8, [100, 100, 100, 40, 10]);
       // }
-      this.addFilter("sentCount", sentCount);
+      wantedFilters.sentCount = sentCount;
     }
 
     // Randomly choose a verb if no nouns or verbs are set
-    if (!filterOptions?.wantedWords) {
+    if (options?.wantedWords) {
+      wantedFilters.wantedWords = options.wantedWords;
+    } else {
       const weights = [100, 15];
       const setRandomVerb = weightedRandom([0, 1], weights) === 1;
 
       if (setRandomVerb) {
         const verb = this.getRandomVerb();
         if (verb) {
-          this.addFilter("wantedWords", [verb]);
+          wantedFilters.wantedWords = [verb];
         }
       }
     }
+
+    // update filters
+    this.addFilter("sentCount", wantedFilters.sentCount);
+    this.addFilter("wantedWords", wantedFilters.wantedWords);
   }
 
   private generateTextOnce(): [string, SentenceType[]] | undefined {
@@ -501,7 +515,6 @@ export class Story {
 
     for (let n = 0; n < this.sentences.length; n++) {
       // Bevor wir die Sätze auswählen, setzen wir die Filter
-      this.resetFilters();
       this.updateFiltersIfNeeded();
       const [text, sentences] = this.generateTextOnce() || [];
 
