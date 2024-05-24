@@ -1,7 +1,7 @@
 import * as v from "valibot";
 
 import { randomFromRange, weightedRandom } from "../random";
-import { TrashMap } from "../trash";
+import { DEFAULT_TRASH_CONFIG, TrashMap } from "../trash";
 import type { SentenceType } from "./sentence";
 import { SentenceSchema } from "./sentence";
 import { loadFile, parseCSVData } from "./utils";
@@ -156,19 +156,29 @@ export class Story {
   }
 
   private checkNouns(sent: SentenceType, foundNouns: Set<string>): boolean {
+    const wantedWords = this.getFilter("wantedWords");
     let foundDuplicateNoun = false;
 
     for (const nounData of sent.nounsParsed) {
+      if (!nounData.lemma) {
+        continue;
+      }
+
+      // Skip wanted words
+      if (wantedWords && wantedWords.includes(nounData.word)) {
+        continue;
+      }
+
       // Not the same nouns in the sentence
-      if (nounData.lemma && foundNouns.has(nounData.lemma)) {
+      if (foundNouns.has(nounData.lemma)) {
         foundDuplicateNoun = true;
         break;
       }
 
       // check Noun trash
       if (
-        (nounData.lemma && this.trash.get("nouns")?.has(nounData.lemma)) ||
-        (nounData.lemma && this.trash.get("repeatedNouns")?.has(nounData.lemma))
+        this.trash.get("nouns")?.has(nounData.lemma) ||
+        this.trash.get("repeatedNouns")?.has(nounData.lemma)
       ) {
         foundDuplicateNoun = true;
         break;
@@ -187,11 +197,16 @@ export class Story {
     // if (!resultCount && !wantedVerbs.includes(sent.rootVerb)) {
     //   return false;
     // }
-
+    const wantedWords = this.getFilter("wantedWords");
     let foundDuplicateVerb = false;
 
     for (const verbData of sent.verbsParsed) {
       if (!verbData.lemma) {
+        continue;
+      }
+
+      // Skip wanted words
+      if (wantedWords && wantedWords.includes(verbData.word)) {
         continue;
       }
 
@@ -261,7 +276,7 @@ export class Story {
     // Check if any of the wanted words are in the last N sentences
     if (wantedWords.length > 1) {
       const wantedWordsCount = wantedWords.length;
-      const sentenceCount = wantedWordsCount > 1 ? wantedWordsCount - 1 : 1;
+      const sentenceCount = wantedWordsCount - 1;
       const usedSentences = this.usedSentences.concat(foundSentences || []);
       if (
         this.hasWordsInRecentSentences(
@@ -284,6 +299,7 @@ export class Story {
     const foundSentences: SentenceType[] = [];
     const sentCount = this.getFilter("sentCount")!;
     const wantedWords = this.getFilter("wantedWords");
+    const hasWantedWords = wantedWords && wantedWords.length > 0;
 
     let foundAnd = false;
 
@@ -299,19 +315,19 @@ export class Story {
         continue;
       }
 
-      if (wantedWords && wantedWords.length) {
+      if (hasWantedWords) {
         // Check wanted words
         if (!this.checkWantedWords(sent, foundSentences)) {
           continue;
         }
-      } else {
-        // Check nouns and verbs
-        const verbCheck = this.checkVerbs(sent, foundVerbs);
-        const nounCheck = this.checkNouns(sent, foundNouns);
+      }
 
-        if (!nounCheck || !verbCheck) {
-          continue;
-        }
+      // Check nouns and verbs
+      const nounCheck = this.checkNouns(sent, foundNouns);
+      const verbCheck = this.checkVerbs(sent, foundVerbs);
+
+      if (!nounCheck || !verbCheck) {
+        continue;
       }
 
       // check Source trash
@@ -408,7 +424,7 @@ export class Story {
     return result;
   }
 
-  private updateFiltersIfNeeded(): void {
+  private setFiltersFromOptions(): void {
     this.resetFilters();
 
     const options = this.getOption("filters");
@@ -432,18 +448,32 @@ export class Story {
       wantedFilters.sentCount = sentCount;
     }
 
-    // Randomly choose a verb if no nouns or verbs are set
+    // Set wanted words filter and trash configs
     if (options?.wantedWords) {
       wantedFilters.wantedWords = options.wantedWords;
+
+      // Set special trash config when wanted words are set
+      const trashConfigs = {
+        verbs: { maxItems: 4 },
+        // repeatedWords: { maxItems: 5 },
+        nouns: { maxItems: 4 },
+        // sentences: { maxItems: 300 },
+        sources: { maxItems: 4 },
+      };
+      this.trash.updateConfig(trashConfigs);
     } else {
       const weights = [100, 15];
       const setRandomVerb = weightedRandom([0, 1], weights) === 1;
 
+      // Randomly choose a verb if no nouns or verbs are set
       if (setRandomVerb) {
         const verb = this.getRandomVerb();
         if (verb) {
           wantedFilters.wantedWords = [verb];
         }
+
+        // Update trash configs
+        this.trash.updateConfig({ ...DEFAULT_TRASH_CONFIG });
       }
     }
 
@@ -515,7 +545,7 @@ export class Story {
 
     for (let n = 0; n < this.sentences.length; n++) {
       // Bevor wir die Sätze auswählen, setzen wir die Filter
-      this.updateFiltersIfNeeded();
+      this.setFiltersFromOptions();
       const [text, sentences] = this.generateTextOnce() || [];
 
       if (!text || !sentences) {

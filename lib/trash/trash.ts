@@ -71,4 +71,9 @@ export class Trash extends Set<string> {
     }
     return false;
   }
+
+  public updateConfig(config: TrashConfig): void {
+    this.config.maxItems = config.maxItems;
+    this.truncateItems();
+  }
 }
