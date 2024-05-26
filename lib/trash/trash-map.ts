@@ -87,24 +87,28 @@ export class TrashMap extends Map<string, Trash> {
       fs.mkdirSync(directory);
     }
 
-    // Lade alle Text-Dateien aus dem Ordner.
+    const trashNames = Object.keys(this.configs);
+
     // Eine Trash-Datei wird als Text-Datei gespeichert.
     // Die Einträge sind Strings, die durch einen Zeilenwechsel getrennt sind.
     // Die Dateinamen sind die Schlüssel der Trash-Map.
-    const files = fs.readdirSync(directory);
-    if (!files.length) {
-      return false;
-    }
+    // const files = fs.readdirSync(directory);
+    // if (!files.length) {
+    //   return false;
+    // }
 
-    for (const file of files) {
-      const key = file.replace(".txt", "") as keyof TrashMapConfig;
+    for (const name of trashNames) {
+      const file = `${name}.txt`;
       const filePath = join(fileURLToPath(directory), file);
       const content = fs.readFileSync(filePath, "utf-8");
       const values = content.length ? content.split("\n") : [];
 
       this.set(
-        key,
-        new Trash({ initialValues: new Set(values), config: this.configs[key] })
+        name,
+        new Trash({
+          initialValues: new Set(values),
+          config: this.configs[name as keyof TrashMapConfig],
+        })
       );
     }
 
