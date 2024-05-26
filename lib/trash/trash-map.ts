@@ -100,7 +100,9 @@ export class TrashMap extends Map<string, Trash> {
     for (const name of trashNames) {
       const file = `${name}.txt`;
       const filePath = join(fileURLToPath(directory), file);
-      const content = fs.readFileSync(filePath, "utf-8");
+      const content = fs.existsSync(filePath)
+        ? fs.readFileSync(filePath, "utf-8")
+        : "";
       const values = content.length ? content.split("\n") : [];
 
       this.set(
