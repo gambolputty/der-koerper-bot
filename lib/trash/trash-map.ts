@@ -9,7 +9,7 @@ const TrashMapConfigSchema = v.record(
   TrashConfigSchema
 );
 
-type TrashMapConfig = v.Output<typeof TrashMapConfigSchema>;
+export type TrashMapConfig = v.Output<typeof TrashMapConfigSchema>;
 
 export const DEFAULT_TRASH_CONFIG: TrashMapConfig = {
   verbs: { maxItems: 20 },
@@ -61,10 +61,6 @@ export class TrashMap extends Map<string, Trash> {
         trash.updateConfig(config);
       }
     }
-  }
-
-  public resetConfig(): void {
-    this.updateConfig({ ...DEFAULT_TRASH_CONFIG });
   }
 
   async loadTrashBinsFromFile(): Promise<boolean> {

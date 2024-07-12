@@ -1,7 +1,8 @@
 import * as v from "valibot";
 
 import { randomFromRange, weightedRandom } from "../random";
-import { TrashMap } from "../trash";
+import type { TrashMapConfig } from "../trash";
+import { DEFAULT_TRASH_CONFIG, TrashMap } from "../trash";
 import type { SentenceType } from "./sentence";
 import { SentenceSchema } from "./sentence";
 import { loadFile, parseCSVData } from "./utils";
@@ -47,22 +48,26 @@ export class Story {
   protected usedSentences: SentenceType[] = [];
   private readonly config: StoryConfig;
   private trash: TrashMap;
+  private trashConfig: TrashMapConfig = DEFAULT_TRASH_CONFIG;
   private filters: Filters = {};
   protected options: Options = defaultOptions;
 
   constructor({
     sentences,
     trashMap,
+    trashConfig,
     config,
     options,
   }: {
     sentences: SentenceType[];
     trashMap?: TrashMap;
+    trashConfig?: TrashMapConfig;
     config?: StoryConfig;
     options?: Options;
   }) {
     this.sentences = sentences;
-    this.trash = trashMap || new TrashMap();
+    this.trashConfig = trashConfig || DEFAULT_TRASH_CONFIG;
+    this.trash = trashMap || new TrashMap(this.trashConfig);
 
     // set config
     if (config instanceof StoryConfig) {
@@ -453,16 +458,16 @@ export class Story {
       wantedFilters.wantedWords = options.wantedWords;
 
       // Set special trash config when wanted words are set
-      const trashConfigs = {
+      const newTrashConfigs = {
         verbs: { maxItems: 4 },
         // repeatedWords: { maxItems: 5 },
         nouns: { maxItems: 4 },
         // sentences: { maxItems: 300 },
         sources: { maxItems: 4 },
       };
-      this.trash.updateConfig(trashConfigs);
+      this.trash.updateConfig(newTrashConfigs);
     } else {
-      this.trash.resetConfig();
+      this.trash.updateConfig(this.trashConfig);
     }
 
     // update filters
