@@ -16,7 +16,7 @@ story.updateOptions({
   filters: {
     // sentCount: 1,
     // verbs: ["weiß"],
-    wantedWords: ["Weibchen", "Gehirn"],
+    wantedWords: ["Gehirn"],
     // verbs: ["will", "soll", "weiß"],
     // mode: "repeatVerb",
   },

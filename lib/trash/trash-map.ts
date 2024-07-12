@@ -63,6 +63,10 @@ export class TrashMap extends Map<string, Trash> {
     }
   }
 
+  public resetConfig(): void {
+    this.updateConfig({ ...DEFAULT_TRASH_CONFIG });
+  }
+
   async loadTrashBinsFromFile(): Promise<boolean> {
     // Prüfe, ob der Ordner STORY_TRASH_DIRECTORY existiert
     // Wenn nicht, erstelle ihn.

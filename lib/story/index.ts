@@ -1,7 +1,7 @@
 import * as v from "valibot";
 
 import { randomFromRange, weightedRandom } from "../random";
-import { DEFAULT_TRASH_CONFIG, TrashMap } from "../trash";
+import { TrashMap } from "../trash";
 import type { SentenceType } from "./sentence";
 import { SentenceSchema } from "./sentence";
 import { loadFile, parseCSVData } from "./utils";
@@ -462,19 +462,7 @@ export class Story {
       };
       this.trash.updateConfig(trashConfigs);
     } else {
-      const weights = [100, 15];
-      const setRandomVerb = weightedRandom([0, 1], weights) === 1;
-
-      // Randomly choose a verb if no nouns or verbs are set
-      if (setRandomVerb) {
-        const verb = this.getRandomVerb();
-        if (verb) {
-          wantedFilters.wantedWords = [verb];
-        }
-
-        // Update trash configs
-        this.trash.updateConfig({ ...DEFAULT_TRASH_CONFIG });
-      }
+      this.trash.resetConfig();
     }
 
     // update filters
