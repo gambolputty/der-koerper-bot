@@ -40,6 +40,7 @@ export class StoryConfig {
   // prettier-ignore
   readonly firstSentenceExcludedWords: Set<string> = new Set([
     "aber", "also", "andererseits", "außerdem", "beide", "beiden", "beides", "dadurch", "daher", "damit", "danach", "daraufhin", "darum", "dementsprechend", "demnach", "demzufolge", "denn", "dennoch", "deshalb", "deswegen", "doch", "einerseits", "folglich", "hierdurch", "infolgedessen", "jedoch", "nichtsdestotrotz", "somit", "sondern", "sowohl", "stattdessen", "trotzdem", "weder", "zudem", "zwar", "nämlich", "obwohl", "weil", "wenn", "während", "währenddessen", "weshalb", "wie", "wieso", "wodurch", "wofür", "woher", "wohin", "womit", "woran", "worauf", "sonst", "sozusagen",
+    "daraus", "aufgrund"
   ]);
 }
 
@@ -259,7 +260,7 @@ export class Story {
     return false;
   }
 
-  private checkWantedWords(
+  private checkWantedWordsInCurrentAndRecentSentences(
     sent: SentenceType,
     foundSentences: SentenceType[]
   ): boolean {
@@ -305,6 +306,7 @@ export class Story {
     const sentCount = this.getFilter("sentCount")!;
     const wantedWords = this.getFilter("wantedWords");
     const hasWantedWords = wantedWords && wantedWords.length > 0;
+    const firstSentenceExcludedWords = this.config.firstSentenceExcludedWords;
 
     let foundAnd = false;
 
@@ -320,9 +322,14 @@ export class Story {
         continue;
       }
 
+      // Check wanted words if set
       if (hasWantedWords) {
-        // Check wanted words
-        if (!this.checkWantedWords(sent, foundSentences)) {
+        if (
+          !this.checkWantedWordsInCurrentAndRecentSentences(
+            sent,
+            foundSentences
+          )
+        ) {
           continue;
         }
       }
@@ -350,11 +357,11 @@ export class Story {
         continue;
       }
 
-      // If it's the first sentence, exclude sentences with excluded words
+      // First sentence cannot contain certain words
       if (
         result.length === 0 &&
         sent.words.some((word) =>
-          this.config.firstSentenceExcludedWords.has(word)
+          firstSentenceExcludedWords.has(word.toLowerCase())
         )
       ) {
         continue;
@@ -396,10 +403,10 @@ export class Story {
     // Sätze, die mit einem Doppelpunkt enden, müssen an den Anfang.
     // sentences.sort((sent1, sent2) => (sent1.endsWithColon ? -1 : 1));
 
-    // Sätze, die einen Doppelpunkt beinhalten, aber mit ihm Enden,
+    // Sätze, die einen Doppelpunkt beinhalten, aber nicht mit ihm Enden,
     // müssen ans Ende.
     sentences.sort((sent1) => {
-      if (sent1.text.includes(":") && !sent1.endsWithColon) {
+      if (sent1.hasColon && !sent1.endsWithColon) {
         return 1;
       } else {
         return 0;

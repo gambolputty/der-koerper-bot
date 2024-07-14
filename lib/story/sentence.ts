@@ -19,9 +19,13 @@ export type ParseNounResult = {
 };
 
 const BooleanString = v.coerce(v.boolean(), (val) => val === "1");
-// src: https://stackoverflow.com/a/11704228/5732518
+
+// Src: https://github.com/winkjs/wink-tokenizer/blob/master/src/wink-tokenizer.js#L59
 const getWords = (text: string): string[] =>
-  text.match(/(?<![\p{L}\p{N}_])[\p{L}\p{N}_]+(?![\p{L}\p{N}_])/gu) || [];
+  text.match(
+    /[a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u00FF][a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u00FF']*/gi
+  ) || [];
+
 const parseVerbs = (
   rootVerb: string,
   verbs: Set<string>,
@@ -40,6 +44,7 @@ const parseVerbs = (
 
   return result;
 };
+
 const parseNouns = (nouns: Set<string>, nounsLemma: Set<string>) => {
   const result: ParseNounResult[] = [];
   const lemmaArray = Array.from(nounsLemma);
@@ -65,15 +70,21 @@ export const SentenceSchema = v.transform(
     nouns: SeparatedCSVField,
     nounsLemma: SeparatedCSVField,
     source: v.string([v.minLength(1)]),
-    endsWithColon: BooleanString,
     hasAnd: BooleanString,
+    hasColon: BooleanString,
+    endsWithColon: BooleanString,
   }),
-  (input) => ({
-    ...input,
-    words: getWords(input.text),
-    verbsParsed: parseVerbs(input.rootVerb, input.verbs, input.verbsLemma),
-    nounsParsed: parseNouns(input.nouns, input.nounsLemma),
-  })
+  (input) => {
+    const text = input.text;
+    const words = getWords(text);
+
+    return {
+      ...input,
+      words,
+      verbsParsed: parseVerbs(input.rootVerb, input.verbs, input.verbsLemma),
+      nounsParsed: parseNouns(input.nouns, input.nounsLemma),
+    };
+  }
 );
 
 export type SentenceType = v.Output<typeof SentenceSchema>;
