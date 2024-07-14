@@ -1,11 +1,11 @@
 import * as v from "valibot";
 
 const SeparatedCSVField = v.transform(v.string(), (val): Set<string> => {
-  if (!val || val === "") {
+  if (!val || !val.length) {
     return new Set();
   }
-  const items = val.split(";");
-  return new Set(items);
+
+  return new Set(val.split(";"));
 });
 
 export type ParseVerbResult = {
@@ -13,6 +13,7 @@ export type ParseVerbResult = {
   lemma: string | undefined;
   isRoot: boolean;
 };
+
 export type ParseNounResult = {
   word: string;
   lemma: string | undefined;
@@ -30,31 +31,30 @@ const parseVerbs = (
   rootVerb: string,
   verbs: Set<string>,
   verbsLemma: Set<string>
-) => {
-  const result: ParseVerbResult[] = [];
-  const lemmaArray = Array.from(verbsLemma);
+): ParseVerbResult[] => {
   const verbsArray = Array.from(verbs);
-
-  verbs.forEach((word) => {
-    const verbIndex = verbsArray.findIndex((v) => v === word);
-    const lemma = lemmaArray[verbIndex];
-    const isRoot = word === rootVerb;
-    result.push({ word, lemma, isRoot });
+  const lemmaArray = Array.from(verbsLemma);
+  const result: ParseVerbResult[] = verbsArray.map((word, index) => {
+    return {
+      word,
+      lemma: lemmaArray[index],
+      isRoot: word === rootVerb,
+    };
   });
 
   return result;
 };
 
-const parseNouns = (nouns: Set<string>, nounsLemma: Set<string>) => {
-  const result: ParseNounResult[] = [];
-  const lemmaArray = Array.from(nounsLemma);
+const parseNouns = (
+  nouns: Set<string>,
+  nounsLemma: Set<string>
+): ParseNounResult[] => {
   const nounsArray = Array.from(nouns);
-
-  nouns.forEach((word) => {
-    const index = nounsArray.findIndex((v) => v === word);
-    const lemma = lemmaArray[index];
-    result.push({ word, lemma });
-  });
+  const lemmaArray = Array.from(nounsLemma);
+  const result: ParseNounResult[] = nounsArray.map((word, index) => ({
+    word,
+    lemma: lemmaArray[index],
+  }));
 
   return result;
 };
