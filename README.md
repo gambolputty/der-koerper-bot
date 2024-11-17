@@ -1,0 +1,1 @@
+Die Dateien "sentences.csv" und "frequencies.json" kommen in "lib/assets" wenn sie im Repository "der-koerper" generiert wurden.
