@@ -58,7 +58,9 @@ export class Trash extends Set<string> {
     if (maxItems && this.size > maxItems) {
       while (this.size > maxItems) {
         const firstItem = this.values().next().value;
-        this.delete(firstItem);
+        if (firstItem) {
+          this.delete(firstItem);
+        }
       }
     }
   }
