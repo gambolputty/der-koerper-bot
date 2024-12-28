@@ -2,7 +2,10 @@ import * as v from "valibot";
 
 import { Trash, TrashConfigSchema } from "./trash";
 
-const STORY_TRASH_DIRECTORY = new URL(".storytrash", import.meta.url);
+const STORY_TRASH_DIRECTORY = new URL(
+  ".storytrash",
+  import.meta.url
+); /* @vite-ignore */
 
 const TrashMapConfigSchema = v.record(
   v.picklist(["verbs", "nouns", "repeatedWords", "sentences", "sources"]),
