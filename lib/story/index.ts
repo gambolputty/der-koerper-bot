@@ -27,6 +27,12 @@ const defaultOptions: Options = {
   generateTextTimes: 1,
 };
 
+const randomSentCountPattern = {
+  start: 1, // Minimum number of sentences
+  end: 5, // Maximum number of sentences
+  weights: [100, 10, 100, 50, 50], // Weights for each number of sentences
+};
+
 export type Filters = v.Output<typeof FiltersSchema>;
 export type Options = v.Output<typeof OptionsSchema>;
 
@@ -450,9 +456,9 @@ export class Story {
       wantedFilters.sentCount = options.sentCount;
     } else {
       const sentCount = Story.getRandomSentCount(
-        1,
-        7,
-        [100, 10, 100, 100, 50, 40, 10]
+        randomSentCountPattern.start,
+        randomSentCountPattern.end,
+        randomSentCountPattern.weights
       );
       // if (this.getFilter("mode") === "repeatVerb") {
       //   sentCount = Story.getRandomSentCount(4, 8, [100, 100, 100, 40, 10]);
