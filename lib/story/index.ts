@@ -30,7 +30,7 @@ const defaultOptions: Options = {
 const randomSentCountPattern = {
   start: 1, // Minimum number of sentences
   end: 5, // Maximum number of sentences
-  weights: [100, 10, 100, 50, 50], // Weights for each number of sentences
+  weights: [100, 10, 100, 25, 25], // Weights for each number of sentences
 };
 
 export type Filters = v.Output<typeof FiltersSchema>;
