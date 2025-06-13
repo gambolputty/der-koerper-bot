@@ -11,6 +11,14 @@ export const generateText = async () => {
   const sentences = await Story.loadSentencesFromCSV(csvUrl);
 
   const allTexts: string[] = [];
+  const bookData: Array<{
+    sentCount: number;
+    sections: Array<{
+      text: string;
+      usedSentences: unknown[];
+      sentCount: number;
+    }>;
+  }> = [];
 
   // Konzeptuelles Kunstbuch: Sätze werden allmählich länger
   // Beginne mit 1 Satz und steigere langsam bis zu mehr Sätzen
@@ -48,6 +56,19 @@ export const generateText = async () => {
     const textArr = story.generateText();
     const sectionTexts = textArr.map((r) => r.text);
 
+    // Speichere sowohl Text als auch Metadaten für JSON
+    const sectionData = textArr.map((r) => ({
+      text: r.text,
+      usedSentences: r.usedSentences,
+      sentCount: sentCount,
+    }));
+
+    // Füge Daten zur JSON-Struktur hinzu
+    bookData.push({
+      sentCount: sentCount,
+      sections: sectionData,
+    });
+
     // Füge Überschrift für den Abschnitt hinzu
     allTexts.push(`--- ${sentCount} ${sentCount === 1 ? "Satz" : "Sätze"} ---`);
     allTexts.push(""); // Leerzeile nach der Überschrift
@@ -60,14 +81,19 @@ export const generateText = async () => {
   }
 
   await trashMap.saveTrashBinsToFile();
-  return allTexts.join("\n");
+  return { text: allTexts.join("\n"), bookData };
 };
 
 console.log("Generating text...");
-const text = await generateText();
+const result = await generateText();
 console.log("Text generated");
 
 // save text to .txt file
-const filePath = path.join(process.cwd(), "book.txt");
-fs.writeFileSync(filePath, text);
-console.log(`Text saved to ${filePath}`);
+const textFilePath = path.join(process.cwd(), "book.txt");
+fs.writeFileSync(textFilePath, result.text);
+console.log(`Text saved to ${textFilePath}`);
+
+// save JSON data for LaTeX generation
+const jsonFilePath = path.join(process.cwd(), "book-data.json");
+fs.writeFileSync(jsonFilePath, JSON.stringify(result.bookData, null, 2));
+console.log(`Book data saved to ${jsonFilePath}`);
