@@ -14,6 +14,9 @@ const FiltersSchema = v.object({
   sentCount: v.optional(v.number([v.minValue(1)])),
   // Ein oder mehrere Verben, das in den Sätzen vorkommen sollen
   wantedWords: v.optional(v.array(v.string([v.minLength(1)]))),
+  // Wörter, die nicht in den Sätzen vorkommen sollen
+  // Wenn ein Satz eines dieser Wörter enthält, wird er nicht ausgewählt
+  excludedWords: v.optional(v.array(v.string([v.minLength(1)]))),
 });
 
 const OptionsSchema = v.object({
@@ -245,6 +248,21 @@ export class Story {
     return true;
   }
 
+  private hasExcludedWords(sent: SentenceType): boolean {
+    const excludedWords = this.getFilter("excludedWords");
+
+    if (!excludedWords || excludedWords.length === 0) {
+      return false;
+    }
+
+    // Prüfe, ob der Satz eines der ausgeschlossenen Wörter enthält
+    const hasExcludedWord = sent.words.some((word) =>
+      excludedWords.includes(word.toLowerCase())
+    );
+
+    return hasExcludedWord;
+  }
+
   private hasWordsInRecentSentences(
     wantedWords: string[],
     n: number,
@@ -345,6 +363,11 @@ export class Story {
       const verbCheck = this.checkVerbs(sent, foundVerbs);
 
       if (!nounCheck || !verbCheck) {
+        continue;
+      }
+
+      // Check excluded words
+      if (this.hasExcludedWords(sent)) {
         continue;
       }
 
@@ -449,6 +472,7 @@ export class Story {
     const wantedFilters: Filters = {
       sentCount: undefined,
       wantedWords: undefined,
+      excludedWords: undefined,
     };
 
     // Lege die Anzahl der Sätze fest, wenn sie nicht gesetzt ist
@@ -483,16 +507,28 @@ export class Story {
       this.trash.updateConfig(this.trashConfig);
     }
 
+    // Set excluded words filter
+    if (options?.excludedWords) {
+      wantedFilters.excludedWords = options.excludedWords;
+    }
+
     // update filters
     this.addFilter("sentCount", wantedFilters.sentCount);
     this.addFilter("wantedWords", wantedFilters.wantedWords);
+    this.addFilter("excludedWords", wantedFilters.excludedWords);
   }
 
   private generateTextOnce(): [string, SentenceType[]] | undefined {
     const wantedWords = this.getFilter("wantedWords");
+    const expectedSentCount = this.getFilter("sentCount")!;
     const sents = this.pickRandomSentences();
 
     if (!sents) {
+      return;
+    }
+
+    // Validierung: Verwerfe Ergebnisse, die nicht die exakte Anzahl von Sätzen enthalten
+    if (sents.length !== expectedSentCount) {
       return;
     }
 
@@ -548,14 +584,25 @@ export class Story {
      */
     const result: GenerateTextResult[] = [];
     const numberOfTimes = this.getOption("generateTextTimes") || 1;
+    const maxAttempts = Math.max(this.sentences.length * 2, numberOfTimes * 10);
+    let attempts = 0;
 
-    for (let n = 0; n < this.sentences.length; n++) {
+    for (let n = 0; n < maxAttempts; n++) {
+      attempts++;
+
       // Bevor wir die Sätze auswählen, setzen wir die Filter
       this.setFiltersFromOptions();
       const [text, sentences] = this.generateTextOnce() || [];
 
       if (!text || !sentences) {
-        break;
+        // Wenn wir zu viele erfolglose Versuche hatten, breche ab
+        if (attempts > maxAttempts / 2 && result.length === 0) {
+          console.warn(
+            `Warnung: Konnte nach ${attempts} Versuchen keine passenden Texte generieren.`
+          );
+          break;
+        }
+        continue;
       }
 
       // Füge den Text zur Liste hinzu
@@ -570,6 +617,12 @@ export class Story {
       if (result.length === numberOfTimes) {
         break;
       }
+    }
+
+    if (result.length < numberOfTimes) {
+      console.warn(
+        `Warnung: Nur ${result.length} von ${numberOfTimes} gewünschten Texten generiert.`
+      );
     }
 
     return result;
