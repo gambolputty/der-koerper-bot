@@ -486,10 +486,12 @@ export class Story {
       wantedFilters.wantedWords = options.wantedWords;
 
       // Set special trash config when wanted words are set
+      // Verwende dynamische Größen basierend auf numberOfTimes
+      const numberOfTimes = this.getOption("generateTextTimes") || 1;
       const newTrashConfigs = {
-        verbs: { maxItems: 4 },
-        nouns: { maxItems: 4 },
-        sources: { maxItems: 4 },
+        verbs: { maxItems: Math.max(4, numberOfTimes) },
+        nouns: { maxItems: Math.max(4, numberOfTimes) },
+        sources: { maxItems: Math.max(4, numberOfTimes) },
       };
       this.trash.updateConfig(newTrashConfigs);
     } else {
@@ -568,8 +570,13 @@ export class Story {
      */
     const result: GenerateTextResult[] = [];
     const numberOfTimes = this.getOption("generateTextTimes") || 1;
-    const maxAttempts = Math.max(this.sentences.length * 2, numberOfTimes * 10);
+
+    // Intelligentere maxAttempts Berechnung
+    const baseAttempts = Math.max(this.sentences.length, numberOfTimes * 50);
+    const maxAttempts = Math.min(baseAttempts, 10000); // Cap bei 10k Versuchen
+
     let attempts = 0;
+    let lastSuccessfulAttempt = 0;
 
     for (let n = 0; n < maxAttempts; n++) {
       attempts++;
@@ -579,17 +586,25 @@ export class Story {
       const [text, sentences] = this.generateTextOnce() || [];
 
       if (!text || !sentences) {
-        // Wenn wir zu viele erfolglose Versuche hatten, breche ab
-        if (attempts > maxAttempts / 2 && result.length === 0) {
+        // Adaptive Abbruchbedingung: Je mehr Erfolg wir hatten, desto geduldiger sind wir
+        const gapSinceLastSuccess = attempts - lastSuccessfulAttempt;
+        const allowedGap =
+          result.length > 0
+            ? Math.min(1000, this.sentences.length) // Mit Erfolg: maximal 1000 oder Anzahl Sätze
+            : Math.min(5000, this.sentences.length * 2); // Ohne Erfolg: mehr Geduld
+
+        if (gapSinceLastSuccess > allowedGap) {
           console.warn(
-            `Warnung: Konnte nach ${attempts} Versuchen keine passenden Texte generieren.`
+            `Abbruch nach ${gapSinceLastSuccess} erfolglosen Versuchen. Möglicherweise sind die Filter zu restriktiv.`
           );
           break;
         }
         continue;
       }
 
-      // Füge den Text zur Liste hinzu
+      // Erfolg!
+      lastSuccessfulAttempt = attempts;
+
       result.push({
         text,
         usedSentences: sentences,
@@ -604,8 +619,12 @@ export class Story {
     }
 
     if (result.length < numberOfTimes) {
+      const wantedWords = this.getOption("filters")?.wantedWords;
+      const filterInfo = wantedWords
+        ? ` (wantedWords: ${wantedWords.join(", ")})`
+        : "";
       console.warn(
-        `Warnung: Nur ${result.length} von ${numberOfTimes} gewünschten Texten generiert.`
+        `Nur ${result.length} von ${numberOfTimes} gewünschten Texten generiert${filterInfo}.`
       );
     }
 

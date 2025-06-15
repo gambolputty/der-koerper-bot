@@ -1,22 +1,97 @@
---- Texte mit Wörtern: zeigt ---
+--- Texte mit Wörtern: benötigt ---
 
-Der Körper verliert jegliche Lebendigkeit und zeigt keine Emotionen mehr.
-Der Körper zeigt sich harmonisch und konzentriert.
-Der Körper mag gepflegt werden und das zeigt sich auch im Alltag.
-Der Körper bildet eine Einheit und zeigt die Anatomie.
-Der Körper zeigt 5 bis 6 blauschwarze Streifen.
-Der Körper zeigt uns die rote Karte.
-Der Körper zeigt die Differenz zwischen dem Eröffnungs- und Schlusskurs.
-Der Körper zeigt eine bestimmte Zeitperiode auf.
-Der Körper kennt und zeigt uns den Weg zu Gesundheit und Harmonie.
-Der Körper zeigt häufig einen spezifischen samtigen Glanz.
-Der Körper zeigt erste Abwehrsignale gegen den aufgenommenen Giftstoff.
-Der Körper zeigt uns den Weg zur Heilung.
-Der Körper zeigt eine stilvolle, geschwungene Linie.
-Der Körper zeigt uns ganz bewusst, wo die Seele kein Gehör fand.
-Der Körper zeigt immer wiederkehrende Symptome.
-Der Körper zeigt nur ähnliche Reaktionen, um Störungen selbst zu heilen.
-Der Körper zeigt einen dreieckigen Querschnitt.
-Der Körper zeigt schon recht früh erste Signale.
-Der Körper ist länger als hoch und zeigt sich kompakt.
-Der Körper zeigt schon früh An- und Verspannungen.
+Der Körper benötigt eine ausgewogene Mischung verschiedener Nährstoffe.
+Der Körper benötigt eine ausreichende Menge guter Öle und Fette.
+Der Körper benötigt immer mehr Energie, um seinen Bedarf zu decken.
+Der Körper benötigt Folat für die Zellteilung und Zellneubildung.
+Der Körper benötigt Eisen, um Hämoglobin zu bilden.
+Der Körper benötigt das Wasser zum Transport.
+Der Körper benötigt Vitamin D, um Kalzium in die Knochen einzulagern.
+Der Körper benötigt Substanzen für lebenswichtige Aufgaben.
+Der Körper benötigt pro Tag ungefähr ein bis zwei Gramm.
+Der Körper benötigt nachts ausreichend Zeit zum Schlafen.
+Der Körper benötigt kleine Portionen, und der Magen wird reduziert.
+Der Körper benötigt Magnesium für die Funktion von über 300 Enzymen.
+Der Körper benötigt Erholung von sportlichen Aktivitäten.
+Der Körper benötigt immer etwas Zucker (Glukose) im Blut.
+Der Körper benötigt B12 für mehr als 100 Vorgänge im Körper.
+Der Körper benötigt regelmäßig tägliche Ruhe- und Wartungsarbeiten.
+Der Körper benötigt im Verlauf der Schwangerschaft mehr Schilddrüsenhormone.
+Der Körper benötigt wichtige Reserven, um fit und gesund zu bleiben.
+Der Körper benötigt rund 25 % aus den im Eiweiß enthaltenen Kalorien.
+Der Körper benötigt Protein für viele Prozesse.
+Der Körper benötigt die Energiereserven um gegen die Erreger anzukämpfen.
+Der Körper benötigt auch Flüssigkeit, um die Bakterien auszuscheiden.
+Der Körper benötigt eine gute Durchblutung, um eine gesunde Haut zu fördern.
+Der Körper benötigt ca. 3 bis 4 Stunden, um eine Mahlzeit zu verdauen.
+Der Körper benötigt Natriumionen für die Nervenfunktionen.
+Der Körper benötigt rund 30 Milliliter pro Kilogramm Körpergewicht.
+Der Körper benötigt Ruhe, um sich regenerieren zu können.
+Der Körper benötigt Zink für viele Stoffwechselprozesse.
+Der Körper reagiert mit noch mehr Galle, die mehr Cholesterin benötigt.
+Der Körper benötigt Arginin, um die Thymusdrüse zu stimulieren.
+Der Körper benötigt seine Kräfte für den Heilungsprozess.
+Der Körper benötigt ausreichend Nahrung, manchmal unnötig.
+Der Körper benötigt keine Entschlackung.
+Der Körper benötigt die Aminosäuren für die Bildung von Muskelmasse.
+Der Körper benötigt zur Verdauung Sauerstoff.
+Der Körper benötigt Kalium zur Blutdruckregulation.
+Der Körper benötigt auch Phasen der Regeneration und Entspannung.
+Der Körper benötigt eine ganzjährige Basisversorgung.
+Der Körper benötigt auch beim Sitzen Bewegung und Halt.
+Der Körper benötigt kein einziges Fluor-Atom.
+Der Körper benötigt Muskeln zur Fortbewegung.
+Der Körper benötigt Östrogen und Gestagen.
+Der Körper benötigt weniger Insulin.
+Der Körper benötigt Carnitin insbesondere zur Energieproduktion.
+Der Körper ist keine Maschine und benötigt Erholungsphasen.
+Der Körper benötigt eine Ruhepause.
+Der Körper benötigt Omega-3 für den Zellaufbau.
+Der Körper benötigt Pausen, um sich von der Anstrengung zu erholen.
+Der Körper benötigt ein neutrales Milieu, um optimal zu funktionieren.
+Der Körper benötigt Calcium auch für die Muskeltätigkeit.
+Der Körper benötigt keine Supplementation.
+Der Körper benötigt verschiedene Komponenten, um gesund auszusehen.
+Der Körper benötigt unbedingt Salz, um verschiedene Reaktionen auszulösen.
+Der Körper benötigt ebenfalls einen Frischekick.
+Der Körper benötigt hochwertige Fettsäuren zum Leben.
+Der Körper benötigt Niacin für verschiedene Stoffwechselvorgänge.
+Der Körper benötigt eine Umstellungsphase.
+Der Körper benötigt dafür mehr Platz.
+Der Körper benötigt beim Fasten nichts weiter als die verordneten Getränke.
+Der Körper benötigt Abwechslung.
+Der Körper benötigt Kohlenhydrate als Energielieferant.
+Der Körper benötigt das Spurenelement für die Blutbildung.
+Der Körper benötigt alle drei Formen.
+Der Körper benötigt durchgängig eine Zufuhr von Kohlenhydraten.
+Der Körper benötigt 20 Minuten, bis sich ein Sättigungsgefühl einstellt.
+Der Körper benötigt zum Einschlafen das Hormon Melatonin.
+Der Körper benötigt zur Energiegewinnung für die Zellen Glucose.
+Der Körper benötigt adäquate Vorsorge- und Therapiekonzepte.
+Der Körper benötigt in vielerlei Hinsicht Zinn.
+Der Körper benötigt die wichtigen Omega3-Fettsäuren.
+Der Körper benötigt das Mineral für jede Muskelkontraktion.
+Der Körper benötigt ebenfalls viel Luft.
+Der Körper benötigt den Kurzschluss zwischen den Herzvorhöfen nicht mehr.
+Der Körper benötigt besonders viel Schwefel, um den Knorpel aufzubauen.
+Der Körper benötigt ein wenig, um sich an die Umgebung zu gewöhnen.
+Der Körper benötigt das Metall sogar.
+Der Körper verändert sich und benötigt mehr Mineralstoffe.
+Der Körper benötigt häufig eine Woche zum Umstellen.
+Der Körper benötigt eine ausgewogene und gesunde Ernährung.
+Der Körper benötigt viel weniger als man denkt.
+Der Körper benötigt den Schlaf schlicht und einfach, um zu überleben.
+Der Körper benötigt Folsäure zur Erzeugung neuer und gesunder Erythrozyten.
+Der Körper benötigt gleichermaßen Methyl- und Adenosylcobalamin.
+Der Körper benötigt immer höhere Insulinmengen zum Reagieren.
+Der Körper benötigt täglich 1,5 bis 2 Liter.
+Der Körper benötigt dringend Unterstützung.
+Der Körper benötigt einen gewissen Zeitraum, um die Stresshormone abzubauen.
+Der Körper benötigt viele gesunde Stoffe.
+Der Körper benötigt Fleisch.
+Der Körper benötigt etwas Gewöhnungszeit.
+Der Körper benötigt Baustoffe beim Training.
+Der Körper benötigt eine Auszeit.
+Der Körper benötigt das gewünschte Nahrungsmittel.
+Der Körper benötigt täglich ungefähr 100 Mikrogramm Chrom.
+Der Körper benötigt täglich ca. 6 mg Pantothensäure.
