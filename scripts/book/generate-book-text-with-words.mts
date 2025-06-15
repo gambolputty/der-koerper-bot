@@ -10,6 +10,7 @@ export const generateTextWithWords = async () => {
   const sentences = await Story.loadSentencesFromCSV(csvUrl);
   const options: Options = {
     generateTextTimes: 1000000, // Soll genau einen Text finden
+    enforceExactSentCount: false,
     filters: {
       wantedWords: ["benötigt"], // Verwende die gewünschten Wörter aus der Variable
       sentCount: 1,

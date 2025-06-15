@@ -24,10 +24,13 @@ const OptionsSchema = v.object({
   generateTextTimes: v.number([v.minValue(1)]),
   // Filter für die Generierung
   filters: v.optional(FiltersSchema),
+  // Ob die exakte Anzahl von Sätzen erzwungen werden soll
+  enforceExactSentCount: v.optional(v.boolean()),
 });
 
 const defaultOptions: Options = {
   generateTextTimes: 1,
+  enforceExactSentCount: true,
 };
 
 const randomSentCountPattern = {
@@ -513,7 +516,9 @@ export class Story {
     const sents = this.pickRandomSentences();
 
     // Validierung: Verwerfe Ergebnisse, die nicht die exakte Anzahl von Sätzen enthalten
-    if (sents.length !== expectedSentCount) {
+    const enforceExactSentCount =
+      this.getOption("enforceExactSentCount") ?? true;
+    if (enforceExactSentCount && sents.length !== expectedSentCount) {
       return;
     }
 

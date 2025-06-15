@@ -45,6 +45,7 @@ export const generateText = async () => {
       trashMap,
       options: {
         generateTextTimes: textsPerSentCount,
+        enforceExactSentCount: true,
         filters: {
           sentCount: sentCount,
           excludedWords: ["kann", "wird", "hat"],
