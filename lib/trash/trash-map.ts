@@ -9,7 +9,7 @@ const STORY_TRASH_DIRECTORY = new URL(
 );
 
 const TrashMapConfigSchema = v.record(
-  v.picklist(["verbs", "nouns", "repeatedWords", "sentences", "sources"]),
+  v.picklist(["verbs", "nouns", "sentences", "sources"]),
   TrashConfigSchema
 );
 
@@ -17,7 +17,6 @@ export type TrashMapConfig = v.Output<typeof TrashMapConfigSchema>;
 
 export const DEFAULT_TRASH_CONFIG: TrashMapConfig = {
   verbs: { maxItems: 20 },
-  repeatedWords: { maxItems: 5 },
   nouns: { maxItems: 40 },
   sentences: { maxItems: 300 },
   sources: { maxItems: 70 },

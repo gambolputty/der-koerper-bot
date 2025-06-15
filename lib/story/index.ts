@@ -191,10 +191,7 @@ export class Story {
       }
 
       // check Noun trash
-      if (
-        this.trash.get("nouns")?.has(nounData.lemma) ||
-        this.trash.get("repeatedNouns")?.has(nounData.lemma)
-      ) {
+      if (this.trash.get("nouns")?.has(nounData.lemma)) {
         foundDuplicateNoun = true;
         break;
       }
@@ -232,10 +229,7 @@ export class Story {
       }
 
       // check Verb trash
-      if (
-        this.trash.get("verbs")?.has(verbData.lemma) ||
-        this.trash.get("repeatedWords")?.has(verbData.word)
-      ) {
+      if (this.trash.get("verbs")?.has(verbData.lemma)) {
         foundDuplicateVerb = true;
         break;
       }
@@ -416,10 +410,7 @@ export class Story {
 
   public getRandomVerb(): string | undefined {
     for (const sent of this.randomElementGenerator(this.sentences)) {
-      if (
-        !this.trash.get("repeatedWords")?.has(sent.rootVerb) &&
-        !this.trash.get("verbs")?.has(sent.rootVerbLemma)
-      ) {
+      if (!this.trash.get("verbs")?.has(sent.rootVerbLemma)) {
         return sent.rootVerb;
       }
     }
@@ -497,9 +488,7 @@ export class Story {
       // Set special trash config when wanted words are set
       const newTrashConfigs = {
         verbs: { maxItems: 4 },
-        // repeatedWords: { maxItems: 5 },
         nouns: { maxItems: 4 },
-        // sentences: { maxItems: 300 },
         sources: { maxItems: 4 },
       };
       this.trash.updateConfig(newTrashConfigs);
@@ -519,7 +508,6 @@ export class Story {
   }
 
   private generateTextOnce(): [string, SentenceType[]] | undefined {
-    const wantedWords = this.getFilter("wantedWords");
     const expectedSentCount = this.getFilter("sentCount")!;
     const sents = this.pickRandomSentences();
 
@@ -543,10 +531,6 @@ export class Story {
       }
       if (sent.nounsLemma.size) {
         this.trash.get("nouns")?.addMany(sent.nounsLemma);
-      }
-
-      if (wantedWords) {
-        this.trash.get("repeatedWords")?.addMany(new Set(wantedWords));
       }
 
       this.trash.get("sources")?.add(sent.source);

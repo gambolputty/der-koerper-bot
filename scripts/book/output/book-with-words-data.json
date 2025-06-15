@@ -1,0 +1,953 @@
+[
+  {
+    "wantedWords": [
+      "zeigt"
+    ],
+    "sections": [
+      {
+        "text": "Der Körper verliert jegliche Lebendigkeit und zeigt keine Emotionen mehr.",
+        "usedSentences": [
+          {
+            "id": "41658",
+            "text": "verliert jegliche Lebendigkeit und zeigt keine Emotionen mehr",
+            "rootVerb": "verliert",
+            "rootVerbLemma": "verlieren",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "15925",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "verliert",
+              "jegliche",
+              "Lebendigkeit",
+              "und",
+              "zeigt",
+              "keine",
+              "Emotionen",
+              "mehr"
+            ],
+            "verbsParsed": [
+              {
+                "word": "verliert",
+                "lemma": "verlieren",
+                "isRoot": true
+              },
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Lebendigkeit",
+                "lemma": "Lebendigkeit"
+              },
+              {
+                "word": "Emotionen",
+                "lemma": "Emotion"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper zeigt sich harmonisch und konzentriert.",
+        "usedSentences": [
+          {
+            "id": "18746",
+            "text": "zeigt sich harmonisch und konzentriert",
+            "rootVerb": "zeigt",
+            "rootVerbLemma": "zeigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "7175",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "zeigt",
+              "sich",
+              "harmonisch",
+              "und",
+              "konzentriert"
+            ],
+            "verbsParsed": [
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": []
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper mag gepflegt werden und das zeigt sich auch im Alltag.",
+        "usedSentences": [
+          {
+            "id": "27100",
+            "text": "mag gepflegt werden und das zeigt sich auch im Alltag",
+            "rootVerb": "mag",
+            "rootVerbLemma": "mögen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "10486",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "mag",
+              "gepflegt",
+              "werden",
+              "und",
+              "das",
+              "zeigt",
+              "sich",
+              "auch",
+              "im",
+              "Alltag"
+            ],
+            "verbsParsed": [
+              {
+                "word": "mag",
+                "lemma": "mögen",
+                "isRoot": true
+              },
+              {
+                "word": "gepflegt",
+                "lemma": "pflegen",
+                "isRoot": false
+              },
+              {
+                "word": "werden",
+                "lemma": "werden",
+                "isRoot": false
+              },
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Alltag",
+                "lemma": "Alltag"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper bildet eine Einheit und zeigt die Anatomie.",
+        "usedSentences": [
+          {
+            "id": "24911",
+            "text": "bildet eine Einheit und zeigt die Anatomie",
+            "rootVerb": "bildet",
+            "rootVerbLemma": "bilden",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "9611",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "bildet",
+              "eine",
+              "Einheit",
+              "und",
+              "zeigt",
+              "die",
+              "Anatomie"
+            ],
+            "verbsParsed": [
+              {
+                "word": "bildet",
+                "lemma": "bilden",
+                "isRoot": true
+              },
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Einheit",
+                "lemma": "Einheit"
+              },
+              {
+                "word": "Anatomie",
+                "lemma": "Anatomie"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper zeigt 5 bis 6 blauschwarze Streifen.",
+        "usedSentences": [
+          {
+            "id": "14163",
+            "text": "zeigt 5 bis 6 blauschwarze Streifen",
+            "rootVerb": "zeigt",
+            "rootVerbLemma": "zeigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "5387",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "zeigt",
+              "bis",
+              "blauschwarze",
+              "Streifen"
+            ],
+            "verbsParsed": [
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Streifen",
+                "lemma": "Streife"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper zeigt uns die rote Karte.",
+        "usedSentences": [
+          {
+            "id": "42694",
+            "text": "zeigt uns die rote Karte",
+            "rootVerb": "zeigt",
+            "rootVerbLemma": "zeigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "16306",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "zeigt",
+              "uns",
+              "die",
+              "rote",
+              "Karte"
+            ],
+            "verbsParsed": [
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Karte",
+                "lemma": "Karte"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper zeigt die Differenz zwischen dem Eröffnungs- und Schlusskurs.",
+        "usedSentences": [
+          {
+            "id": "7875",
+            "text": "zeigt die Differenz zwischen dem Eröffnungs- und Schlusskurs",
+            "rootVerb": "zeigt",
+            "rootVerbLemma": "zeigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "3112",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "zeigt",
+              "die",
+              "Differenz",
+              "zwischen",
+              "dem",
+              "Eröffnungs",
+              "und",
+              "Schlusskurs"
+            ],
+            "verbsParsed": [
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Differenz",
+                "lemma": "Differenz"
+              },
+              {
+                "word": "Schlusskurs",
+                "lemma": "Schlusskurs"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper zeigt eine bestimmte Zeitperiode auf.",
+        "usedSentences": [
+          {
+            "id": "16125",
+            "text": "zeigt eine bestimmte Zeitperiode auf",
+            "rootVerb": "zeigt",
+            "rootVerbLemma": "zeigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "6148",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "zeigt",
+              "eine",
+              "bestimmte",
+              "Zeitperiode",
+              "auf"
+            ],
+            "verbsParsed": [
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Zeitperiode",
+                "lemma": "Zeitperiode"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper kennt und zeigt uns den Weg zu Gesundheit und Harmonie.",
+        "usedSentences": [
+          {
+            "id": "36995",
+            "text": "kennt und zeigt uns den Weg zu Gesundheit und Harmonie",
+            "rootVerb": "kennt",
+            "rootVerbLemma": "kennen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "14162",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "kennt",
+              "und",
+              "zeigt",
+              "uns",
+              "den",
+              "Weg",
+              "zu",
+              "Gesundheit",
+              "und",
+              "Harmonie"
+            ],
+            "verbsParsed": [
+              {
+                "word": "kennt",
+                "lemma": "kennen",
+                "isRoot": true
+              },
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Weg",
+                "lemma": "Weg"
+              },
+              {
+                "word": "Gesundheit",
+                "lemma": "Gesundheit"
+              },
+              {
+                "word": "Harmonie",
+                "lemma": "Harmonie"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper zeigt häufig einen spezifischen samtigen Glanz.",
+        "usedSentences": [
+          {
+            "id": "888",
+            "text": "zeigt häufig einen spezifischen samtigen Glanz",
+            "rootVerb": "zeigt",
+            "rootVerbLemma": "zeigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "379",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "zeigt",
+              "häufig",
+              "einen",
+              "spezifischen",
+              "samtigen",
+              "Glanz"
+            ],
+            "verbsParsed": [
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Glanz",
+                "lemma": "Glanz"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper zeigt erste Abwehrsignale gegen den aufgenommenen Giftstoff.",
+        "usedSentences": [
+          {
+            "id": "27899",
+            "text": "zeigt erste Abwehrsignale gegen den aufgenommenen Giftstoff",
+            "rootVerb": "zeigt",
+            "rootVerbLemma": "zeigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "10784",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "zeigt",
+              "erste",
+              "Abwehrsignale",
+              "gegen",
+              "den",
+              "aufgenommenen",
+              "Giftstoff"
+            ],
+            "verbsParsed": [
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Abwehrsignale",
+                "lemma": "Abwehrsignal"
+              },
+              {
+                "word": "Giftstoff",
+                "lemma": "Giftstoff"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper zeigt uns den Weg zur Heilung.",
+        "usedSentences": [
+          {
+            "id": "27953",
+            "text": "zeigt uns den Weg zur Heilung",
+            "rootVerb": "zeigt",
+            "rootVerbLemma": "zeigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "1290",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "zeigt",
+              "uns",
+              "den",
+              "Weg",
+              "zur",
+              "Heilung"
+            ],
+            "verbsParsed": [
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Weg",
+                "lemma": "Weg"
+              },
+              {
+                "word": "Heilung",
+                "lemma": "Heilung"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper zeigt eine stilvolle, geschwungene Linie.",
+        "usedSentences": [
+          {
+            "id": "2124",
+            "text": "zeigt eine stilvolle, geschwungene Linie",
+            "rootVerb": "zeigt",
+            "rootVerbLemma": "zeigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "876",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "zeigt",
+              "eine",
+              "stilvolle",
+              "geschwungene",
+              "Linie"
+            ],
+            "verbsParsed": [
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Linie",
+                "lemma": "Linie"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper zeigt uns ganz bewusst, wo die Seele kein Gehör fand.",
+        "usedSentences": [
+          {
+            "id": "28483",
+            "text": "zeigt uns ganz bewusst, wo die Seele kein Gehör fand",
+            "rootVerb": "zeigt",
+            "rootVerbLemma": "zeigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "10993",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "zeigt",
+              "uns",
+              "ganz",
+              "bewusst",
+              "wo",
+              "die",
+              "Seele",
+              "kein",
+              "Gehör",
+              "fand"
+            ],
+            "verbsParsed": [
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": true
+              },
+              {
+                "word": "fand",
+                "lemma": "finden",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Seele",
+                "lemma": "Seele"
+              },
+              {
+                "word": "Gehör",
+                "lemma": "Gehör"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper zeigt immer wiederkehrende Symptome.",
+        "usedSentences": [
+          {
+            "id": "31248",
+            "text": "zeigt immer wiederkehrende Symptome",
+            "rootVerb": "zeigt",
+            "rootVerbLemma": "zeigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "12011",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "zeigt",
+              "immer",
+              "wiederkehrende",
+              "Symptome"
+            ],
+            "verbsParsed": [
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Symptome",
+                "lemma": "Symptom"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper zeigt nur ähnliche Reaktionen, um Störungen selbst zu heilen.",
+        "usedSentences": [
+          {
+            "id": "42",
+            "text": "zeigt nur ähnliche Reaktionen, um Störungen selbst zu heilen",
+            "rootVerb": "zeigt",
+            "rootVerbLemma": "zeigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "14",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "zeigt",
+              "nur",
+              "ähnliche",
+              "Reaktionen",
+              "um",
+              "Störungen",
+              "selbst",
+              "zu",
+              "heilen"
+            ],
+            "verbsParsed": [
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": true
+              },
+              {
+                "word": "heilen",
+                "lemma": "heilen",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Reaktionen",
+                "lemma": "Reaktion"
+              },
+              {
+                "word": "Störungen",
+                "lemma": "Störung"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper zeigt einen dreieckigen Querschnitt.",
+        "usedSentences": [
+          {
+            "id": "35316",
+            "text": "zeigt einen dreieckigen Querschnitt",
+            "rootVerb": "zeigt",
+            "rootVerbLemma": "zeigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "13525",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "zeigt",
+              "einen",
+              "dreieckigen",
+              "Querschnitt"
+            ],
+            "verbsParsed": [
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Querschnitt",
+                "lemma": "Querschnitt"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper zeigt schon recht früh erste Signale.",
+        "usedSentences": [
+          {
+            "id": "37040",
+            "text": "zeigt schon recht früh erste Signale",
+            "rootVerb": "zeigt",
+            "rootVerbLemma": "zeigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "6949",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "zeigt",
+              "schon",
+              "recht",
+              "früh",
+              "erste",
+              "Signale"
+            ],
+            "verbsParsed": [
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Signale",
+                "lemma": "Signal"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper ist länger als hoch und zeigt sich kompakt.",
+        "usedSentences": [
+          {
+            "id": "14692",
+            "text": "ist länger als hoch und zeigt sich kompakt",
+            "rootVerb": "ist",
+            "rootVerbLemma": "sein",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "5476",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "ist",
+              "länger",
+              "als",
+              "hoch",
+              "und",
+              "zeigt",
+              "sich",
+              "kompakt"
+            ],
+            "verbsParsed": [
+              {
+                "word": "ist",
+                "lemma": "sein",
+                "isRoot": true
+              },
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": []
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      },
+      {
+        "text": "Der Körper zeigt schon früh An- und Verspannungen.",
+        "usedSentences": [
+          {
+            "id": "794",
+            "text": "zeigt schon früh An- und Verspannungen",
+            "rootVerb": "zeigt",
+            "rootVerbLemma": "zeigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "336",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "zeigt",
+              "schon",
+              "früh",
+              "An",
+              "und",
+              "Verspannungen"
+            ],
+            "verbsParsed": [
+              {
+                "word": "zeigt",
+                "lemma": "zeigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Verspannungen",
+                "lemma": "Verspannung"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "zeigt"
+        ]
+      }
+    ]
+  }
+]

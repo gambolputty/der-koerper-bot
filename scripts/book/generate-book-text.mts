@@ -1,12 +1,12 @@
 import fs from "node:fs";
 import path from "node:path";
 
-import { TrashMap } from "../lib";
-import { Story } from "../lib/story";
+import { TrashMap } from "../../lib";
+import { Story } from "../../lib/story";
 
 export const generateText = async () => {
   const trashMap = new TrashMap();
-  const csvUrl = new URL("../lib/assets/sentences.csv", import.meta.url);
+  const csvUrl = new URL("../../lib/assets/sentences.csv", import.meta.url);
   const sentences = await Story.loadSentencesFromCSV(csvUrl);
 
   const allTexts: string[] = [];
@@ -22,8 +22,8 @@ export const generateText = async () => {
   // Konzeptuelles Kunstbuch: Sätze werden allmählich länger
   // Beginne mit 1 Satz und steigere langsam bis zu mehr Sätzen
   const maxSentCount = 10; // Mehr Durchläufe für ein ganzes Buch
-  const maxTextsPerSentCount = 100; // Maximale Anzahl Texte bei niedrigster sentCount
-  const minTextsPerSentCount = 50; // Minimale Anzahl Texte bei höchster sentCount
+  const maxTextsPerSentCount = 80; // Maximale Anzahl Texte bei niedrigster sentCount
+  const minTextsPerSentCount = 80; // Minimale Anzahl Texte bei höchster sentCount
 
   for (let sentCount = 1; sentCount <= maxSentCount; sentCount++) {
     // Lineare Abnahme: Je höher sentCount, desto weniger textsPerSentCount
@@ -87,12 +87,20 @@ console.log("Generating text...");
 const result = await generateText();
 console.log("Text generated");
 
-// save text to .txt file
-const textFilePath = path.join(process.cwd(), "book.txt");
+// save text to .txt file in the output subdirectory
+const scriptDir = path.dirname(new URL(import.meta.url).pathname);
+const outputDir = path.join(scriptDir, "output");
+
+// Create output directory if it doesn't exist
+if (!fs.existsSync(outputDir)) {
+  fs.mkdirSync(outputDir, { recursive: true });
+}
+
+const textFilePath = path.join(outputDir, "book.txt");
 fs.writeFileSync(textFilePath, result.text);
 console.log(`Text saved to ${textFilePath}`);
 
 // save JSON data for LaTeX generation
-const jsonFilePath = path.join(process.cwd(), "book-data.json");
+const jsonFilePath = path.join(outputDir, "book-data.json");
 fs.writeFileSync(jsonFilePath, JSON.stringify(result.bookData, null, 2));
 console.log(`Book data saved to ${jsonFilePath}`);

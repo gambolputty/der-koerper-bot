@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "tsx watch --env-file=.env ./run.ts",
     "post-to-mastodon": "tsx --env-file=.env ./scripts/post-to-mastodon.mts",
-    "generate-book-text": "tsx ./scripts/generate-book-text.mts",
+    "book:generate-main-text": "tsx ./scripts/book/generate-book-text.mts",
+    "book:generate-text-with-words": "tsx ./scripts/book/generate-book-text-with-words.mts",
     "watch": "rollup --config --watch",
     "serve": "serve ./",
     "build": "rollup --config"
