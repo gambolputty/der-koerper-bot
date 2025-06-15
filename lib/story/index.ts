@@ -486,12 +486,10 @@ export class Story {
       wantedFilters.wantedWords = options.wantedWords;
 
       // Set special trash config when wanted words are set
-      // Verwende dynamische Größen basierend auf numberOfTimes
-      const numberOfTimes = this.getOption("generateTextTimes") || 1;
       const newTrashConfigs = {
-        verbs: { maxItems: Math.max(4, numberOfTimes) },
-        nouns: { maxItems: Math.max(4, numberOfTimes) },
-        sources: { maxItems: Math.max(4, numberOfTimes) },
+        verbs: { maxItems: 4 },
+        nouns: { maxItems: 4 },
+        sources: { maxItems: 4 },
       };
       this.trash.updateConfig(newTrashConfigs);
     } else {

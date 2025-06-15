@@ -5,96 +5,48 @@
     ],
     "sections": [
       {
-        "text": "Der Körper benötigt eine ausgewogene Mischung verschiedener Nährstoffe.",
+        "text": "Der Körper benötigt Wasser, um Fett zu verstoffwechseln.",
         "usedSentences": [
           {
-            "id": "39886",
-            "text": "benötigt eine ausgewogene Mischung verschiedener Nährstoffe",
+            "id": "6399",
+            "text": "benötigt Wasser, um Fett zu verstoffwechseln",
             "rootVerb": "benötigt",
             "rootVerbLemma": "benötigen",
             "verbs": {},
             "verbsLemma": {},
             "nouns": {},
             "nounsLemma": {},
-            "source": "15290",
+            "source": "547",
             "hasAnd": false,
             "hasColon": false,
             "endsWithColon": false,
             "words": [
               "benötigt",
-              "eine",
-              "ausgewogene",
-              "Mischung",
-              "verschiedener",
-              "Nährstoffe"
+              "Wasser",
+              "um",
+              "Fett",
+              "zu",
+              "verstoffwechseln"
             ],
             "verbsParsed": [
               {
                 "word": "benötigt",
                 "lemma": "benötigen",
                 "isRoot": true
+              },
+              {
+                "word": "verstoffwechseln",
+                "lemma": "verstoffwechseln",
+                "isRoot": false
               }
             ],
             "nounsParsed": [
               {
-                "word": "Mischung",
-                "lemma": "Mischung"
+                "word": "Wasser",
+                "lemma": "Wasser"
               },
               {
-                "word": "Nährstoffe",
-                "lemma": "Nährstoff"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt eine ausreichende Menge guter Öle und Fette.",
-        "usedSentences": [
-          {
-            "id": "21124",
-            "text": "benötigt eine ausreichende Menge guter Öle und Fette",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "8126",
-            "hasAnd": true,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "eine",
-              "ausreichende",
-              "Menge",
-              "guter",
-              "Öle",
-              "und",
-              "Fette"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Menge",
-                "lemma": "Menge"
-              },
-              {
-                "word": "Öle",
-                "lemma": "Öl"
-              },
-              {
-                "word": "Fette",
+                "word": "Fett",
                 "lemma": "Fett"
               }
             ]
@@ -105,84 +57,28 @@
         ]
       },
       {
-        "text": "Der Körper benötigt immer mehr Energie, um seinen Bedarf zu decken.",
+        "text": "Der Körper benötigt mit zunehmendem Alter weniger Kalorien.",
         "usedSentences": [
           {
-            "id": "23854",
-            "text": "benötigt immer mehr Energie, um seinen Bedarf zu decken",
+            "id": "21243",
+            "text": "benötigt mit zunehmendem Alter weniger Kalorien",
             "rootVerb": "benötigt",
             "rootVerbLemma": "benötigen",
             "verbs": {},
             "verbsLemma": {},
             "nouns": {},
             "nounsLemma": {},
-            "source": "9202",
+            "source": "8175",
             "hasAnd": false,
             "hasColon": false,
             "endsWithColon": false,
             "words": [
               "benötigt",
-              "immer",
-              "mehr",
-              "Energie",
-              "um",
-              "seinen",
-              "Bedarf",
-              "zu",
-              "decken"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              },
-              {
-                "word": "decken",
-                "lemma": "decken",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Energie",
-                "lemma": "Energie"
-              },
-              {
-                "word": "Bedarf",
-                "lemma": "Bedarf"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Folat für die Zellteilung und Zellneubildung.",
-        "usedSentences": [
-          {
-            "id": "25491",
-            "text": "benötigt Folat für die Zellteilung und Zellneubildung",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "2276",
-            "hasAnd": true,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Folat",
-              "für",
-              "die",
-              "Zellteilung",
-              "und",
-              "Zellneubildung"
+              "mit",
+              "zunehmendem",
+              "Alter",
+              "weniger",
+              "Kalorien"
             ],
             "verbsParsed": [
               {
@@ -193,16 +89,12 @@
             ],
             "nounsParsed": [
               {
-                "word": "Folat",
-                "lemma": "Folat"
+                "word": "Alter",
+                "lemma": "Alter"
               },
               {
-                "word": "Zellteilung",
-                "lemma": "Zellteilung"
-              },
-              {
-                "word": "Zellneubildung",
-                "lemma": "Zellneubildung"
+                "word": "Kalorien",
+                "lemma": "Kalorie"
               }
             ]
           }
@@ -212,380 +104,18 @@
         ]
       },
       {
-        "text": "Der Körper benötigt Eisen, um Hämoglobin zu bilden.",
+        "text": "Der Körper benötigt Magnesium für die Energieverwertung.",
         "usedSentences": [
           {
-            "id": "4473",
-            "text": "benötigt Eisen, um Hämoglobin zu bilden",
+            "id": "5921",
+            "text": "benötigt Magnesium für die Energieverwertung",
             "rootVerb": "benötigt",
             "rootVerbLemma": "benötigen",
             "verbs": {},
             "verbsLemma": {},
             "nouns": {},
             "nounsLemma": {},
-            "source": "1828",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Eisen",
-              "um",
-              "Hämoglobin",
-              "zu",
-              "bilden"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              },
-              {
-                "word": "bilden",
-                "lemma": "bilden",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Eisen",
-                "lemma": "Eisen"
-              },
-              {
-                "word": "Hämoglobin",
-                "lemma": "Hämoglobin"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt das Wasser zum Transport.",
-        "usedSentences": [
-          {
-            "id": "12496",
-            "text": "benötigt das Wasser zum Transport",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "4331",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "das",
-              "Wasser",
-              "zum",
-              "Transport"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Wasser",
-                "lemma": "Wasser"
-              },
-              {
-                "word": "Transport",
-                "lemma": "Transport"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Vitamin D, um Kalzium in die Knochen einzulagern.",
-        "usedSentences": [
-          {
-            "id": "2260",
-            "text": "benötigt Vitamin D, um Kalzium in die Knochen einzulagern",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "933",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Vitamin",
-              "D",
-              "um",
-              "Kalzium",
-              "in",
-              "die",
-              "Knochen",
-              "einzulagern"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              },
-              {
-                "word": "einzulagern",
-                "lemma": "einlagern",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Vitamin",
-                "lemma": "Vitamin"
-              },
-              {
-                "word": "D",
-                "lemma": "D"
-              },
-              {
-                "word": "Kalzium",
-                "lemma": "Kalzium"
-              },
-              {
-                "word": "Knochen",
-                "lemma": "Knochen"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Substanzen für lebenswichtige Aufgaben.",
-        "usedSentences": [
-          {
-            "id": "29947",
-            "text": "benötigt Substanzen für lebenswichtige Aufgaben",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "326",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Substanzen",
-              "für",
-              "lebenswichtige",
-              "Aufgaben"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Substanzen",
-                "lemma": "Substanz"
-              },
-              {
-                "word": "Aufgaben",
-                "lemma": "Aufgabe"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt pro Tag ungefähr ein bis zwei Gramm.",
-        "usedSentences": [
-          {
-            "id": "19908",
-            "text": "benötigt pro Tag ungefähr ein bis zwei Gramm",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "244",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "pro",
-              "Tag",
-              "ungefähr",
-              "ein",
-              "bis",
-              "zwei",
-              "Gramm"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Tag",
-                "lemma": "Tag"
-              },
-              {
-                "word": "Gramm",
-                "lemma": "Gramm"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt nachts ausreichend Zeit zum Schlafen.",
-        "usedSentences": [
-          {
-            "id": "36933",
-            "text": "benötigt nachts ausreichend Zeit zum Schlafen",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "9205",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "nachts",
-              "ausreichend",
-              "Zeit",
-              "zum",
-              "Schlafen"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Zeit",
-                "lemma": "Zeit"
-              },
-              {
-                "word": "Schlafen",
-                "lemma": "schlafen"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt kleine Portionen, und der Magen wird reduziert.",
-        "usedSentences": [
-          {
-            "id": "26315",
-            "text": "benötigt kleine Portionen, und der Magen wird reduziert",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "10168",
-            "hasAnd": true,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "kleine",
-              "Portionen",
-              "und",
-              "der",
-              "Magen",
-              "wird",
-              "reduziert"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              },
-              {
-                "word": "wird",
-                "lemma": "werden",
-                "isRoot": false
-              },
-              {
-                "word": "reduziert",
-                "lemma": "reduzieren",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Portionen",
-                "lemma": "Portion"
-              },
-              {
-                "word": "Magen",
-                "lemma": "Magen"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Magnesium für die Funktion von über 300 Enzymen.",
-        "usedSentences": [
-          {
-            "id": "37512",
-            "text": "benötigt Magnesium für die Funktion von über 300 Enzymen",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "14366",
+            "source": "2344",
             "hasAnd": false,
             "hasColon": false,
             "endsWithColon": false,
@@ -594,10 +124,7 @@
               "Magnesium",
               "für",
               "die",
-              "Funktion",
-              "von",
-              "über",
-              "Enzymen"
+              "Energieverwertung"
             ],
             "verbsParsed": [
               {
@@ -612,12 +139,8 @@
                 "lemma": "Magnesium"
               },
               {
-                "word": "Funktion",
-                "lemma": "Funktion"
-              },
-              {
-                "word": "Enzymen",
-                "lemma": "Enzymo"
+                "word": "Energieverwertung",
+                "lemma": "Energieverwertung"
               }
             ]
           }
@@ -627,734 +150,27 @@
         ]
       },
       {
-        "text": "Der Körper benötigt Erholung von sportlichen Aktivitäten.",
+        "text": "Der Körper benötigt Nährstoffe, um richtig arbeiten zu können.",
         "usedSentences": [
           {
-            "id": "33071",
-            "text": "benötigt Erholung von sportlichen Aktivitäten",
+            "id": "29770",
+            "text": "benötigt Nährstoffe, um richtig arbeiten zu können",
             "rootVerb": "benötigt",
             "rootVerbLemma": "benötigen",
             "verbs": {},
             "verbsLemma": {},
             "nouns": {},
             "nounsLemma": {},
-            "source": "3249",
+            "source": "11460",
             "hasAnd": false,
             "hasColon": false,
             "endsWithColon": false,
             "words": [
               "benötigt",
-              "Erholung",
-              "von",
-              "sportlichen",
-              "Aktivitäten"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Erholung",
-                "lemma": "Erholung"
-              },
-              {
-                "word": "Aktivitäten",
-                "lemma": "Aktivität"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt immer etwas Zucker (Glukose) im Blut.",
-        "usedSentences": [
-          {
-            "id": "34231",
-            "text": "benötigt immer etwas Zucker (Glukose) im Blut",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "13110",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "immer",
-              "etwas",
-              "Zucker",
-              "Glukose",
-              "im",
-              "Blut"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Zucker",
-                "lemma": "Zucker"
-              },
-              {
-                "word": "Glukose",
-                "lemma": "Glukose"
-              },
-              {
-                "word": "Blut",
-                "lemma": "Blut"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt B12 für mehr als 100 Vorgänge im Körper.",
-        "usedSentences": [
-          {
-            "id": "580",
-            "text": "benötigt B12 für mehr als 100 Vorgänge im Körper",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "240",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "B",
-              "für",
-              "mehr",
-              "als",
-              "Vorgänge",
-              "im",
-              "Körper"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "B12",
-                "lemma": "B12"
-              },
-              {
-                "word": "Vorgänge",
-                "lemma": "Vorgang"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt regelmäßig tägliche Ruhe- und Wartungsarbeiten.",
-        "usedSentences": [
-          {
-            "id": "39169",
-            "text": "benötigt regelmäßig tägliche Ruhe- und Wartungsarbeiten",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "4358",
-            "hasAnd": true,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "regelmäßig",
-              "tägliche",
-              "Ruhe",
-              "und",
-              "Wartungsarbeiten"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Wartungsarbeiten",
-                "lemma": "Wartungsarbeit"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt im Verlauf der Schwangerschaft mehr Schilddrüsenhormone.",
-        "usedSentences": [
-          {
-            "id": "31523",
-            "text": "benötigt im Verlauf der Schwangerschaft mehr Schilddrüsenhormone",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "6189",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "im",
-              "Verlauf",
-              "der",
-              "Schwangerschaft",
-              "mehr",
-              "Schilddrüsenhormone"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Verlauf",
-                "lemma": "Verlauf"
-              },
-              {
-                "word": "Schwangerschaft",
-                "lemma": "Schwangerschaft"
-              },
-              {
-                "word": "Schilddrüsenhormone",
-                "lemma": "Schilddrüsenhormon"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt wichtige Reserven, um fit und gesund zu bleiben.",
-        "usedSentences": [
-          {
-            "id": "22941",
-            "text": "benötigt wichtige Reserven, um fit und gesund zu bleiben",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "8853",
-            "hasAnd": true,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "wichtige",
-              "Reserven",
+              "Nährstoffe",
               "um",
-              "fit",
-              "und",
-              "gesund",
-              "zu",
-              "bleiben"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              },
-              {
-                "word": "bleiben",
-                "lemma": "bleiben",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Reserven",
-                "lemma": "Reserve"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt rund 25 % aus den im Eiweiß enthaltenen Kalorien.",
-        "usedSentences": [
-          {
-            "id": "29068",
-            "text": "benötigt rund 25 % aus den im Eiweiß enthaltenen Kalorien",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "3798",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "rund",
-              "aus",
-              "den",
-              "im",
-              "Eiweiß",
-              "enthaltenen",
-              "Kalorien"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "%",
-                "lemma": "%"
-              },
-              {
-                "word": "Eiweiß",
-                "lemma": "Eiweiß"
-              },
-              {
-                "word": "Kalorien",
-                "lemma": "Kalorie"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Protein für viele Prozesse.",
-        "usedSentences": [
-          {
-            "id": "16783",
-            "text": "benötigt Protein für viele Prozesse",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "6388",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Protein",
-              "für",
-              "viele",
-              "Prozesse"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Protein",
-                "lemma": "Protein"
-              },
-              {
-                "word": "Prozesse",
-                "lemma": "Prozeß"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt die Energiereserven um gegen die Erreger anzukämpfen.",
-        "usedSentences": [
-          {
-            "id": "28286",
-            "text": "benötigt die Energiereserven um gegen die Erreger anzukämpfen",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "759",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "die",
-              "Energiereserven",
-              "um",
-              "gegen",
-              "die",
-              "Erreger",
-              "anzukämpfen"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              },
-              {
-                "word": "anzukämpfen",
-                "lemma": "ankämpfen",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Energiereserven",
-                "lemma": "Energiereserve"
-              },
-              {
-                "word": "Erreger",
-                "lemma": "Erreger"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt auch Flüssigkeit, um die Bakterien auszuscheiden.",
-        "usedSentences": [
-          {
-            "id": "24808",
-            "text": "benötigt auch Flüssigkeit, um die Bakterien auszuscheiden",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "1229",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "auch",
-              "Flüssigkeit",
-              "um",
-              "die",
-              "Bakterien",
-              "auszuscheiden"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              },
-              {
-                "word": "auszuscheiden",
-                "lemma": "ausscheiden",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Flüssigkeit",
-                "lemma": "Flüssigkeit"
-              },
-              {
-                "word": "Bakterien",
-                "lemma": "Bakterie"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt eine gute Durchblutung, um eine gesunde Haut zu fördern.",
-        "usedSentences": [
-          {
-            "id": "24440",
-            "text": "benötigt eine gute Durchblutung, um eine gesunde Haut zu fördern",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "9422",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "eine",
-              "gute",
-              "Durchblutung",
-              "um",
-              "eine",
-              "gesunde",
-              "Haut",
-              "zu",
-              "fördern"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              },
-              {
-                "word": "fördern",
-                "lemma": "fördern",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Durchblutung",
-                "lemma": "Durchblutung"
-              },
-              {
-                "word": "Haut",
-                "lemma": "Haut"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt ca. 3 bis 4 Stunden, um eine Mahlzeit zu verdauen.",
-        "usedSentences": [
-          {
-            "id": "32294",
-            "text": "benötigt ca. 3 bis 4 Stunden, um eine Mahlzeit zu verdauen",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "12397",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "ca",
-              "bis",
-              "Stunden",
-              "um",
-              "eine",
-              "Mahlzeit",
-              "zu",
-              "verdauen"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              },
-              {
-                "word": "verdauen",
-                "lemma": "verdauen",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Stunden",
-                "lemma": "Stunde"
-              },
-              {
-                "word": "Mahlzeit",
-                "lemma": "Mahlzeit"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Natriumionen für die Nervenfunktionen.",
-        "usedSentences": [
-          {
-            "id": "14500",
-            "text": "benötigt Natriumionen für die Nervenfunktionen",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "130",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Natriumionen",
-              "für",
-              "die",
-              "Nervenfunktionen"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Natriumionen",
-                "lemma": "Natriumion"
-              },
-              {
-                "word": "Nervenfunktionen",
-                "lemma": "Nervenfunktion"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt rund 30 Milliliter pro Kilogramm Körpergewicht.",
-        "usedSentences": [
-          {
-            "id": "16648",
-            "text": "benötigt rund 30 Milliliter pro Kilogramm Körpergewicht",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "5133",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "rund",
-              "Milliliter",
-              "pro",
-              "Kilogramm",
-              "Körpergewicht"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Milliliter",
-                "lemma": "Milliliter"
-              },
-              {
-                "word": "Kilogramm",
-                "lemma": "Kilogramm"
-              },
-              {
-                "word": "Körpergewicht",
-                "lemma": "Körpergewicht"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Ruhe, um sich regenerieren zu können.",
-        "usedSentences": [
-          {
-            "id": "38700",
-            "text": "benötigt Ruhe, um sich regenerieren zu können",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "14804",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Ruhe",
-              "um",
-              "sich",
-              "regenerieren",
+              "richtig",
+              "arbeiten",
               "zu",
               "können"
             ],
@@ -1365,8 +181,8 @@
                 "isRoot": true
               },
               {
-                "word": "regenerieren",
-                "lemma": "regenerieren",
+                "word": "arbeiten",
+                "lemma": "arbeiten",
                 "isRoot": false
               },
               {
@@ -1377,251 +193,8 @@
             ],
             "nounsParsed": [
               {
-                "word": "Ruhe",
-                "lemma": "Ruhe"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Zink für viele Stoffwechselprozesse.",
-        "usedSentences": [
-          {
-            "id": "28538",
-            "text": "benötigt Zink für viele Stoffwechselprozesse",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "901",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Zink",
-              "für",
-              "viele",
-              "Stoffwechselprozesse"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Zink",
-                "lemma": "Zink"
-              },
-              {
-                "word": "Stoffwechselprozesse",
-                "lemma": "Stoffwechselprozeß"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper reagiert mit noch mehr Galle, die mehr Cholesterin benötigt.",
-        "usedSentences": [
-          {
-            "id": "16765",
-            "text": "reagiert mit noch mehr Galle, die mehr Cholesterin benötigt",
-            "rootVerb": "reagiert",
-            "rootVerbLemma": "reagieren",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "6383",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "reagiert",
-              "mit",
-              "noch",
-              "mehr",
-              "Galle",
-              "die",
-              "mehr",
-              "Cholesterin",
-              "benötigt"
-            ],
-            "verbsParsed": [
-              {
-                "word": "reagiert",
-                "lemma": "reagieren",
-                "isRoot": true
-              },
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Galle",
-                "lemma": "Galle"
-              },
-              {
-                "word": "Cholesterin",
-                "lemma": "Cholesterin"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Arginin, um die Thymusdrüse zu stimulieren.",
-        "usedSentences": [
-          {
-            "id": "1009",
-            "text": "benötigt Arginin, um die Thymusdrüse zu stimulieren",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "433",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Arginin",
-              "um",
-              "die",
-              "Thymusdrüse",
-              "zu",
-              "stimulieren"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              },
-              {
-                "word": "stimulieren",
-                "lemma": "stimulieren",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Arginin",
-                "lemma": "Arginin"
-              },
-              {
-                "word": "Thymusdrüse",
-                "lemma": "Thymusdrüse"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt seine Kräfte für den Heilungsprozess.",
-        "usedSentences": [
-          {
-            "id": "40363",
-            "text": "benötigt seine Kräfte für den Heilungsprozess",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "129",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "seine",
-              "Kräfte",
-              "für",
-              "den",
-              "Heilungsprozess"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Kräfte",
-                "lemma": "Kraft"
-              },
-              {
-                "word": "Heilungsprozess",
-                "lemma": "Heilungsprozess"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt ausreichend Nahrung, manchmal unnötig.",
-        "usedSentences": [
-          {
-            "id": "16096",
-            "text": "benötigt ausreichend Nahrung, manchmal unnötig",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "6082",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "ausreichend",
-              "Nahrung",
-              "manchmal",
-              "unnötig"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Nahrung",
-                "lemma": "Nahrung"
+                "word": "Nährstoffe",
+                "lemma": "Nährstoff"
               }
             ]
           }
@@ -1671,864 +244,33 @@
         ]
       },
       {
-        "text": "Der Körper benötigt die Aminosäuren für die Bildung von Muskelmasse.",
+        "text": "Der Körper benötigt ca. 21 Tage, um sich an die neue Position zu gewöhnen.",
         "usedSentences": [
           {
-            "id": "28582",
-            "text": "benötigt die Aminosäuren für die Bildung von Muskelmasse",
+            "id": "22145",
+            "text": "benötigt ca. 21 Tage, um sich an die neue Position zu gewöhnen",
             "rootVerb": "benötigt",
             "rootVerbLemma": "benötigen",
             "verbs": {},
             "verbsLemma": {},
             "nouns": {},
             "nounsLemma": {},
-            "source": "507",
+            "source": "8538",
             "hasAnd": false,
             "hasColon": false,
             "endsWithColon": false,
             "words": [
               "benötigt",
-              "die",
-              "Aminosäuren",
-              "für",
-              "die",
-              "Bildung",
-              "von",
-              "Muskelmasse"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Aminosäuren",
-                "lemma": "Aminosäure"
-              },
-              {
-                "word": "Bildung",
-                "lemma": "Bildung"
-              },
-              {
-                "word": "Muskelmasse",
-                "lemma": "Muskelmasse"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt zur Verdauung Sauerstoff.",
-        "usedSentences": [
-          {
-            "id": "36381",
-            "text": "benötigt zur Verdauung Sauerstoff",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "13931",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "zur",
-              "Verdauung",
-              "Sauerstoff"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Verdauung",
-                "lemma": "Verdauung"
-              },
-              {
-                "word": "Sauerstoff",
-                "lemma": "Sauerstoff"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Kalium zur Blutdruckregulation.",
-        "usedSentences": [
-          {
-            "id": "25206",
-            "text": "benötigt Kalium zur Blutdruckregulation",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "9739",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Kalium",
-              "zur",
-              "Blutdruckregulation"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Kalium",
-                "lemma": "Kalium"
-              },
-              {
-                "word": "Blutdruckregulation",
-                "lemma": "Blutdruckregulation"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt auch Phasen der Regeneration und Entspannung.",
-        "usedSentences": [
-          {
-            "id": "28935",
-            "text": "benötigt auch Phasen der Regeneration und Entspannung",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "11161",
-            "hasAnd": true,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "auch",
-              "Phasen",
-              "der",
-              "Regeneration",
-              "und",
-              "Entspannung"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Phasen",
-                "lemma": "Phase"
-              },
-              {
-                "word": "Regeneration",
-                "lemma": "Regeneration"
-              },
-              {
-                "word": "Entspannung",
-                "lemma": "Entspannung"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt eine ganzjährige Basisversorgung.",
-        "usedSentences": [
-          {
-            "id": "4283",
-            "text": "benötigt eine ganzjährige Basisversorgung",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "1767",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "eine",
-              "ganzjährige",
-              "Basisversorgung"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Basisversorgung",
-                "lemma": "Basisversorgung"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt auch beim Sitzen Bewegung und Halt.",
-        "usedSentences": [
-          {
-            "id": "27209",
-            "text": "benötigt auch beim Sitzen Bewegung und Halt",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "2846",
-            "hasAnd": true,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "auch",
-              "beim",
-              "Sitzen",
-              "Bewegung",
-              "und",
-              "Halt"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Sitzen",
-                "lemma": "Sitz"
-              },
-              {
-                "word": "Bewegung",
-                "lemma": "Bewegung"
-              },
-              {
-                "word": "Halt",
-                "lemma": "Halt"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt kein einziges Fluor-Atom.",
-        "usedSentences": [
-          {
-            "id": "12946",
-            "text": "benötigt kein einziges Fluor-Atom",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "4941",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "kein",
-              "einziges",
-              "Fluor",
-              "Atom"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Fluor-Atom",
-                "lemma": "Fluor-Atom"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Muskeln zur Fortbewegung.",
-        "usedSentences": [
-          {
-            "id": "5573",
-            "text": "benötigt Muskeln zur Fortbewegung",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "2206",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Muskeln",
-              "zur",
-              "Fortbewegung"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Muskeln",
-                "lemma": "Muskel"
-              },
-              {
-                "word": "Fortbewegung",
-                "lemma": "Fortbewegung"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Östrogen und Gestagen.",
-        "usedSentences": [
-          {
-            "id": "27634",
-            "text": "benötigt Östrogen und Gestagen",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "10693",
-            "hasAnd": true,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Östrogen",
-              "und",
-              "Gestagen"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Östrogen",
-                "lemma": "Östrogen"
-              },
-              {
-                "word": "Gestagen",
-                "lemma": "Gestagen"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt weniger Insulin.",
-        "usedSentences": [
-          {
-            "id": "7842",
-            "text": "benötigt weniger Insulin",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "2223",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "weniger",
-              "Insulin"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Insulin",
-                "lemma": "Insulin"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Carnitin insbesondere zur Energieproduktion.",
-        "usedSentences": [
-          {
-            "id": "33941",
-            "text": "benötigt Carnitin insbesondere zur Energieproduktion",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "12999",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Carnitin",
-              "insbesondere",
-              "zur",
-              "Energieproduktion"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Carnitin",
-                "lemma": "Carnitin"
-              },
-              {
-                "word": "Energieproduktion",
-                "lemma": "Energieproduktion"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper ist keine Maschine und benötigt Erholungsphasen.",
-        "usedSentences": [
-          {
-            "id": "17798",
-            "text": "ist keine Maschine und benötigt Erholungsphasen",
-            "rootVerb": "ist",
-            "rootVerbLemma": "sein",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "6796",
-            "hasAnd": true,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "ist",
-              "keine",
-              "Maschine",
-              "und",
-              "benötigt",
-              "Erholungsphasen"
-            ],
-            "verbsParsed": [
-              {
-                "word": "ist",
-                "lemma": "sein",
-                "isRoot": true
-              },
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Maschine",
-                "lemma": "Maschine"
-              },
-              {
-                "word": "Erholungsphasen",
-                "lemma": "Erholungsphas"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt eine Ruhepause.",
-        "usedSentences": [
-          {
-            "id": "15140",
-            "text": "benötigt eine Ruhepause",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "5769",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "eine",
-              "Ruhepause"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Ruhepause",
-                "lemma": "Ruhepause"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Omega-3 für den Zellaufbau.",
-        "usedSentences": [
-          {
-            "id": "45538",
-            "text": "benötigt Omega-3 für den Zellaufbau",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "17356",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Omega",
-              "für",
-              "den",
-              "Zellaufbau"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Omega-3",
-                "lemma": "Omega-3"
-              },
-              {
-                "word": "Zellaufbau",
-                "lemma": "Zellaufbau"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Pausen, um sich von der Anstrengung zu erholen.",
-        "usedSentences": [
-          {
-            "id": "29644",
-            "text": "benötigt Pausen, um sich von der Anstrengung zu erholen",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "11417",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Pausen",
+              "ca",
+              "Tage",
               "um",
               "sich",
-              "von",
-              "der",
-              "Anstrengung",
-              "zu",
-              "erholen"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              },
-              {
-                "word": "erholen",
-                "lemma": "erholen",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Pausen",
-                "lemma": "Pause"
-              },
-              {
-                "word": "Anstrengung",
-                "lemma": "Anstrengung"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt ein neutrales Milieu, um optimal zu funktionieren.",
-        "usedSentences": [
-          {
-            "id": "22074",
-            "text": "benötigt ein neutrales Milieu, um optimal zu funktionieren",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "8511",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "ein",
-              "neutrales",
-              "Milieu",
-              "um",
-              "optimal",
-              "zu",
-              "funktionieren"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              },
-              {
-                "word": "funktionieren",
-                "lemma": "funktionieren",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Milieu",
-                "lemma": "Milieu"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Calcium auch für die Muskeltätigkeit.",
-        "usedSentences": [
-          {
-            "id": "5061",
-            "text": "benötigt Calcium auch für die Muskeltätigkeit",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "2026",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Calcium",
-              "auch",
-              "für",
+              "an",
               "die",
-              "Muskeltätigkeit"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Calcium",
-                "lemma": "Calcium"
-              },
-              {
-                "word": "Muskeltätigkeit",
-                "lemma": "Muskeltätigkeit"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt keine Supplementation.",
-        "usedSentences": [
-          {
-            "id": "20449",
-            "text": "benötigt keine Supplementation",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "1200",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "keine",
-              "Supplementation"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Supplementation",
-                "lemma": "Supplementation"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt verschiedene Komponenten, um gesund auszusehen.",
-        "usedSentences": [
-          {
-            "id": "5927",
-            "text": "benötigt verschiedene Komponenten, um gesund auszusehen",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "2346",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "verschiedene",
-              "Komponenten",
-              "um",
-              "gesund",
-              "auszusehen"
+              "neue",
+              "Position",
+              "zu",
+              "gewöhnen"
             ],
             "verbsParsed": [
               {
@@ -2537,109 +279,19 @@
                 "isRoot": true
               },
               {
-                "word": "auszusehen",
-                "lemma": "aussehen",
+                "word": "gewöhnen",
+                "lemma": "gewöhnen",
                 "isRoot": false
               }
             ],
             "nounsParsed": [
               {
-                "word": "Komponenten",
-                "lemma": "Komponente"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt unbedingt Salz, um verschiedene Reaktionen auszulösen.",
-        "usedSentences": [
-          {
-            "id": "43029",
-            "text": "benötigt unbedingt Salz, um verschiedene Reaktionen auszulösen",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "16432",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "unbedingt",
-              "Salz",
-              "um",
-              "verschiedene",
-              "Reaktionen",
-              "auszulösen"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
+                "word": "Tage",
+                "lemma": "Tag"
               },
               {
-                "word": "auszulösen",
-                "lemma": "auslösen",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Salz",
-                "lemma": "Salz"
-              },
-              {
-                "word": "Reaktionen",
-                "lemma": "Reaktion"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt ebenfalls einen Frischekick.",
-        "usedSentences": [
-          {
-            "id": "26030",
-            "text": "benötigt ebenfalls einen Frischekick",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "4759",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "ebenfalls",
-              "einen",
-              "Frischekick"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Frischekick",
-                "lemma": "Frischekick"
+                "word": "Position",
+                "lemma": "Position"
               }
             ]
           }
@@ -2695,27 +347,125 @@
         ]
       },
       {
-        "text": "Der Körper benötigt Niacin für verschiedene Stoffwechselvorgänge.",
+        "text": "Der Körper benötigt relativ viel Kalzium.",
         "usedSentences": [
           {
-            "id": "6354",
-            "text": "benötigt Niacin für verschiedene Stoffwechselvorgänge",
+            "id": "22031",
+            "text": "benötigt relativ viel Kalzium",
             "rootVerb": "benötigt",
             "rootVerbLemma": "benötigen",
             "verbs": {},
             "verbsLemma": {},
             "nouns": {},
             "nounsLemma": {},
-            "source": "2512",
+            "source": "7775",
             "hasAnd": false,
             "hasColon": false,
             "endsWithColon": false,
             "words": [
               "benötigt",
-              "Niacin",
+              "relativ",
+              "viel",
+              "Kalzium"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Kalzium",
+                "lemma": "Kalzium"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt Schlaf und Ruhe, um Regenerationsprozesse durchzuführen.",
+        "usedSentences": [
+          {
+            "id": "45389",
+            "text": "benötigt Schlaf und Ruhe, um Regenerationsprozesse durchzuführen",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "17295",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "Schlaf",
+              "und",
+              "Ruhe",
+              "um",
+              "Regenerationsprozesse",
+              "durchzuführen"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              },
+              {
+                "word": "durchzuführen",
+                "lemma": "durchführen",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Schlaf",
+                "lemma": "Schlaf"
+              },
+              {
+                "word": "Ruhe",
+                "lemma": "Ruhe"
+              },
+              {
+                "word": "Regenerationsprozesse",
+                "lemma": "Regenerationsprozeß"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt für sämtliche Prozesse Energie.",
+        "usedSentences": [
+          {
+            "id": "42747",
+            "text": "benötigt für sämtliche Prozesse Energie",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "16328",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
               "für",
-              "verschiedene",
-              "Stoffwechselvorgänge"
+              "sämtliche",
+              "Prozesse",
+              "Energie"
             ],
             "verbsParsed": [
               {
@@ -2726,12 +476,12 @@
             ],
             "nounsParsed": [
               {
-                "word": "Niacin",
-                "lemma": "Niacin"
+                "word": "Prozesse",
+                "lemma": "Prozeß"
               },
               {
-                "word": "Stoffwechselvorgänge",
-                "lemma": "Stoffwechselvorgäng"
+                "word": "Energie",
+                "lemma": "Energie"
               }
             ]
           }
@@ -2741,25 +491,29 @@
         ]
       },
       {
-        "text": "Der Körper benötigt eine Umstellungsphase.",
+        "text": "Der Körper benötigt das in der Nahrung vorkommende Eisen.",
         "usedSentences": [
           {
-            "id": "4232",
-            "text": "benötigt eine Umstellungsphase",
+            "id": "5172",
+            "text": "benötigt das in der Nahrung vorkommende Eisen",
             "rootVerb": "benötigt",
             "rootVerbLemma": "benötigen",
             "verbs": {},
             "verbsLemma": {},
             "nouns": {},
             "nounsLemma": {},
-            "source": "1747",
+            "source": "708",
             "hasAnd": false,
             "hasColon": false,
             "endsWithColon": false,
             "words": [
               "benötigt",
-              "eine",
-              "Umstellungsphase"
+              "das",
+              "in",
+              "der",
+              "Nahrung",
+              "vorkommende",
+              "Eisen"
             ],
             "verbsParsed": [
               {
@@ -2770,99 +524,12 @@
             ],
             "nounsParsed": [
               {
-                "word": "Umstellungsphase",
-                "lemma": "Umstellungsphase"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt dafür mehr Platz.",
-        "usedSentences": [
-          {
-            "id": "40541",
-            "text": "benötigt dafür mehr Platz",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "12977",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "dafür",
-              "mehr",
-              "Platz"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Platz",
-                "lemma": "Platz"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt beim Fasten nichts weiter als die verordneten Getränke.",
-        "usedSentences": [
-          {
-            "id": "33003",
-            "text": "benötigt beim Fasten nichts weiter als die verordneten Getränke",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "12672",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "beim",
-              "Fasten",
-              "nichts",
-              "weiter",
-              "als",
-              "die",
-              "verordneten",
-              "Getränke"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Fasten",
-                "lemma": "Fasten"
+                "word": "Nahrung",
+                "lemma": "Nahrung"
               },
               {
-                "word": "Getränke",
-                "lemma": "Getränk"
+                "word": "Eisen",
+                "lemma": "Eisen"
               }
             ]
           }
@@ -2872,36 +539,56 @@
         ]
       },
       {
-        "text": "Der Körper benötigt Abwechslung.",
+        "text": "Der Körper benötigt zwei Wochen, bis der Schutz aufgebaut ist.",
         "usedSentences": [
           {
-            "id": "6103",
-            "text": "benötigt Abwechslung",
+            "id": "33458",
+            "text": "benötigt zwei Wochen, bis der Schutz aufgebaut ist",
             "rootVerb": "benötigt",
             "rootVerbLemma": "benötigen",
             "verbs": {},
             "verbsLemma": {},
             "nouns": {},
             "nounsLemma": {},
-            "source": "2417",
+            "source": "4003",
             "hasAnd": false,
             "hasColon": false,
             "endsWithColon": false,
             "words": [
               "benötigt",
-              "Abwechslung"
+              "zwei",
+              "Wochen",
+              "bis",
+              "der",
+              "Schutz",
+              "aufgebaut",
+              "ist"
             ],
             "verbsParsed": [
               {
                 "word": "benötigt",
                 "lemma": "benötigen",
                 "isRoot": true
+              },
+              {
+                "word": "aufgebaut",
+                "lemma": "aufbauen",
+                "isRoot": false
+              },
+              {
+                "word": "ist",
+                "lemma": "sein",
+                "isRoot": false
               }
             ],
             "nounsParsed": [
               {
-                "word": "Abwechslung",
-                "lemma": "Abwechslung"
+                "word": "Wochen",
+                "lemma": "Woche"
+              },
+              {
+                "word": "Schutz",
+                "lemma": "Schutz"
               }
             ]
           }
@@ -2956,116 +643,27 @@
         ]
       },
       {
-        "text": "Der Körper benötigt das Spurenelement für die Blutbildung.",
+        "text": "Der Körper benötigt Erholung von sportlichen Aktivitäten.",
         "usedSentences": [
           {
-            "id": "2270",
-            "text": "benötigt das Spurenelement für die Blutbildung",
+            "id": "33071",
+            "text": "benötigt Erholung von sportlichen Aktivitäten",
             "rootVerb": "benötigt",
             "rootVerbLemma": "benötigen",
             "verbs": {},
             "verbsLemma": {},
             "nouns": {},
             "nounsLemma": {},
-            "source": "938",
+            "source": "3249",
             "hasAnd": false,
             "hasColon": false,
             "endsWithColon": false,
             "words": [
               "benötigt",
-              "das",
-              "Spurenelement",
-              "für",
-              "die",
-              "Blutbildung"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Spurenelement",
-                "lemma": "Spurenelement"
-              },
-              {
-                "word": "Blutbildung",
-                "lemma": "Blutbildung"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt alle drei Formen.",
-        "usedSentences": [
-          {
-            "id": "14776",
-            "text": "benötigt alle drei Formen",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "5609",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "alle",
-              "drei",
-              "Formen"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Formen",
-                "lemma": "Form"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt durchgängig eine Zufuhr von Kohlenhydraten.",
-        "usedSentences": [
-          {
-            "id": "42063",
-            "text": "benötigt durchgängig eine Zufuhr von Kohlenhydraten",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "16064",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "durchgängig",
-              "eine",
-              "Zufuhr",
+              "Erholung",
               "von",
-              "Kohlenhydraten"
+              "sportlichen",
+              "Aktivitäten"
             ],
             "verbsParsed": [
               {
@@ -3076,12 +674,58 @@
             ],
             "nounsParsed": [
               {
-                "word": "Zufuhr",
-                "lemma": "Zufuhr"
+                "word": "Erholung",
+                "lemma": "Erholung"
               },
               {
-                "word": "Kohlenhydraten",
-                "lemma": "Kohlenhydrate"
+                "word": "Aktivitäten",
+                "lemma": "Aktivität"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt Carnitin insbesondere zur Energieproduktion.",
+        "usedSentences": [
+          {
+            "id": "33941",
+            "text": "benötigt Carnitin insbesondere zur Energieproduktion",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "12999",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "Carnitin",
+              "insbesondere",
+              "zur",
+              "Energieproduktion"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Carnitin",
+                "lemma": "Carnitin"
+              },
+              {
+                "word": "Energieproduktion",
+                "lemma": "Energieproduktion"
               }
             ]
           }
@@ -3144,6 +788,534 @@
         ]
       },
       {
+        "text": "Der Körper erhält „Hilfe zur Selbsthilfe“, das benötigt einige Zeit.",
+        "usedSentences": [
+          {
+            "id": "853",
+            "text": "erhält „Hilfe zur Selbsthilfe“, das benötigt einige Zeit",
+            "rootVerb": "erhält",
+            "rootVerbLemma": "erhalten",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "367",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "erhält",
+              "Hilfe",
+              "zur",
+              "Selbsthilfe",
+              "das",
+              "benötigt",
+              "einige",
+              "Zeit"
+            ],
+            "verbsParsed": [
+              {
+                "word": "erhält",
+                "lemma": "erhalten",
+                "isRoot": true
+              },
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Hilfe",
+                "lemma": "Hilfe"
+              },
+              {
+                "word": "Selbsthilfe",
+                "lemma": "Selbsthilfe"
+              },
+              {
+                "word": "Zeit",
+                "lemma": "Zeit"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt viel Flüssigkeit, um die Haut zu versorgen.",
+        "usedSentences": [
+          {
+            "id": "13625",
+            "text": "benötigt viel Flüssigkeit, um die Haut zu versorgen",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "2805",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "viel",
+              "Flüssigkeit",
+              "um",
+              "die",
+              "Haut",
+              "zu",
+              "versorgen"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              },
+              {
+                "word": "versorgen",
+                "lemma": "versorgen",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Flüssigkeit",
+                "lemma": "Flüssigkeit"
+              },
+              {
+                "word": "Haut",
+                "lemma": "Haut"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt eine ausgewogene und gesunde Ernährung.",
+        "usedSentences": [
+          {
+            "id": "37029",
+            "text": "benötigt eine ausgewogene und gesunde Ernährung",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "7536",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "eine",
+              "ausgewogene",
+              "und",
+              "gesunde",
+              "Ernährung"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Ernährung",
+                "lemma": "Ernährung"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper zerstört und rezykliert Zellen, die nicht benötigt werden.",
+        "usedSentences": [
+          {
+            "id": "20407",
+            "text": "zerstört und rezykliert Zellen, die nicht benötigt werden",
+            "rootVerb": "zerstört",
+            "rootVerbLemma": "zerstören",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "7835",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "zerstört",
+              "und",
+              "rezykliert",
+              "Zellen",
+              "die",
+              "nicht",
+              "benötigt",
+              "werden"
+            ],
+            "verbsParsed": [
+              {
+                "word": "zerstört",
+                "lemma": "zerstören",
+                "isRoot": true
+              },
+              {
+                "word": "rezykliert",
+                "lemma": "rezyklieren",
+                "isRoot": false
+              },
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": false
+              },
+              {
+                "word": "werden",
+                "lemma": "werden",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Zellen",
+                "lemma": "Zelle"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt das Spurenelement zur Bildung von Melanin.",
+        "usedSentences": [
+          {
+            "id": "30037",
+            "text": "benötigt das Spurenelement zur Bildung von Melanin",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "233",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "das",
+              "Spurenelement",
+              "zur",
+              "Bildung",
+              "von",
+              "Melanin"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Spurenelement",
+                "lemma": "Spurenelement"
+              },
+              {
+                "word": "Bildung",
+                "lemma": "Bildung"
+              },
+              {
+                "word": "Melanin",
+                "lemma": "Melanin"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt nach dem Sport eine Weile, um sich zu regenerieren.",
+        "usedSentences": [
+          {
+            "id": "17810",
+            "text": "benötigt nach dem Sport eine Weile, um sich zu regenerieren",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "6802",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "nach",
+              "dem",
+              "Sport",
+              "eine",
+              "Weile",
+              "um",
+              "sich",
+              "zu",
+              "regenerieren"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              },
+              {
+                "word": "regenerieren",
+                "lemma": "regenerieren",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Sport",
+                "lemma": "Sport"
+              },
+              {
+                "word": "Weile",
+                "lemma": "Weile"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt Folat für die Zellteilung und Zellneubildung.",
+        "usedSentences": [
+          {
+            "id": "25491",
+            "text": "benötigt Folat für die Zellteilung und Zellneubildung",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "2276",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "Folat",
+              "für",
+              "die",
+              "Zellteilung",
+              "und",
+              "Zellneubildung"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Folat",
+                "lemma": "Folat"
+              },
+              {
+                "word": "Zellteilung",
+                "lemma": "Zellteilung"
+              },
+              {
+                "word": "Zellneubildung",
+                "lemma": "Zellneubildung"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt dafür mehr Platz.",
+        "usedSentences": [
+          {
+            "id": "40541",
+            "text": "benötigt dafür mehr Platz",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "12977",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "dafür",
+              "mehr",
+              "Platz"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Platz",
+                "lemma": "Platz"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt Lycopin, um freie Radikale unschädlich zu machen.",
+        "usedSentences": [
+          {
+            "id": "38989",
+            "text": "benötigt Lycopin, um freie Radikale unschädlich zu machen",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "5864",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "Lycopin",
+              "um",
+              "freie",
+              "Radikale",
+              "unschädlich",
+              "zu",
+              "machen"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              },
+              {
+                "word": "machen",
+                "lemma": "machen",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Lycopin",
+                "lemma": "Lycopin"
+              },
+              {
+                "word": "Radikale",
+                "lemma": "Radikal"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt genügend Vitamin D, um Calcium zu verwerten.",
+        "usedSentences": [
+          {
+            "id": "39966",
+            "text": "benötigt genügend Vitamin D, um Calcium zu verwerten",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "554",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "genügend",
+              "Vitamin",
+              "D",
+              "um",
+              "Calcium",
+              "zu",
+              "verwerten"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              },
+              {
+                "word": "verwerten",
+                "lemma": "verwerten",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Vitamin",
+                "lemma": "Vitamin"
+              },
+              {
+                "word": "D",
+                "lemma": "D"
+              },
+              {
+                "word": "Calcium",
+                "lemma": "Calcium"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
         "text": "Der Körper benötigt zum Einschlafen das Hormon Melatonin.",
         "usedSentences": [
           {
@@ -3186,6 +1358,936 @@
               {
                 "word": "Melatonin",
                 "lemma": "Melatonin"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt in geringen Dosen Fett.",
+        "usedSentences": [
+          {
+            "id": "6343",
+            "text": "benötigt in geringen Dosen Fett",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "2110",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "in",
+              "geringen",
+              "Dosen",
+              "Fett"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Dosen",
+                "lemma": "Dose"
+              },
+              {
+                "word": "Fett",
+                "lemma": "Fett"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt im Verlauf der Schwangerschaft mehr Schilddrüsenhormone.",
+        "usedSentences": [
+          {
+            "id": "31523",
+            "text": "benötigt im Verlauf der Schwangerschaft mehr Schilddrüsenhormone",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "6189",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "im",
+              "Verlauf",
+              "der",
+              "Schwangerschaft",
+              "mehr",
+              "Schilddrüsenhormone"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Verlauf",
+                "lemma": "Verlauf"
+              },
+              {
+                "word": "Schwangerschaft",
+                "lemma": "Schwangerschaft"
+              },
+              {
+                "word": "Schilddrüsenhormone",
+                "lemma": "Schilddrüsenhormon"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt etwa 15 verschiedene Mineralstoffe.",
+        "usedSentences": [
+          {
+            "id": "4828",
+            "text": "benötigt etwa 15 verschiedene Mineralstoffe",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "1949",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "etwa",
+              "verschiedene",
+              "Mineralstoffe"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Mineralstoffe",
+                "lemma": "Mineralstoff"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt dringend Unterstützung.",
+        "usedSentences": [
+          {
+            "id": "8137",
+            "text": "benötigt dringend Unterstützung",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "3205",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "dringend",
+              "Unterstützung"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Unterstützung",
+                "lemma": "Unterstützung"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt weniger Insulin.",
+        "usedSentences": [
+          {
+            "id": "7842",
+            "text": "benötigt weniger Insulin",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "2223",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "weniger",
+              "Insulin"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Insulin",
+                "lemma": "Insulin"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt Salz, um den Elektrolythaushalt aufrechtzuerhalten.",
+        "usedSentences": [
+          {
+            "id": "3150",
+            "text": "benötigt Salz, um den Elektrolythaushalt aufrechtzuerhalten",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "1305",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "Salz",
+              "um",
+              "den",
+              "Elektrolythaushalt",
+              "aufrechtzuerhalten"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              },
+              {
+                "word": "aufrechtzuerhalten",
+                "lemma": "aufrechtzuerhalten",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Salz",
+                "lemma": "Salz"
+              },
+              {
+                "word": "Elektrolythaushalt",
+                "lemma": "Elektrolythaushalt"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt etwas Cholesterin, um richtig zu funktionieren.",
+        "usedSentences": [
+          {
+            "id": "17432",
+            "text": "benötigt etwas Cholesterin, um richtig zu funktionieren",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "1958",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "etwas",
+              "Cholesterin",
+              "um",
+              "richtig",
+              "zu",
+              "funktionieren"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              },
+              {
+                "word": "funktionieren",
+                "lemma": "funktionieren",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Cholesterin",
+                "lemma": "Cholesterin"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt Nahrungsmittel und Sauerstoff.",
+        "usedSentences": [
+          {
+            "id": "18084",
+            "text": "benötigt Nahrungsmittel und Sauerstoff",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "6900",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "Nahrungsmittel",
+              "und",
+              "Sauerstoff"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Nahrungsmittel",
+                "lemma": "Nahrungsmittel"
+              },
+              {
+                "word": "Sauerstoff",
+                "lemma": "Sauerstoff"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt seine Kräfte für den Heilungsprozess.",
+        "usedSentences": [
+          {
+            "id": "40363",
+            "text": "benötigt seine Kräfte für den Heilungsprozess",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "129",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "seine",
+              "Kräfte",
+              "für",
+              "den",
+              "Heilungsprozess"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Kräfte",
+                "lemma": "Kraft"
+              },
+              {
+                "word": "Heilungsprozess",
+                "lemma": "Heilungsprozess"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt auch Ruhetage zur Regeneration.",
+        "usedSentences": [
+          {
+            "id": "3065",
+            "text": "benötigt auch Ruhetage zur Regeneration",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "1275",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "auch",
+              "Ruhetage",
+              "zur",
+              "Regeneration"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Ruhetage",
+                "lemma": "Ruhetag"
+              },
+              {
+                "word": "Regeneration",
+                "lemma": "Regeneration"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt Eisen für vielerlei Funktionen.",
+        "usedSentences": [
+          {
+            "id": "26643",
+            "text": "benötigt Eisen für vielerlei Funktionen",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "10311",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "Eisen",
+              "für",
+              "vielerlei",
+              "Funktionen"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Eisen",
+                "lemma": "Eisen"
+              },
+              {
+                "word": "Funktionen",
+                "lemma": "Funktion"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt verschiedene Nährstoffe, um Muttermilch zu produzieren.",
+        "usedSentences": [
+          {
+            "id": "22045",
+            "text": "benötigt verschiedene Nährstoffe, um Muttermilch zu produzieren",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "8501",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "verschiedene",
+              "Nährstoffe",
+              "um",
+              "Muttermilch",
+              "zu",
+              "produzieren"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              },
+              {
+                "word": "produzieren",
+                "lemma": "produzieren",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Nährstoffe",
+                "lemma": "Nährstoff"
+              },
+              {
+                "word": "Muttermilch",
+                "lemma": "Muttermilch"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt und verbraucht 24 Stunden lang Energie.",
+        "usedSentences": [
+          {
+            "id": "1058",
+            "text": "benötigt und verbraucht 24 Stunden lang Energie",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "442",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "und",
+              "verbraucht",
+              "Stunden",
+              "lang",
+              "Energie"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              },
+              {
+                "word": "verbraucht",
+                "lemma": "verbrauchen",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Stunden",
+                "lemma": "Stunde"
+              },
+              {
+                "word": "Energie",
+                "lemma": "Energie"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt Wasser als Lösungs-, Transport- und Ausscheidungsmittel.",
+        "usedSentences": [
+          {
+            "id": "36183",
+            "text": "benötigt Wasser als Lösungs-, Transport- und Ausscheidungsmittel",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "13851",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "Wasser",
+              "als",
+              "Lösungs",
+              "Transport",
+              "und",
+              "Ausscheidungsmittel"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Wasser",
+                "lemma": "Wasser"
+              },
+              {
+                "word": "Ausscheidungsmittel",
+                "lemma": "Ausscheidungsmittel"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper befindet sich im Wachstum und benötigt ausreichend Halt.",
+        "usedSentences": [
+          {
+            "id": "2856",
+            "text": "befindet sich im Wachstum und benötigt ausreichend Halt",
+            "rootVerb": "befindet",
+            "rootVerbLemma": "befinden",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "1168",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "befindet",
+              "sich",
+              "im",
+              "Wachstum",
+              "und",
+              "benötigt",
+              "ausreichend",
+              "Halt"
+            ],
+            "verbsParsed": [
+              {
+                "word": "befindet",
+                "lemma": "befinden",
+                "isRoot": true
+              },
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Wachstum",
+                "lemma": "Wachstum"
+              },
+              {
+                "word": "Halt",
+                "lemma": "Halt"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt Proteine, um Antikörper gegen Streptokokken zu bilden.",
+        "usedSentences": [
+          {
+            "id": "32487",
+            "text": "benötigt Proteine, um Antikörper gegen Streptokokken zu bilden",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "10124",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "Proteine",
+              "um",
+              "Antikörper",
+              "gegen",
+              "Streptokokken",
+              "zu",
+              "bilden"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              },
+              {
+                "word": "bilden",
+                "lemma": "bilden",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Proteine",
+                "lemma": "Protein"
+              },
+              {
+                "word": "Antikörper",
+                "lemma": "Antikörper"
+              },
+              {
+                "word": "Streptokokken",
+                "lemma": "Streptokokke"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt Aminosäuren zur Neubildung und Reparatur von Gewebe.",
+        "usedSentences": [
+          {
+            "id": "23634",
+            "text": "benötigt Aminosäuren zur Neubildung und Reparatur von Gewebe",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "640",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "Aminosäuren",
+              "zur",
+              "Neubildung",
+              "und",
+              "Reparatur",
+              "von",
+              "Gewebe"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Aminosäuren",
+                "lemma": "Aminosäure"
+              },
+              {
+                "word": "Neubildung",
+                "lemma": "Neubildung"
+              },
+              {
+                "word": "Reparatur",
+                "lemma": "Reparatur"
+              },
+              {
+                "word": "Gewebe",
+                "lemma": "Gewebe"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt für eine kräftige Blutzirkulation genug Flüssigkeit.",
+        "usedSentences": [
+          {
+            "id": "3287",
+            "text": "benötigt für eine kräftige Blutzirkulation genug Flüssigkeit",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "1365",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "für",
+              "eine",
+              "kräftige",
+              "Blutzirkulation",
+              "genug",
+              "Flüssigkeit"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Blutzirkulation",
+                "lemma": "Blutzirkulation"
+              },
+              {
+                "word": "Flüssigkeit",
+                "lemma": "Flüssigkeit"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt einige Zeit, um auf die richtige Temperatur zu kommen.",
+        "usedSentences": [
+          {
+            "id": "40549",
+            "text": "benötigt einige Zeit, um auf die richtige Temperatur zu kommen",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "4122",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "einige",
+              "Zeit",
+              "um",
+              "auf",
+              "die",
+              "richtige",
+              "Temperatur",
+              "zu",
+              "kommen"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              },
+              {
+                "word": "kommen",
+                "lemma": "kommen",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Zeit",
+                "lemma": "Zeit"
+              },
+              {
+                "word": "Temperatur",
+                "lemma": "Temperatur"
               }
             ]
           }
@@ -3247,27 +2349,72 @@
         ]
       },
       {
-        "text": "Der Körper benötigt adäquate Vorsorge- und Therapiekonzepte.",
+        "text": "Der Körper benötigt etwa 160 g pro Tag.",
         "usedSentences": [
           {
-            "id": "18741",
-            "text": "benötigt adäquate Vorsorge- und Therapiekonzepte",
+            "id": "25186",
+            "text": "benötigt etwa 160 g pro Tag",
             "rootVerb": "benötigt",
             "rootVerbLemma": "benötigen",
             "verbs": {},
             "verbsLemma": {},
             "nouns": {},
             "nounsLemma": {},
-            "source": "7170",
+            "source": "9727",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "benötigt",
+              "etwa",
+              "g",
+              "pro",
+              "Tag"
+            ],
+            "verbsParsed": [
+              {
+                "word": "benötigt",
+                "lemma": "benötigen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "g",
+                "lemma": "g"
+              },
+              {
+                "word": "Tag",
+                "lemma": "Tag"
+              }
+            ]
+          }
+        ],
+        "containedWords": [
+          "benötigt"
+        ]
+      },
+      {
+        "text": "Der Körper benötigt Ruhepausen und Entspannung.",
+        "usedSentences": [
+          {
+            "id": "40179",
+            "text": "benötigt Ruhepausen und Entspannung",
+            "rootVerb": "benötigt",
+            "rootVerbLemma": "benötigen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "15392",
             "hasAnd": true,
             "hasColon": false,
             "endsWithColon": false,
             "words": [
               "benötigt",
-              "adäquate",
-              "Vorsorge",
+              "Ruhepausen",
               "und",
-              "Therapiekonzepte"
+              "Entspannung"
             ],
             "verbsParsed": [
               {
@@ -3278,54 +2425,12 @@
             ],
             "nounsParsed": [
               {
-                "word": "Therapiekonzepte",
-                "lemma": "Therapiekonzept"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt in vielerlei Hinsicht Zinn.",
-        "usedSentences": [
-          {
-            "id": "25835",
-            "text": "benötigt in vielerlei Hinsicht Zinn",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "7775",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "in",
-              "vielerlei",
-              "Hinsicht",
-              "Zinn"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Hinsicht",
-                "lemma": "Hinsicht"
+                "word": "Ruhepausen",
+                "lemma": "Ruhepause"
               },
               {
-                "word": "Zinn",
-                "lemma": "Zinn"
+                "word": "Entspannung",
+                "lemma": "Entspannung"
               }
             ]
           }
@@ -3335,569 +2440,11 @@
         ]
       },
       {
-        "text": "Der Körper benötigt die wichtigen Omega3-Fettsäuren.",
+        "text": "Der Körper benötigt Laktaseenzym, um Laktose zu verdauen.",
         "usedSentences": [
           {
-            "id": "28581",
-            "text": "benötigt die wichtigen Omega3-Fettsäuren",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "11030",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "die",
-              "wichtigen",
-              "Omega",
-              "Fettsäuren"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Omega3-Fettsäuren",
-                "lemma": "Omega3-Fettsäure"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt das Mineral für jede Muskelkontraktion.",
-        "usedSentences": [
-          {
-            "id": "2524",
-            "text": "benötigt das Mineral für jede Muskelkontraktion",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "1051",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "das",
-              "Mineral",
-              "für",
-              "jede",
-              "Muskelkontraktion"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Mineral",
-                "lemma": "Mineral"
-              },
-              {
-                "word": "Muskelkontraktion",
-                "lemma": "Muskelkontraktion"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt ebenfalls viel Luft.",
-        "usedSentences": [
-          {
-            "id": "187",
-            "text": "benötigt ebenfalls viel Luft",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "82",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "ebenfalls",
-              "viel",
-              "Luft"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Luft",
-                "lemma": "Luft"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt den Kurzschluss zwischen den Herzvorhöfen nicht mehr.",
-        "usedSentences": [
-          {
-            "id": "42898",
-            "text": "benötigt den Kurzschluss zwischen den Herzvorhöfen nicht mehr",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "708",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "den",
-              "Kurzschluss",
-              "zwischen",
-              "den",
-              "Herzvorhöfen",
-              "nicht",
-              "mehr"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Kurzschluss",
-                "lemma": "Kurzschluss"
-              },
-              {
-                "word": "Herzvorhöfen",
-                "lemma": "Herzvorhof"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt besonders viel Schwefel, um den Knorpel aufzubauen.",
-        "usedSentences": [
-          {
-            "id": "26510",
-            "text": "benötigt besonders viel Schwefel, um den Knorpel aufzubauen",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "2899",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "besonders",
-              "viel",
-              "Schwefel",
-              "um",
-              "den",
-              "Knorpel",
-              "aufzubauen"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              },
-              {
-                "word": "aufzubauen",
-                "lemma": "aufbauen",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Schwefel",
-                "lemma": "Schwefel"
-              },
-              {
-                "word": "Knorpel",
-                "lemma": "Knorpel"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt ein wenig, um sich an die Umgebung zu gewöhnen.",
-        "usedSentences": [
-          {
-            "id": "34132",
-            "text": "benötigt ein wenig, um sich an die Umgebung zu gewöhnen",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "13071",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "ein",
-              "wenig",
-              "um",
-              "sich",
-              "an",
-              "die",
-              "Umgebung",
-              "zu",
-              "gewöhnen"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              },
-              {
-                "word": "gewöhnen",
-                "lemma": "gewöhnen",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Umgebung",
-                "lemma": "Umgebung"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt das Metall sogar.",
-        "usedSentences": [
-          {
-            "id": "43515",
-            "text": "benötigt das Metall sogar",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "8622",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "das",
-              "Metall",
-              "sogar"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Metall",
-                "lemma": "Metall"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper verändert sich und benötigt mehr Mineralstoffe.",
-        "usedSentences": [
-          {
-            "id": "21993",
-            "text": "verändert sich und benötigt mehr Mineralstoffe",
-            "rootVerb": "verändert",
-            "rootVerbLemma": "verändern",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "8476",
-            "hasAnd": true,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "verändert",
-              "sich",
-              "und",
-              "benötigt",
-              "mehr",
-              "Mineralstoffe"
-            ],
-            "verbsParsed": [
-              {
-                "word": "verändert",
-                "lemma": "verändern",
-                "isRoot": true
-              },
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Mineralstoffe",
-                "lemma": "Mineralstoff"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt häufig eine Woche zum Umstellen.",
-        "usedSentences": [
-          {
-            "id": "778",
-            "text": "benötigt häufig eine Woche zum Umstellen",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "327",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "häufig",
-              "eine",
-              "Woche",
-              "zum",
-              "Umstellen"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Woche",
-                "lemma": "Woche"
-              },
-              {
-                "word": "Umstellen",
-                "lemma": "umstellen"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt eine ausgewogene und gesunde Ernährung.",
-        "usedSentences": [
-          {
-            "id": "37029",
-            "text": "benötigt eine ausgewogene und gesunde Ernährung",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "7536",
-            "hasAnd": true,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "eine",
-              "ausgewogene",
-              "und",
-              "gesunde",
-              "Ernährung"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Ernährung",
-                "lemma": "Ernährung"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt viel weniger als man denkt.",
-        "usedSentences": [
-          {
-            "id": "26979",
-            "text": "benötigt viel weniger als man denkt",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "10440",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "viel",
-              "weniger",
-              "als",
-              "man",
-              "denkt"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              },
-              {
-                "word": "denkt",
-                "lemma": "denken",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": []
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt den Schlaf schlicht und einfach, um zu überleben.",
-        "usedSentences": [
-          {
-            "id": "34329",
-            "text": "benötigt den Schlaf schlicht und einfach, um zu überleben",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "13149",
-            "hasAnd": true,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "den",
-              "Schlaf",
-              "schlicht",
-              "und",
-              "einfach",
-              "um",
-              "zu",
-              "überleben"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              },
-              {
-                "word": "überleben",
-                "lemma": "überleben",
-                "isRoot": false
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Schlaf",
-                "lemma": "Schlaf"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Folsäure zur Erzeugung neuer und gesunder Erythrozyten.",
-        "usedSentences": [
-          {
-            "id": "45114",
-            "text": "benötigt Folsäure zur Erzeugung neuer und gesunder Erythrozyten",
+            "id": "45333",
+            "text": "benötigt Laktaseenzym, um Laktose zu verdauen",
             "rootVerb": "benötigt",
             "rootVerbLemma": "benötigen",
             "verbs": {},
@@ -3905,241 +2452,16 @@
             "nouns": {},
             "nounsLemma": {},
             "source": "11316",
-            "hasAnd": true,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Folsäure",
-              "zur",
-              "Erzeugung",
-              "neuer",
-              "und",
-              "gesunder",
-              "Erythrozyten"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Folsäure",
-                "lemma": "Folsäure"
-              },
-              {
-                "word": "Erzeugung",
-                "lemma": "Erzeugung"
-              },
-              {
-                "word": "Erythrozyten",
-                "lemma": "Erythrozyte"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt gleichermaßen Methyl- und Adenosylcobalamin.",
-        "usedSentences": [
-          {
-            "id": "6393",
-            "text": "benötigt gleichermaßen Methyl- und Adenosylcobalamin",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "2526",
-            "hasAnd": true,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "gleichermaßen",
-              "Methyl",
-              "und",
-              "Adenosylcobalamin"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Adenosylcobalamin",
-                "lemma": "Adenosylcobalamin"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt immer höhere Insulinmengen zum Reagieren.",
-        "usedSentences": [
-          {
-            "id": "36027",
-            "text": "benötigt immer höhere Insulinmengen zum Reagieren",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "13797",
             "hasAnd": false,
             "hasColon": false,
             "endsWithColon": false,
             "words": [
               "benötigt",
-              "immer",
-              "höhere",
-              "Insulinmengen",
-              "zum",
-              "Reagieren"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Insulinmengen",
-                "lemma": "Insulinmenge"
-              },
-              {
-                "word": "Reagieren",
-                "lemma": "Reagieren"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt täglich 1,5 bis 2 Liter.",
-        "usedSentences": [
-          {
-            "id": "42545",
-            "text": "benötigt täglich 1,5 bis 2 Liter",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "16249",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "täglich",
-              "bis",
-              "Liter"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Liter",
-                "lemma": "Liter"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt dringend Unterstützung.",
-        "usedSentences": [
-          {
-            "id": "8137",
-            "text": "benötigt dringend Unterstützung",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "3205",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "dringend",
-              "Unterstützung"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Unterstützung",
-                "lemma": "Unterstützung"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt einen gewissen Zeitraum, um die Stresshormone abzubauen.",
-        "usedSentences": [
-          {
-            "id": "28922",
-            "text": "benötigt einen gewissen Zeitraum, um die Stresshormone abzubauen",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "287",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "einen",
-              "gewissen",
-              "Zeitraum",
+              "Laktaseenzym",
               "um",
-              "die",
-              "Stresshormone",
-              "abzubauen"
+              "Laktose",
+              "zu",
+              "verdauen"
             ],
             "verbsParsed": [
               {
@@ -4148,357 +2470,19 @@
                 "isRoot": true
               },
               {
-                "word": "abzubauen",
-                "lemma": "abbauen",
+                "word": "verdauen",
+                "lemma": "verdauen",
                 "isRoot": false
               }
             ],
             "nounsParsed": [
               {
-                "word": "Zeitraum",
-                "lemma": "Zeitraum"
+                "word": "Laktaseenzym",
+                "lemma": "Laktaseenzym"
               },
               {
-                "word": "Stresshormone",
-                "lemma": "Stresshormon"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt viele gesunde Stoffe.",
-        "usedSentences": [
-          {
-            "id": "41703",
-            "text": "benötigt viele gesunde Stoffe",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "15946",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "viele",
-              "gesunde",
-              "Stoffe"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Stoffe",
-                "lemma": "Stoff"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Fleisch.",
-        "usedSentences": [
-          {
-            "id": "38991",
-            "text": "benötigt Fleisch",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "5864",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Fleisch"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Fleisch",
-                "lemma": "Fleisch"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt etwas Gewöhnungszeit.",
-        "usedSentences": [
-          {
-            "id": "31714",
-            "text": "benötigt etwas Gewöhnungszeit",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "12188",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "etwas",
-              "Gewöhnungszeit"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Gewöhnungszeit",
-                "lemma": "Gewöhnungszeit"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt Baustoffe beim Training.",
-        "usedSentences": [
-          {
-            "id": "16174",
-            "text": "benötigt Baustoffe beim Training",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "1345",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "Baustoffe",
-              "beim",
-              "Training"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Baustoffe",
-                "lemma": "Baustoff"
-              },
-              {
-                "word": "Training",
-                "lemma": "Training"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt eine Auszeit.",
-        "usedSentences": [
-          {
-            "id": "31",
-            "text": "benötigt eine Auszeit",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "13",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "eine",
-              "Auszeit"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Auszeit",
-                "lemma": "Auszeit"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt das gewünschte Nahrungsmittel.",
-        "usedSentences": [
-          {
-            "id": "20552",
-            "text": "benötigt das gewünschte Nahrungsmittel",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "3371",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "das",
-              "gewünschte",
-              "Nahrungsmittel"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Nahrungsmittel",
-                "lemma": "Nahrungsmittel"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt täglich ungefähr 100 Mikrogramm Chrom.",
-        "usedSentences": [
-          {
-            "id": "38462",
-            "text": "benötigt täglich ungefähr 100 Mikrogramm Chrom",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "540",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "täglich",
-              "ungefähr",
-              "Mikrogramm",
-              "Chrom"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "Mikrogramm",
-                "lemma": "Mikrogramm"
-              },
-              {
-                "word": "Chrom",
-                "lemma": "Chrom"
-              }
-            ]
-          }
-        ],
-        "containedWords": [
-          "benötigt"
-        ]
-      },
-      {
-        "text": "Der Körper benötigt täglich ca. 6 mg Pantothensäure.",
-        "usedSentences": [
-          {
-            "id": "44614",
-            "text": "benötigt täglich ca. 6 mg Pantothensäure",
-            "rootVerb": "benötigt",
-            "rootVerbLemma": "benötigen",
-            "verbs": {},
-            "verbsLemma": {},
-            "nouns": {},
-            "nounsLemma": {},
-            "source": "721",
-            "hasAnd": false,
-            "hasColon": false,
-            "endsWithColon": false,
-            "words": [
-              "benötigt",
-              "täglich",
-              "ca",
-              "mg",
-              "Pantothensäure"
-            ],
-            "verbsParsed": [
-              {
-                "word": "benötigt",
-                "lemma": "benötigen",
-                "isRoot": true
-              }
-            ],
-            "nounsParsed": [
-              {
-                "word": "mg",
-                "lemma": "mg"
-              },
-              {
-                "word": "Pantothensäure",
-                "lemma": "Pantothensäure"
+                "word": "Laktose",
+                "lemma": "Laktose"
               }
             ]
           }
