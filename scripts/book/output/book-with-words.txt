@@ -1,52 +1,102 @@
 --- Texte mit Wörtern: benötigt ---
 
-Der Körper benötigt Wasser, um Fett zu verstoffwechseln.
-Der Körper benötigt mit zunehmendem Alter weniger Kalorien.
-Der Körper benötigt Magnesium für die Energieverwertung.
-Der Körper benötigt Nährstoffe, um richtig arbeiten zu können.
-Der Körper benötigt keine Entschlackung.
-Der Körper benötigt ca. 21 Tage, um sich an die neue Position zu gewöhnen.
-Der Körper benötigt hochwertige Fettsäuren zum Leben.
-Der Körper benötigt relativ viel Kalzium.
-Der Körper benötigt Schlaf und Ruhe, um Regenerationsprozesse durchzuführen.
-Der Körper benötigt für sämtliche Prozesse Energie.
-Der Körper benötigt das in der Nahrung vorkommende Eisen.
-Der Körper benötigt zwei Wochen, bis der Schutz aufgebaut ist.
-Der Körper benötigt Kohlenhydrate als Energielieferant.
-Der Körper benötigt Erholung von sportlichen Aktivitäten.
-Der Körper benötigt Carnitin insbesondere zur Energieproduktion.
-Der Körper benötigt 20 Minuten, bis sich ein Sättigungsgefühl einstellt.
-Der Körper erhält „Hilfe zur Selbsthilfe“, das benötigt einige Zeit.
-Der Körper benötigt viel Flüssigkeit, um die Haut zu versorgen.
-Der Körper benötigt eine ausgewogene und gesunde Ernährung.
-Der Körper zerstört und rezykliert Zellen, die nicht benötigt werden.
-Der Körper benötigt das Spurenelement zur Bildung von Melanin.
-Der Körper benötigt nach dem Sport eine Weile, um sich zu regenerieren.
-Der Körper benötigt Folat für die Zellteilung und Zellneubildung.
-Der Körper benötigt dafür mehr Platz.
-Der Körper benötigt Lycopin, um freie Radikale unschädlich zu machen.
-Der Körper benötigt genügend Vitamin D, um Calcium zu verwerten.
-Der Körper benötigt zum Einschlafen das Hormon Melatonin.
-Der Körper benötigt in geringen Dosen Fett.
-Der Körper benötigt im Verlauf der Schwangerschaft mehr Schilddrüsenhormone.
-Der Körper benötigt etwa 15 verschiedene Mineralstoffe.
-Der Körper benötigt dringend Unterstützung.
-Der Körper benötigt weniger Insulin.
+Der Körper benötigt Flüssigkeit.
+Der Körper benötigt ein gesundes Wechselspiel aus Erholung und Training.
+Der Körper benötigt Fettsäuren für die verschiedensten Stoffwechselprozesse.
+Der Körper benötigt das Wasser für jeden einzelnen Stoffwechselprozess.
+Der Körper benötigt viele gesunde Stoffe.
+Der Körper benötigt Kalium vor allem für das Herz, Nerven und Muskeln.
+Der Körper benötigt auch Flüssigkeit, um die Bakterien auszuscheiden.
 Der Körper benötigt Salz, um den Elektrolythaushalt aufrechtzuerhalten.
-Der Körper benötigt etwas Cholesterin, um richtig zu funktionieren.
+Der Körper benötigt für den Aufbau von Kollagen Aminosäuren.
 Der Körper benötigt Nahrungsmittel und Sauerstoff.
-Der Körper benötigt seine Kräfte für den Heilungsprozess.
-Der Körper benötigt auch Ruhetage zur Regeneration.
-Der Körper benötigt Eisen für vielerlei Funktionen.
-Der Körper benötigt verschiedene Nährstoffe, um Muttermilch zu produzieren.
-Der Körper benötigt und verbraucht 24 Stunden lang Energie.
-Der Körper benötigt Wasser als Lösungs-, Transport- und Ausscheidungsmittel.
-Der Körper befindet sich im Wachstum und benötigt ausreichend Halt.
-Der Körper benötigt Proteine, um Antikörper gegen Streptokokken zu bilden.
-Der Körper benötigt Aminosäuren zur Neubildung und Reparatur von Gewebe.
-Der Körper benötigt für eine kräftige Blutzirkulation genug Flüssigkeit.
-Der Körper benötigt einige Zeit, um auf die richtige Temperatur zu kommen.
-Der Körper benötigt zur Energiegewinnung für die Zellen Glucose.
-Der Körper benötigt etwa 160 g pro Tag.
-Der Körper benötigt Ruhepausen und Entspannung.
-Der Körper benötigt Laktaseenzym, um Laktose zu verdauen.
+Der Körper benötigt täglich mindestens zwei Liter Wasser, Saft oder Tee.
+Der Körper benötigt und bekommt Nahrung, um funktionieren zu können.
+Der Körper benötigt mehr Zeit, um sich auf die Hitze einzustellen.
+Der Körper benötigt adäquate Vorsorge- und Therapiekonzepte.
+Der Körper benötigt keine Entschlackung.
+Der Körper benötigt Calcium auch für die Muskeltätigkeit.
+Der Körper benötigt Energie, um die Nahrung zu verdauen.
+Der Körper benötigt Vitamine B, A, C, E, PP.
+Der Körper benötigt alle Energiereserven, um die Viren zu bekämpfen.
+Der Körper benötigt zur Energiegewinnung große Mengen an Sauerstoff.
+Der Körper benötigt alle Vitamingruppen für eine gesunde Funktion.
+Der Körper benötigt etwa 2.5 Liter Flüssigkeit am Tag.
+Der Körper benötigt pro Kilogramm Körpergewicht 13 Milligramm.
+Der Körper benötigt nicht alle Aminosäuren im gleichen Maße.
+Der Körper benötigt Magnesium für Hunderte von chemischen Reaktionen.
+Der Körper benötigt das Vitamin vor allem für das Wachstum.
+Der Körper benötigt die nächtliche Ruhezeit, um sich zu erholen.
+Der Körper benötigt keine Nahrungsmittel und Getränke aus dem roten Bereich.
+Der Körper benötigt wasserlösliche Vitamine für viele Funktionen.
+Der Körper benötigt nach dem Sport eine Weile, um sich zu regenerieren.
+Der Körper benötigt Protein für viele Prozesse.
+Der Körper benötigt Fett für verschiedene Stoffwechselprozesse.
+Der Körper benötigt mal mehr, mal weniger Schilddrüsenhormone.
+Der Körper benötigt Laktase, um Laktose abzubauen oder zu verdauen.
+Der Körper benötigt weniger Insulin.
+Der Körper benötigt täglich ca 800 mg Kalzium und 350 mg Magnesium.
+Der Körper benötigt Pausen.
+Der Körper benötigt den Schlaf zur Regeneration.
+Der Körper benötigt für seine tägliche Arbeit Energie.
+Der Körper benötigt Folsäure zur Erzeugung neuer und gesunder Erythrozyten.
+Der Körper benötigt Östrogen und Gestagen.
+Der Körper benötigt Drüsen, um seine Funktionen aufrechtzuerhalten.
+Der Körper benötigt kleine Portionen, und der Magen wird reduziert.
+Der Körper benötigt Zeit, um sich an einen neuen Lebensstil zu gewöhnen.
+Der Körper benötigt Jod für die Produktion der Schilddrüsenhormone.
+Der Körper benötigt täglich eine Vielzahl von Nährstoffen.
+Der Körper benötigt ein Gleichgewicht der Hormone für optimale Gesundheit.
+Der Körper benötigt zur Umwandlung in Vitamin A die Aufnahme von Fett.
+Der Körper benötigt Magnesium für die Energieverwertung.
+Der Körper benötigt im Schnitt etwa zwei Liter Flüssigkeit am Tag.
+Der Körper benötigt Insulin, um Zucker verstoffwechseln zu können.
+Der Körper benötigt etwa 12 Wochen, um neues Kollagen zu produzieren.
+Der Körper benötigt Biotin, um das Protein Keratin zu bilden.
+Der Körper benötigt bei körperlicher Aktivität mehr Sauerstoff.
+Der Körper benötigt Baustoffe beim Training.
+Der Körper benötigt in Stressmomenten extra Energie.
+Der Körper benötigt 1,5 bis 2 Liter pro Tag.
+Der Körper benötigt eine Ruhepause.
+Der Körper benötigt bei Anstrengung mehr Sauerstoff.
+Der Körper benötigt für den Muskelaufbau auch Aminosäuren.
+Der Körper benötigt Fett für viele Körperfunktionen.
+Der Körper benötigt ausreichend Flüssigkeit, vor allem Wasser.
+Der Körper benötigt für viele Funktionen Eiweiß.
+Der Körper benötigt nur sehr geringe Mengen an Vitamin B12.
+Der Körper benötigt Abwechslung.
+Der Körper benötigt Flüssigkeit, um seine Prozesse am Laufen zu halten.
+Der Körper benötigt Kohlenhydrate als Energielieferant.
+Der Körper benötigt das in der Nahrung vorkommende Eisen.
+Der Körper benötigt nur winzige Mengen Jod.
+Der Körper benötigt stets ausreichend Protein, um ideal arbeiten zu können.
+Der Körper benötigt Kalium zur Blutdruckregulation.
+Der Körper benötigt die Energie.
+Der Körper benötigt rund 300 mg Magnesium pro Tag.
+Der Körper benötigt lediglich einige Zeit zum Aufbau der Kräfte.
+Der Körper benötigt täglich 1,5 bis 2 Liter.
+Der Körper benötigt Energie, um die aufgenommene Nahrung zu verwerten.
+Der Körper benötigt jeden Tag etwa ein halbes bis ein Gramm Cholesterin.
+Der Körper benötigt eine gute Portion Energie.
+Der Körper benötigt Pausen, um sich von der Anstrengung zu erholen.
+Der Körper benötigt eine längere Zeit für die Gewöhnung an das Medikament.
+Der Körper benötigt in vielerlei Hinsicht Zinn.
+Der Körper benötigt Fettsäuren für viele Funktionen.
+Der Körper benötigt täglich ca. 6 mg Pantothensäure.
+Der Körper benötigt etwas Gewöhnungszeit.
+Der Körper benötigt effektiv nur drei Tage zur Entwöhnung.
+Der Körper benötigt Ruhe, um zu entspannen und neue Energie aufzuladen.
+Der Körper benötigt auch Fett, um gesund zu bleiben.
+Der Körper benötigt weniger Kalorien, und die Knochendichte sinkt.
+Der Körper benötigt mindestens sieben Stunden Schlaf.
+Der Körper ist schlapp, träge und benötigt einen Energieschub.
+Der Körper benötigt Magnesium für die Funktion von über 300 Enzymen.
+Der Körper benötigt pro Tag eine bestimmte Anzahl Kalorien.
+Der Körper benötigt täglich eine bestimmte Menge Kreatin.
+Der Körper benötigt am Morgen Energie, um in den Tag zu starten.
+Der Körper benötigt regelmäßig mehr Eisen.
+Der Körper benötigt Fette.
+Der Körper benötigt nur geringste Mengen Kupfer.
+Der Körper benötigt für den Selbstheilungsprozess eine gewisse Zeit.
+Der Körper benötigt die Energiereserven um gegen die Erreger anzukämpfen.
+Der Körper benötigt, um gut zu funktionieren, ausreichend Flüssigkeit.

@@ -297,8 +297,9 @@ export class Story {
       return false;
     }
 
-    // Check if any of the wanted words are in the last N sentences
-    if (wantedWords.length > 1) {
+    // Nur prüfen wenn mehr als ein gewünschtes Wort UND mehr als ein Satz erwartet wird
+    const sentCount = this.getFilter("sentCount") || 1;
+    if (wantedWords.length > 1 && sentCount > 1) {
       const wantedWordsCount = wantedWords.length;
       const sentenceCount = wantedWordsCount - 1;
       const usedSentences = this.usedSentences.concat(foundSentences || []);
@@ -316,7 +317,7 @@ export class Story {
     return true;
   }
 
-  private pickRandomSentences(): SentenceType[] | undefined {
+  private pickRandomSentences(): SentenceType[] {
     const result: SentenceType[] = [];
     const foundNouns: Set<string> = new Set();
     const foundVerbs: Set<string> = new Set();
@@ -405,7 +406,7 @@ export class Story {
       }
     }
 
-    return result.length > 0 ? result : undefined;
+    return result;
   }
 
   public getRandomVerb(): string | undefined {
@@ -511,10 +512,6 @@ export class Story {
     const expectedSentCount = this.getFilter("sentCount")!;
     const sents = this.pickRandomSentences();
 
-    if (!sents) {
-      return;
-    }
-
     // Validierung: Verwerfe Ergebnisse, die nicht die exakte Anzahl von Sätzen enthalten
     if (sents.length !== expectedSentCount) {
       return;
@@ -569,39 +566,20 @@ export class Story {
     const result: GenerateTextResult[] = [];
     const numberOfTimes = this.getOption("generateTextTimes") || 1;
 
-    // Intelligentere maxAttempts Berechnung
-    const baseAttempts = Math.max(this.sentences.length, numberOfTimes * 50);
-    const maxAttempts = Math.min(baseAttempts, 10000); // Cap bei 10k Versuchen
-
-    let attempts = 0;
-    let lastSuccessfulAttempt = 0;
-
-    for (let n = 0; n < maxAttempts; n++) {
-      attempts++;
-
+    for (let n = 0; n < numberOfTimes; n++) {
       // Bevor wir die Sätze auswählen, setzen wir die Filter
       this.setFiltersFromOptions();
-      const [text, sentences] = this.generateTextOnce() || [];
+      const generated = this.generateTextOnce();
 
-      if (!text || !sentences) {
-        // Adaptive Abbruchbedingung: Je mehr Erfolg wir hatten, desto geduldiger sind wir
-        const gapSinceLastSuccess = attempts - lastSuccessfulAttempt;
-        const allowedGap =
-          result.length > 0
-            ? Math.min(1000, this.sentences.length) // Mit Erfolg: maximal 1000 oder Anzahl Sätze
-            : Math.min(5000, this.sentences.length * 2); // Ohne Erfolg: mehr Geduld
-
-        if (gapSinceLastSuccess > allowedGap) {
-          console.warn(
-            `Abbruch nach ${gapSinceLastSuccess} erfolglosen Versuchen. Möglicherweise sind die Filter zu restriktiv.`
-          );
-          break;
-        }
-        continue;
+      if (!generated) {
+        // Keine passenden Sätze mehr verfügbar - Generator ist durch alle Sätze gegangen
+        console.warn(
+          `Keine weiteren passenden Sätze verfügbar. Generiert: ${result.length} von ${numberOfTimes} Texten.`
+        );
+        break;
       }
 
-      // Erfolg!
-      lastSuccessfulAttempt = attempts;
+      const [text, sentences] = generated;
 
       result.push({
         text,
@@ -610,20 +588,6 @@ export class Story {
 
       // Speichere den Verlauf der verwendeten Sätze
       this.usedSentences.push(...sentences);
-
-      if (result.length === numberOfTimes) {
-        break;
-      }
-    }
-
-    if (result.length < numberOfTimes) {
-      const wantedWords = this.getOption("filters")?.wantedWords;
-      const filterInfo = wantedWords
-        ? ` (wantedWords: ${wantedWords.join(", ")})`
-        : "";
-      console.warn(
-        `Nur ${result.length} von ${numberOfTimes} gewünschten Texten generiert${filterInfo}.`
-      );
     }
 
     return result;
