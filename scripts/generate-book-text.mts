@@ -6,7 +6,6 @@ import { Story } from "../lib/story";
 
 export const generateText = async () => {
   const trashMap = new TrashMap();
-  await trashMap.loadTrashBinsFromFile();
   const csvUrl = new URL("../lib/assets/sentences.csv", import.meta.url);
   const sentences = await Story.loadSentencesFromCSV(csvUrl);
 
