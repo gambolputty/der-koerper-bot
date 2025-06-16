@@ -567,8 +567,8 @@ export class Story {
 
       if (!text || !sentences) {
         // Keine passenden Sätze mehr verfügbar - Generator ist durch alle Sätze gegangen
-        console.warn(
-          `Keine weiteren passenden Sätze verfügbar. Generiert: ${result.length} von ${numberOfTimes} Texten.`
+        console.debug(
+          `generateText() exhausted. Generated: ${result.length}/${numberOfTimes} texts.`
         );
         break;
       }
