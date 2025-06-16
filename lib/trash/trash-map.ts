@@ -15,22 +15,21 @@ const TrashMapConfigSchema = v.record(
 
 export type TrashMapConfig = v.Output<typeof TrashMapConfigSchema>;
 
-export const DEFAULT_TRASH_CONFIG: TrashMapConfig = {
-  verbs: { maxItems: 20 },
-  nouns: { maxItems: 40 },
-  sentences: { maxItems: 300 },
-  sources: { maxItems: 70 },
-};
-
 export class TrashMap extends Map<string, Trash> {
   readonly configs: TrashMapConfig;
+  static readonly defaultConfig: TrashMapConfig = {
+    verbs: { maxItems: 20 },
+    nouns: { maxItems: 40 },
+    sentences: { maxItems: 300 },
+    sources: { maxItems: 70 },
+  };
 
   constructor(configs?: TrashMapConfig) {
     super();
 
     // Setze die Konfigurationen für die Trash-Bins
     this.configs = v.parse(TrashMapConfigSchema, {
-      ...DEFAULT_TRASH_CONFIG,
+      ...TrashMap.defaultConfig,
       ...(configs || {}),
     });
 
