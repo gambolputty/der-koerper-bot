@@ -2,7 +2,7 @@ import * as v from "valibot";
 
 import { randomFromRange, weightedRandom } from "../random";
 import type { TrashMapConfig } from "../trash";
-import { DEFAULT_TRASH_CONFIG, TrashMap } from "../trash";
+import { TrashMap } from "../trash";
 import type { SentenceType } from "./sentence";
 import { SentenceSchema } from "./sentence";
 import { loadFile, parseCSVData } from "./utils";
@@ -30,7 +30,7 @@ const OptionsSchema = v.object({
 
 const defaultOptions: Options = {
   generateTextTimes: 1,
-  enforceExactSentCount: true,
+  enforceExactSentCount: false,
 };
 
 const randomSentCountPattern = {
@@ -61,14 +61,12 @@ export class Story {
   protected usedSentences: SentenceType[] = [];
   private readonly config: StoryConfig;
   private trash: TrashMap;
-  private trashConfig: TrashMapConfig = DEFAULT_TRASH_CONFIG;
   private filters: Filters = {};
   protected options: Options = defaultOptions;
 
   constructor({
     sentences,
     trashMap,
-    trashConfig,
     config,
     options,
   }: {
@@ -79,8 +77,7 @@ export class Story {
     options?: Options;
   }) {
     this.sentences = sentences;
-    this.trashConfig = trashConfig || DEFAULT_TRASH_CONFIG;
-    this.trash = trashMap || new TrashMap(this.trashConfig);
+    this.trash = trashMap || new TrashMap();
 
     // set config
     if (config instanceof StoryConfig) {
@@ -126,6 +123,10 @@ export class Story {
 
   public resetTrash(): void {
     this.trash.reset();
+  }
+
+  public updateTrashConfig(config: TrashMapConfig) {
+    this.trash.updateConfig(config);
   }
 
   static async loadSentencesFromCSV(
@@ -488,16 +489,6 @@ export class Story {
     // Set wanted words filter and trash configs
     if (options?.wantedWords) {
       wantedFilters.wantedWords = options.wantedWords;
-
-      // Set special trash config when wanted words are set
-      const newTrashConfigs = {
-        verbs: { maxItems: 4 },
-        nouns: { maxItems: 4 },
-        sources: { maxItems: 4 },
-      };
-      this.trash.updateConfig(newTrashConfigs);
-    } else {
-      this.trash.updateConfig(this.trashConfig);
     }
 
     // Set excluded words filter
@@ -512,17 +503,12 @@ export class Story {
   }
 
   private generateTextOnce(): [string, SentenceType[]] | undefined {
-    const expectedSentCount = this.getFilter("sentCount")!;
     const sents = this.pickRandomSentences();
+    const sortedSents: SentenceType[] = Story.sortSentences(sents);
 
-    // Validierung: Verwerfe Ergebnisse, die nicht die exakte Anzahl von Sätzen enthalten
-    const enforceExactSentCount =
-      this.getOption("enforceExactSentCount") ?? true;
-    if (enforceExactSentCount && sents.length !== expectedSentCount) {
+    if (!sents || !sents.length) {
       return;
     }
-
-    const sortedSents: SentenceType[] = Story.sortSentences(sents);
 
     // Speichere die Sätze im Trash
     for (const sent of sortedSents) {
@@ -570,13 +556,16 @@ export class Story {
      */
     const result: GenerateTextResult[] = [];
     const numberOfTimes = this.getOption("generateTextTimes") || 1;
+    const expectedSentCount = this.getFilter("sentCount")!;
+    const enforceExactSentCount =
+      this.getOption("enforceExactSentCount") ?? false;
 
     for (let n = 0; n < numberOfTimes; n++) {
       // Bevor wir die Sätze auswählen, setzen wir die Filter
       this.setFiltersFromOptions();
-      const generated = this.generateTextOnce();
+      const [text, sentences] = this.generateTextOnce() || [];
 
-      if (!generated) {
+      if (!text || !sentences) {
         // Keine passenden Sätze mehr verfügbar - Generator ist durch alle Sätze gegangen
         console.warn(
           `Keine weiteren passenden Sätze verfügbar. Generiert: ${result.length} von ${numberOfTimes} Texten.`
@@ -584,7 +573,9 @@ export class Story {
         break;
       }
 
-      const [text, sentences] = generated;
+      if (enforceExactSentCount && sentences.length !== expectedSentCount) {
+        continue;
+      }
 
       result.push({
         text,

@@ -2,21 +2,11 @@ import fs from "node:fs";
 import path from "node:path";
 
 import { TrashMap } from "../../lib";
-import { type Options, Story } from "../../lib/story";
+import { Story } from "../../lib/story";
 
 export const generateTextWithWords = async () => {
-  const trashMap = new TrashMap();
   const csvUrl = new URL("../../lib/assets/sentences.csv", import.meta.url);
   const sentences = await Story.loadSentencesFromCSV(csvUrl);
-  const options: Options = {
-    generateTextTimes: 1000000, // Soll genau einen Text finden
-    enforceExactSentCount: false,
-    filters: {
-      wantedWords: ["benötigt"], // Verwende die gewünschten Wörter aus der Variable
-      sentCount: 1,
-      // Keine sentCount-Begrenzung - lasse alle Satzlängen zu
-    },
-  };
 
   const allTexts: string[] = [];
   const bookData: Array<{
@@ -27,20 +17,28 @@ export const generateTextWithWords = async () => {
       containedWords: string[];
     }>;
   }> = [];
+  const wantedWords = ["benötigt"];
 
   console.log(
-    `Generating texts containing words: ${options.filters!.wantedWords!.join(", ")}...`
+    `Generating texts containing words: ${wantedWords!.join(", ")}...`
   );
 
-  // Generiere so viel Text wie möglich mit den gewünschten Wörtern
-  // Verwende eine hohe Anzahl an Versuchen
   const story = new Story({
     sentences,
-    trashConfig: {
+    trashMap: new TrashMap({
       sentences: { maxItems: 99999999999 },
+      verbs: { maxItems: 4 },
+      nouns: { maxItems: 4 },
+      sources: { maxItems: 4 },
+    }),
+    options: {
+      generateTextTimes: 1000,
+      filters: {
+        wantedWords: ["benötigt"], // Verwende die gewünschten Wörter aus der Variable
+        sentCount: 1,
+        // Keine sentCount-Begrenzung - lasse alle Satzlängen zu
+      },
     },
-    trashMap,
-    options,
   });
 
   const textArr = story.generateText();
@@ -56,7 +54,7 @@ export const generateTextWithWords = async () => {
   const sectionData = textArr.map((r) => {
     // Finde heraus, welche der gewünschten Wörter im Text enthalten sind
     const textLower = r.text.toLowerCase();
-    const containedWords = options.filters!.wantedWords!.filter((word) =>
+    const containedWords = wantedWords!.filter((word) =>
       textLower.includes(word.toLowerCase())
     );
 
@@ -69,21 +67,18 @@ export const generateTextWithWords = async () => {
 
   // Füge Daten zur JSON-Struktur hinzu
   bookData.push({
-    wantedWords: options.filters!.wantedWords!,
+    wantedWords: wantedWords!,
     sections: sectionData,
   });
 
   // Füge Überschrift hinzu
-  allTexts.push(
-    `--- Texte mit Wörtern: ${options.filters!.wantedWords!.join(", ")} ---`
-  );
+  allTexts.push(`--- Texte mit Wörtern: ${wantedWords!.join(", ")} ---`);
   allTexts.push(""); // Leerzeile nach der Überschrift
 
   // Füge alle Texte hinzu
   const sectionTexts = textArr.map((r) => r.text);
   allTexts.push(...sectionTexts);
 
-  await trashMap.saveTrashBinsToFile();
   return { text: allTexts.join("\n"), bookData };
 };
 

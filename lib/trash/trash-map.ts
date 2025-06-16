@@ -15,7 +15,7 @@ const TrashMapConfigSchema = v.record(
 
 export type TrashMapConfig = v.Output<typeof TrashMapConfigSchema>;
 
-export const DEFAULT_TRASH_CONFIG: TrashMapConfig = {
+const DEFAULT_TRASH_CONFIG: TrashMapConfig = {
   verbs: { maxItems: 20 },
   nouns: { maxItems: 40 },
   sentences: { maxItems: 300 },

@@ -5,7 +5,6 @@ import { TrashMap } from "../../lib";
 import { Story } from "../../lib/story";
 
 export const generateText = async () => {
-  const trashMap = new TrashMap();
   const csvUrl = new URL("../../lib/assets/sentences.csv", import.meta.url);
   const sentences = await Story.loadSentencesFromCSV(csvUrl);
 
@@ -39,10 +38,12 @@ export const generateText = async () => {
 
     const story = new Story({
       sentences,
-      trashConfig: {
+      trashMap: new TrashMap({
         sentences: { maxItems: 99999999999 },
-      },
-      trashMap,
+        verbs: { maxItems: 4 },
+        nouns: { maxItems: 4 },
+        sources: { maxItems: 4 },
+      }),
       options: {
         generateTextTimes: textsPerSentCount,
         enforceExactSentCount: true,
@@ -80,7 +81,6 @@ export const generateText = async () => {
     }
   }
 
-  await trashMap.saveTrashBinsToFile();
   return { text: allTexts.join("\n"), bookData };
 };
 
