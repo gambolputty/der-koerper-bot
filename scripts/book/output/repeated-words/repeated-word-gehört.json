@@ -1,0 +1,280 @@
+[
+  {
+    "sections": [
+      {
+        "text": "Der Körper gehört der Gemeinschaft.",
+        "usedSentences": [
+          {
+            "id": "23095",
+            "text": "gehört der Gemeinschaft",
+            "rootVerb": "gehört",
+            "rootVerbLemma": "gehören",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "5213",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "gehört",
+              "der",
+              "Gemeinschaft"
+            ],
+            "verbsParsed": [
+              {
+                "word": "gehört",
+                "lemma": "gehören",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Gemeinschaft",
+                "lemma": "Gemeinschaft"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Der Körper gehört zuweilen auch zur Welt.",
+        "usedSentences": [
+          {
+            "id": "18698",
+            "text": "gehört zuweilen auch zur Welt",
+            "rootVerb": "gehört",
+            "rootVerbLemma": "gehören",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "7152",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "gehört",
+              "zuweilen",
+              "auch",
+              "zur",
+              "Welt"
+            ],
+            "verbsParsed": [
+              {
+                "word": "gehört",
+                "lemma": "gehören",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Welt",
+                "lemma": "Welt"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Der Körper gehört denen, die drin wohnen.",
+        "usedSentences": [
+          {
+            "id": "13878",
+            "text": "gehört denen, die drin wohnen",
+            "rootVerb": "gehört",
+            "rootVerbLemma": "gehören",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "5279",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "gehört",
+              "denen",
+              "die",
+              "drin",
+              "wohnen"
+            ],
+            "verbsParsed": [
+              {
+                "word": "gehört",
+                "lemma": "gehören",
+                "isRoot": true
+              },
+              {
+                "word": "wohnen",
+                "lemma": "wohnen",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": []
+          }
+        ]
+      },
+      {
+        "text": "Der Körper gehört zu den intelligentesten existierenden Organismen.",
+        "usedSentences": [
+          {
+            "id": "7150",
+            "text": "gehört zu den intelligentesten existierenden Organismen",
+            "rootVerb": "gehört",
+            "rootVerbLemma": "gehören",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "2819",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "gehört",
+              "zu",
+              "den",
+              "intelligentesten",
+              "existierenden",
+              "Organismen"
+            ],
+            "verbsParsed": [
+              {
+                "word": "gehört",
+                "lemma": "gehören",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Organismen",
+                "lemma": "Organismus"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Der Körper gehört der Frau allein.",
+        "usedSentences": [
+          {
+            "id": "27374",
+            "text": "gehört der Frau allein",
+            "rootVerb": "gehört",
+            "rootVerbLemma": "gehören",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "10598",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "gehört",
+              "der",
+              "Frau",
+              "allein"
+            ],
+            "verbsParsed": [
+              {
+                "word": "gehört",
+                "lemma": "gehören",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Frau",
+                "lemma": "Frau"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Der Körper gehört dem Menschen, nicht dem Staat.",
+        "usedSentences": [
+          {
+            "id": "31966",
+            "text": "gehört dem Menschen, nicht dem Staat",
+            "rootVerb": "gehört",
+            "rootVerbLemma": "gehören",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "12276",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "gehört",
+              "dem",
+              "Menschen",
+              "nicht",
+              "dem",
+              "Staat"
+            ],
+            "verbsParsed": [
+              {
+                "word": "gehört",
+                "lemma": "gehören",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Menschen",
+                "lemma": "Mensch"
+              },
+              {
+                "word": "Staat",
+                "lemma": "Staat"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Der Körper gehört dem Mann.",
+        "usedSentences": [
+          {
+            "id": "6830",
+            "text": "gehört dem Mann",
+            "rootVerb": "gehört",
+            "rootVerbLemma": "gehören",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "2697",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "gehört",
+              "dem",
+              "Mann"
+            ],
+            "verbsParsed": [
+              {
+                "word": "gehört",
+                "lemma": "gehören",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Mann",
+                "lemma": "Mann"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

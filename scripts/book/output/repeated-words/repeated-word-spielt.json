@@ -1,0 +1,467 @@
+[
+  {
+    "sections": [
+      {
+        "text": "Der Körper spielt die Hauptrolle.",
+        "usedSentences": [
+          {
+            "id": "38584",
+            "text": "spielt die Hauptrolle",
+            "rootVerb": "spielt",
+            "rootVerbLemma": "spielen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "14766",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "spielt",
+              "die",
+              "Hauptrolle"
+            ],
+            "verbsParsed": [
+              {
+                "word": "spielt",
+                "lemma": "spielen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Hauptrolle",
+                "lemma": "Hauptrolle"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Der Körper spielt verrückt und die Gefühle fahren Achterbahn.",
+        "usedSentences": [
+          {
+            "id": "9055",
+            "text": "spielt verrückt und die Gefühle fahren Achterbahn",
+            "rootVerb": "spielt",
+            "rootVerbLemma": "spielen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "3550",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "spielt",
+              "verrückt",
+              "und",
+              "die",
+              "Gefühle",
+              "fahren",
+              "Achterbahn"
+            ],
+            "verbsParsed": [
+              {
+                "word": "spielt",
+                "lemma": "spielen",
+                "isRoot": true
+              },
+              {
+                "word": "fahren",
+                "lemma": "fahren",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Gefühle",
+                "lemma": "Gefühl"
+              },
+              {
+                "word": "Achterbahn",
+                "lemma": "Achterbahn"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Der Körper spielt Tetris.",
+        "usedSentences": [
+          {
+            "id": "22214",
+            "text": "spielt Tetris",
+            "rootVerb": "spielt",
+            "rootVerbLemma": "spielen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "8573",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "spielt",
+              "Tetris"
+            ],
+            "verbsParsed": [
+              {
+                "word": "spielt",
+                "lemma": "spielen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Tetris",
+                "lemma": "Tetris"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Der Körper spielt eine wichtige Rolle bei allen Arten von Ängsten.",
+        "usedSentences": [
+          {
+            "id": "39219",
+            "text": "spielt eine wichtige Rolle bei allen Arten von Ängsten",
+            "rootVerb": "spielt",
+            "rootVerbLemma": "spielen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "15019",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "spielt",
+              "eine",
+              "wichtige",
+              "Rolle",
+              "bei",
+              "allen",
+              "Arten",
+              "von",
+              "Ängsten"
+            ],
+            "verbsParsed": [
+              {
+                "word": "spielt",
+                "lemma": "spielen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Rolle",
+                "lemma": "Rolle"
+              },
+              {
+                "word": "Arten",
+                "lemma": "Art"
+              },
+              {
+                "word": "Ängsten",
+                "lemma": "Ängsten"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Der Körper spielt mit beim Musizieren.",
+        "usedSentences": [
+          {
+            "id": "41470",
+            "text": "spielt mit beim Musizieren",
+            "rootVerb": "spielt",
+            "rootVerbLemma": "spielen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "15861",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "spielt",
+              "mit",
+              "beim",
+              "Musizieren"
+            ],
+            "verbsParsed": [
+              {
+                "word": "spielt",
+                "lemma": "spielen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Musizieren",
+                "lemma": "Musizieren"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Der Körper spielt der Frau praktisch eine Schwangerschaft vor.",
+        "usedSentences": [
+          {
+            "id": "37105",
+            "text": "spielt der Frau praktisch eine Schwangerschaft vor",
+            "rootVerb": "spielt",
+            "rootVerbLemma": "spielen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "156",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "spielt",
+              "der",
+              "Frau",
+              "praktisch",
+              "eine",
+              "Schwangerschaft",
+              "vor"
+            ],
+            "verbsParsed": [
+              {
+                "word": "spielt",
+                "lemma": "spielen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Frau",
+                "lemma": "Frau"
+              },
+              {
+                "word": "Schwangerschaft",
+                "lemma": "Schwangerschaft"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Der Körper spielt auch in meinen Gedichten eine wichtige Rolle.",
+        "usedSentences": [
+          {
+            "id": "6166",
+            "text": "spielt auch in meinen Gedichten eine wichtige Rolle",
+            "rootVerb": "spielt",
+            "rootVerbLemma": "spielen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "2443",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "spielt",
+              "auch",
+              "in",
+              "meinen",
+              "Gedichten",
+              "eine",
+              "wichtige",
+              "Rolle"
+            ],
+            "verbsParsed": [
+              {
+                "word": "spielt",
+                "lemma": "spielen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Gedichten",
+                "lemma": "Gedicht"
+              },
+              {
+                "word": "Rolle",
+                "lemma": "Rolle"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Der Körper spielt verrückt, die Gedanken auch.",
+        "usedSentences": [
+          {
+            "id": "30332",
+            "text": "spielt verrückt, die Gedanken auch",
+            "rootVerb": "spielt",
+            "rootVerbLemma": "spielen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "11667",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "spielt",
+              "verrückt",
+              "die",
+              "Gedanken",
+              "auch"
+            ],
+            "verbsParsed": [
+              {
+                "word": "spielt",
+                "lemma": "spielen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Gedanken",
+                "lemma": "Gedanke"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Der Körper spielt Tetris und das Immunsystem hilft uns zu regenerieren.",
+        "usedSentences": [
+          {
+            "id": "22215",
+            "text": "spielt Tetris und das Immunsystem hilft uns zu regenerieren",
+            "rootVerb": "spielt",
+            "rootVerbLemma": "spielen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "8573",
+            "hasAnd": true,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "spielt",
+              "Tetris",
+              "und",
+              "das",
+              "Immunsystem",
+              "hilft",
+              "uns",
+              "zu",
+              "regenerieren"
+            ],
+            "verbsParsed": [
+              {
+                "word": "spielt",
+                "lemma": "spielen",
+                "isRoot": true
+              },
+              {
+                "word": "hilft",
+                "lemma": "helfen",
+                "isRoot": false
+              },
+              {
+                "word": "regenerieren",
+                "lemma": "regenerieren",
+                "isRoot": false
+              }
+            ],
+            "nounsParsed": [
+              {
+                "word": "Tetris",
+                "lemma": "Tetris"
+              },
+              {
+                "word": "Immunsystem",
+                "lemma": "Immunsystem"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Der Körper spielt mit.",
+        "usedSentences": [
+          {
+            "id": "25579",
+            "text": "spielt mit",
+            "rootVerb": "spielt",
+            "rootVerbLemma": "spielen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "9890",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "spielt",
+              "mit"
+            ],
+            "verbsParsed": [
+              {
+                "word": "spielt",
+                "lemma": "spielen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": []
+          }
+        ]
+      },
+      {
+        "text": "Der Körper spielt verrückt.",
+        "usedSentences": [
+          {
+            "id": "17977",
+            "text": "spielt verrückt",
+            "rootVerb": "spielt",
+            "rootVerbLemma": "spielen",
+            "verbs": {},
+            "verbsLemma": {},
+            "nouns": {},
+            "nounsLemma": {},
+            "source": "6854",
+            "hasAnd": false,
+            "hasColon": false,
+            "endsWithColon": false,
+            "words": [
+              "spielt",
+              "verrückt"
+            ],
+            "verbsParsed": [
+              {
+                "word": "spielt",
+                "lemma": "spielen",
+                "isRoot": true
+              }
+            ],
+            "nounsParsed": []
+          }
+        ]
+      }
+    ]
+  }
+]
