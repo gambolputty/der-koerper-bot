@@ -8,14 +8,6 @@ export const generateTextWithWords = async (targetWord: string) => {
   const csvUrl = new URL("../../lib/assets/sentences.csv", import.meta.url);
   const sentences = await Story.loadSentencesFromCSV(csvUrl);
 
-  const allTexts: string[] = [];
-  const bookData: Array<{
-    sections: Array<{
-      text: string;
-      usedSentences: unknown[];
-    }>;
-  }> = [];
-
   console.log(`Generating texts containing word: ${targetWord}...`);
 
   const story = new Story({
@@ -42,11 +34,11 @@ export const generateTextWithWords = async (targetWord: string) => {
 
   if (textArr.length === 0) {
     console.log("No texts found containing the wanted words.");
-    return { text: "", bookData: [] };
+    return "";
   }
 
-  // Speichere sowohl Text als auch Metadaten für JSON
-  const sectionData = textArr
+  // Filtere Sätze, die mit dem Suchwort beginnen und entferne "Der Körper " am Anfang
+  const filteredTexts = textArr
     .filter((r) => {
       // Prüfe, ob der Satz mit dem Suchwort beginnt
       const textTrimmed = r.text.trim();
@@ -55,29 +47,13 @@ export const generateTextWithWords = async (targetWord: string) => {
         .startsWith(`der körper ${targetWord.toLowerCase()}`);
       return startsWithTarget;
     })
-    .map((r) => ({
-      text: r.text,
-      usedSentences: r.usedSentences,
-    }));
-
-  // Füge Daten zur JSON-Struktur hinzu
-  bookData.push({
-    sections: sectionData,
-  });
-
-  // Füge Überschrift hinzu
-  allTexts.push(`--- Texte mit Wort: ${targetWord} ---`);
-  allTexts.push(""); // Leerzeile nach der Überschrift
-
-  // Füge alle gefilterten Texte hinzu
-  const sectionTexts = sectionData.map((section) => section.text);
-  allTexts.push(...sectionTexts);
+    .map((r) => r.usedSentences[0].text);
 
   console.log(
-    `Found ${sectionData.length} texts that start with "Der Körper ${targetWord}".`
+    `Found ${filteredTexts.length} texts that start with "Der Körper ${targetWord}".`
   );
 
-  return { text: allTexts.join("\n"), bookData };
+  return filteredTexts.join("\n");
 };
 
 const targetWords = ["ist", "gehört", "erfährt", "spielt"];
@@ -97,11 +73,6 @@ for (const word of targetWords) {
   }
 
   const textFilePath = path.join(outputDir, `repeated-word-${word}.txt`);
-  fs.writeFileSync(textFilePath, result.text);
+  fs.writeFileSync(textFilePath, result);
   console.log(`Text saved to ${textFilePath}`);
-
-  // save JSON data for LaTeX generation
-  const jsonFilePath = path.join(outputDir, `repeated-word-${word}.json`);
-  fs.writeFileSync(jsonFilePath, JSON.stringify(result.bookData, null, 2));
-  console.log(`Book data saved to ${jsonFilePath}`);
 }
