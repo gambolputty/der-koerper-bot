@@ -18,9 +18,14 @@ export const generateText = async () => {
     }>;
   }> = [];
 
+  // TrasMap muss außerhalb der Schleife erstellt werden, um die Sätze zu speichern
+  const trashMap = new TrashMap({
+    sentences: { maxItems: 99999999999999 },
+  });
+
   // Konzeptuelles Kunstbuch: Sätze werden allmählich länger
   // Beginne mit 1 Satz und steigere langsam bis zu mehr Sätzen
-  const maxSentCount = 10; // Mehr Durchläufe für ein ganzes Buch
+  const maxSentCount = 25; // Mehr Durchläufe für ein ganzes Buch
   const maxTextsPerSentCount = 80; // Maximale Anzahl Texte bei niedrigster sentCount
   const minTextsPerSentCount = 80; // Minimale Anzahl Texte bei höchster sentCount
 
@@ -38,12 +43,7 @@ export const generateText = async () => {
 
     const story = new Story({
       sentences,
-      trashMap: new TrashMap({
-        sentences: { maxItems: 99999999999 },
-        verbs: { maxItems: 4 },
-        nouns: { maxItems: 4 },
-        sources: { maxItems: 4 },
-      }),
+      trashMap,
       options: {
         generateTextTimes: textsPerSentCount,
         enforceExactSentCount: true,

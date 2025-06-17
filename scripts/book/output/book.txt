@@ -1,394 +1,517 @@
 --- 1 Satz ---
 
-Der Körper schüttet Adrenalin aus und bringt uns in Hochform.
-Der Körper ist an dem Stiel gelegen.
-Der Körper erholt sich von 21:00 bis 2:00.
-Der Körper aktiviert im entspannten Zustand seine Selbstheilungskräfte.
-Der Körper schüttet Insulin aus, um den Blutzucker zu senken.
-Der Körper bedeutet nichts ohne Bewusstheit und Geist.
-Der Körper funktioniert nach denselben Prinzipien.
-Der Körper verändert sich und lässt weibliche Rundungen entstehen.
-Der Körper bildet das Vitamin vor allem im Sommer in der Haut.
-Der Körper ist weiß.
-Der Körper speichert Unmengen.
-Der Körper reagiert auf eine schlechte Ernährung.
-Der Körper entspannt sich zunehmend.
-Der Körper reguliert die Aufnahme von Magnesium sehr genau.
-Der Körper ist rechteckig, muskulös und elegant.
-Der Körper benötigt die Energie.
-Der Körper befindet sich in paralleler Position zum Boden.
-Der Körper enthält den Schlüssel der langen Reise.
-Der Körper sollte im zweiten Stock in einem der vier Klostertempel bleiben.
-Der Körper produziert das ca. 600-fache an Eiweiß als normal.
-Der Körper erholt sich in Pausen und gleicht die Tätigkeiten aus.
-Der Körper ist nicht in der Lage, Infektionen und Viren zu bekämpfen.
-Der Körper darf nicht „stottern“.
-Der Körper befreit sich.
-Der Körper hilft sich selbst.
-Der Körper ist ständig überfordert.
-Der Körper erholt sich nicht, die Anziehung verschwindet.
-Der Körper fährt herunter und kühlt noch mehr aus.
-Der Körper benötigt das Coenzym1 zur Produktion von Energie.
-Der Körper sollte regelmäßig bewegt werden.
-Der Körper reagiert mit Symptomen.
-Der Körper schaltet ab, man erholt sich.
-Der Körper absorbiert die Strahlen über die Augen und die Haut.
-Der Körper stellt Cholesterin selber in der Leber und im Darm her.
-Der Körper erlebt weiterhin Gefahr und manchmal sogar Lebensgefahr.
-Der Körper ist oftmals in der Lage, seine Defizite selbst auszugleichen.
-Der Körper benötigt Kohlenhydrate, um zu funktionieren.
-Der Körper verwendet Glukose für Energie.
-Der Körper legt neue Fettdepots langsamer an.
-Der Körper enthält etwa 200 Gramm bis 300 Gramm Schwefel.
-Der Körper reagiert verhältnismäßig schnell auf die Abstinenz.
-Der Körper nimmt über den Dünndarm zu viel Eisen auf.
-Der Körper muss als Ganzes dargestellt und gesehen werden.
-Der Körper gewöhnt sich an eine monotone Diät und speichert Fettmasse.
-Der Körper ist ein Wunderwerk.
-Der Körper braucht eine ausgewogene Ernährung mit Mineralien und Vitaminen.
-Der Körper besteht etwa zu 200 bis 300 Gramm aus Salz.
-Der Körper verändert instinktiv seine Haltung, um Schmerzen zu vermeiden.
-Der Körper reagiert auf die Impulse vielfältig.
-Der Körper erzählt die Geschichte unseres Lebens.
-Der Körper ist stromlinienförmig und unbehaart.
-Der Körper bildet mehr Gelbkörperhormon Progesteron und weniger Östrogen.
-Der Körper besteht aus einer Vielzahl von Zellen.
-Der Körper reagiert völlig normal gegen Gifte.
-Der Körper fordert Tribut.
-Der Körper büßt ein.
-Der Körper beurteilt Gefühle nicht von einem moralischen Standpunkt aus.
-Der Körper muss sich zunächst auf die neue Situation umstellen.
-Der Körper enthält etwa 20 Gramm Magnesium.
-Der Körper ist nicht in der Lage, Immunität gegen Ringwurmpilze zu bilden.
-Der Körper benötigt eine gewisse Kerntemperatur, um gut schlafen zu können.
-Der Körper existiert nicht ohne Skelett.
-Der Körper soll mit langsamen und fließenden Bewegungen aktiviert werden.
-Der Körper verliert viel Flüssigkeit.
-Der Körper passt sich an Training in sehr vielschichtiger Art und Weise an.
-Der Körper versucht, gegen die Infektion und Entzündung anzukämpfen.
-Der Körper scheidet nicht benötigtes Magnesium mit dem Harn aus.
-Der Körper lässt sich mit einem Haus vergleichen.
-Der Körper speichert Vitamin B12 über mehrere Jahre, vor allem in der Leber.
-Der Körper ist das Zuhause der Firma, geschenkt bei Geburt.
-Der Körper gleicht einem Rechteck.
-Der Körper muss sich auf einen neuen Tag-Nacht-Rhythmus einstellen.
-Der Körper wandelt Kohlenhydrate in Zucker und Energie um.
-Der Körper ist olivgrün, wobei die Bauchseite heller als die Oberseite ist.
-Der Körper benötigt für eine kräftige Blutzirkulation genug Flüssigkeit.
-Der Körper braucht Zeit, um zu genesen.
-Der Körper scheint leicht im Wasser zu schweben.
-Der Körper versucht, das überschüssige Kochsalz loszuwerden.
-Der Körper benötigt Magnesium für Hunderte von chemischen Reaktionen.
-Der Körper speichert meist zu viel Wasser.
+Der Körper ist schwarz mit gelben Querbinden auf dem Hinterleib.
+Der Körper braucht etwa einen Liter zusätzlich pro Grad über 37 °C.
+Der Körper arbeitet schließlich auf Notstrom.
+Der Körper nimmt täglich viele verschiedene Nahrungsmittel auf.
+Der Körper wirkt ruhig, kühl und beziehungslos.
+Der Körper fällt in eine Starre und Lähmung.
+Der Körper soll lernen, sich selbst zu helfen.
+Der Körper macht den Geist.
+Der Körper besitzt weißes und braunes Fettgewebe.
+Der Körper kuriert die Kinderkrankheit selbstständig.
+Der Körper fühlt, was das Auge sieht.
+Der Körper speichert Magnesium v.A. in der Muskulatur und im Skelett.
+Der Körper findet wieder zurück in Harmonie und Gleichgewicht.
+Der Körper reagiert plötzlich und drastisch.
+Der Körper muss eine glatte, geschlossene Oberfläche zeigen.
+Der Körper reguliert seinen Blutdruck und seine Herzfrequenz nach unten.
+Der Körper weist die Symmetrie eines Würfels auf.
+Der Körper rückt in den Mittelpunkt.
+Der Körper ist das modernste Trainingsgerät.
+Der Körper wehrt sich, indem die Nase Schleim absondert.
+Der Körper benutzt Drogen, um sich zu normalisieren, um normal zu werden.
+Der Körper lernt Verspannungen loszulassen und Expansion zu spüren.
+Der Körper rächt sich für eine Überbelastung.
+Der Körper bildet vermehrt Lymphozyten als Antwort auf das Antigen.
+Der Körper bekommt Ausschlag an der Haut, begleitet von einem Husten und Fieber.
+Der Körper äußert das Unbehagen, das sich nicht aussprechen lässt.
+Der Körper leidet unter Flüssigkeitsverlust und Wärmestau.
+Der Körper versucht den Fremdkörper, in dem Fall das Implantat, abzukapseln.
+Der Körper steht frei auf dem Gleichgewichtsbrett.
+Der Körper verfügt über interne Mechanismen, die den Heilungsprozess anregen.
+Der Körper verdaut Nahrung und funktioniert bis zum Herztod weiter.
+Der Körper verändert sich, die Sicht auf die Welt ebenso.
+Der Körper verwendet als Energiequelle eher Kohlenhydrate als Fett.
+Der Körper geht auf dem Zahnfleisch.
+Der Körper ist vollständig nackt.
+Der Körper zersetzt das Gerinnsel.
+Der Körper benötigt das Vitamin K, um Vitamin D verwerten zu können.
+Der Körper spiegelt die Emotionen, Gedanken und Stimmungen.
+Der Körper muss dazu passen.
+Der Körper erscheint zumeist länglich walzenförmig, platt und weich.
+Der Körper braucht Energie, um zu überleben.
+Der Körper bekommt eine Hilfe zur Selbsthilfe.
+Der Körper entsteht im Raum.
+Der Körper schaltet zunehmend auf die Verbrennung von Kohlenhydraten um.
+Der Körper greift die Immunzellen an.
+Der Körper lagert Wasser ein, man merkt das an dickeren Füßen und Fingern.
+Der Körper deckt die entzündete Stelle („Plaque“) mit einer Schutzkappe ab.
+Der Körper verfügt über zwei Systeme.
+Der Körper bereitet sich allmählich auf die Entbindung vor.
+Der Körper reagiert mit Heißhungerattacken.
+Der Körper ist keine „defekte Maschine“.
+Der Körper versucht einem etwas mitzuteilen.
+Der Körper entgleist in einen Schockzustand.
+Der Körper benötigt ca. 21 Tage, um sich an die neue Position zu gewöhnen.
+Der Körper dehnt sich gleichsam in der Seele aus und kehrt in sich zurück.
+Der Körper muss ausbalanciert im Bereich Nacken, Wirbelsäule, Becken liegen.
+Der Körper drosselt mit der Zeit seine Produktion.
+Der Körper profitiert auf vielfältige Weise von einem Rauchstopp.
+Der Körper bildet sich aus Zucker selbst die Omega-9-Fettsäuren.
+Der Körper will die obersten Schichten der Schleimhaut loswerden.
+Der Körper besitzt selbstheilende Kräfte.
+Der Körper muß seine nächste Art entdecken und ausarbeiten.
+Der Körper reichert Omega-3-Fettsäuren in der Muttermilch an.
+Der Körper ist ein Mosaik zahlreicher Anlagen.
+Der Körper erhält Vitamin D aus der Nahrung und Sonnenlicht.
+Der Körper entwickelt nicht einfach aus einer Laune heraus Beschwerden.
+Der Körper empfindet Phenol als Elektrolyt bei Krampfadern.
+Der Körper reagiert mit einer Entzündung, um die Schäden zu reparieren.
+Der Körper macht alles selber.
+Der Körper erneuert sich fortwährend.
+Der Körper findet schnell wieder den richtigen Rhythmus.
+Der Körper scheidet die über Nacht anfallenden Säuren am Morgen aus.
+Der Körper produziert Cholesterin in ausreichender Menge.
+Der Körper braucht Folsäure für den Aufbau von Zellen.
+Der Körper soll gekräftigt und der Geist gleichzeitig entspannt werden.
+Der Körper verträgt die Hormonpräparate nicht.
+Der Körper verfügt über eine Epithelschicht.
+Der Körper reguliert seine Temperatur selbstständig.
+Der Körper tut, was du denkst.
+Der Körper baut Stress ab und stellt ein hormonelles Gleichgewicht her.
 
 --- 2 Sätze ---
 
-Der Körper braucht Nährstoffe, um die gewollte Muskulatur aufzubauen und benötigt Eiweiß, um defekte Zellen zu reparieren.
-Der Körper besitzt einen eigenen B12-Speicher in der Leber, der z. B und ist ein außerordentlich erfolgreicher Durchlauferhitzer.
-Der Körper reagiert auf Kälte mit einer Verengung der Blutgefäße und besteht zu etwa 65% aus Wasser.
-Der Körper verliert im Schlaf grundsätzlich Flüssigkeit und schüttet Dopamin und Endorphine aus.
-Der Körper benötigt etwas Zeit, um sich auf die Schwangerschaft einzustellen und baut eher Muskeln ab als Fett.
-Der Körper steht in ständiger Alarmbereitschaft und sollte auf Zeckenbisse untersucht werden.
-Der Körper braucht Vitamin und beginnt sich zu regenerieren.
-Der Körper soll bis ins hohe Alter perfekt bleiben und folgt immer bestimmten Prinzipien.
-Der Körper ist komplett mit Schuppen bedeckt und reagiert mit Kopfschmerz.
-Der Körper verbrennt ununterbrochen Kalorien, egal bei welcher Tätigkeit und arbeitet ganz normal weiter.
-Der Körper ist nichts als komprimierte Energie und muss einfach mit basischen Puffersystemen beladen werden.
-Der Körper gibt Warnzeichen, die man kennen sollte und bewegt sich schließlich mit konstanter Geschwindigkeit fort.
-Der Körper repariert in der Fastenzeit auf jeden Fall und verträgt keinen Milchzucker.
-Der Körper benötigt eine gewisse Zeit, um sich zu erwärmen und muss hart arbeiten, um sich selbst zu kühlen.
-Der Körper soll komplett eintauchen und ist die attraktive und äußerst reizvolle Verpackung unseres Ichs.
-Der Körper richtet seinen Wachzustand durchaus am Licht aus und reagiert mit der Vergrößerung der Venen.
-Der Körper geht zurück zur Erde, der Geist zu Gott und soll sich nachts erholen und regenerieren.
-Der Körper schützt sich selbst vor einer Überlastung und ruht in einer flachen Mulde.
-Der Körper ist in der Lage, Vitamin B12 über mehrere Jahre zu speichern und misst knapp über 6 cm lang.
-Der Körper greift zuerst auf die Fettpolster zurück und schützt sich selbst vor starken Verletzungen mit einem Reflex.
-Der Körper muss sich erst wieder an Nahrung gewöhnen und spielt sozusagen immer dasselbe Programm wieder ab.
-Der Körper ist ein „Wesen“, das nichts vergisst und aktiviert daher automatisch die Schweißdrüsen.
-Der Körper versucht das Gelenk zu versteifen und interagiert mit der Umwelt.
-Der Körper ist ein sogenanntes offenes System und lässt sich nicht betrügen.
-Der Körper findet zum inneren Gleichgewicht und erneuert die roten Blutkörperchen nur ca. alle acht Wochen.
-Der Körper ist meist beige mit einem bläulichen Schimmer und braucht am Tag etwa ein Mikrogramm pro Kilo Körpergewicht.
-Der Körper muss regelmäßig in Bewegung gehalten werden und schwitzt und verliert damit Flüssigkeit.
-Der Körper braucht für die Fettverdauung Gallensäure und ist in Grau.
-Der Körper reagiert auf den physikalischen Kältereiz und versucht, das Gehirn bis zuletzt mit Sauerstoff zu versorgen.
-Der Körper braucht 12 Stunden, um das Koffein vollständig abzubauen und erhält mehr Energie.
-Der Körper ist in einem absolut entspannten Zustand und rächt sich schnell.
-Der Körper besitzt keine Zeichnung oder Fleckung und soll Gesundheit, Unversehrtheit suggerieren.
-Der Körper legt Reserven an und bekommt mehr Energie und greift die unerwünschten Fettzellen an.
-Der Körper ist ein geduldiger Freund und produziert zu viele Blutzellen.
-Der Körper bildet gegen die eigene Schilddrüse Abwehrstoffe und gehört der Gemeinschaft.
-Der Körper spiegelt sich auf unserem Fuß wider und schwächt sich also allmählich ab.
-Der Körper kehrt nach dem Ende der Bedrohung in den Normalzustand zurück und schaltet auf Überlebensmodus.
-Der Körper braucht Zeit zur aktiven Verdauung und benötigt mehrere Tage, um sich an die Umstellung anzupassen.
-Der Körper ist fast immer perfekt. Flüssigkeit erhält eine warme Mahlzeit und will nicht mehr, die Kräfte lassen nach, der Geist entschwindet.
-Der Körper strebt immer nach Ausgewogenheit und erstreckt sich bis zum anderen Ende der Erde.
-Der Körper muss früher auf „Wachmodus“ umstellen als gewohnt und weiß sich zu wehren.
-Der Körper bleibt auch kein Körper und produziert Ketone als Nebenprodukt im Fettstoffwechsel.
-Der Körper handelt nach Plan B: dem Narbenplan und legt ein neues Gewand an.
-Der Körper enthält ca. 250 Gramm Salz und nutzt den Rest für Zellen und körperliche Aktivität.
-Der Körper ist im biographischen Kontext bei Weltbild.de zu kaufen und dient der Seele und nicht umgekehrt.
-Der Körper braucht täglich eine Dosis von rund 70 Mikrogramm und gesellt sich dazu, wiegt sich zum Beat.
-Der Körper gibt im Wasser mehr Wärme ab als an der Luft und tut alles dafür, dass man überlebt.
-Der Körper fällt langsam in den Tiefschlaf und ist schlank gebaut und weist eine schwärzliche Grundfärbung auf.
-Der Körper bleibt ohne Leben, erkaltet und wirkt schlanker und die Proportionen gewinnen an Harmonie.
-Der Körper ist restauriert und besteht aus Mesoglea, einer nicht lebenden Qualle.
-Der Körper braucht Sonnenlicht, um Vitamin D zu bilden und sieht nach der Spende nicht anders aus.
-Der Körper ist mit einem dichten Fleckenmuster überzogen und arbeitet mit dem in der Sitzung gesetzten Stimulus ca. 6-7 Tage.
-Der Körper sucht ein Ventil und baut das Eigenfett möglicherweise mit der Zeit ab.
-Der Körper gerät in eine ständige Alarmbereitschaft und ist das einzige Werkzeug.
-Der Körper braucht mehr Kalorien und entsäuert sich, und das in intensivem Maße.
-Der Körper reagiert etwas anders und verdaut Klumpen perfekt.
-Der Körper ist in eine spezielle Folie eingehüllt und verfügt über die Fähigkeit zur Selbstheilung.
-Der Körper bildet nach der Injektion Antikörper gegen die Viren und besteht aus einem Stamm und einer Wurzel.
+Der Körper erhält nicht alle nötigen Nährstoffe und stirbt, die Seele zieht weiter.
+Der Körper schwitzt stark, was sich auf den Kreislauf negativ auswirkt und ist dunkel und trägt seitlich einige rote Flecken.
+Der Körper befindet sich in der Regel vollständig im warmen Thermalwasser und macht viele Veränderungen mit.
+Der Körper braucht auch Fett, um Carotinoide aufnehmen zu können und muss sich an die Kälte anpassen.
+Der Körper benötigt eine Vielzahl an Mikronährstoffen und fragt schon danach.
+Der Körper unterkühlt sehr schnell, Schutzreflexe werden ausgeschaltet und bildet vermehrt Antikörper.
+Der Körper produziert zur Schmerzlinderung Endorphine und steht im Mittelpunkt der Arbeiten.
+Der Körper kehrt nicht in den ungestressten Zustand zurück und setzt daraufhin Insulin und Chrom frei.
+Der Körper reagiert oftmals über einen langen Zeitraum mit Kompensationen und ist aus Beton gegossen und verputzt.
+Der Körper besteht aus mehreren Gewebeschichten und wendet zusätzliche Energie auf, um nicht zu überhitzen.
+Der Körper darf das Bett nur mit Schlaf in Zusammenhang bringen und bedankt sich mit mehr Lebenslust und Lebensfreude.
+Der Körper kennt seine Grenzen sehr genau und stößt das Naturprodukt zudem nicht ab.
+Der Körper versucht, andere Energiequellen anzuzapfen und kommt „innerlich“ nicht mehr zur Ruhe.
+Der Körper spricht über die Qualität unserer Lebensmittel und benötigt Flüssigkeit, um gut in den Tag zu starten.
+Der Körper verfügt über Mechanismen, um Medikamente abzubauen und erschaudert, eine Mischung aus Angst und Erregung.
+Der Körper ist eine Erfindung der Seele und schaltet auf „Sparprogramm“.
+Der Körper befindet sich in der sogenannten „Ketogenese“ und gibt täglich 2-3 Liter Wasser ab.
+Der Körper baut die Laurinsäure in Monolaurin um und altert, der Astralleib nicht.
+Der Körper steht ständig unter Strom und dankt uns den Verzicht auf Luxus mit mehr Lebenskraft und Freude.
+Der Körper stößt eingewachsene Haare irgendwann ab und gilt als heilig, untrennbar mit dem Kosmos verbunden.
+Der Körper fühlt sich erfrischt an und verändert sich stets und ständig.
+Der Körper verbraucht mehr Fett, auch in Ruhephasen und glänzt geradezu metallisch.
+Der Körper unterscheidet nicht und dient dem Selbstbewusstsein.
+Der Körper funktioniert auch ohne Zucker und braucht nämlich ausreichend Biotin, um Keratin herzustellen.
+Der Körper ist im Verhältnis zu den Flügeln viel zu schwer und muss nach der Operation neu lernen.
+Der Körper passt sich in kurzer Zeit den neuen Anforderungen an und bildet keine Abwehrstoffe gegen die Fructose.
+Der Körper weist seitlich eine komprimierte Form auf und schafft natürlich Narbengewebe um das Implantat herum.
+Der Körper wandelt Purine in Harnsäure um und gleitet in keine wirkliche Entspannungsphase.
+Der Körper reagiert mit erheblicher Überempfindlichkeit und besteht aus mehreren Teilen (Gelenken).
+Der Körper spielt Tetris und sollte auf Zeckenbisse untersucht werden.
+Der Körper produziert kein Jod und verkrampft sich und dabei zucken Arme und Beine unkontrolliert.
+Der Körper erinnert sich an die Fähigkeit, innere Prozesse zu erspüren und baut mit Enzymen den Alkohol über die Leber ab.
+Der Körper ist das Ergebnis der Vergangenheit und benötigt das Vitamin vor allem für das Wachstum.
+Der Körper speichert das Ereignis und spricht auch auf seine ganz eigene Art und Weise.
+Der Körper wandelt 60 mg Tryptophan in 1 mg Niacin um und erreicht die körperliche Reife.
+Der Körper nimmt über die Haut die Wirkstoffe der ätherischen Öle auf und bereitet sich auf Empfängnis und Schwangerschaft vor.
+Der Körper repräsentiert sich am Ende selbst und wechselt zwischen Positionen und verharrt nicht.
+Der Körper weiß den Weg zur Heilung und braucht nachts genug Zeit, das Fett zu verbrennen.
+Der Körper reguliert seine Temperatur über Schwitzen und muss vor, während und nach der Belastung gut versorgt werden.
+Der Körper ist ein wesentlicher Bestandteil der Kommunikation und bewegt den Geist.
+Der Körper verfügt über ein Potenzial zur Selbstregulation und fügt sich wie ein großes Puzzle Stück für Stück zusammen.
+Der Körper fühlt sich schlapp an, geistig fehlt die Energie und sollte auch von innen Kühlung erfahren.
+Der Körper improvisiert mit und benötigt am Tag rund zwei Liter Wasser.
+Der Körper reagiert unbewusst auf Unstimmigkeiten und liebt langsame Veränderungen in Bezug auf Ernährung und Bewegung.
+Der Körper versucht den Blutdruck zu normalisieren und kümmert sich.
+Der Körper muss keinen größeren Hohlraum erwärmen und braucht schließlich Reserven.
+Der Körper vermittelt Dir die Täuschung von Raum und überwärmt bei einer Entzündung bereits von sich aus das Gewebe.
+Der Körper schüttet Insulin aus, um den Blutzucker zu senken und stellt Traubenzucker, zum Beispiel für das Gehirn, selber her.
+Der Körper nimmt die notwendige Flüssigkeit auf und ist in der Nut 4 mit einer Feder 6 geführt.
+Der Körper weiß mehr über seine Realität als jeder außenstehende Experte und besitzt starke Werte.
+Der Körper erholt sich nicht, die Anziehung verschwindet und verhält sich wie ein Massenpunkt.
+Der Körper vollzieht über Nacht einen natürlichen Regenerationsprozess und besteht aus einem passenden Naturstein.
+Der Körper trägt in sich alles Göttliche und funktioniert etwa im neutralen Bereich.
+Der Körper spaltet die aufgenommenen Kohlenhydrate in Glukosemoleküle auf und ist gut entwickelt, elastisch, kurz und ziemlich breit.
+Der Körper produziert selbst ein bis eineinhalb Gramm am Tag und wartet auf eine Schwangerschaft.
+Der Körper geht in einer Gegenbewegung unter die Hantel und weist eine schwarze Färbung auf.
+Der Körper reagiert mit Überempfindlichkeit und verwendet Eisen, um Hämoglobin herzustellen.
+Der Körper durchlebt einen natürlichen Prozess der Alterung und schaltet beim Hungern auf Notfallprogramm um.
+Der Körper besteht zu rund 65 Prozent aus H2O und zeigt erste Ermüdungserscheinungen.
+Der Körper erfährt eine bessere Beweglichkeit und will ein großes Einkommen.
 
 --- 3 Sätze ---
 
-Der Körper trägt die Lösung der Probleme schon in sich, muss den Überschuss beseitigen und ist auch leichter als die Nikon D800.
-Der Körper gilt als greifbarster Beweis für das Reale, unterliegt also weiterhin den Schwankungen im Hormonhaushalt und gewöhnt sich mit der Zeit an die verringerte Kalorienzufuhr.
-Der Körper besteht aus einer Vielzahl von Zellen, erholt sich von 21:00 bis 2:00 und muss sich ständig ausbalancieren.
-Der Körper ist vom Wasser ganz aufgedunsen, produziert Insulin und verfügt über ein sogenanntes Endocannabinoid-System.
-Der Körper fährt seinen Energieverbrauch gleichzeitig langsam zurück, steckt eben immer noch in der Steinzeit fest und besteht aus Kohlefaser.
-Der Körper nimmt keine toten Strukturen als „sicher“ an, steht im direkten Zusammenhang mit der Psyche und sendet uns Signale, die wir beachten sollten.
-Der Körper braucht den Schlaf, um zu regenerieren, schüttet dauerhaft Insulin aus und benötigt fünf Portionen Obst und Gemüse am Tag.
-Der Körper stellt täglich etwa die doppelte Menge (600 Milligramm) her, arbeitet sozusagen auf Sparflamme und ist bläulich-grau.
-Der Körper muss sich anfänglich erholen, bietet ein geringes Gewicht und greift auf alle Reserven zurück.
-Der Körper benötigt eine Auszeit, scheint sich danach zu sehnen und geht zurück zur Erde, der Geist zu Gott.
-Der Körper braucht Proteine, ist erschöpft und verfügt über ein enormes Selbstheilungspotenzial.
-Der Körper hilft beim Abnehmen im Schlaf, dient als Übertragungsmedium und treibt wie ein Korken auf der Wasseroberfläche.
-Der Körper reagiert auf schädliche Reize aller Art mit Entzündung, besitzt ein großes Potential an Selbstheilungskräften und regelt danach.
-Der Körper scheidet die nicht benötigte Flüssigkeit wieder aus, hört auf zu funktionieren und bleibt beweglich, die Figur schlank und attraktiv.
-Der Körper ist mittelgroß mit relativ kräftigen Knochen, soll ins Gleichgewicht gebracht werden und verbraucht am Tag durchschnittlich etwa 2 g Kreatin.
-Der Körper nutzt Insulin, um die Glukose in die Zellen zu transportieren, benötigt etwa 300 Kalorien mehr als verbraucht werden und kommt bei plötzlichen Wetterwechseln oftmals nicht mit.
-Der Körper reagiert auf Emotionen, treibt die Stoffe aus, welche die Därme reizen und ist materiell.
-Der Körper verliert laufend Flüssigkeit, öffnet sich nach außen in den Raum und bedankt sich mit mehr Lebenslust und Lebensfreude.
-Der Körper ist fast transparent, gelblich gefärbt, besitzt die Fähigkeit zur Selbstheilung und verschwindet in der Maschine.
-Der Körper spricht unablässig, ob wir wollen oder nicht, regelt den Cholesterinspiegel über das autonome Nervensystem und stoppt nach spätestens 30 Minuten die Umwandlung und Einlagerung.
-Der Körper ist dunkel metallisch-braun, verstoffwechselt die verbleibenden Fettzellreste vollständig und erhält eine gute straffe Form.
-Der Körper bildet mit dessen Hilfe das „Glückshormon“ Serotonin, benötigt, wenn auch in Maßen, Fette und muss sich von dem Eingriff erholen.
-Der Körper ist ein fein abgestimmtes Puffersystem, produziert bei Typ 1 quasi null Insulin und benötigt genügend Entspannung.
-Der Körper sollte sich vorher einige Minuten aufwärmen können, arbeitet auf Hochtouren, um das Baby optimal zu versorgen und muss eine natürliche Abwehr haben, die wir Husten nennen.
-Der Körper erkennt einfach seinen Schmerz an, soll sich ganz auf seine Abwehrarbeit konzentrieren können und ist permanent in einem Entzündungszustand.
-Der Körper regiert nicht mehr über, benötigt am Morgen Energie, um in den Tag zu starten und schaltet von Fortpflanzung auf langes Überleben um.
-Der Körper befindet sich im emotionalen Ausnahmezustand, drückt aus, was Worte nicht vermögen und versucht mit Muskeln, gegen die Vibrationen anzukämpfen.
-Der Körper benötigt Eisen für vielerlei Funktionen, bildet als Schutzreaktion eine Hornhaut und ist grau mit 4 Längsstreifen auf dem Rumpf (Thorax).
-Der Körper gewöhnt sich an den Druck, greift die verschiedenen Fettreserven anscheinend wahllos an und reagiert unterschiedlich auf die verschiedenen Getränke.
-Der Körper fängt an, Nahrung intelligent zu handhaben, was das Fett betrifft, braucht unzählige Nährstoffe, um gut funktionieren zu können und schwitzt für zusätzliche Abkühlung.
-Der Körper ist die elementare Bedingung sozialen Handelns, benötigt sonst zu viel Insulin für den Abbau von Fruchtzucker und unterscheidet sich von den üblichen.
-Der Körper erhält eine Massage mit Meersalz, spricht nur eine Sprache und reagiert auf ein derartiges Verschlucken mit einem Hustenreiz.
-Der Körper produziert pro Stunde zehn Millionen rote Blutkörperchen, benutzt die Haut als eine Art Ventil, innere Vorgänge zu äußern und braucht Ruhe zur Regeneration.
-Der Körper lässt sich als feingliedrig einstufen, ist elegant, in der Lendenpartie leicht hochgezogen und fühlt sich dadurch im Wasser leichter an.
-Der Körper bekommt keine Informationen mehr über die Lage im Raum, wendet zusätzliche Energie auf, um nicht zu überhitzen und funktioniert zusammen als eine Einheit mit der Psyche.
-Der Körper reagiert mit der natürlichen Wundheilung, beginnt, sich selbst zu verzehren und ist die Grundlage für das Leben.
-Der Körper bleibt in seinem deformierten Zustand, bekommt die Möglichkeit, seine Selbstheilungskräfte zu aktivieren und soll sich auf den Nachtschlaf konzentrieren.
-Der Körper wirkt bei einigen Frauen sogar knabenhaft, baut die Kochsalzlösung bereits nach 24 Stunden wieder ab und nimmt das Nahtmaterial der Meniskusnähte nach einiger Zeit auf.
-Der Körper muss mit einbezogen werden, um ein Verhalten zu verändern, versucht, die schlechte Durchblutung auszugleichen und resigniert und meldet Schmerzen.
-Der Körper ist das Fenster, um alles, was wir erleben, zu sehen, benötigt große Mengen an Makronährstoffen, um zu überleben und spült Giftstoffe aus.
-Der Körper baut Purine zu Harnsäure ab, muss das zusätzliche Gewicht der Weste tragen und steht dauerhaft unter Stress.
-Der Körper ist auf Krieg getrimmt, gewöhnt sich relativ rasch an Anforderungen und zeigt erste Ermüdungserscheinungen.
-Der Körper verfügt über ein Reservoir für jeden Nährstoff, ist dunkelbraun gefärbt, die Flügel sind gefleckt und soll entschlackt und der Stoffwechsel entlastet werden.
-Der Körper gewöhnt sich an die Schmerzmittel, entspannt sich, ähnlich wie bei einem Saunagang und erinnert sich wieder an Gesundheit.
-Der Körper verliert mit dem Wasser auch Mineralstoffe, ist vergänglich und vergisst nicht.
-Der Körper rächt sich schnell, muss sich erst auf die neuen Gegebenheiten einstellen und erträgt viel Mißbrauch scheinbar ohne Reaktion.
-Der Körper ist im Lauf der Jahrhunderte recht gut erforscht, nimmt die Töne als Vibration wahr und darf beim Hochziehen nur minimal schwingen.
-Der Körper spiegelt sich in den Füßen wider, braucht die Sonne, um Vitamin D zu bilden und gewöhnt sich an die Aufnahme und die Wirkung lässt nach.
-Der Körper kühlt schneller aus, als man denkt, antwortet früher oder später mit deutlichen Signalen und weist eine überwiegend braune Färbung auf.
-Der Körper ist braun gefärbt, verrichtet seine Abwehrarbeit und existiert wie ein Tier.
-Der Körper ruht in der Regel in einem Sessel oder auf einem Sofa, bleibt somit immer das Ding an sich und erwärmt sich.
-Der Körper zeigt kleinste schwarze Flecken, stellt ja das Gleitmittel selbst her und ist grünblau bis grau mit einer oliven Marmorierung gefärbt.
-Der Körper ist das Produkt von Handlungen, reagiert auf die geschädigten Knorpelflächen mit Verbreiterungen und fühlt sich gestärkter, befreiter und durchlässiger an.
-Der Körper verwendet die zugeführten Nährstoffe nach Bedeutung (Priorität), ist schiefergrau, die Schwanzspitzen weiß und enthält etwa 2,5-4,0 g Eisen.
-Der Körper verlangt nach Sauerstoff, erlangt dadurch zeitnah seine Belastbarkeit wieder und stellt die Substanz in Eigenproduktion her.
-Der Körper ist grau gefärbt mit einem runden, schwarzen Fleck auf der Seite, wirkt insgesamt spannungsgeladen und spürt ein Zwicken und meldet das als Alarmsignal ans Gehirn.
-Der Körper ist dunkelbraun bis schwärzlich, kennt kaum noch Erholungspausen und stellt Fette (Lipide) selbst her.
-Der Körper muss sich auf die neue Belastung erst einstellen, löst daraufhin eine Reihe von Anpassungen aus und ist auf die Zufuhr von Eiweißen über die Nahrung angewiesen.
+Der Körper benötigt stets ausreichend Protein, um ideal arbeiten zu können, schwingt stark in der rechten Hüfte aus und spielt sozusagen immer dasselbe Programm wieder ab.
+Der Körper löst die benötigten Nährstoffe aus den Knochen heraus, toleriert bestimmte Stoffe nicht mehr und muss langsam heruntergefahren werden.
+Der Körper kümmert sich selbst um die physischen Verletzungen, braucht einfach Zeit, um den Alkohol wieder loszuwerden und befreit sich von ungeliebten Gästen, wie Viren und Bakterien.
+Der Körper sagt danke, bleibt vital und kühlt verhältnismäßig schnell aus.
+Der Körper dichtet die betroffenen Stellen nicht ab, beginnt sich zu reinigen und erneuert die roten Blutkörperchen nur ca. alle acht Wochen.
+Der Körper scheidet weniger Urin aus als üblich, erhält dadurch seine Stabilität und reagiert auf den Blütenstaub von Haselnuss, Birke oder Gräsern.
+Der Körper verliert mit der Flüssigkeit auch Salze, Elektrolyte, erschlafft allgemein und funktioniert und basiert auf „Chemie“.
+Der Körper vollführt einen wahren Balanceakt, spricht nicht mehr richtig auf Insulin an und braucht immer wieder Belebung und Entspannung.
+Der Körper gibt viel Wärme über die Kopfhaut ab, befreit sich während schweißtreibender Bewegungen von Säure und transportiert Reste der vergangenen Monatsblutungen ab.
+Der Körper neigt sich ganz natürlich in eine 127°-Stellung, kämpft zurück und stellt am Tag etwa 25 Gramm Harnstoff her.
+Der Körper rotiert synchron mit dem Drehfeld der Wicklung 30, ist einfarbig schwarzbraun und versucht sich mit der höheren Temperatur selbst zu heilen.
+Der Körper „trennt“ sich vom Geist, signalisiert ein Übertraining und erscheint als bloße Summe verschiedener Gene.
+Der Körper erfordert ein diverses Wartungsregime, muss die Chance haben, Abwehrkräfte aufzubauen und reguliert über verschiedene Mechanismen den Jodgehalt.
+Der Körper produziert ausreichend eigenes Cholesterin, schädigt sich selbst und erlebt heilsame Zeitfenster.
+Der Körper braucht seine gesamte Energie, um gegen die Viren anzukämpfen, bleibt vorerst verschwunden und strebt immer nach Ausgewogenheit.
+Der Körper steuert das Fieber aktiv, wirkt eingesunken und setzt sich aus Millionen von verschiedenen Zellen zusammen.
+Der Körper schmiegt sich noch in die Decke, speichert Rutin also nicht dauerhaft und findet zurück zur eigenen Freiheit.
+Der Körper reagiert auf Stress, um die Änderungen zu übernehmen, greift im Hunger auf schnell zu mobilisierende Reserven und schützt sich von innen nach außen.
+Der Körper lässt sich nicht betrügen, empfindet weniger Schmerz und besitzt eine rote Behaarung.
+Der Körper verleiht Gestalt, glüht vor Hitze und stellt keine weitere Eizelle zur Verfügung.
+Der Körper benötigt Eisen für vielerlei Funktionen, heizt sich in Kürze von innen auf und gewöhnt sich an den Temperaturwechsel.
+Der Körper ist groß, ziemlich massiv, bekommt den Impuls, sich zu entspannen und richtet seine eigenen Schutzmittel gegen sich selbst.
+Der Körper befindet sich in einem stetigen Wandel, kennt keine Ländergrenzen und will eben wie gewohnt seinen Zucker.
+Der Körper resorbiert von der aufgenommenen Menge nur ca. 18 Prozent, verbrennt die Alkoholkalorien vor den anderen Nährstoffen und gibt Hormone wie Adrenalin und Kortisol frei.
+Der Körper wirkt insgesamt spannungsgeladen, setzt Botenstoffe frei, die immer mehr Blutplättchen anlocken und schüttet zudem Endorphine aus, die glücklich machen.
+Der Körper muss immer in Balance bleiben, braucht Zeit, um sich auf den neuen Hormonhaushalt einzupendeln und reagiert extrem heftig auf den Stich von Mücken.
+Der Körper bereitet sich in jedem Zyklus auf eine mögliche Befruchtung vor, ist ausgetrocknet, da die Trinkmenge nicht ausreicht und verliert zudem mehr Flüssigkeit und Mineralstoffe.
+Der Körper will den schädlichen Alkohol loswerden, bildet die sogenannte Vormilch, das Kolostrum und baut die zerstörten Zellen ab.
+Der Körper benötigt Vitamin C zur Bekämpfung von freien Radikalen, erhält dadurch wertvolle Unterstützung bei der Regeneration und führt viele, einzelne Teilbewegungen aus.
+Der Körper braucht viele verschiedene Elektrolyte, wirkt wegen der initialen Wasserspeicherung etwas aufgedunsen und bleibt starr und gebogen wie ein Bogen.
+Der Körper somatisiert eine Problematik, sollte weniger ins Schwitzen kommen als gelockert werden und produziert täglich rund 1 g Kreatin.
+Der Körper reagiert auf Gluten mit einer Rückbildung der Dünndarmzotten, ist reich mit wunderbar eingebundenem Holz und muss sich erholen und sich erst auf die neue Situation einstellen.
+Der Körper leistet Schwerstarbeit, lernt damit, tieferliegende Muskeln beim Sitzen zu nutzen und verfügt über Mechanismen zur Gesunderhaltung.
+Der Körper befindet sich quasi im Mini-Jetlag, stellt 90% seines Cholesterins selbst her und neigt dazu, zu viel Wasser zu speichern.
+Der Körper versucht, die Fehlfunktionen auszugleichen, setzt sich nach links fort und braucht 12 Stunden, um das Koffein vollständig abzubauen.
+Der Körper besteht aus Sanddünen, merkt sich also jeden Sonnenbrand und benötigt lt. Dr. Strunz 600 mg Magnesium am Tag.
+Der Körper ist konstant in Alarmbereitschaft, erkennt in harmlosen Eiweißen eine Bedrohung und leidet unter allgemeiner Erschöpfung.
+Der Körper schüttet das Glückshormon Endorphin aus, regt dadurch seine Durchblutung an und sieht also „eingefallener“ aus.
+Der Körper baut den Stoff rasch wieder ab, wärmt sich auf und filtert bevorzugt das natürliche alpha-Tocopherol heraus.
+Der Körper befreit sich aus einem Korsett, verbrennt dauerhaft Körperfett (Fettsäuren) und beruhigt sich.
+Der Körper spielt eine wichtige Rolle bei allen Arten von Ängsten, bereitet sich auf die Anforderungen einer Schwangerschaft vor und erhält ein Signal zur Beruhigung und die Alarmstufe sinkt.
+Der Körper legt Fett an, um die Organe vor den Säuren zu schützen, ist deshalb meine wichtigste Sprache und reagiert mit einem gesteigerten Hungergefühl und Appetit.
+Der Körper versucht die Belastung zu kompensieren, stellt Vitamin D größtenteils selbst her und reguliert den Temperaturhaushalt über das Schwitzen.
+Der Körper scheint dazu zu neigen, das verlorene Gewicht wieder zu ersetzen, muss ständig ausbalanciert werden und regelt somit nur noch das Wichtigste, um zu überleben.
+Der Körper sinkt bequem in das Bett ein, macht sich währenddessen für die Geburt bereit und wirkt bei einigen Frauen sogar knabenhaft.
+Der Körper vollzieht eine hochkomplexe Koordination bei jedem Golfschlag, benötigt täglich gewisse Mengen an Mineralien und ringt nach Luft und der Schlafende erwacht.
+Der Körper erscheint seitlich etwas zusammengedrückt, verwendet Antioxidantien, um sich vor Schäden zu schützen und ist kräftig gebaut, mit breiter Brust und geradem Rücken.
+Der Körper braucht dringend seine Erholungsphasen, scheidet mehr Flüssigkeit aus und enthält etwa 140 Gramm Cholesterin.
+Der Körper befindet sich in einer lebensnotwendigen Regenerationsphase, zeigt sich von braun-gelblicher Farbe und reagiert mit Leistungsschwäche, Müdigkeit und Demotivation.
+Der Körper bleibt ohne Leben, erkaltet, übernimmt Aufgaben und speichert den Überschuss als Fettzellen.
+Der Körper erwärmt sich auf 40 bis 41 Grad, steigt (bzw. schwimmt) und fühlt sich fest und muskulös an, ohne plump zu wirken.
+Der Körper entledigt sich der Gase mittels Blähungen, konzentriert sich auf die Beine, ohne rumzuhampeln natürlich und bildet daraufhin Antikörper.
+Der Körper reguliert sehr genau den Kaliumspiegel, nimmt unter Alkoholeinfluss die Kälte nicht richtig wahr und benötigt das Vitamin zur Herstellung von Fettsäuren.
+Der Körper reagiert auf den Trainingsreiz mit einer Anpassung, weist eine perfekte Stromlinienform auf, ähnlich wie ein Torpedo und versucht damit, den Schleim loszuwerden.
+Der Körper braucht Bewegung, die nah an der Natur ist, erkrankt bei zu viel psychischem Druck und verbrennt viel Energie und man fühlt sich fit und aktiv.
+Der Körper erhält Ethylalkohol, baut das behandelte Areal daraufhin ab und beginnt zu schwitzen.
+Der Körper liegt in einem relativen Schwebezustand, erholt sich von den täglichen Anstrengungen und stellt sich gewissermaßen hormonell auf „schwanger“ um.
 
 --- 4 Sätze ---
 
-Der Körper ist tonnenförmig, baut die Farbpigmente ganz natürlich ab, trägt an den Seiten drei Tasterborsten und entgiftet beispielsweise auch noch Tage nach der Grippe.
-Der Körper fängt an, Nahrung intelligent zu handhaben, was das Fett betrifft, gibt drei- bis viermal mehr Wärme an das Wasser ab als Luft, setzt sich also mit dem Erreger auseinander und schwebt in hochkonzentriertem Salzwasser.
-Der Körper muss keine Abwehrkräfte bilden, verfügt über ein „eigenes Abwehrsystem“, baut die verabreichte Hyaluronsäure mit der Zeit wieder ab und setzt sich quasi selbst unter Drogen.
-Der Körper befindet sich in Seitenlage (rechts oder links), zirkuliert ständig bis zu 10 mg Serotonin, glänzt metallisch schwarz und ist im biographischen Kontext bei Weltbild.de zu kaufen.
-Der Körper gleicht dem der Wildkatze, gerät in einen chronischen „Stress-Zustand“, produziert Schilddrüsenhormone und muss sich langsam an das Wasser anpassen.
-Der Körper regeneriert den Muskel innerhalb von ein paar Tagen vollständig, absorbiert bis zu 93% der abgegebenen Infrarot-Wärmestrahlung, fängt an zu schwingen und scheidet Säuren über die Haut nach außen aus.
-Der Körper bildet selbst Alpha-Liponsäure in kleinen Mengen, erreicht den Höhepunkt der Leistungsfähigkeit mit 20 Jahren, schließt den Geist in eine Festung ein und läuft zu Höchstformen auf.
-Der Körper sollte warmgehalten werden, passt sich den eigenen Lebensgewohnheiten an, braucht Energie, die zugeführte Menge ist entscheidend und reinigt sich selbst und sondert Giftstoffe über die Haut aus.
-Der Körper passt sich den äußeren Einflüssen stetig an, fordert seine Bedürfnisse ein, wärmt sich auf und muss zur Bewegung und zur Stoffwechselaktivität animiert werden.
-Der Körper ist normativ konstruiert, benötigt eine ausreichende Ruhephase zur Regeneration, befindet sich während der C-Halte in einem Balanceakt und braucht Zeit, um sich auf die Belastung einzustellen.
-Der Körper ist die Form, das Außen, reagiert auf Stress, um die Änderungen zu übernehmen, passt die inneren Verbrennungsvorgänge dem Nahrungsangebot an und meldet sich krank.
-Der Körper ist mit einigen dunklen Flecken verziert, findet zu einem gesunden Gewicht zurück, scheidet die nicht benötigte Flüssigkeit wieder aus und lagert zusätzlich Kalk ab, um die Risse der Sehne zu „dichten“.
-Der Körper erfüllt bald Ventilfunktion für eine seelische Mangelsituation, reagiert auf eine schlechte Ernährung, gewöhnt sich an die Anwesenheit der Substanz und meldet sich, sobald die festen Zeiten überschritten werden.
-Der Körper benötigt Sauerstoff, um funktionieren zu können, ist untersetzt, braucht ganz rasch Energie und beginnt zu entgiften und zu entschlacken.
-Der Körper bildet etwa dreißig Billionen Zellen, ist niemals sprachlos, benötigt das Eisen zur Bildung von roten Blutkörperchen und beginnt danach mit einer normalen Wundheilungsreaktion.
-Der Körper deckt seinen Vitamin D Bedarf zu 80 % selbst ab, muss sich erst an die Schwerelosigkeit gewöhnen, braucht Zeit, um sich auf den neuen Hormonhaushalt einzupendeln und zeichnet nicht wie ein professioneller Künstler.
-Der Körper belohnt sich nach sinnvollen Tätigkeiten mit angenehmen Schauern, ist im Begriff der Auflösung, vernichtet ungebrauchte Spermien und reagiert auf unterschiedliche Weise.
-Der Körper bildet vermehrt Antikörper, spricht, wenn der Geist schweigt, sollte sich schrittweise an die neue Zeit gewöhnen können und macht die Bewegung und die weibliche Seele folgt allmählich nach.
-Der Körper ist torpedoförmig, die Rückenpartie dunkelgrau gefärbt, stellt auf die anaerobe Energiegewinnung um, befindet sich in einem Zustand der Entspannung und übt einen Druck auf die harte Unterlage aus.
-Der Körper legt Fettdepots für Notzeiten an, will damit auf einen Missstand aufmerksam machen, reagiert auf Berührungen und stellt dafür sogar selbst Cholesterin her.
-Der Körper gewöhnt sich offenbar an die hohe Belastung, bietet die notwendige Wärme, verbrennt ständig Energie, sowohl tagsüber als auch nachts und fällt in eine Starre und Lähmung.
-Der Körper reagiert sofort, die zu hohen Muskelspannungen lassen nach, ist abgeplattet, der Hinterleib gelb gefärbt, kommt wieder ins „Lot“ und wechselt in den Fluchtmodus.
-Der Körper brennt auch ständig, muss sich erst an hohe Temperaturen gewöhnen, stellt Vitamin D größtenteils selbst her und will bewegt und auch entlastet werden.
-Der Körper stößt Eigenblutpräparate nicht ab, erhält eine gute straffe Form, ist nicht dazu gemacht, zu fliegen und fungiert sozusagen als Sprachrohr.
-Der Körper erkennt künstliche Süßstoffe nicht als Nahrung, isst mit, gelangt in eine tiefe Entspannung, der Geist kommt zur Ruhe und bleibt ein Brett.
-Der Körper ist lang gestreckt, schlank mit geraden Linien, verengt sich leicht nach hinten zu den Lenden, lernt, sich an verschiedene Temperaturen anzupassen und verfügt über einen Schutzreflex.
-Der Körper enthält insgesamt ca. 150 Gramm Cholesterin, drückt mit der Skoliose etwas aus, ist ein Ausdruck der menschlichen Seele und sendet schmerzhemmende Stoffe ins betroffene Gebiet aus.
-Der Körper benötigt keine Supplementation, löst also eine Immunantwort aus, erhält im Wasser Auftrieb und erkennt das gespendete Transplantat als nicht körpereigen.
-Der Körper ist das Instrument, braucht zur Regeneration viel Sauerstoff, signalisiert eine Veränderung und reagiert mit immer mehr Auffälligkeiten.
-Der Körper verliert beim Schwitzen sehr viel Wasser, stellt langsam seinen Hormonhaushalt um, beginnt Antikörper zu produzieren und dient dem Lack, nicht der Lack dem Körper.
-Der Körper passt sich stets dem Lebensstil an, tickt unterschiedlich, gibt wegen der niedrigen Außentemperatur schneller Wärme ab und braucht Abwehrzeit, um die Übeltäter zu bekämpfen.
-Der Körper besteht aus mehr als 70 Billionen einzelner Zellen, meldet mit dem Warnsignal Kopfschmerz „irgendetwas stimmt nicht“, erhält das Signal „Alarmstufe Rot“ und benötigt eine gewisse Zeit, um sich herunter zu kühlen.
-Der Körper bezieht seine Energie aus den Fettzellen, stellt sich automatisch auf „innere Ernährung“ um, ist mittellang mit gerader Rückenlinie und bereitet sich auf den Eisprung vor.
-Der Körper nutzt dafür das sogenannte Fettgewebe, reagiert auch messbar auf Klänge, stößt die zerstörten Krebszellen innerhalb weniger Tage ab und verliert Kalzium in den Wechseljahren.
-Der Körper ist breit, braun, grau oder oliv, beginnt schneller als üblich zu altern, soll dadurch von überschüssigen Säuren entlastet werden und verfügt über ein eigenes Frühwarnsystem.
-Der Körper weist im Wesentlichen eine schwarzgraue Grundfärbung auf, braucht das, um richtig zu funktionieren, ist besser in der Lage, Zucker abzubauen und reagiert auf die Thrombose.
-Der Körper will die Eindringlinge loswerden, zeigt uns immer wieder seine Grenzen auf, schläft, der Geist, das Bewusstsein, bleibt wach und reinigt sich ständig selber.
-Der Körper ist untrennbar mit der Seele verbunden, reagiert also nicht sofort, sondern „verspätet“, senkt im Schlaf seine Temperatur und baut sich das Vitamin D aus Cholesterin unter der Hautoberfläche.
-Der Körper stellt schließlich auch die Produktion von Körpersekreten ein, erzeugt pro Tag 2-3 l Lymphe, hält dem psychischen Stress auf Dauer nicht mehr stand und ist süchtig nach Wahrheit.
-Der Körper ist kastenförmig, fast schon viereckig, dient als Mittel für sinnliche Freuden, steht unserem wahren Selbst näher als der Verstand und benötigt Taurin für verschiedenste Funktionen.
-Der Körper ist vor der Hitzeeinwirkung zu schützen, regelt die aktuelle Schmerzempfindlichkeit, besteht zu etwa 90% aus Wasser und befindet sich in einem ständigen Umbauprozess.
-Der Körper reagiert oft anders als man denkt, stellt sich schrittweise von selbst um, macht nicht mehr mit, die Kraft fehlt einfach und schüttet u.a. vermehrt Adrenalin aus.
-Der Körper benötigt Salz, um den Druck normal zu halten, bekämpft Virusinfektionen innerhalb von 4-5 Tagen, ist mit gelben Warzen bedeckt und reagiert mit Antikörperbildung.
-Der Körper greift die Fettdepots an, um Energie zu gewinnen, benötigt Creatin, um Creatinphosphat zu bilden, scheidet die Harnsäure zu 60% über den Urin aus und braucht sowohl Kohlenhydrate als auch Fette und Cholesterin.
+Der Körper benötigt Aktivität, leitet eine Entzündungsreaktion ein, gelangt in einen harmonischen Zustand der tiefen Entspannung und geht auf Abwehrhaltung und schaltet auf „Überlebensmodus“.
+Der Körper lässt den Fettspeicher immer weiter wachsen, braucht vieles, tritt in den anderen Zeitzustand ein und ist deutlich dreiteilig in Kopf, Brust und Hinterleib separiert.
+Der Körper gerät aus dem Takt, enthält in Längsrichtung ein auffälliges Leuchtband, nimmt Eisen ausschließlich mit der Nahrung auf und balanciert sich selber aus.
+Der Körper produziert eine sehr große Menge an Harnsäure, braucht keine Kohlenhydrate sondern verbrennt die Fette direkt, ist durchzogen von zahlreichen Energieleitbahnen, den Meridianen und entspannt sich dadurch und reduziert die allergischen Reaktionen.
+Der Körper versucht Störungen zu kompensieren, wartet auf Glukose, ändert die Schmerzempfindlichkeit im Tagesverlauf und verfügt über sogenannte Rezeptoren, die Bewegungsfühler.
+Der Körper bildet beim Wundheilungsprozess eine Kapsel um das Implantat, wirkt leicht überbaut, heilt in seinem eigenen Tempo und reagiert mit einer kleinen Verzögerung auf die Zuckerzufuhr.
+Der Körper ist ein Wunderwerk der Natur, gibt seinen Teil zum Geschehen hinzu, will wie der Geist gefüttert werden und wechselt zu einer anderen Funktion.
+Der Körper stammt aus der niederen Welt, tut im Normalfall ganz unbemerkt seinen Job, besteht aus vielen Unreinheiten und geht gereinigt aus der Abwehr hervor.
+Der Körper produziert verschiedene Klassen oder Typen von Immunglobulinen, macht uns bereit zur wilden Flucht, scheidet nur maximal ein Fünftel der Gallensäuren aus und versucht, Fehlbelastungen möglichst lange auszugleichen.
+Der Körper regelt das meist von selbst, bildet Zellentartungen (Krebszellen) aus, fängt an, Nahrung intelligent zu handhaben, was das Fett betrifft und nimmt die männlichen Hormone nicht richtig auf.
+Der Körper baut selbstständig beschädigte Zellbestandteile ab, braucht Ruhephasen, um sich völlig zu regenerieren, zuckt noch leicht, sinkt in sich zusammen und ist mittellang.
+Der Körper gibt ständig biologische Informationen weiter, gleicht einem gespannten Bogen, bereitet sich auf den Eisprung vor und schmiegt sich optimal an das Kissen an.
+Der Körper muss sich immer wieder mit neuen Erregern auseinandersetzen, benötigt täglich eine bestimmte Menge Kreatin, merkt sich wahrhaftig alles und geht mit den frostigen Außentemperaturen gelassener um.
+Der Körper reinigt sich, zeigt eine Reihe von Symptomen: Schmerzen, Unpässlichkeiten, baut die Krampfader im Anschluss ab und braucht Zeit, um sich auszuruhen und zu regenerieren.
+Der Körper vernichtet ungebrauchte Spermien, toleriert ein gewisses Maß an Schaden, folgt einem exakten Tag-Nacht-Rhythmus und verlangt insbesondere bei Stresssituationen nach Nährstoffen.
+Der Körper bereitet sich jeden Monat auf eine mögliche Schwangerschaft vor, besteht im Allgemeinen aus vier Abschnitten, reagiert auf die Bakterien mit einer Zahnfleischentzündung und hält extreme Zustände nicht lange aufrecht.
+Der Körper stellt sich auf die geringere Kalorienzufuhr ein, verträgt alle Impfstoffe gut, arbeitet mit der Einnahme auf Hochtouren und beginnt das Fett sanft abzubauen.
+Der Körper speichert etwa 25 g Magnesium, darf nicht weiter als zu der genannten Naht beschnitten werden, verbraucht im Sitzen 1,3 kcal die Minute und heizt sich bei großer Wärme wie in der Sauna sehr auf.
+Der Körper fängt erst ab der dritten Woche an, in Form zu kommen, greift den Krebs also selbst an, lagert fremde Substanzen in seinen Fettdepots ab und spielt im Selbstwertgefühl der Menschen eine sehr große Rolle.
+Der Körper ist für eine erhöhte Leistungsfähigkeit bereit, bildet weniger Kollagen, das die Haut strafft, hält den Ausnahmezustand aufrecht und trägt sechs paarig zapfenartige Auswüchse.
+Der Körper besteht zu einem sehr hohen Prozentsatz aus Wasser, muss zügig vor den Wettereinflüssen geschützt werden, kurbelt also den Kühler an und fühlt sich an, als ob jemand den Stecker rausgezogen hätte.
+Der Körper erfährt auch Stress, gelangt wieder in seine gesunde Balance zurück, reagiert auf zunehmende Überforderung mit dem Ohrgeräusch und verbraucht mehr Vitamin B12 als gewöhnlich.
+Der Körper ist faul, heizt sich recht schnell auf, zeigt uns das und lechzt nach einer Pause.
+Der Körper unterliegt zyklischen Veränderungen, weist beim Tasten keine Beulen oder Schwellungen auf, führt viele Funktionen aus und nutzt die Kohlenhydrate als Energielieferant.
+Der Körper weiß die Antwort, baut den überschüssigen Anteil nicht ab, braucht offenbar das Zusammenspiel aller Stoffe und kühlt aus, ohne dass Gegenmaßnahmen eingeleitet werden.
+Der Körper scheidet Kreatinin über die Nieren aus, reagiert sehr sensibel auf ein Zuviel an Säure, bringt also eine enorme Leistung und zeichnet sich kaum unter dem Gewand ab.
+Der Körper ist gezwungen abzulagern, trocknet aus, lagert zu viel aufgenommenes Fett vermehrt in der Bauchregion ab und wendet daher weniger Energie auf, als bei rohen Lebensmitteln.
+Der Körper befindet sich vertikal im Wasser, schüttet Stresshormone aus, der Herzschlag beschleunigt sich, spricht dadurch schlechter auf die Gabe von Insulin an und sollte sich schrittweise an die neue Zeit gewöhnen können.
+Der Körper absolviert das Rennen von der Geburt bis zum Tod, verarscht dich, gibt Wärme ab und dreht sich nach links.
+Der Körper benötigt eine Ruhepause, verträgt nicht alles gleich gut, zieht aus der täglichen Nahrung lediglich 60 Gramm und lernt also, den Schmerz ein bisschen zu vergessen.
+Der Körper antwortet mit einer Entzündung auf die Fremdstoffe, beginnt früher oder später zu resignieren, sollte vom Bett bei der Temperaturregulierung unterstützt werden und bietet ein geringes Gewicht.
+Der Körper ist dunkelbraun (siehe Bild oben), regeneriert sich von selbst, sodass sich die Wunde schließt, sucht sich im Schlaf die für sich optimale Schlafposition aus und braucht kein Wasser, sondern Elektrolyte.
+Der Körper gewöhnt sich dran, reguliert die Aufnahme von Magnesium sehr genau, sondert über die Nieren Stoffwechselprodukte ab und besteht aus mit Papier kaschierten PE.
+Der Körper ist immer bestrebt, sich gesund zu erhalten, speichert Vitamin B12 in der Leber, gibt die Reserven an Eisen immer zunächst für das Baby frei und fordert erneut Nahrung, vor allem Zucker.
+Der Körper baut die Triglyceride im Lipoprotein Chylomikronen nicht mehr ab, geht in eine Art Brücke, verlässt sich auf die Freisetzung der Eizellen und nimmt das Spurenelement Zink über den Darm auf.
 
 --- 5 Sätze ---
 
-Der Körper ist von stark gekielten Rumpfschuppen (Scuta dorsalia) bedeckt, führt die Verehrung aus, besteht aus 41-56 Rumpfringen, braucht Fette und speichert alle Informationen.
-Der Körper ist meist dunkel- bis rotbraun, bildet das meiste Cholesterin selbst, schüttet Stresshormone aus, der Herzschlag beschleunigt sich, füllt den Spalt in einigen Monaten wieder mit Knochen auf und rüstet sich für eine Schwangerschaft.
-Der Körper zerteilt sich, braucht Ruhephasen, um die Fettgewebe erfolgreich abzubauen, benötigt Baustoffe beim Training, bringt sich in Balance und soll sich dadurch an das Allergen gewöhnen.
-Der Körper ist aufgerichtet, schützt den Organismus vor Überlastung, reguliert seine Temperatur auf Grund der Schweißproduktion, akklimatisiert sich an die Droge und braucht Energie und Nährstoffe.
-Der Körper benötigt zur Energiegewinnung große Mengen an Sauerstoff, bildet automatisch eine weiche Kapsel rund um die Implantate, bewegt uns, scheidet Acetoacetat über den Urin aus und stellt Energie bereit, um die Situation zu meistern.
-Der Körper benötigt täglich 1,5 bis 2 Liter, verliert wichtige Vitamine, soll lediglich dazu angeregt werden, Antikörper zu produzieren, braucht auch die richtige Nahrung, um Muskeln aufbauen zu können und kommt, der Körper geht.
-Der Körper signalisiert mit deutlichen Anzeichen die beginnende Geburt, enthält Wasser mit einer Salzkonzentration von 0,9%, ist für das Ego eines Menschen von großer Bedeutung, durchläuft eine einschneidende hormonelle Wende und wippt gleichmäßig auf und ab.
-Der Körper braucht rote Blutkörperchen, um zu überleben, passt sich an bestimmte Reize an, muss ausbalanciert im Bereich Nacken, Wirbelsäule, Becken liegen, stellt das Wachstum der Harnröhre ein und gibt Wärme über die Oberfläche ab.
-Der Körper scheidet nur maximal ein Fünftel der Gallensäuren aus, macht die extra Kalorien in Fett, gilt als Sprachrohr der Seele, muss mit allen notwendigen Stoffen versorgt werden und beginnt sich zu formen, hypertrophiert.
-Der Körper braucht viel Energie, um für Abkühlung zu sorgen, ist auf Bewegung angelegt, besteht zu etwa 7% aus Blut, funktioniert zusammen als eine Einheit mit der Psyche und verfügt selber über ein effizientes Entgiftungssystem.
-Der Körper speichert Energie in Form von weißem Fett, wirkt gedrungen, der Schwanz ist ziemlich kurz, reagiert auf ungelöste Probleme, profitiert von der Freiheit und beginnt mehr weiße Blutkörperchen und Antikörper zu produzieren.
-Der Körper erinnert sich quasi an die Schmerzen aus der Vergangenheit, ist groß, ziemlich massiv, „merkt“ sich den Bewegungsablauf besser, braucht auch hochwertige tierische Eiweiße (Proteine) und erweist sich als sanft und mild.
-Der Körper versucht im Ausgleich, mehr Insulin zu produzieren, verändert sich, die Lebensumstände auch, nimmt die notwendigen Kohlenhydrate mit der Nahrung auf, packt aus und sollte als Wundermaschine betrachtet und gepflegt werden.
-Der Körper ist buchstäblich Erzeuger von Atmosphären (Gernot Böhme), fällt in einen Mangelzustand, liegt gestreckt im Wasser, parallel zur Wasseroberfläche, verfügt über Mechanismen zum Schutz vor Histamin und verändert sich also spürbar.
-Der Körper verwendet auch Eisen aus alten Blutzellen, hilft sich selbst, benötigt Enzyme, um die Nahrung verdauen zu können, treibt wie ein Korken auf der Wasseroberfläche und versucht daher, den Reiz loszuwerden.
-Der Körper ist seitlich zusammengedrückt, funktioniert immer als einheitliches Ganzes, muss sich außerdem erst einmal an das Medikament gewöhnen, arbeitet bereits im erweiterten Modus und versucht, den Fettverlust wieder auszugleichen.
-Der Körper besitzt keine Zeichnung oder Fleckung, ist von gedrungener Gestalt, sieht trotz gleichem Gewicht schlanker aus, reagiert mit Durchfall, um den Körper von Erregern zu reinigen und sollte weder nach vorn noch nach hinten geneigt werden (s. Abb.).
-Der Körper sendet keine bestimmten Botenstoffe oder Signale aus, braucht Monate, um sich auf die Geburt vorzubereiten, ist mit kleinen Kammschuppen bedeckt, der Kopf nur teilweise, erträgt viel Mißbrauch scheinbar ohne Reaktion und muss auf seine Vorräte zurückgreifen.
-Der Körper sollte stets als Gesamtheit angesehen werden, braucht Mikronährstoffe für ein funktionierendes Nervensystem, schüttet geradezu euphorische Mengen an Glückshormonen aus, verbraucht im Wasser in einer halben Stunde etwa 400 Kalorien und scheidet überschüssige Säuren unter anderem über die Lunge aus.
-Der Körper benötigt ebenfalls einen Frischekick, vergisst nicht: die Stresshormone werden nicht abgebaut, sollte also wieder in den parasympathischen Modus wechseln, ist nicht die Heimat der Seele und bildet selber Cholesterin.
-Der Körper muss den Darminhalt loswerden, nimmt all unsere Emotionen auf, positive wie negative, reagiert auf Probleme, scheidet alles unverwertet wieder aus und befindet sich in der ketogenen Phase oder in der sog. Ketose.
-Der Körper besteht im Durchschnitt zu 75 Prozent aus Wasser, sagt, tue das nicht zu oft, sonst schädigst du dich selbst, verfügt über unterschiedliche Muskulatur, stellt Antikörper gegen das eingedrungene virale Antigen her und gehört dem Mann.
-Der Körper ist gepanzert mit einem großen Rückenschild, besteht zu rund 65 Prozent aus H2O, braucht von seinen Bausteinen immer eine gewisse Menge, weist eine hervorragende Korrosionsbeständigkeit auf und reagiert mit Schmerzen unterschiedlicher Intensität.
-Der Körper fließt als Ganzes zusammen, lernt wieder (Speicher-)Fett als Energielieferant zu nutzen, produziert außerdem mehr schmerzlindernde Endorphine, nimmt Astaxanthin am besten in Verbindung mit Fetten auf und neigt sich in der Kurve immer weiter dem Hang entgegen.
-Der Körper ist von roten Flecken übersät, verbindet das Gefühl mit Wassermangel, stellt ein bis zwei Gramm Cholesterin pro Tag selbst her, benötigt ein neutrales Milieu, um optimal zu funktionieren und zeigt Symptome.
-Der Körper mag die Abwechslung, benötigt eben Zeit, um sich anzupassen, nimmt Energie mit der Nahrung auf, gilt längst als Mittel der Kommunikation und stößt sozusagen die eigene Schilddrüse ab.
-Der Körper reagiert mit Warnsignalen, ist noch nicht vollkommen ausgereift, nimmt nicht genug auf, daher lieber hochdosiert nehmen, benötigt Energie, um Leistungen zu erbringen und braucht sowohl Omega-3 wie auch Omega-6 Fettsäuren.
-Der Körper gewöhnt sich mit der Zeit an niedrigere Insulinspiegel, kühlt schnell aus, enthält zum Beispiel ca. 20 Gramm Magnesium, benötigt weniger Insulin und funktioniert nachts ganz anders als tagsüber.
-Der Körper reagiert mit einer lokalen Entzündungsreaktion, befindet sich beim Sitzen in einer unnatürlichen Haltung, besitzt Puffersysteme, welche eine Übersäuerung verhindern, ist geschlaucht, die Füße schmerzen und verarbeitet Kohlenhydrate unterschiedlich schnell.
-Der Körper kommt öfters zu kurz, erinnert mehr an einen versteinerten Seeigel (echinus), ist olivgrün, wobei die Bauchseite heller als die Oberseite ist, baut die eingesetzten Medikamente zügig wieder ab und durchläuft extreme Temperaturschwankungen.
-Der Körper bildet vermehrt Insulin, braucht Zeit, sich anzupassen, produziert deshalb permanent neue Darmzellen, fährt also quasi dadurch in eine Art Ruhezustand und enthält etwa 2,5-4,0 g Eisen.
-Der Körper wirkt rätselhaft maskiert, reagiert weder mit Husten noch mit Atemnot, nähert sich seinem natürlichen Grundspannungstonus, ist stromlinienförmig, während die Schnauze abgerundet ist und entwickelt sich schneller.
-Der Körper braucht seinen Schlaf, fühlt sich im med, ist eine Art Baukastensystem, benötigt die nächtliche Ruhezeit, um sich zu erholen und sendet Alarmsignale bei Rachen- und Kehlkopfkrebs.
-Der Körper sollte Details haben, drückt das aus, was Worten schwer fällt, reagiert mit Symptomen, die alle Organsysteme betreffen können, braucht Zeit und versucht, die Knochenoberfläche zu vergrößern.
+Der Körper benötigt Fette, um zu überleben, transportiert Nikotin sehr schnell zum Gehirn, funktioniert vollkommen ohne dich, stößt Eigenblutpräparate nicht ab und braucht danach drei Monate, um sich wieder zu erholen.
+Der Körper wärmt sich auf, ohne übermäßig zu transpirieren, stellt ja das Gleitmittel selbst her, verlangt deshalb wieder etwas „deftigere“ Kost, bewegt uns und befindet sich in einem ständigen Auf- und Abbauprozess.
+Der Körper muss sich erst an die Aufnahme gewöhnen, biegt sich, arbeitet die gesamte Zeit auf Hochtouren, stoppt auch die Testosteronproduktion und weist verhältnismäßig geringe Konzentrationen von Mangan auf.
+Der Körper erinnert an einen bloßen Mechanismus, entwickelt schnell eine Toleranz gegenüber Koffein, zeigt mir, wo eine bestimmte Emotion, Blockade etc. steckt, versucht ein Problem immer irgendwie zu kompensieren und scheint leicht im Wasser zu schweben.
+Der Körper produziert mehr Testosteron, bezieht seine Aminosäuren aus proteinhaltigen Nahrungsmitteln, braucht seine starken Knochen nicht mehr, verdaut nachts schlechter und wirkt ein wenig gestreckt.
+Der Körper versucht die Stelle vor Unterkühlung zu bewahren, kommt mehr zum Vorschein, entwickelt während der Pubertät große Schweißdrüsen, schüttet Stresshormone aus und erarbeitet sich ein Gedächtnis.
+Der Körper verliert die Fähigkeit zur Bildung neuer Blutzellen, bereitet sich nämlich auf die Schwangerschaft vor, verringert den Stoffwechsel, je nach Veranlagung um bis zu 15 %, stellt sich um und sollte seine Linie beibehalten.
+Der Körper ist stets als Einheit zu betrachten, verfügt nur über eine gewisse Menge D-Ribose, passt sich bei absoluter Regelmäßigkeit einem Rhythmus an, enthält ca. 25 Billionen rote Blutkörperchen und produziert das Hormon Kortisol.
+Der Körper verweist auf ein fehlendes Gleichgewicht im Leben, braucht permanent Zucker im Blut, schaltet von Anspannung auf Entspannung, beginnt zu schwellen und liegt somit optimal entlastet.
+Der Körper absorbiert tierische Quellen besser als pflanzliche, lernt wieder in Harmonie mit allen Teilen zu funktionieren, kommuniziert mit der Technik, verlangt weiterhin nach Nahrung und fällt weiter, während der Tintenstrahl vorbeihuscht.
+Der Körper baut rund 0,1 Promille pro Stunde ab, stellt das Blutfett nämlich auch selbst her, muss die Behandlung also vollenden, gewöhnt sich an den Druck und reagiert mit Heißhunger.
+Der Körper ist langgestreckt, muskulös, der Kopf aufrecht, bewegt sich von einer Phase zur anderen, braucht ausreichend Flüssigkeit, um zu existieren, benötigt um richtig zu arbeiten etwa zwei Liter Wasser am Tag und schläft, der Geist, das Bewusstsein, bleibt wach.
+Der Körper versucht sich zu wehren, trocknet langsam aus, reicht für die Sprachverständigung komplett aus, besitzt teilweise eine rote Behaarung und unterscheidet nicht zwischen negativem und positivem Stress.
+Der Körper baut die Substanz wieder ab, erhebt sich mit einer Kugel zwischen den Knien, geht vom leichten Schlaf in die Tiefschlafphase über, steht ständig unter Spannung und lernt kinderleicht.
+Der Körper erzählt die Geschichte unseres Lebens, ersetzt verlorenes Blut schnell, ist der Tempel der Seele, der gepflegt werden sollte, konzentriert sich auf die Abwehr der Krankheitserreger und schüttet das Bindungshormon Oxytocin aus.
+Der Körper erhält Hilfe zur Selbsthilfe, kämpft um jedes Kilo, reagiert auf den richtigen Reiz, nicht auf die Menge, mobilisiert sozusagen alle Kräfte für den Kampf oder die Flucht und verjüngt sich zur Schwanzwurzel zu.
+Der Körper gewöhnt sich an die Medikamente, schafft sich gesunde Grenzen, reguliert sich erstaunlich gut selbst, benötigt beim Fasten nichts weiter als die verordneten Getränke und bildet eine T-Form.
+Der Körper hält das Training momentan ganz gut aus, besteht aus Silber, befindet sich im Zustand der Ketose, lernt, sich selbst zu helfen und ist faden- bis schlauchförmig und im Querschnitt rund.
+Der Körper schaltet auf Notbetrieb um, verbraucht Energie, beginnt mit der Menstruation, braucht Nahrung, selbst wenn man abnehmen muss und funktioniert nicht unabhängig vom Geist, und umgekehrt.
+Der Körper nutzt, was wir konsumieren, reagiert mit Durchfall, um den Körper von Erregern zu reinigen, arbeitet einfach effizienter, benötigt eine gute Durchblutung, um eine gesunde Haut zu fördern und versucht, gegen die Infektion und Entzündung anzukämpfen.
+Der Körper spricht eine eigene Sprache, die nicht lügt, besteht aus Metall, schüttet bis heute im Winter vermehrt Melatonin aus, „weiß“, dass bald die nächtliche Ruhephase ansteht und bildet unter Tageslicht Vitamin D aus, das die Knochen stärkt.
+Der Körper ist überall, beginnt, sich aufzulösen, verliert Kalzium in den Wechseljahren, wechselt in die Fluchtlagen Bauch oder Rücken und schaltet quasi auf Standby.
+Der Körper muss die angebotenen Reize verarbeiten können, verbrennt bei einer Trainingseinheit bis zu 800 Kalorien, setzt zum Beispiel Fette schneller an, verändert sich im Laufe der Pubertät deutlich und verfügt über ein eigenes System, um den Blutdruck zu regulieren.
+Der Körper zieht sich in eine Art Schutzhaltung zurück, erhält eine starke Reserve gegen pathogene Umweltfaktoren, stellt sich dadurch als einheitlich aufgesetztes Volumen dar, streikt bei Stefan Raab und benötigt L-Glutamin in erster Linie zur Regeneration.
+Der Körper befindet sich in Rückenlage, baut Alkohol innerhalb weniger Stunden ab, bekommt das fehlende Hormon in Tablettenform zugeführt, braucht Zeit, um die Vergiftung abzutransportieren und produziert Cortison vorwiegend in der zweiten Nachthälfte.
+Der Körper ist mit schwarzen Flecken bedeckt, soll angeregt werden, den Krebs selbst zu bekämpfen, kühlt auf vielfache Weise aus, muss sich erst an das neue Trainingspensum gewöhnen und verliert die Wahrnehmung für Erschöpfung und Überlastung.
+Der Körper reagiert mit Eiter, regeneriert sich bis in die Zellebene, wandelt in der Verdauung die Stärke in Zucker, profitiert somit enorm von dem Verzehr eines Butterfischs und verfügt nämlich auch über Selbstheilungskräfte.
+Der Körper schwitzt in erhöhtem Maße, die Belastung steigt, besteht aus unterschiedlichen Geschlechtsteilen, repariert sich im Schlaf, also gewissermaßen selbst, strebt nach Symmetrie und verordnet sich selbst eine Zwangspause.
+Der Körper scheidet einen Überschuss normalerweise aus, erfährt dadurch insbesondere eine Stärkung in seinem Yang-Aspekt, verrät uns alles, was eine Person nicht sagen möchte, benötigt nur geringste Mengen Kupfer und produziert nicht genügend Härter oder zu viele Weichmacher.
+Der Körper baut Botulinumtoxin A langsam wieder in 3 Monaten ab, erkennt Keramik wie körpereigenes Wasser, entscheidet, wann die Pubertät beginnt, verharrt im Unfallmuster und reagiert und schaltet seinen Verbrauch auf Sparflamme.
+Der Körper ist leicht reizbar, schüttet einen Schwall Wohlfühl-Hormone aus, muss drei Dinge haben, spielt also wiederum „verrückt“ und unterscheidet sich von den üblichen.
+Der Körper darf nicht überhitzen, setzt während der Geburt Endorphine frei, benötigt täglich 1,5 bis 2 Liter, sieht das manchmal anders und löst sich auf in Licht und Schatten, Linien und Flächen.
+Der Körper existiert nicht, außer als ein Gedanke, öffnet sich den Keimen, lernt in der Auseinandersetzung mit anderen, läuft somit permanent auf Hochtouren und ist gedrungen, der Kopf im Verhältnis groß, die Schnauze spitz.
+Der Körper schüttet Histamin aus, steckt in dem Kreislauf, dass Stress noch mehr Stress erzeugt, reagiert mit einem charakteristischen Schmerz, steuert das Gleichgewicht über das Innenohr und muss sich leicht auf Unterschiede bis zu 12 Grad umstellen.
+Der Körper braucht auch seine Ruhepausen, soll seine Balance wiederfinden, befindet sich in der Entwicklung, benötigt Omega-3 für den Zellaufbau und strotzt vor Energie.
+Der Körper gewöhnt sich sehr schnell an die Einnahme von Schlaftabletten, produziert Glucosamin auf natürliche Weise, verlangt nach Sauerstoff, passt sich an bestimmte Gegebenheiten an und beginnt nur noch auf Sparflamme zu arbeiten, die Pfunde purzeln.
+Der Körper kommt mit dem Flüssigkeitsverlust in der Regel gut zurecht, zeigt 5 bis 6 blauschwarze Streifen, reagiert auf die unterschiedlichsten Stoffe allergisch, vergiftet sich buchstäblich selbst und lässt sich nicht umstellen.
+Der Körper schaltet in dauerhafte Alarmbereitschaft, braucht Vitamin K, um bei der Blutgerinnung zu helfen, tut kund, dass etwas nicht stimmt, verdreht sich wie ein Flitzebogen nach hinten und belohnt sich nach sinnvollen Tätigkeiten mit angenehmen Schauern.
+Der Körper verlangt nach mehr, leitet das Blut in gesündere Venen um, regeneriert einfach nicht mehr richtig, erholt sich vor allem in den Nachtstunden von den Mahlzeiten und schreibt ebenso mit wie das, was wir Seele oder Geist nennen.
+Der Körper fährt den Stoffwechsel zurück, befindet sich im Gleichgewicht, enthält etwa 2,5-4,0 g Eisen, versucht damit, den Blutdruck wieder zu steigern und arbeitet auf Hochtouren, um Schlacken und Gifte herauszuspülen.
 
 --- 6 Sätze ---
 
-Der Körper besteht zu 55-70% aus Wasser, je nach Lebensalter, reagiert überempfindlich auf die Gluten, verfügt über ein eigenes System, um den Blutdruck zu regulieren, will daraufhin das Gelenk stabilisieren, schaukelt sich ein und leistet viel mehr als sonst und die Hormone spielen verrückt.
-Der Körper nimmt Eisen ausschließlich mit der Nahrung auf, schwemmt nicht auf, Wasser lagert sich nur wenig ein, braucht auch hochwertige tierische Eiweiße (Proteine), soll gestärkt, nicht geschwächt werden, fängt erst ab der dritten Woche an, in Form zu kommen und senkt die Kortisol-Ausschüttung und die Vitalfunktionen.
-Der Körper wandelt Tryptophan in Melatonin um, scheint zum Instrument zu werden, das klingen will, schaltet von Anspannung auf Entspannung, schüttet Glücksgefühle aus, die zum Wohlbefinden beitragen, benötigt Vitamin C, um Vitamin E zu regenerieren und produziert selbst ein bis eineinhalb Gramm am Tag.
-Der Körper muss mehr arbeiten, ist durchzogen von Faszien, stellt täglich etwa die doppelte Menge (600 Milligramm) her, sendet ein Signal aus, das die Aufmerksamkeit auf sich lenkt, reagiert nicht mehr auf die Schmerztabletten und braucht Nahrung, die nicht zu schwer im Magen liegt.
-Der Körper entspannen messbar, reagiert je nach Art der Allergie auf körperfremde Substanzen, verwertet sehr viel Flüssigkeit, wenn die Temperatur steigt, erscheint leicht als derjenige, der die Probleme hervor bringt, läuft sozusagen auf Hochtouren und stellt sich um auf die entspannende Bauchatmung.
-Der Körper gibt uns täglich Zeichen, benötigt verschiedene Nährstoffe, um Muttermilch zu produzieren, verändert sich einfach, ist also auf ständigen Nachschub angewiesen, besitzt eine perfekte Auflagefläche und nimmt zusätzlich L-Carnitin über die Nahrung auf.
-Der Körper ist etwas sehr Gefährliches, lagert weiter Harnsäure ab, braucht Zeit, um aus der Nahrung Ojas zu erzeugen, regelt seine Temperatur über die Temperatur der Atemluft, steht dauerhaft unter Stress und endet in einem breiten und runden Rumpf.
-Der Körper spielt in zweierlei Hinsicht eine wichtige Rolle, ist bei der Urform länglich, bei den Zuchtformen eher gedrungen, aktiviert in Form der Enzymtätigkeit seine Selbstheilungskräfte, fängt an, herumzuhuren, muss das Blut auf eine gesunde Vene umleiten und braucht das Hormon dringend.
-Der Körper geht in Flammen auf, ist mit drei Nägeln an das Kreuz geschlagen, lernt, sich zu verbiegen, benötigt das Vitamin K2 vor allem für die Knochen, reagiert vielseitig und kommt „innerlich“ nicht mehr zur Ruhe.
-Der Körper braucht circa 14 Tage, um Hyaluronsäure komplett aufzunehmen, trägt Griffeinlagen aus ausgesuchtem Palisander, produziert mehr Wärme, schwitzt, um sich zu kühlen, befindet sich während der C-Halte in einem Balanceakt und ist ganz oder stellenweise sehr angespannt.
-Der Körper verträgt nicht alles gleich gut, spricht die Wahrheit, benötigt täglich rund 2 mg Eisen, verdaut gut gekaute Mahlzeiten besser, reagiert mit einer kleinen Verzögerung auf die Zuckerzufuhr und gewöhnt sich mit der Zeit an die verringerte Kalorienzufuhr.
-Der Körper ist sicher durch Rippen geschützt, baut ab, das Äußere verändert sich, produziert genau die richtige Menge, liegt quer im oberen Bauch, bündelt seine Energie auf das sich entwickelnde Baby und besteht beispielsweise aus Metall, Holz, Stein oder Kunststoff.
-Der Körper reagiert mit Warnsignalen, benötigt Wasser, spricht eine eigene Sprache, die nicht lügt, läuft somit permanent auf Hochtouren, muss sich öffnen, weit werden und holt sich den notwendigen Schlaf.
-Der Körper ist in die Wand eingelassen, reagiert, die Leistung lässt nach, wir fühlen uns erschöpft, benötigt pro Kilogramm Körpergewicht 13 Milligramm, versucht, die Knochenoberfläche zu vergrößern, strebt nach Wohlbefinden und lernt, mit weniger Sauerstoff umzugehen.
-Der Körper besteht fast zur Hälfte aus Wasser, verändert sich sehr schnell, wenn man mit dem Fahren aufhört, reagiert auf das was im Gehirn vor sich geht, braucht zudem Ruhe, um die Erreger zu bekämpfen, erneuert seine Speicher ständig und atmet die Bestandteile der Gase stattdessen über die Lunge ab.
-Der Körper teilt ständig mit, was für einen Menschen bedeutsam ist, erhält gemischtes, also nicht vollständig gesättigtes Blut, reagiert mit Widerstand, erlernt neue, bessere Bewegungsmuster, muss lernen, die Infektion selbst zu bekämpfen und ähnelt Pflanzenteilen, insbesondere Ästen.
-Der Körper riecht anders bei Krankheit, gleicht einer Schaumblase, benötigt Nährstoffe, um zu funktionieren, lebt noch, bringt ins Bewusstsein, was man am liebsten vergessen würde und zeigt zahlreiche ringförmige Einschnitte.
-Der Körper lechzt nach Sauerstoff, schreitet in seinem Alterungsprozess unaufhaltsam fort, muss langsam auf die neue Belastung eingestellt werden, nimmt Schmerzen als Warnsignal wahr, benötigt täglich ca. 6 mg Pantothensäure und stimmt alle Funktionen in ständiger Bewegung aufeinander ab.
-Der Körper will über vermehrtes Trinken den Flüssigkeitsverlust ausgleichen, durchläuft einige Veränderungen, weist eine schwarze Färbung auf, besitzt natürliche Selbstheilungskräfte, ist an Belastung gewöhnt und stellt ein einziges Ganzes dar.
-Der Körper braucht viele Spurenelemente für die inneren Prozesse, muss hart arbeiten, um sich selbst zu kühlen, fühlt sich nach der Einnahme sehr schnell gesättigt, denke ich, befindet sich in der Entwicklung und produziert verstärkt Schleim, der die Nase „verstopft“.
-Der Körper reagiert sofort, allerdings für uns unbemerkt, braucht ungefähr 2 bis 4 Gramm Kreatin pro Tag, spiegelt uns wider, wie wir uns als Ganzes organisieren, benötigt das Wasser zum Transport, produziert nahezu überhaupt kein Insulin und bildet danach selbst Abwehrstoffe gegen das Gift.
-Der Körper nimmt die männlichen Hormone nicht richtig auf, zersetzt das Gerinnsel, misst knapp über 6 cm lang, benötigt nach dem Sport eine Weile, um sich zu regenerieren, leitet infolgedessen einen Abwehrprozess ein und erscheint als bloße Summe verschiedener Gene.
-Der Körper verliert schließlich das Maß für die richtige Kochsalzmenge, braucht Zeit, den Stoff sacken zu lassen, antwortet mit angeborenen Bewegungsmustern, benötigt den Botenstoff, um im Gleichgewicht zu bleiben, profitiert vom Floating in vielerlei Hinsicht und kommt wieder ins „Lot“.
-Der Körper bildet selbst Alpha-Liponsäure in kleinen Mengen, braucht Vitamin D um Krebs aus dem Körper abzuwehren, bekommt den Impuls, sich zu entspannen, aktiviert andere Prozesse ohne den Einsatz von Sauerstoff, ist generell mehr oder weniger zylindrisch und arbeitet nur mit der eigenen Gewichtsbelastung.
+Der Körper besteht aus Milliarden von Elementen, reagiert mit der Mehrproduktion von Magensäure, produziert auf das im Impfstoff enthaltene Antigen Antikörper, setzt als Reaktion auf Angst oder Trauma Endorphine frei, bereitet sich auf Flucht oder Angriff vor und geht mit Zuckeralkoholen anders um als mit normalen Zuckern.
+Der Körper liebt Rituale, weiß, sich selbst zu heilen, erreicht Temperaturen wie bei einem Fieber, hält den Blutspiegel von Kalzium in einem engen Bereich, gewöhnt sich an das Nikotin in den Zigaretten und „verlangt“ förmlich danach.
+Der Körper wehrt sich mit „eigenen“ Mitteln gegen die Sonnenstrahlen, verbringt viel Zeit mit der Verdauung, speichert Unmengen, will über vermehrtes Trinken den Flüssigkeitsverlust ausgleichen, passt sich einer Notlage oder einem Haltungsproblem sehr schnell an und zerstört und rezykliert Zellen, die nicht benötigt werden.
+Der Körper erleidet auf Grund dessen einen Insulinmangel, ist langgestreckt mit großen Flossen, nutzt das vorhandene Vitamin K optimal, braucht die Pause, um Stress abzubauen, trägt den Traum und reduziert den Energieverbrauch und baut Eiweiß in den Muskeln ab.
+Der Körper versucht sofort, den epithelialen Schutzwall wieder herzustellen, räumt dem Geschehen Platz in einem Gewebehohlraum ein, nimmt Schmerzen als Warnsignal wahr, erhält also die Gelegenheit zu entgiften, schüttet stattdessen Adrenalin aus und produziert täglich etwa ein Gramm Abfallstoffe.
+Der Körper wirkt im Gegensatz zum Kopf-Hals-Bereich etwas massig, kommt noch einmal auf Hochtouren, erfährt nachts im Ruhezustand eine optimale Lagerung, wandelt sich vom Kind hin zu einem geschlechtsreifen Menschen, verbrennt beim Muskeltraining genauso Fett und versorgt sich eigenständig mit Hyaluronsäure.
+Der Körper unterscheidet sich vom Geisteswesen Christi, ist weit im Kontrapost nach hinten gelehnt, benötigt Zeit, um sich an die gestiegene Belastung anzupassen, weist eine eher unspektakuläre Färbung auf, soll mit Glaubersalz auf die eigentliche Diät vorbereitet werden und muss sich erst an Phasen ohne Essen gewöhnen.
+Der Körper bewegt sich nicht optimal, setzt seine eigenen Schmerzmittel, die Endorphine, frei, gibt Hydrochlorothiazid über den Urin ab, reagiert mit einer Entzündung, verwendet die Haut als Ausscheidungsorgan und fordert Tribut.
+Der Körper benötigt einen gewissen Zeitraum, um die Stresshormone abzubauen, nimmt einen Selbstbräuner meist ohne große Probleme hin, kühlt eher ab als warmzuwerden, fröstelt, der Hals kratzt, die Nase hört nicht auf zu triefen, darf sich nicht verdrehen und speichert Energie in Form von Fettpolstern.
+Der Körper soll ja nicht überbelastet werden, befindet sich somit im Alarmzustand, bleibt ja während der ganzen Bewegung hinter der Stange, erhält Impulse, die seine Selbstheilungskräfte aktivieren, wählt aus beiden Richtungen selber aus und verändert sich stark in der Schwangerschaft.
+Der Körper verliert bei Schnupfen Flüssigkeit, tut weh, läuft auf Sparflamme, braucht Zeit, sich umzustellen, benötigt viel Ruhe, um richtig nachwachsen zu können und scheint sich auch an die kleinen Klimawechsel anzupassen.
+Der Körper scheidet Cyclamat über die Nieren aus, hält normalerweise die Balance des Säure-Basen-Milieus, drückt aus, was in der Seele schmerzt, befindet sich im emotionalen Ausnahmezustand, folgt dem natürlichen Prinzip der Spiralform und bildet ein „biologisches System“.
+Der Körper produziert Vitamin D als Reaktion auf Sonnenlicht, baut Hyaluron ab, kennt kaum noch Erholungspausen, bekommt nicht genug Nahrung, kühlt unter Wasser viel schneller aus als an der Luft und genießt, der Geist bleibt leer, vorderhand.
+Der Körper reagiert auf Gefühle, agiert wie per Autopilot, regiert nicht mehr über, wehrt sich praktisch selbst gegen die Warzen, spürt unablässig und regeneriert sich langsam wieder.
+Der Körper erscheint farbig, benutzt Cholesterin als Antioxidant, scheint eher so alt wie derjenige der Tochter, stellt die Solltemperatur höher, verliert also nur Fett und kommt zwischen Einleitung und Fazit.
+Der Körper reagiert auf alle Lebensmittel, die Milchzucker enthalten, ist von Geburt an auf ein Ziel gerichtet, will das Gift möglichst schnell wieder draußen haben, produziert das ca. 600-fache an Eiweiß als normal, kämpft erfolgreich mit starken Blutungen und passt sich den eigenen Lebensgewohnheiten an.
+Der Körper soll sich an feste Schlaf-Wach-Zeiten gewöhnen, bildet daraufhin Symptome wie bei einem Wassermangel, nimmt Edelgase nicht auf, muss sich erst einmal auf die neue Ernährung einstellen, beschließt, mit der Regeneration zu beginnen und benutzt die Haut als eine Art Ventil, innere Vorgänge zu äußern.
+Der Körper versucht, den richtigen Calciumspiegel zu halten, aktiviert seine Abwehrkräfte, muss selbst an die Lüge glauben, weist ein charakteristisches erbsenförmiges Opisthosoma auf, zerteilt sich und will sich von Fremdstoffen befreien.
+Der Körper baut ab, das Äußere verändert sich, bekommt somit viel Wasser zugeführt, bleibt schmerzfrei, bekämpft sich sozusagen selbst, braucht Aktivität und verfügt über Abwehrmechanismen gegen Giftstoffe.
+Der Körper bildet nicht pausenlos neue Knochen, lagert überzählige Säure im Gewebe ein, wächst in den folgenden Wochen von oben nach unten, bietet die größte Angriffsfläche, geht in einen Alarmzustand und benötigt mal mehr, mal weniger Schilddrüsenhormone.
+Der Körper verliert seine natürliche Erholungsfähigkeit, besteht aus festem FX-Schaum, soll dadurch lernen, die Pollen zu tolerieren, nimmt die spürbare Vibration auf, vollzieht eine linear-horizontale Bewegung und sagt also noch nichts über die Geschlechtsidentität aus.
+Der Körper hemmt das Talent, reagiert folglich mit Warnsignalen, erkrankt leider, z.B. Herpes-Infektionen nach Sonnenbrand, meldet sich krank, stellt auf die anaerobe Energiegewinnung um und bewältigt die Auseinandersetzung mit dem Erreger ohne Symptome.
+Der Körper trennt sich nur ungern von Fettpolstern, räumt sich selber auf, besteht hauptsächlich aus Bindegewebe, produziert jeden Tag 1 bis 1,5 Liter Speichel, schüttet bei jeder Nahrungsaufnahme Botenstoffe aus und braucht Aminosäuren zum Muskelaufbau.
+Der Körper zeigt uns die rote Karte, antwortet mit angeborenen Bewegungsmustern, baut die Hyaluronsäure nach einigen Monaten wieder ab, altert schneller, fängt an Schwangerschaftshormone auszuschütten und zerfällt, nutzt sich ab, stirbt.
+Der Körper dient als Übertragungsmedium, ist bekleidet, nimmt eine Schonhaltung an, was die Sache noch verschlimmert, löst also eine Immunantwort aus, gibt einfach weniger Wärme an die Umgebung ab und neigt dazu, mehr Fett zu speichern.
+Der Körper folgt automatisch der Richtung, die der Geist vorgibt, muss laufen, der Körper muss schwitzen, verlangt daher absolut berechtigt nach Jod, funktioniert als ein großes Organ, benötigt Creatin für seine zahlreichen Funktionen und reagiert daraufhin häufig mit Juckreiz, Hautrötungen und Pusteln.
+Der Körper sollte nach der Behandlung warm gehalten werden, gleicht einer rautenförmigen Körperscheibe, produziert Cholesterin, um Entzündungen zu bekämpfen, misst seine Sättigung nicht nach Kalorien, braucht für die Fettverdauung Gallensäure und ist kein Selbstzweck, sondern ein Offenbarungswerkzeug.
+Der Körper reagiert häufig mit Bauchschmerzen oder Bauchkrämpfen, dient dem Menschen, kennt den Schlüssel für die Heilung, heilt sich selbst vom Magen-Darm-Virus, speichert Vitamin B12 mehrere Jahre und hilft sich mit Schnupfen und Husten.
+Der Körper erhält einen zusätzlichen Hitzereiz, nutzt dafür unterschiedliche „Speicherorte“, verliert durchschnittlich zwei Liter Wasser am Tag, zittert, „die Zähne klappern“, erwacht somit aus dem Ruhezustand und nimmt Coenzym Q10 auch über die Nahrung auf.
+Der Körper produziert von sich aus sogenannte Prostaglandine, ist immer als Ganzes beteiligt, hält sich eben nicht unbedingt ans Lehrbuch, setzt die Wärme um, lagert vermehrt Flüssigkeit im Gewebe ein und bildet Antikörper gegen die Erreger.
+Der Körper spaltet die Laktose problemlos, versucht die Schäden zu reparieren, gelangt somit in einen energiesparenden Ruhemodus, erneuert ständig jedes Atom in jeder Zelle, verfügt über ein integriertes Endocannabinoid-System und baut beim Radfahren wichtige Muskeln auf.
+Der Körper schützt sich zusätzlich mit einer reflexartigen Abwehrspannung, bekommt nicht ausreichend Schlaf, beschreibt einen leichten Bogen nach rechts, schwebt nahezu schwerelos im Nass, gleicht das in der Regel problemlos aus und wirkt groß und rechteckig, mit einer vollen Brust.
 
 --- 7 Sätze ---
 
-Der Körper sagt: Ich muss dringend auf Toilette, wiegt etwa 20 Gramm, ist mit kurzen gelben Härchen bewachsen, stellt die Endocannabinoide nach Bedarf her, benötigt Jod zum Aufbau von Schilddrüsenhormonen, erscheint deshalb als schwarzes Loch und scheidet vermehrt Eisen über Urin und Stuhl aus.
-Der Körper muss sich zunächst auf die neue Situation ohne Magen umstellen, ist weich, beim Gehen, reagiert also mit einer überschießenden Immunreaktion, versucht seine Körperwärme nach außen abzugeben, bildet mit dem Geist eben eine Einheit, braucht Zeit, sich zu erholen und darf ruhig ein wenig nach vorne geneigt werden.
-Der Körper ist kein sicherer Ort, benötigt Glukose zur Energiegewinnung, entwickelt schnell eine Toleranz gegenüber Koffein, verändert sich fast täglich, befindet sich in Seitenlage (rechts oder links), braucht während der Krankheit Ruhe und stellt sich auf Flucht oder Angriff optimal ein.
-Der Körper gibt drei- bis viermal mehr Wärme an das Wasser ab als Luft, reagiert mit einer Abwehrreaktion gegen die eigenen Nervenzellen, muss sich akklimatisieren können, ist meist aus Glas oder Kristall, entwickelt dadurch eine Gewöhnung an den auslösenden Fremdstoff, passt sich dem erhöhten Sauerstoffbedarf unter Belastung an und produziert selber sehr viel Zucker.
-Der Körper braucht erst Zeit, um in Schwung zu kommen, verfügt über verschiedene Sinnesorgane, reagiert mit Widerstand, verlangt nach Energie, ersetzt das gespendete Plasma innerhalb von 48 Stunden, steht immer mehr im Zentrum unserer Aufmerksamkeit und stellt sich auf regelmäßige Kaffeezufuhr ein.
-Der Körper braucht etwas Zeit, um den Wirkstoff vollständig aufzunehmen, arbeitet praktisch gegen sich selbst, stirbt, die Seele zieht weiter, bewegt sich einmal in Richtung der x-Achse vorwärts, nimmt Coenzym Q10 auch über die Nahrung auf, baut mehr Fettpolster auf und reagiert anders, was den Spaß beim Sex noch erhöht.
-Der Körper bleibt in der kompletten Bewegungsausführung gestreckt, ist von einer äußeren Umhüllung umgeben, der Cuticula, befindet sich somit im Alarmzustand, bildet in jeder Bewegung eine gerade Linie, trägt den Traum, steht unter Stress und optimiert seine Funktionen, gelangt zu neuer Kraft.
-Der Körper ist oval geformt, muss mit den Veränderungen zurechtkommen, verfügt über ein Potenzial zur Selbstregulation, schaltet auf Ernährung aus seinen Depots um, nimmt Calcium über die Nahrung auf, weist entsprechend die bedeutsamsten Unterschiede auf und braucht Tageslicht.
-Der Körper transportiert Nikotin sehr schnell zum Gehirn, reinigt sich ständig selber, schüttet vermehrt das Glückshormon Serotonin aus, braucht Zeit, um die Hormone zu verändern, verringert den Stoffwechsel, je nach Veranlagung um bis zu 15 %, gerät aus dem Takt und wirkt straffer und konditionierter.
-Der Körper trägt sich gewissermaßen selbst, transportiert die toten Fettzellen im Laufe der Zeit ab, ist überwiegend mit Fell bedeckt, enthält etwa 100 g Schwefel, reagiert extrem heftig auf den Stich von Mücken, benötigt Insulin, um Glukose zu verstoffwechseln und weist Merkmale auf, die eher einem Säugetier ähneln.
-Der Körper ist mit feinen roten Härchen bedeckt, sammelt täglich größere Mengen an Giftstoffen, reagiert mit einem charakteristischen Schmerz, stellt auf anaerobe Energiegewinnung (ohne Sauerstoff) um, braucht bis zu zwei Wochen, um sich an die neue Zeit zu gewöhnen, signalisiert eine Veränderung und funktioniert auf dieselbe Weise.
-Der Körper entsteht, indem man ein Tetraeder an der Grundfläche spiegelt, stößt die zerstörten Krebszellen innerhalb weniger Tage ab, ist im Lauf der Jahrhunderte recht gut erforscht, braucht Zeit, um interne Ressourcen zu mobilisieren, beginnt Stresshormone auszuschütten, bereitet sich auf den gesunden Schlaf vor und lernt auf Verspannungen mit Entspannung zu reagieren.
-Der Körper stellt sich auf die Schwangerschaft um, erfordert auch unsere Aufmerksamkeit, scheidet fetthaltige Lebensmittel aus, ohne die Fette aufzunehmen, ist immer bestrebt, einen Konzentrationsausgleich herzustellen, merkt sich wahrhaftig alles, überbringt die Botschaft und versucht, die Partikel einzukapseln oder auszustoßen.
-Der Körper unterliegt einem stetigen Wandel, oft hormonell bedingt, kommt dadurch in seine natürliche Aufrichtung, regt dadurch seine Durchblutung an, nimmt die Herausforderungen besser an, reguliert seine Temperatur über Schwitzen, arbeitet die gesamte Zeit auf Hochtouren und besteht aus Salzen und Wasser.
-Der Körper ist recht kräftig entwickelt, steht auf hohen schlanken Beinen, versucht sich zu wehren, deckt die entzündete Stelle („Plaque“) mit einer Schutzkappe ab, existiert nicht ohne Skelett, neigt dazu, mehr Fett zu speichern und geht in Flammen auf.
-Der Körper reguliert seine Temperatur selbstständig, ist ein kleines Miniaturuniversum, nimmt schnell eine Anpassung vor, soll, ähnlich einer perfekten Maschine, gefälligst funktionieren, muss lernen, die Infektion selbst zu bekämpfen, verändert sich, man fühlt sich wohler und äußert sich.
-Der Körper liegt auf der Seite, benötigt Vitamin D für den Einbau von Kalzium in die Knochen, ist in die Länge gewachsen, betrachtet die Autosuggestion als die Wahrheit, darf sich erholen, während der Geist sich vergisst, passt sich dem sogar an und dient uns als ein Spiegel unserer persönlichen Geschichte.
-Der Körper sollte für die Auferstehung von den Toten „aufbewahrt“ werden, wandelt nur die benötigten Mengen in das wirksame Vitamin A um, bekommt die Chance, sich von alleine wieder zu regenerieren, ist anders, reagiert anders auf die Behandlung, braucht Zeit, um vom Schlafmodus in den Arbeitsmodus zu wechseln, produziert mehr weibliche Geschlechtshormone, Östrogene und erkennt in harmlosen Eiweißen eine Bedrohung.
-Der Körper befindet sich in einer Stresssituation, muss sich an die Bewegungen gewöhnen, geht in den Ruhezustand, stellt die Fettsäure nicht selbst her, besteht aus emotionalen Strukturen, steht unter einer angenehmen Spannung und erzählt die Geschichte unseres Lebens.
-Der Körper fordert Tribut, produziert täglich zwischen 25–30 mg Progesteron, benötigt täglich eine gewisse Menge an Glucose, bleibt weitgehend verschont, muss sich richtig anstrengen, verlangt nach Pausen und bewegt sich auf verschiedenen Höhen.
-Der Körper signalisiert: „Stopp, ich brauche Erholung!“, erscheint mäßig langgestreckt, krümmt sich automatisch, um das schwere Gewicht auszugleichen, schreibt das Leben, könnte man hinzufügen, befindet sich dadurch in einem permanenten Alarmzustand, attackiert sozusagen die eigenen Gelenke und beginnt unmittelbar danach, Testosteron zu bilden.
+Der Körper schüttet zunehmend das Hormon Testosteron aus, gilt als das Gröbste, der Geist als das Feinste, produziert Melanin mit Hilfe der Aminosäure Tyrosin, muss mehr Arbeit leisten, braucht also rund um die Uhr eine kleine Menge Insulin im Blut, gewöhnt sich allmählich an das neue Hormongleichgewicht und zeigt die Hülle der Erfahrungen.
+Der Körper begleitet uns nur für das jeweilige Leben, reagiert oftmals mit üblichen Reaktionen auf das Bakterium, benötigt das Vitamin zur Synthese von Myelin, geht ja nicht umsonst in einen Notfallmodus, schüttet Zytokine aus, Entzündungsbotenstoffe, besitzt eigenes Bewusstsein, eine eigene Intelligenz und drückt das aus, was die Seele empfindet.
+Der Körper ersetzt das Fruchtwasser vollständig alle drei Stunden, zielt besonders auf die Leber ab, löst die vernetzte Hyaluronsäure nach 8-12 Monaten auf, gerät in einen Ruhezustand, warnt auf seine Weise, erscheint abgeschlafft und lernt, dass man in der Situation keine Angst haben braucht.
+Der Körper bleibt gerade, vom Fuß bis zum Kopf in einer Linie, braucht Energie, um sich zu bewegen, fehlt Magnesium, wenn man sauer isst, erfordert die Zuteilung zusätzlicher saurer Säfte, stellt beim Fasten seinen Stoffwechsel um, besteht größtenteils aus Wasser und verfügt über die Fähigkeit zur Selbstheilung.
+Der Körper ist muskulös gestaltet, der Schwanz ist erhoben, benötigt Insulin, um Glukose zu verstoffwechseln, greift besonders schnell die Muskelmasse an, nutzt das Wohlfühlhormon, um die Entzündung einzudämmen, sollte von eingelagerten Stoffen befreit werden, will die Eindringlinge loswerden und läuft sozusagen auf Sparflamme.
+Der Körper meldet mit dem Warnsignal Kopfschmerz „irgendetwas stimmt nicht“, legt Fettzellen an, versucht den Calciumspiegel im Blut immer konstant zu halten, wandelt das nicht durchblutete Gewebe in Narbengewebe um, senkt die Testosteronproduktion daher stetig, lebt auf, ein neues Lebensgefühl stellt sich ein und bezieht sich direkt auf uns Menschen.
+Der Körper ist nach der OP in Form gebracht, bekommt den Impuls im betroffenen Bereich zu arbeiten, beginnt erst nach IT-Produkten sinnvoll zu erfordern, schmerzt überall, entspannt sich vollkommen, entwickelt sich bei jedem Mädchen mit ihrem eigenen Tempo und verfügt über unterschiedliche Muskulatur.
+Der Körper schimmert violettblau, scheint nach Ruhe zu schreien, ermüdet dadurch langsamer, deutet ein Absinken der Körpertemperatur als Stresszeichen, speichert Fett als Energiereserve für schlechte Zeiten, nutzt Energie effizienter und metabolisiert die zerstörten Fettzellen.
+Der Körper produziert täglich ca. 2 Liter Lymphflüssigkeit, baut die verflüssigten Zellen selbstständig ab, reagiert abnorm auf Belastung, besteht über die Hälfte aus Wasser, brennt auch Monate nach einer Hungerperiode auf Sparflamme, treibt uns in Hamsterräder, aus denen wir keinen Ausstieg sehen und zeigt immer wiederkehrende Symptome.
+Der Körper muss sich erst an den stärkeren Lichteinfluss gewöhnen, ist schon ein Rätsel, enthält ca. 2-3 g Zink, verlangt nach Ersatzbefriedigung, kennt die Situation, entwickelt dadurch eine Gewöhnung an den auslösenden Fremdstoff und verschmälert sich zum Kopf und zum Schwanz hin.
+Der Körper besitzt ca. vier Millionen Schweißdrüsen, beginnt mit der Entwicklung von knöchernen Zacken, produziert das Vitamin normalerweise selbst, befindet sich in einer überstreckten Haltung, greift vorerst auf eigene Reserven zurück, gehört der Frau allein und reagiert von allein positiv auf den Sport.
+Der Körper benötigt pro Stunde Training etwa 60 Gramm Kohlenhydrate, lernt somit, nicht mehr unnötig Histamin auszuschütten, folgt den Gewohnheiten, sagt: Achtung, gewöhnt sich durchaus an die tägliche Dosis Koffein, versucht stets, in einem stabilen Zustand zu bleiben und braucht Mikronährstoffe für ein funktionierendes Nervensystem.
+Der Körper will immer Ausgleich, verbraucht beim Alkoholabbau viel Sauerstoff, bietet die notwendige Wärme, enthält etwa 140 g Schwefel, besteht zu 45-65 Prozent aus Wasser, läuft zu Höchstformen auf und baut für häufig Gegessenes eine entsprechende Toleranz auf.
+Der Körper stellt sich auf das instinktive „fight or flight“ ein, schüttet das Schlafhormon Melatonin mit der Dunkelheit aus, treibt wie ein Korken auf der Wasseroberfläche, muss auch einen starken Einfluss auf die Vorstellungskraft haben, greift also gezwungenermaßen auf Fette als Energiereserve zurück, reagiert mit Kopfschmerzen oder Verdauungsproblemen und schwitzt, um sich abzukühlen.
+Der Körper befindet sich bei Liebeskummer im Stressmodus, produziert Antikörper, passt sich den Bedingungen also an, bildet vermehrt Hyaluronsäure, bleibt somit immer das Ding an sich, erhält das Signal „Alarmstufe Rot“ und besteht aus emotionalen Strukturen.
+Der Körper befreit sich auf natürlichem Wege vom Überschuss, versucht, seinen ursprünglichen Bewegungszustand beizubehalten, baut Knorpel ab, meist an Knien, Hüfte, Händen oder Zehen, nimmt das Milchprotein nur sehr langsam auf, erholt sich nachts, während wir schlafen, wehrt sich gegen das eingesetzte Fremdorgan und erinnert an den eines Windhundes.
+Der Körper reagiert zum Beispiel mit Schwitzen, Herzklopfen oder Zittern, darf nicht rotieren, verändert ein Arzneimittel, trägt kleine Kammschuppen, funktioniert besser als der Körper eines Erwachsenen, erfährt eine Bremswirkung und findet nur Beachtung im Sportunterricht.
+Der Körper muss schließlich bei kalten Temperaturen warm gehalten werden, bleibt gesund, solange die Ströme intakt bleiben, bekommt Stress, ist nicht in der Lage, das Gift zu eliminieren, entgiftet hauptsächlich über den Darm, erzählt viel über das Erlebte und schüttet viel Insulin aus, um den Zucker abzubauen.
+Der Körper verlangt nach Nikotin, wendet seine Abwehr gegen sich selbst, weist Merkmale auf, die eher einem Säugetier ähneln, leidet unter oxidativen Schäden, besitzt die Fähigkeit, das wichtige Vitamin D zu speichern, ragt beim Kriechen kaum hervor und arbeitet, um das Alkoholgift wieder zu verarbeiten.
+Der Körper braucht erheblich länger, um sich vom Nervenkitzel zu beruhigen, bekommt alle wichtigen Nährstoffe, nutzt Fett nämlich auf zwei Arten, muss selber Abwehrkörper gegen die Viren bilden, geht in den Ruhezustand, ist aus seinem energetischen Gleichgewicht geraten und steht kurz vor dem Kollaps.
+Der Körper besteht aus faszialen Ketten, bedient sich einer Befehlshierarchie im Körper, besitzt dazu über vier Millionen Schweißdrüsen, verrät gewissermaßen, wie wir uns wirklich fühlen, bewegt sich schließlich mit konstanter Geschwindigkeit fort, benötigt für sämtliche Prozesse Energie und setzt Endorphine unter anderem bei Ausdauersport frei.
+Der Körper lernt, sich zu verbiegen, kühlt gleichmäßig aus, braucht also keine große Kraft, um sich zu dehnen, verändert sich, wenn eine Überdosis Cortisol ins Blut gelangt, nimmt Titan ähnlich wie körpereigenes Gewebe an, ist eine Abnormalität, wie ein dritter Arm und reagiert unterschiedlich auf die verschiedenen Getränke.
+Der Körper ist sehr gut geschützt, braucht Mangan in kleinen Mengen, beeinflusst unsere Gefühle, die Gefühle beeinflussen den Körper, beginnt von sich aus mit der Selbstregulation, verfügt über cirka 360 klassische Akupunkturpunkte, verändert sich im Lauf der Zeit und verarbeitet einen Abbruch sehr schnell.
+Der Körper schüttet beim Sport „Glückshormone“, sogenannte Endorphine, aus, versucht, die Abnutzung zu kompensieren, lässt sich schlecht zivilisieren, baut die Substanzen sehr schnell ab, produziert Ketone als Nebenprodukt im Fettstoffwechsel, stellt alle Enzyme selbst her und gewinnt an Muskelkraft und die Knochendichte nimmt zu.
+Der Körper braucht überschwellige Reize, um Aufbauprozesse zu fördern, hilft der Seele zu heilen, kommt bei plötzlichen Wetterwechseln oftmals nicht mit, ist dunkelbraun mit grau-braunen Schuppen, muss immer abgesucht werden, befindet sich im permanenten Stress und bleibt nicht auf gleicher Höhe, sondern bewegt sich auf und ab.
+Der Körper quittiert die schnelle Bergfahrt mit Kopfschmerzen, benötigt dringend eine Regenerationsphase, löst sich innerlich selbst auf, regelt den Hormonspiegel, erkennt das gespendete Transplantat als nicht körpereigen, speichert durchschnittlich in etwa zwei Gramm und weicht bei gesunden Menschen von seinem Rhythmus nicht ab.
+Der Körper reagiert positiv auf Singen, weitet dadurch seine Blutgefäße, verfügt nämlich über einen ausgeklügelten Schutzmechanismus, sinkt leicht in das Material ein, nimmt die Wirkstoffe über den Verdauungstrakt auf, signalisiert uns, bitte kümmere dich erst mal um die Kälte und verliert rote Blutkörperchen und Eisen, was zu Anämie führt.
+Der Körper ist völlig normal, bekommt rundere Formen, die Taille bildet sich aus etc, realisiert eine Bedrohung, braucht die Regeneration, stellt eine Arena für gesellschaftliche Kämpfe dar, drosselt seinen Kalorienverbrauch, um Energie zu sparen und beginnt zu überwärmen und schwitzt, um abzukühlen.
+Der Körper baut sich das Vitamin D aus Cholesterin unter der Hautoberfläche, schützt mit dem Fett wichtige Organe vor Toxinen, besteht aus unzähligen, miteinander verbundenen Strukturen, setzt die Immunabwehr in Gang, die Bakterien abtötet, reagiert mit verschiedenen Abwehrmaßnahmen, fungiert somit zugleich als schützende Uniform und steht dauerhaft unter Nervosität und Unruhe.
+Der Körper zeigt kaum Anzeichen von Verwesung, lässt sich mit einer Art Gewichtsangabe umschreiben, stößt schneller an seine Grenzen, legt kein Reservoir an, muss daher unversehrt bleiben, akzeptiert die künstliche Wurzel als echte und regeneriert sich schneller nach einer Leistung.
+Der Körper macht eine wellenförmige Bewegung, ähnlich einem Delphin, benötigt zwei bis drei Liter Flüssigkeit am Tag, verdaut gut gekaute Mahlzeiten besser, verschließt den Defekt, wir sagen: Die Wunde heilt, bildet mehr Muskeln, kommt in seine mentale Mitte zurück und verdreht sich auch in sich selbst.
 
 --- 8 Sätze ---
 
-Der Körper ist aus Styrodur, das mit Schleiernessel kaschiert ist, setzt als Reaktion auf Angst oder Trauma Endorphine frei, droht sich zu vergiften, benötigt Salz für seinen Stoffwechsel, verändert sich, die Lebensumstände auch, entscheidet, wann die Pubertät beginnt, gilt als Kerker, aus dem die Seele befreit werden muß und besteht zu 70% aus Wasser.
-Der Körper ist über drei Punkte permanent geerdet, scheidet das Thymianöl über die Atemwege aus, versucht es auch mit der Wadenmuskulatur, vergiftet sich geradezu selber, benötigt den richtigen Treibstoff, um zu funktionieren, verbrennt demnach nur noch sehr wenig Energie, leuchtet in einem kräftigen Blau und bewegt sich schließlich mit konstanter Geschwindigkeit fort.
-Der Körper ist schiefergrau, die Schwanzspitzen weiß, entwickelt dadurch Symptome einer akuten Übersäuerung, gibt uns die Signale für die geeigneten Schritte, braucht ziemlich viel Energie für die Verdauung der Speisen, besteht aus 41-56 Rumpfringen, heizt sich auf, tritt auf die Bremse und versucht den übermäßigen Zucker über die Nieren auszuscheiden.
-Der Körper wächst an Größe, sollte jederzeit hydratisiert werden, nimmt Eisen lediglich in geringen Mengen über die Nahrung auf, sendet keine oder nicht die richtigen Signale an den Kopf, schüttet Insulin aus, sobald man Süßes isst, regelt die aktuelle Schmerzempfindlichkeit, arbeitet praktisch gegen sich selbst und transportiert die Bruchstücke.
-Der Körper zeigt bei Müdigkeit oft den Beginn eines Infektes an, geht in eine menschliche Hand über, soll gestärkt, nicht geschwächt werden, bildet täglich bis zu sechs Liter Speichel, nutzt die Tiefenentspannung, um sich selbst zu regulieren, braucht außerdem Energie für den Abbau von Eiweißen, benötigt beide Brennstoffe und lässt sich in vier Bereiche gliedern.
-Der Körper muss in der Folge mehr Insulin produzieren, verliert zu große Mengen an Säure, hält also eine Art Mini-Winterschlaf, schüttet Botenstoffe aus, die den Darm attackieren, benötigt keine Supplementation, reagiert auf eine Belastung, fällt zur rechten Seite hin und kommt somit wieder in die Balance.
-Der Körper benötigt Jod für die Bildung der Schilddrüsenhormone, reagiert überempfindlich auf die Gluten, passt sich an den veränderten Luftdruck an, möchte lediglich etwas aufzeigen, gibt ein warnendes Beispiel, spricht, die Worte folgen, will Nikotin haben und beginnt bei egal welchem Zipfel und in irgendeiner Minute am Tag.
-Der Körper dient nur als Signalverstärker, reagiert auf Emotionen, versorgt die Haarwurzel nicht mehr mit Nährstoffen, kämpft erfolgreich mit starken Blutungen, gilt als Sprachrohr der Seele, bereitet sich allmählich auf die Entbindung vor, deckt seinen Vitamin D Bedarf zu 80 % selbst ab und besteht aus 105 Segmenten.
-Der Körper belohnt uns dafür, dass wir etwas Arterhaltendes tun, zehrt von seinen Reserven, muss Kalzium aufnehmen, rächt sich, benötigt Kupfer, um Pigmente bilden zu können, befindet sich also weiterhin im freien Fall, lernt, spontan zu reagieren und versucht, andere Energiequellen zu nutzen.
-Der Körper besitzt ein körpereigenes schmerzhemmendes System, zehrt mehr oder weniger vollkommen aus, braucht ca. 1,2 bis 2 mg am Tag, benötigt Ruhephasen, um sich regenerieren zu können, enthält etwa 140 Gramm Cholesterin, versinkt wie in einer angenehmen Umarmung, reagiert auf bestimmte Stoffe empfindlich (allergisch) und strebt daher immer einen kleinen Puffer an.
-Der Körper soll seine Batterien im Schlaf wieder aufladen, besteht aus einer großen Anzahl von Bändern, Venen, sendet Signale über den Zustand der Organe, baut zunehmend ab, auch wenn das Gewicht steigen mag, nähert sich seinem natürlichen Grundspannungstonus, reagiert entsprechend, bildet eine Linie und passt sich in kurzer Zeit den neuen Anforderungen an.
-Der Körper durchläuft die verschiedenen Schlafphasen mehrmals in der Nacht, verfügt nur noch über langsame, rote Muskeln, weiß mehr als wir in der Sackgasse denken können, dehydriert, weil beim Schwitzen Wasser verloren geht, soll sich nicht beugen, sondern nur senken, verknöchert sich, verträgt keinen Milchzucker und muss sich von dem Eingriff erholen.
-Der Körper funktioniert als zusammenhängendes Ganzes, ist restauriert, muss sich erst an die erhöhte Ballaststoffzufuhr gewöhnen, passt sich erstaunlich schnell an neue Dinge an, bekommt nachts zum Beispiel nicht mehr die nötige Abkühlung, versucht verzweifelt, genug Mineralstoffe zu sich zu nehmen, erhält Impulse, die seine Selbstheilungskräfte aktivieren und mobilisiert eigene Reserven und die Fettverbrennung setzt ein.
-Der Körper versucht, sich vor einem weiteren Wärmeverlust zu schützen, zehrt von sich selbst, das Körpergewicht sinkt, scheidet eigentlich rund um die Uhr die sogenannten Gifte aus, gewöhnt sich an das Nikotin in den Zigaretten, schüttet verstärkt das Hormon Melatonin aus, ist an ein Kreuz aus Holz oder Metall befestigt, stellt fest, dass in der Umwelt eine Änderung stattfindet und legt Sondermülldeponien an.
-Der Körper ist ausgelaugt, muss sich zunächst an die fremde Apparatur gewöhnen, verfügt über eine sogenannte Tiefenwahrnehmung (Propriozeption), fühlt, was das Auge sieht, ruht in einer flachen Mulde, verliert an normalen Tagen über zwei Liter Wasser, weist eine helle, silbrige Grundfärbung auf und braucht die richtigen Nährstoffe, um zu funktionieren.
-Der Körper folgt immer bestimmten Prinzipien, sorgt zuerst für das Baby, besteht beispielsweise aus Metall, Holz, Stein oder Kunststoff, scheidet zu viel Kalium aus, versucht, den potentiell schädlichen Reiz zu bekämpfen, wechselt in den sogenannten Hungerstoffwechsel, benötigt beim Fasten nichts weiter als die verordneten Getränke und ist leicht, getragen von malziger, biskuit-artiger Süße.
-Der Körper reagiert mit Angst, Panik, produziert selber sehr viel Zucker, erholt sich, befindet sich viel mehr in ständiger Bewegung, stellt das Blutfett nämlich auch selbst her, profitiert dadurch am meisten, speichert nur geringe Mengen und darf ruhig ein wenig nach vorne geneigt werden.
+Der Körper ist kräftig mit geradem Rücken, stellt selbst Cholesterin her, lehnt ab, Psychologe zu werden, befindet sich im Ausnahmezustand, versucht unterdessen, die schützenden Gelenkanteile zu reparieren, sammelt Fettzellen als Energielager für Notsituationen, überbringt die Botschaft und nimmt das Cannabidiol direkt über die Schleimhäute auf.
+Der Körper strebt immer den natürlichen Idealzustand an, stellt sich auf das Ungeborene ein, resorbiert nur etwa 30,5 %, trainiert also tatsächlich 24 Stunden, liegt praktisch in einer Kuhle, dient als Maßstab, um uns im Raum zu orientieren, produziert im Winter weniger Serotonin und pumpt Blut und Lymphe in die betroffenen Hautregionen.
+Der Körper lügt nie, besteht zu großen Teilen aus Proteinen, auch „Eiweißen“ genannt, beginnt, die Trichinen in den Muskelzellen einzukapseln, erneuert ständig Zellen auf allen Ebenen, spricht schneller als der Mund, scheint in einer bestimmten Position zu erstarren, holt sich den notwendigen Schlaf und zerstört sich letztlich selbst.
+Der Körper lagert nicht zusätzlich Wasser ein, braucht eine gewisse Zeit für den Selbstheilungsprozess, sagt auf seine Art: Mir fehlt etwas, geht zurück zur Erde, der Geist zu Gott, sollte nicht zu viele säurehaltige Nahrungsmittel aufnehmen, schreibt das Leben, könnte man hinzufügen, „entgiftet“ von alleine und bekommt die Möglichkeit, seine Heilungskräfte zu mobilisieren.
+Der Körper fängt an, sich zu wehren, nimmt dadurch sehr viele Ballaststoffe auf, steckt in der nicht verarbeiteten, bedrohlichen Erfahrung fest, produziert täglich ca. 30 Meter Haar, verändert sich beim Älterwerden immer wieder, reagiert sofort bei zu hohem Blutzucker, stabilisiert sich und misst bis zu 25 cm.
+Der Körper schüttet gleichzeitig Endorphine aus, braucht tägliche Pflege bereits in jungen Jahren, heilt sich sozusagen selbst, rückt in den Fokus, auch performative Formate werden einbezogen, erhält Gleichgewicht durch Callanetics, Aerobic, Yoga, Stretching, baut die kranke Vene anschließend langsam ab, macht die extra Kalorien in Fett und weist Schusswunden und Folterspuren auf.
+Der Körper verfügt über enorme Kräfte zur Selbstregulation, speichert Informationen jeglicher Art ab, leidet nicht nur optisch, sondern auch innerlich darunter, bekommt unter ihrem Einfluss etwas zu wenig Sauerstoff, zehrt von seinen begrenzten Reserven, stellt mit zunehmendem Alter weniger Melatonin her, verstoffwechselt Buchweizen basisch und kontrolliert den Soll-Zustand mehrmals täglich.
+Der Körper spricht Bände, speichert besonders in den Abwehrzellen (Mastzellen) Histamin, besteht etwa zu 200 bis 300 Gramm aus Salz, beginnt allmählich auszutrocknen, setzt sich auf jede erdenkliche Weise gegen den Tod zur Wehr, heizt sich auf, übersäuert langfristig und bekommt Zeit und Möglichkeit, zur „Selbstreparatur“ überzugehen.
+Der Körper sollte nachts im Schlaf neue Kraft schöpfen, schützt sich damit vor Überhitzung, braucht das Spurenelement Eisen zur Sauerstoffversorgung, rüstet sich zum Kampf, befindet sich stromabwärts, erhält sich gesund, macht Melatonin und scheidet das Thymianöl über die Atemwege aus.
+Der Körper muss weiterhin gegen die Erreger ankämpfen, macht seinen Schaft buchstäblich fest, besteht aus 60 Billionen Zellen, heilt schneller als der Geist, verlangt nach Alkohol, schaltet um auf Programm zwei: Ernährung von innen, weist kein farbiges Streifen- oder Fleckenmuster auf und bekämpft Bakterien, pathogene Mikroorganismen allein.
+Der Körper zehrt von sich selbst, das Körpergewicht sinkt, bekommt die Gelegenheit, sich selbst zu regenerieren, ist der Botschafter meiner Seele, verliert ständig etwas Eisen, benötigt 1,5 bis 2 Liter pro Tag, lernt zu entspannen, verändert sich mit dem Altern und produziert deutlich weniger Stresshormone im Urlaub.
+Der Körper handelt ohne jeglichen bewussten Aufwand, braucht viel Feuchtigkeit, behält dadurch seine Beweglichkeit, liegt in einem gekühlten Glaskasten, stellt den Stoffwechsel von Zucker- auf Fettverbrennung um, erscheint plastischer, reguliert das Säure-Basen-Gleichgewicht selbstständig und spielt verrückt und die Gefühle fahren Achterbahn.
+Der Körper gehorcht dem Insulin nicht mehr, verfügt über ein „eigenes Abwehrsystem“, funktioniert meistens auf Autopilot, schlägt mit 40% zu Buche, gewöhnt sich an wärmere Temperaturen, speichert in Stresssituationen Bauchfett, leitet infolgedessen einen Abwehrprozess ein und verwendet Glykogen zur Energiegewinnung zwischen den Mahlzeiten.
+Der Körper symbolisiert ja auch die Erde, schaltet beim Heilfasten auf eine Ernährung von innen um, baut aufgebauten Stress dadurch ab, versucht die Störung selbst zu regulieren, schreit nach Magnesium, trifft die Entscheidung, bildet auch Hormone und verfügt über verschiedene Bausteine.
+Der Körper braucht Ruhephasen, um die Fettgewebe erfolgreich abzubauen, liegt in gestreckter Rückenlage, schaltet irgendwann einfach ab, besteht zu knapp drei Viertel aus Wasser, muss in Bewegung bleiben, verliert seine Fähigkeit, mehreren Infektionen zu widerstehen, kommt danach mit weniger Kalorien pro Tag zurecht und signalisiert einen dringenden Behandlungsbedarf.
+Der Körper ist meistens mit der Hormonumstellung überfordert, richtet sich für die Schwangerschaft ein, enthält etwa 10 Kilo Eiweiß, folgt den Gedanken, erscheint leicht als derjenige, der die Probleme hervor bringt, funktioniert fast genauso wie ein Ofen, wandelt Serotonin zur Melatonin-Produktion um und vergisst schnell.
+Der Körper schaltet ab, man erholt sich, bildet etwa dreißig Billionen Zellen, braucht Hilfe, versucht daher, den Reiz loszuwerden, spielt seit jeher in zahlreichen Religionen eine zentrale Rolle, spricht, wenn der Geist schweigt, benötigt genug Flüssigkeit, um den Schleim abzustoßen und führt eine Prothese ein, die an der Hydraulik arbeitet.
+Der Körper ist relativ flach, ebenso der Kopf, glüht, die Lebensgeister kehren zurück, gewöhnt sich an die Schmerzmittel, verfügt über ein enormes Selbstheilungspotenzial, sollte die optimale Wassermenge erhalten, gibt ein Wecksignal, damit die Atmung wieder einsetzt, reagiert sofort mit Veränderung und bekommt ausreichend Mineralstoffe.
+Der Körper findet in seinem Blut eine Menge toter Blutzellen, benötigt das Vitamin für einen stabilen Knochenbau, erscheint in einem kompakten Rechteckformat, besteht aus einem kleinen, weißen Oval, befindet sich in einer geraden Linie, beginnt sich zu aktivieren, nimmt eine asymmetrische Haltung ein und heilt, das Trauma bleibt.
+Der Körper versucht, Energie zu sparen, wehrt sich selbstständig gegen die Erreger, ist auf Aktivität, eine Flucht- oder Kampfsituation vorbereitet, räumt die schädlichen Eindringlinge im Prinzip selbst auf, reagiert auf Stress mit biochemischen Vorgängen, spaltet Protein nach der Aufnahme in Aminosäuren auf, beschränkt also die Versorgung auf die wesentlichen Organe und erkaltet pro Stunde um etwa ein Grad.
 
 --- 9 Sätze ---
 
-Der Körper zieht sich immer mehr zusammen, stellt sich um auf die entspannende Bauchatmung, muss sich leicht auf Unterschiede bis zu 12 Grad umstellen, ist sehr leidensfähig, erklärt Böger, schüttet Insulin aus, welches den Blutzuckerspiegel senkt, umgibt das Brustimplantat mit einer Gewebekapsel, bekämpft sich sozusagen selbst und wehrt sich und löst eine Entzündung aus.
-Der Körper arbeitet, um das Alkoholgift wieder zu verarbeiten, verfügt über selbstheilende Kräfte, ist schwer zu kontrollieren, setzt sich aus Millionen von verschiedenen Zellen zusammen, versucht Schlacken auszuscheiden, besteht aus vielen Unreinheiten, baut im Laufe der Zeit die injizierte Hyaluronsäure wieder ab, soll gesund gehalten werden und schüttet vermehrt eigene Endorphine aus.
-Der Körper verlangt insbesondere bei Stresssituationen nach Nährstoffen, erinnert an den eines Windhundes, will also das Implantat, braucht Energie, weint rote Tränen, ist kulturell determiniert, je nachdem, wo du aufgewachsen bist, entgleist in einen Schockzustand, reagiert auf die veränderte Hormonzufuhr auf vielfältige Weise und produziert Hormone.
-Der Körper bildet von den Fersen bis zu den Schultern eine gerade Linie, scheidet mehr Flüssigkeit aus, steht also nicht unter Belastung, ist eine Metapher unseres unbewussten Zustandes, weiß das sowieso besser, sinkt zu tief ein, enthält im Durchschnitt 150 Gramm Cholesterin, reagiert unwillkürlich mit neurogenem Zittern und braucht Proteine, um Aminosäuren herzustellen.
-Der Körper benötigt alle 13 Arten, um problemlos zu funktionieren, erhält ein ganz neues Eigenempfinden, ist viel mehr als wir denken, reagiert verhältnismäßig schnell auf die Abstinenz, braucht Monate, um sich auf die Geburt vorzubereiten, nutzt hauptsächlich Kohlenhydrate zur Energiegewinnung, soll nur der Schwerkraft unterliegen, fängt zu schwitzen an und versucht, seine Hormonreserven wieder anzusammeln.
-Der Körper produziert eine hohe Dosis von Sexualhormonen, stößt daraufhin die Gebärmutterschleimhaut ab, ist bei einem verliebten Mann stets in einer „offenen“ Position, scheidet das überflüssige Kalzium über den Urin aus, möchte nur eins: Unversehrtheit, gleitet auf die Erde, steht fremden Substanzen nicht wehrlos gegenüber, besteht aus lauter Tetraederstümpfen und reagiert ggf. mit intensiverem Blutkreislauf, Schwitzen etc.
-Der Körper spürt die UV-Strahlung nicht, ist ganz besonderen Herausforderungen ausgesetzt, macht den Geist, erzeugt mit Hilfe von Fettsäuren Endocannabinoide, versucht die Schadstoffe in Lösung zu halten, erinnert mehr an einen versteinerten Seeigel (echinus), bildet ein wichtiges Eiweiß nicht in ausreichender Menge, hört auf zu funktionieren und verzeiht in den meisten Fällen eine Überdosierung.
-Der Körper produziert zu viele Blutzellen, braucht Zucker, verbraucht entsprechend weniger Energie, reagiert empfindlich auf einen Energiemangel, stellt sich sehr schnell um, nutzt früher die Fettreserven zur Energiegewinnung, verliert gerade bei Hitze viel Flüssigkeit, besteht aus unzähligen Geweben, das die Organe bildet und verbrennt pro halbem Liter Wasser 50 kcal.
-Der Körper baut ca. 0,1‰ in der Stunde ab, ist Spiegel alltäglicher Einflüsse, gilt in der Soziologie als vernachlässigtes Thema, offeriert ein wenig Gewicht, beinhaltet einen Unterkörper, drückt laut Berichten seinen Zustand in den Träumen aus, benutzt Cholesterin als Antioxidant, vibriert um seinen Mittelpunkt und produziert immer weniger Speichel.
-Der Körper reagiert erst nach wenigen Stunden auf Alkohol, baut anschließend die funktionslosen Kreuzbandteile ab, versucht lange gegenzusteuern, bevor Krankheit entsteht, gehorcht nicht mehr wie früher, auch der Geist lässt nach, benötigt Nährstoffe nicht nur für die energetische Versorgung, verliert bei Schnupfen Flüssigkeit, verwendet auch Arginin als primären Baustein für Stickoxid, beginnt sich innerlich wie auch äußerlich zu verändern und entspannt sich allmählich.
-Der Körper ist grundsätzlich eine absolut gegenwärtig-agierende Lebensform, verwandelt überschüssige Kalorien in Fett, muss mit großen Mengen Wasser versorgt werden, wandelt die in Kokosöl enthaltene Laurinsäure in Monolaurin um, versteift sich bei ungewollter Aufmerksamkeit, darf nicht rotieren, benötigt alle Energien für die Genesung, bewegt sich zugunsten der E-Motion und reagiert überempfindlich gegen einen Stoff (Allergen).
-Der Körper braucht Energie, um zu funktionieren, muss also auf seine im Sommer angelegten Reserven zurückgreifen, besteht aus mehreren Ebenen, leidet unter Hypoxie, wodurch ein Reflex geschieht, greift die eigenen Nieren in Form von Antikörpern an, produziert jede Nacht mehrere Deziliter Feuchtigkeit, schützt sich mit Diarrhoe, passt sich etwa 3 Monate an den neuen Zustand an und verfügt zudem über ein eigenes Körpergedächtnis.
-Der Körper benötigt Kohlenhydrate, bildet den wichtigen Lebenssaft kurzfristig neu, braucht Wasser, um seine Funktionen zu erfüllen, trocknet besonders schnell aus, zeigt kleinste schwarze Flecken, nimmt weibliche Formen an, stößt die melaninhaltigen Zellen ab, besteht vorwiegend aus Flüssigkeit und startet ein biologisches Sonderprogramm.
-Der Körper sollte reines, vorzugsweise ungekühltes Wasser erhalten, braucht erst Zeit, um in Schwung zu kommen, muss nach der Operation neu lernen, reagiert mit zunehmend größerer Unbeweglichkeit, zieht Eisen nämlich hauptsächlich aus tierischen Nahrungsmitteln, nutzt Glukose oder Zucker für Energie, bildet eine Spiegelachse, benötigt keine Supplementation und bekommt die Möglichkeit, seine Heilungskräfte zu mobilisieren.
-Der Körper holt sich die Stoffe für die Milch, welche das Kind braucht, kommt allmählich zur Ruhe, scheidet die Kontrastmittel wieder vollständig aus, ähnelt Pflanzenteilen, insbesondere Blättern, benötigt Insulin, um Glukose zu verstoffwechseln, besteht aus mit schwarzer Emaille überzogenem Stahl, reagiert auf Stress, um die Änderungen zu übernehmen, muss sich auf die sinkenden Temperaturen einstellen und steckt in einem kurzen Kittel aus grobem Tuch.
-Der Körper bildet ein Gedächtnis, strebt nach Wohlbefinden, soll schließlich in Ruhe aufgebaut werden, reagiert mit immer mehr Auffälligkeiten, läuft noch auf Zucker, während die ersten Tage der Diät laufen, muss sich an neue Lebensmittel gewöhnen, bereitet sich auf Aktivität, nämlich Flucht oder Angriff, vor, geht zurück zur Erde, der Geist zu Gott und leidet nicht nur optisch, sondern auch innerlich darunter.
+Der Körper sollte auf ganzer Länge gleichmäßig gestützt werden, beginnt, sich auf die Geburt vorzubereiten, lagert Kalk ab, um Risse der Sehne zu heilen, absorbiert, wie vorher auch, die nicht verbrauchten Spermien, greift die Nebennierenrinde selbst mit Antikörpern an, bildet selber Cholesterin, freut sich über jede Übung, braucht verschiedene Trainingsreize, um sich zu entwickeln und erreicht einen Durchmesser von etwa 17 cm.
+Der Körper sendet ein Signal aus, das die Aufmerksamkeit auf sich lenkt, fordert seinen Tribut für den Erfolg der vergangenen Jahre, benötigt lediglich geringe Mengen an Fett, nimmt Lactose langsam auf, schadet sich selbst, unterscheidet sich von dem eines Erwachsenen, produziert selbst ebenfalls Cannabinoide, schaltet nicht einfach ab, sondern bleibt in Grenzen aufmerksam und spiegelt uns wider, wie wir uns als Ganzes organisieren.
+Der Körper reagiert nicht mehr nach dem eigenen Willen, braucht die guten Säfte, insbesondere der Niere (Yin), auf, kommt wieder ins natürliche Gleichgewicht, muss die Erkältung alleine durchstehen, befindet sich viel mehr in ständiger Bewegung, arbeitet auf Sparflamme, schwitzt weniger, was das Aufheizen im Inneren unterstützt, macht das nicht ewig mit und trägt alles Wissen um Heilsein in sich.
+Der Körper ist mehrere Stunden starken Belastungen ausgesetzt, erscheint verzerrt, vieldeutig, veränderbar, braucht seine Zeit, um Alltagsstress runterzufahren, reagiert ggf. mit intensiverem Blutkreislauf, Schwitzen etc, nutzt Eiweiß, um die Regeneration der Muskeln zu fördern, steht unter Dauerstress, benötigt alle drei Formen, bildet Antikörper auf „gut Glück“ und beginnt also mit dem Training gegen Widerstände.
+Der Körper braucht Vitamin C auch, um Eisen optimal aufzunehmen, wehrt sich gegen eigentlich vollkommen harmlose Stoffe, erreicht zusammen mit dem Geist das Urlaubsland, verändert sich auf dem Wege zur Mutterschaft, fängt irgendwann an, Nachrichten zu schicken, zeigt keine Reizanzeichen bei Berührung, sorgt für eine Zwangspause, schwitzt für zusätzliche Abkühlung und wirkt athletisch, wie der eines Panthers.
+Der Körper steht unter enormer Spannung, ist einfach gegangen, ohne Mühe, nimmt frische universelle Reiki-Energie auf, besteht aus Trillionen gesunder Zellen, benötigt für die Verdauung von Lebensmitteln bis zu 7 Stunden, kommt in direkten Kontakt mit dem Moor, sammelt täglich größere Mengen an Giftstoffen, nähert sich seinem natürlichen Grundspannungstonus und findet in ein neues Gleichgewicht.
+Der Körper verändert sich, Organe verschieben sich, reagiert mit chronischer Müdigkeit, trainiert sich seine Fehlhaltungen zudem leider auch noch an, gewöhnt sich sehr schnell an Wiederholungen, besitzt viele Kräfte, um sich selbst zu heilen, bleibt für alle Belastungen rein elastisch, verliert auch beim Schwitzen oder sogar beim Atmen Flüssigkeit, absorbiert bis zu 93% der abgegebenen Infrarot-Wärmestrahlung und fängt an, Angriffe von gefährlichen Infektionen abzuwehren.
+Der Körper geht, die geistige Existenz lebt ewig, ist mit Stacheln besetzt, die auf Falten liegen, versucht seine Temperatur auf ca. 37 Grad konstant zu halten, sendet keine bestimmten Botenstoffe oder Signale aus, richtet sich in seine ursprüngliche Ordnung auf, will die entstandene Säure neutralisieren, spaltet Kohlenhydrate aus dem Essen in Zucker, stellt Vitamin D selbst mithilfe von Sonnenlicht her und gehört zuweilen auch zur Welt.
+Der Körper benötigt die Ruhe, um den Infekt zu bewältigen, erholt sich hauptsächlich im Schlaf, reagiert auf den Gewebeschaden der Sehne mit einer Entzündung, baut Melatonin ab, mutiert, falls man nicht höllisch aufpasst, sieht sehr plump aus, besteht nämlich zu 20 Prozent aus Eiweiß, sättigt also mit Stickstoff auf und muss Mutter und Kind gemeinsam versorgen.
+Der Körper neigt zu einer entzündlichen Reaktion auf Stress, verschwindet allerdings nach unten aus dem Blickfeld der Kamera, schafft das nicht, bleibt unter Anspannung, ist immer auf Gefahr eingestellt, fließt als Ganzes zusammen, verwendet die chemische Energie in Form von Lebensmitteln, befindet sich in Rom, Vatikan (Gabinetto delle Maschere 474), beginnt intensiv zu arbeiten und spiegelt in Haltung und Bewegung das innere Erleben wider.
+Der Körper braucht etwa 2000-2500 mg Jod pro Tag (etwa ein Teelöffel Salz), kämpft gegen die Krankheit, schüttet Wachstumshormone aus, versucht, den Eindringling loszuwerden, will daraufhin das Gelenk stabilisieren, lagert die aufgenommenen Gifte ein, muss daher länger gegen eine Infektion ankämpfen, benötigt ein Gleichgewicht der Hormone für optimale Gesundheit und produziert immer weniger Speichel.
+Der Körper ruft den Ausnahmezustand aus, enthält ca. 2 bis 5 Gramm Fluorid, empfindet keine Schmerzen, muss regelmäßig in Bewegung gehalten werden, fordert einen sofortigen Kalorienabbau, unterliegt während der Pubertät starken Hormonschwankungen, fährt auf Sparflamme, verfügt über selbstheilende Kräfte und greift die Vorräte an und baut Muskelmasse ab.
+Der Körper hält der Belastung wieder stand, scheint sich danach zu sehnen, gerät in eine Art Waage, passt seine Stoffwechselrate dem Ernährungsangebot an, transportiert die zerstörten Farbpigmente ab, zehrt sich selbst auf, „frisst“ sich quasi selbst auf, verliert genauso viel Wasser wie Elektrolyte und funktioniert nach denselben Prinzipien.
+Der Körper ist silbrig glänzend, die Flossen sind leuchtend rot geschmückt, schwemmt regelrecht auf, gehört dem Mann, leidet quasi an einem Energiemangel, denke ich, legt keine Wasserreserven an, verliert seine feste Form, erinnert sich und gelangt wieder in seine ursprüngliche Balance.
+Der Körper ist matt schwarz, die Deckflügel verjüngen sich zum Ende hin, beginnt die Knochen zurückzubilden, versucht sich damit zu schützen, muss sich öffnen, weit werden, signalisiert den Wunsch nach Distanz, verbrennt in der Tat Fett, während wir schlafen, mobilisiert alle Kräfte, um widrigen Bedingungen zu überleben, fängt an zu riechen, zu stinken und gesundet automatisch.
+Der Körper gerät in einen chronischen „Stress-Zustand“, ist kugelförmig, benötigt viel weniger als man denkt, durchlebt viele Veränderungen, scheidet überflüssige Flüssigkeit schnell wieder aus, macht Hausputz, wenn wir nichts essen, zeigt häufig einen spezifischen samtigen Glanz, dient als Ebene der Vergewisserung in vielerlei Hinsicht und weist ein schwaches, senkrechtes Streifenmuster auf.
+Der Körper ist gewöhnt an die Wirkungen von Testosteron, speichert auch an seinen Schwachstellen Toxine ein, speichert Fett, erhöht die gelösten Teilchen im Blut, schwitzt, um sich zu kühlen, steht unserem wahren Selbst näher als der Verstand, drückt laut Berichten seinen Zustand in den Träumen aus, erhält ausreichend Sauerstoff für einen erholsamen Schlaf und verfügt über eine ungeheure Intelligenz.
+Der Körper warnt, das Gelenk möglichst nicht oder nur wenig zu belasten, entwickelt also eigene Methoden um sich selbst zu helfen, gerät aus der Balance, verfällt in eine Starre, in den sogenannten Totstellreflex, braucht relativ lange, um sich nach der Ejakulation zu erholen, rüstet eine Armee von Antikörpern auf, benötigt während des anstrengenden Trainings Energie, möchte immer wieder zu seinem alten höheren Gewicht zurück und entspannt sich, Blockaden können sich lösen.
+Der Körper verliert vor allem Muskelmasse sowie eingelagertes Wasser, muss sich erst auf die neuen klimatischen Bedingungen gewöhnen, scheidet weniger Salz aus, kommt aus dem 3D-Drucker, erlernt quasi, wie der persönliche Zyklus aussieht, verformt sich zu einer menschenähnlichen, geschuppten Gestalt, erhält eine solide Unterstützung beim Abnehmen, befindet sich in einer Umstellungsphase und gibt Stück für Stück freiwillig nach.
 
 --- 10 Sätze ---
 
-Der Körper gewöhnt sich an die Belastung, das Laufen fällt immer leichter, sondert über die Nieren Stoffwechselprodukte ab, steht also im Mittelpunkt der karnevalesken Aufmerksamkeit, muss kämpfen, braucht täglich Vitalstoffe, um zu existieren, speichert 3-5 Gramm Eisen, ist ebenso lang wie der Schwanz, benötigt Kieselerde zur ausreichenden Bildung von Kollagen, bekommt nicht genug Nahrung und denkt mit und zeigt die Befindlichkeit der Seele.
-Der Körper ist niemals sprachlos, verbraucht im Ruhezustand weniger Kalorien, muss sich erst an Phasen ohne Essen gewöhnen, sollte normalerweise eine Wärmesymmetrie haben, reagiert stärker auf die reizenden Stoffe im Urin, regelt den Cholesterinspiegel selbst, nimmt eine asymmetrische Haltung ein, spaltet Kohlenhydrate aus dem Essen in Zucker, lernt wieder, ohne Schmerz zu leben und baut Fettgewebe auf und legt an Gewicht zu.
-Der Körper verlangt nach Alkohol, um chemisch im Gleichgewicht zu bleiben, beginnt sich auf den Tiefschlaf vorzubereiten, regelt seine Temperatur über die Temperatur der Atemluft, absorbiert bis zu 93% der abgegebenen Infrarot-Wärmestrahlung, spiegelt das ganze Leben, verbrennt bei bestimmten Sportarten meist bis zu 450 Kalorien, gerät in eine Unterversorgung mit Sauerstoff, reagiert mit Durchfall, besteht zu etwa 70 Prozent (variiert im Alter) aus Wasser und besitzt körpereigene Selbstheilungskräfte.
-Der Körper besteht bis zu 75 Prozent aus Wasser, ist abgeplattet, stellt keine weitere Eizelle zur Verfügung, muss selbst mit dem Virus fertig werden, wehrt sich gegen die eingedrungenen Erreger, besitzt starke Werte, nutzt Eiweiß, um die Regeneration der Muskeln zu fördern, produziert verschiedene Klassen oder Typen von Immunglobulinen, liefert eine Fülle an Informationen und bildet auch Hormone.
-Der Körper braucht Zeit, um sich an eine Ernährungsumstellung zu gewöhnen, ist viel mehr als wir denken, findet nur Beachtung im Sportunterricht, sollte möglichst wenig Lactat bilden, verändert sich ab dem dreizehnten Lebensjahr, besteht aus Kohlefaser, spielt im Tantra eine besondere Rolle, bleibt gesund, treibt daher fast schwerelos auf der Oberfläche und setzt relativ große Mengen an Coenzym Q10 um.
-Der Körper bildet keinen neuen Knochen um den Zahn, braucht Fette, auch tierische, erzeugt Salzäure (HCl), die aus dem Blut in den Magen übertritt, erscheint grau bis schwarz, will nachts herunterfahren, hilft somit bei der Heilung, enthält 150 bis 300 g Speisesalz, verformt sich zu einer menschenähnlichen, geschuppten Gestalt, soll sich langsam an Belastungen gewöhnen und stellt Antikörper gegen das eingedrungene virale Antigen her.
-Der Körper ist kaum bewegungsfähig, scheidet nicht benötigtes Magnesium mit dem Harn aus, verändert sich, das Selbst bleibt ewig, darf nicht übersäuern, versucht sich mit Schwitzen abzukühlen, krümmt sich in Muskelkrämpfen, muss erst mithilfe von Enzymen die Fruktose in Glukose umwandeln, benötigt Vitamin C, um Vitamin E zu regenerieren, zeigt uns immer wieder seine Grenzen auf und nimmt nur etwa 10% der Eisenmenge aus Nahrungsmitteln auf.
-Der Körper wirkt gedrungen mit einem großen Kopf, der Mund ist endständig, spricht mit, greift vermutlich die eigenen Zellen in den Haarwurzeln an, braucht den Schlaf, um zu regenerieren, produziert täglich ca. 30 Meter Haar, reagiert im privaten Umfeld sowie auf der Arbeit, steht kurz vor dem Kollaps, stoppt deshalb die Produktion roter Blutzellen, muss sich keine zusätzliche Energie aus den Lagern holen und baut zunehmend ab, auch wenn das Gewicht steigen mag.
-Der Körper ändert seine Abmessungen mit der Spannungsänderung, benötigt Proteine, um Antikörper gegen Streptokokken zu bilden, ist ein erstaunliches Wunderwerk, kämpft also gegen die eigene Schilddrüse, wandelt das Hanfprotein in Immunglobuline um, beginnt unwillkürlich, den Kalorienbedarf runterzuschrauben, ruht sich aus, während die Seele sich im Nachklang weitet, befindet sich in einem Zustand der maximalen Entspannung, reagiert auf die im Kopf produzierten Angstgefühle und passt sich überraschend schnell an.
-Der Körper speichert das Vitamin in größeren Mengen, vor allem in der Leber, hält Flüssigkeit zurück, was zu Schwellungen führt, muss sich akklimatisieren können, „merkt“ sich den Bewegungsablauf besser, versucht sich also zunächst sehr unspezifisch zu wehren, sollte für die Auferstehung von den Toten „aufbewahrt“ werden, greift also gezwungenermaßen auf Fette als Energiereserve zurück, darf sich erholen, während der Geist sich vergisst, aktualisiert ständig die roten Blutkörperchen und stellt sich sozusagen auf Notzeiten ein und läuft auf Sparflamme.
-Der Körper reagiert auf die Impulse vielfältig, reguliert den Bedarf an Cholesterin selbst, verfügt ebenfalls über Abwehrmittel gegen die Pein, benötigt Kalium zur Blutdruckregulation, befindet sich stromabwärts, „wählt“ das Datum, an dem die Eierstöcke „ruhen“, erlöst sich in sich selbst, besteht aus 41-56 Rumpfringen, wechselt auf „Sparflamme“ und verlangt ständig Nahrung und Fett.
-Der Körper setzt kontinuierlich einzelne Komponenten wieder instand, greift fälschlicherweise eigenes Gewebe an, sieht sehr plump aus, befindet sich in einer überstreckten Haltung, scheint sich danach zu sehnen, muss arbeiten, um sich zu bewegen, verwendet 5-http, um Serotonin zu machen, erfährt nachts im Ruhezustand eine optimale Lagerung, ist entspannt und funktioniert nicht optimal.
-Der Körper verwendet Hyaluron für viele Körperfunktionen, wandelt Kohlenhydrate in Glukose um, vergiftet sich, stellt eine Einheit dar, befindet sich dauerhaft im Alarmzustand, braucht Zeit, um alles zu verarbeiten, produziert Schweiß, um sich zu erfrischen, reagiert mit Reparaturprozessen, Schwellungen bilden sich, löst sich in einer farbig-grafischen Umgebung auf und beginnt schnell mit dem Schwitzen.
+Der Körper gewöhnen sich sehr schnell an Nikotin, spielt auch in meinen Gedichten eine wichtige Rolle, speichert das Vitamin D in geringen Mengen, optimiert seine Funktionen, gelangt zu neuer Kraft, benötigt zudem weniger Zeit, um sich zu regenerieren, bildet das gespendete Blut mühelos wieder nach, versucht unweigerlich, sich wieder gerade zu richten, bereitet sich also auf die Schwangerschaft vor, soll zur Normalisierung körpereigener Vorgänge angeregt werden und muss schwitzen, um sich abzukühlen.
+Der Körper muss wiederum gegen die neuen Viren auch neue Antikörper bilden, stützt sich in Bauchlage auf die Ellenbogen, reagiert „eigentlich“ normal, strebt immer nach einer Homöostase, soll eine Toleranz entwickeln, liegt bewusstlos da, während sich die Seele „auf den Weg macht“, dient als Memoria, als biographische Chiffre, benötigt auf jeden Fall einen Tag dazwischen zur Regeneration, fühlt sich bei Übersäuerung besonders kraftlos an und bewegt sich einmal in Richtung der x-Achse vorwärts.
+Der Körper verändert sich gravierend, hört auf, Fett zu verbrennen, gewöhnt sich an die Zuführung, schaltet auf Abwehr um, transportiert das zerstörte Gewebe ab, erfährt eine Möglichkeit, sich neu zu organisieren, rutscht in eine Schilddrüsenunterfunktion, befindet sich beim Sitzen in einer unnatürlichen Haltung, speichert jede Art von Erfahrung in seinem „Zellgedächtnis“ und braucht regelmäßige Bewegung und Anstrengung.
+Der Körper ist nicht länger Hauptzielscheibe der strafenden Repression, reagiert in erster Linie auf den Temperaturreiz, produziert Insulin, erhält ein ganz neues Eigenempfinden, stellt sich auf Flucht oder Angriff optimal ein, heilt von innen, verträgt das enthaltene Eiweiß Gluten nicht, muss regelmäßig entschlackt werden, bekommt die Chance, sich selbst einzuregulieren und symbolisiert Macht, Ohnmacht, Status und Zugehörigkeit.
+Der Körper steht aufrecht, ohne dass es Aufwand erfordert, besitzt Reservekapazitäten für alle Mineralstoffe, sendet schon vor dem Zusammenbruch deutliche Signale aus, bildet somit Drüsengewebe in der Brust, passt sich den jeweiligen Reizen an, übersteigt seine Begrenztheit, leidet unter einer chronischen Malabsorption, verändert sich rasant, wirft eine Art „Gravitationsschatten“ und existiert nicht im Netz.
+Der Körper konzentriert sämtliche Energie auf die gewählte Vorgehensweise, sagt mehr als tausend Worte, reagiert in der Folge anders als in gewöhnlichen Situationen, benötigt viele gesunde Stoffe, besteht aus einer Vielzahl von Zellen, macht auch Probleme, sollte alle 3 Stunden mit Wasser aufgefüllt werden, spielt keine Rolle, glüht, die Nase trieft, der Hals kratzt und vergiftet sich somit selbst.
+Der Körper scheint gleich einige Zentimeter zu wachsen, benötigt deshalb auch weniger Wärme, reagiert individuell auf unterschiedliche Trainingsintensitäten, gewinnt seine Stärke, um die Krankheit zu bekämpfen, braucht Zucker, verliert im Flugzeug stark an Flüssigkeit, das Blut verdickt sich, befindet sich in einem labilen Gleichgewichtszustand, muss lediglich die Hormonumstellung „verarbeiten“, ähneln dem Deutsch Drahthaar sehr und wehrt sich mit Entzündung.
+Der Körper ist aufgequollen, nimmt Curcumin nur in Verbindung mit Fett auf, hilft sich manchmal selbst, bleibt somit leistungsfähig, erkennt Titan nicht als Fremdkörper, setzt das Hormon Dopamin frei, stellt über 2000 verschiedene Enzyme aus Aminosäuren selbst her, sollte faserreiche Nahrung erhalten, bietet uns einen einfachen Zugang zur Lösung und besteht aus Kohlefaser.
+Der Körper bleibt in einer Linie, versucht damit, eine energetische Dysharmonie auszugleichen, spielt im Tantra eine besondere Rolle, entfernt also alle fremden Mikroorganismen, rüstet sich für eine Schwangerschaft, setzt sich also mit dem Erreger auseinander, produziert eine hohe Dosis von Sexualhormonen, identifiziert Kochsalz als ein aggressives Zellgift, verbraucht mit zunehmendem Alter weniger Kalorien pro Tag und benötigt die nächtliche Ruhephase zur Regeneration.
+Der Körper benötigt zwischendurch Pausen, um sich zu erholen, produziert Arginin aus der Aminosäure Citrullin, weiß mehr als der Verstand, muss mehr arbeiten, antwortet auf eine fremde Substanz mit einer Abwehrreaktion, funktioniert schon seit Jahren nur bedingt, wirkt wie ein langgezogenes Oval, polstert die empfindliche Stelle sozusagen ab, lernt, Glück zu empfinden und ermöglicht das Leben auf der Erde.
+Der Körper schüttet dafür unter anderem das Stresshormon Cortisol aus, verspürt eine neue Vitalität, fängt an zu nicken, entwickelt eine Toleranz, wehrt sich gegen die Übersäuerung, sendet weiße Blutzellen (Leukozyten) aus, kämpft mit zahlreichen Veränderungen, trägt die Lösung der Probleme schon in sich, bildet eine gerade Linie (Kopf, Wirbelsäule, Hüfte, Knie) und muss sich langsam an das Wasser anpassen.
+Der Körper lernt, die Aufrichtung ohne Mühe im Alltag zu behalten, verbrennt Muskelmasse, ist im Wesentlichen Kommunikation, hält also eine Art Mini-Winterschlaf, besteht aus fünf Hüllen, verlangt danach, wieder das gewünschte Mittel zu bekommen, bildet somit auch die beiden Endanschläge 5, 6 aus, baut Arzneimittel überwiegend über die Leber ab, erkrankt, weil die Seele nicht mehr mitspielt und regeneriert in der anschließenden Ruhephase (ca. 48 Stunden).
+Der Körper sollte eher langsam an die Anstrengung gewöhnt werden, verbraucht rund um die Uhr Fett, reagiert somit auf Proteine völlig anders, verfügt insgesamt über mehr als zwei Millionen Schweißdrüsen, lebt entsprechend der Natur in einem achtförmigen Kreislauf, bekommt nicht genügend Zeit, um sich ausgiebig zu erholen, erkennt künstliche Süßstoffe nicht als Nahrung, erinnert sich an den Schrecken, das bewusste Ich nicht, profitiert also gleich doppelt und schaltet direkt auf Abwehrmodus.
+Der Körper sagt: Ich muss dringend auf Toilette, steuert mit erhöhtem Blutdruck gegen, speichert die B-Vitamine übrigens, schwitzt aus ganz unterschiedlichen Gründen, bildet das LH-Hormon (luteinisierendes Hormon), benötigt Insulin, um Zucker als Energiequelle zu nutzen, reduziert seine Funktionen auf das Nötigste, besteht aus hochwertig gespritzten Kunststoffteilen, lautet meine Devise und beginnt sozusagen zu verwesen.
+Der Körper fängt an, sich auf die Geburt vorzubereiten, leidet unter einem hohen Grundtonus, kommt dadurch nicht in den Ruhemodus, reagiert auf Stromreize, produziert Antiviren, bekommt das schöne Gefühl umsorgt zu werden, existiert, um der Augen willen, scheidet Kalium hauptsächlich mit dem Urin aus, löst sich in einer farbig-grafischen Umgebung auf und passt sich an und erreicht bald wieder das alte Leistungsniveau.
+
+--- 11 Sätze ---
+
+Der Körper gewinnt an Flexibilität in der Wirbelsäule, verändert sich generell, reagiert entsprechend, bleibt trotz einer teilweise gewaltigen Gewichtsabnahme straffer, bildet täglich bis zu sechs Liter Speichel, besitzt die Fähigkeit zur Reparatur der Nukleinsäuren, speichert die Erinnerungsmuster, z.B. einen Kloß im Hals, scheint sich gegen jedwede „Verhütung“ zu sträuben, braucht indes nur eine bestimmte Menge an Energie, sollte durchschnittlich 6-8 Stunden ruhen und produziert plötzlich weniger Östrogen.
+Der Körper muss selbst mit der Infektion fertig werden, versucht, sich zu schonen, gleicht den Verlust rasch aus, entzieht sich in der Regel unserer alltäglichen Aufmerksamkeit, signalisiert somit eine drohende Gefahr, kommt der Belastung nicht hinterher, reagiert sofort mit dem Stresshormon Cortisol, geht auf Sparflamme, besteht aus circa 60 Prozent Wasser, klärt sich, die Allergie nimmt allmählich ab und verändert sich und stellt sich auf das neue Leben ein.
+Der Körper kühlt schnell aus, können wieder gespürt werden, weist eine helle, silbrige Grundfärbung auf, braucht 10-30 Tage, um sich an den neuen Zustand zu gewöhnen, speichert jede Information, stellt sich sehr schnell um, reagiert auf die veränderte Hormonzufuhr auf vielfältige Weise, tut nichts aus sich selbst heraus, benötigt Zeit, um sich an neue Gegebenheiten anzupassen, schüttet Insulin aus, welches den Blutzuckerspiegel senkt und bildet zu wenig Lactase, die das Disaccharid Lactose spaltet.
+Der Körper schwitzt im Schlaf zur Regulation der Körperwärme, existiert nicht, ist leuchtend gelb gefärbt, funktioniert wie ein Muskel, produziert bei Dunkelheit nachweislich mehr Melatonin, glänzt metallisch-bunt, versucht die Giftstoffe zu entsorgen, enthält bis zu 300 Gramm Salz, verlangt deshalb vermehrt nach Kohlenhydraten, kämpft quasi gegen sich selbst und stößt das alte Haar ab.
+Der Körper versucht, überschüssigen Zucker über den Urin auszuscheiden, braucht Flüssigkeit am besten in Form von Wasser, durchläuft über die Nacht verteilt verschiedene Schlafphasen, öffnet sich meist nach 1 bis 2 Minuten, nimmt Astaxanthin am besten in Verbindung mit Fetten auf, benötigt alle Vitamingruppen für eine gesunde Funktion, gewöhnt sich bei regelmäßiger Einnahme an Xylitol, verwandelt die Eiweiße in Aminosäuren, verfügt über ein Reservoir für jeden Nährstoff, besteht aus Zement und verlernt Bewegungsabläufe, die uns in die Wiege gelegt wurden.
+Der Körper benötigt Vitamin D, um Kalzium in die Knochen einzulagern, ist total entkräftet, lagert auf der einen Seite vermehrt Fett ein, befindet sich in Seitenlage (rechts oder links), liegt zu Beginn rücklings auf dem Boden, produziert einige Komponenten, die ein Gerinnsel bilden, weist Kerbverzierungen auf, sinkt neben der Wirbelsäule um die betroffene Niere zusammen, nimmt gegen die Überforderung eine Abwehrhaltung ein, setzt eine Menge Harnsäure frei und versucht das Gelenk zu versteifen.
+Der Körper verliert fortlaufend Wasser, reagiert wie auf eine reelle Gefahr mit körperlichen Symptomen, droht zu überhitzen, bekommt den Impuls „Muskel entspannen“, zeigt kleinste schwarze Flecken, schüttet Glückshormone aus, löst seine Abwehr gegen sich selbst aus, gehorcht nicht mehr wie früher, auch der Geist lässt nach, fällt in eine Art Energiespar-Modus, rückt bei den Menschen immer stärker in den Mittelpunkt und bewegt sich also in alle drei Richtungen.
+Der Körper baut das Hormon nur zögerlich ab, kühlt sozusagen auch innerlich ab, verbrennt hauptsächlich in der Nacht Fett, scheidet Stoffwechselendprodukte nämlich aus, produziert seine eigenen Heilmittel, wandelt jedes aufgenommene Beta-Carotin in Vitamin A um, fungiert früh als Gegenstand narzisstischer Bezugnahme, soll gesund gehalten werden, stößt sozusagen die eigene Schilddrüse ab, befreit sich vom Nikotin und weist keine Behaarung auf.
+
+--- 12 Sätze ---
+
+Der Körper ist insgesamt besser proportioniert, verlangt nach mehr Zucker, lässt nur ein bestimmtes Maß an Schmerzen zu, empfängt nur ein Signal: Panik, meldet sich auch, spricht dauernd, sogar wenn der Mund schweigt, setzt relativ große Mengen an Coenzym Q10 um, arbeitet auf Hochtouren an der Behebung der entstandenen Schäden, taucht während einer Sitzung in eine wohltuende Sphäre, erhält Biotin über die Nahrung, Körper auf „Sparflamme“: am falschen Fleck gespart und verfügt über ein Drahtskelett und eine Schaumstofffüllung.
+Der Körper benötigt eine ganzjährige Basisversorgung, geht in den Energiesparmodus, der Jo-Jo-Effekt droht, versucht, wieder in einen geordneten Zustand zurückzukehren, verliert täglich zirka 2,5 Liter Wasser, weist zudem Stichwunden auf, steht quasi zwischen den beiden Kreisen, richtet seine Abwehrkräfte gegen sich selbst, enthält 10-20 mg Chrom, leidet unter chronischem Sauerstoffmangel, besteht aus einer Kugel, spricht meist schnell auf Akupunktur an und verbrennt bei bestimmten Sportarten meist bis zu 450 Kalorien.
+Der Körper vergisst seinen Feind nicht, braucht vor allem Schonung, um mit den Viren fertig zu werden, baut die Fettzellen mit den normalen Stoffwechselvorgängen ab, erholt sich schneller, muss sich zunächst an eine umgestellte Ernährung gewöhnen, passt sich immer besser dem Verhalten an, gleicht einzelne schlechte Nächte gewöhnlich rasch wieder aus, zeigt, obwohl bereits übersättigt, immer noch Hungergefühle an, erhält seine natürliche gesunde Balance zurück, verlangt nach Pausen, funktioniert als Einheit und nimmt auf einmal sieben Teelöffel Zucker auf.
+Der Körper übt lediglich für die Geburt, kennt keine Diäten, sondern Hungersnöte, darf nicht „stottern“, enthält 1,5 bis 2,5 g an Zink, braucht beispielsweise Magnesium, um Kalzium auszubalancieren, gerät in einen Alarmzustand, findet wieder zu seinem natürlichen Gleichgewicht, bildet danach selbst Abwehrstoffe gegen das Gift, zwingt uns zur Ruhe, wirkt insgesamt spindelförmig, macht nie etwas ohne Grund und bündelt seine Energie auf das sich entwickelnde Baby.
+Der Körper läuft ohne äußere Notwendigkeit auf „Vollgas“, impliziert seinen richtigen nächsten Schritt, passt sich erstaunlich schnell an neue Dinge an, scheidet die Stoffe aus, drosselt allmählich seine Hormonproduktion, liegt auf einer professionellen Massageliege, soll genau einen Meter angehoben werden, speichert alle Erfahrungen in seinem Gedächtnis, reagiert nicht mehr oder nicht ausreichend auf Insulin, nimmt nicht alles auf. Daher lieber hochdosiert nehmen, setzt kontinuierlich einzelne Komponenten wieder instand und lernt neu.
+Der Körper ist überall fein gelblich-weiß punktiert, akklimatisiert sich an die Droge, verändert sich während der Schwangerschaft ständig, produziert die Aminosäuren nicht selbst, gleicht einem hypnotisierten Säugling, bleibt bekleidet, stellt seine Funktionen ein, beginnt, sich selber zu zerstören, besteht aus 100 Billionen Zellen, sagt etwas anderes als die Identität bzw. umgekehrt, benötigt Baustoffe beim Training und meint, nicht denken, sondern handeln zu müssen.
+Der Körper schüttet bei zu wenig Schlaf sehr viel Cortisol aus, sucht sich einen Weg, dem Schmerz auszuweichen, gelangt ins Gleichgewicht, verfügt über Selbstheilungskräfte, die aktiviert werden können, dient dem Lack, nicht der Lack dem Körper, hinkt sozusagen den äußeren Gegebenheiten hinterher, schaltet auf Alarm, neigt dazu, überschüssige Energie in Form von Fett zu speichern, reagiert auf die Eiweißanteile im Kot besonders allergisch, signalisiert schon frühzeitig Alarmsignale, ändert seinen Rhythmus nicht von einem Tag auf den anderen und versucht sich auf das veränderte Blutvolumen einzustellen.
+Der Körper arbeitet mit einer sehr großen Anzahl an Alternativen, lädt also wieder Energie auf, spielt eine große Rolle, beginnt mit der Entgiftung, verbraucht Magnesium kontinuierlich, scheidet unnötige B-Vitamine im Urin aus, schwitzt um die Körpertemperatur auszugleichen, baut die Purine ab, besteht zum Großteil aus Wasser, erzählt etwas anderes als der Text, dient der Illustration einer (Illusion von) Kultur und gewöhnt sich an den Kokainkonsum, entwickelt eine Toleranz.
+Der Körper ist schwarz mit weißen Flecken, benötigt Nährstoffe, um zu funktionieren, bildet danach fast keine Geschlechtshormone mehr, bringt abgewehrte seelische Konflikte zum Ausdruck, macht da irgendwann nicht mehr mit, öffnet sich nach außen in den Raum, muss sich nicht weiter mit „Altlasten“ beschäftigen, baut Stresshormone im Normalfall in den Erholungsphasen ab, arbeitet nach einer inneren Uhr, handelt in der Vorstellung, fängt an, mit den überflüssigen Pfunden zu kämpfen und nimmt zu viele irrelevante Informationen als „wichtig“ wahr.
+Der Körper profitiert von einer großen Bandbreite an Input, gewöhnt sich schneller an den neuen Rhythmus, versucht über Mineralstoffe die Säuren zu neutralisieren, ist weniger auf Sex eingerichtet, scheint sich mit den Schwingungen der Umwelt zu synchronisieren, reagiert auf die dauerhafte Schädigung, braucht den Dialog mit einem wachen Geist, weist auf der dem Schacht zugewandten Seite Rippen auf, sollte nicht rund, sondern facettenreich dargestellt werden, kommt nicht mit dem Schwamm in Kontakt, registriert eine Wunde, eine Entzündung oder eine Reizung und verliert dadurch Wasser, das du wieder aufnehmen solltest.
+Der Körper kennt keine Gewöhnung an Lärm, ist blaugrau, scheidet nicht benötigtes Riboflavin über den Urin aus, reagiert auch auf unbewussten Stress, enthält etwa 2,5 bis 4 Gramm Eisen, hält die Temperatur in seinem Inneren konstant, strebt daher immer einen kleinen Puffer an, versucht den Mangel auszugleichen, arbeitet ganz normal weiter, bildet zudem weniger Serotonin, erfüllt zu verschiedenen Tageszeiten unterschiedliche Aufgaben und regeneriert sich im Ruhezustand.
+
+--- 13 Sätze ---
+
+Der Körper speichert allgemein mehr Kohlenhydrate als Proteine, trocknet also schneller aus, beginnt den vorhandenen Vorrat an Calcium umzulagern, soll dadurch von überschüssigen Säuren entlastet werden, braucht Enzyme, will dir überhaupt nichts sagen, erfordert auch unsere Aufmerksamkeit, erleidet, laienhaft ausgedrückt, einen hormonellen Infarkt, sklerotisiert, verhärtet in das Älterwerden, verbrennt dadurch mehr Fett in Ruhe, setzt in der Regel schon sehr gute Signale, stellt seit jeher ein beliebtes Ausdrucksmedium der Künstler dar und verliert über die Haut Flüssigkeit.
+Der Körper muss kaum neue Hautzellen bilden, um den Schnitt zu verschließen, dient als Nährstoffquelle für den Embryo, bekommt ausreichend Chlor über die tägliche Salzzufuhr, befindet sich knapp unter der Wasseroberfläche, arbeitet ökonomisch, beginnt sich zu verändern, warnt also vor drohenden Schädigungen, gleicht einer Säule, gibt drei- bis viermal mehr Wärme an das Wasser ab als Luft, transportiert das Cortisol über die Blutbahn in den Körper, verliert zu große Mengen an Säure, steht unter Dauerbelastung, bzw. enormem Stress und erhält eine gute straffe Form.
+Der Körper benötigt täglich eine bestimmte Ration Energie, versucht, die Mangelversorgung auszugleichen, muss auf schädliche frühe Ereignisse reagieren, bildet während der Erneuerung der Haut das Kollagen täglich neu, stellt selbst jeden Tag 1 bis 2 Gramm Creatin her, erträgt viel Mißbrauch scheinbar ohne Reaktion, verliert in der Zeit eine nicht unerhebliche Menge Blut, verfügt über verschiedene Stoffwechselvorgänge, verändert sich, auch die Partnerschaft, nimmt das Eisen als zweiwertiges Eisen am besten auf, produziert Melatonin nur in der Nacht, dreht sich also nicht überall gleich schnell und macht also mit, der Skeleton-Schlitten ebenso.
+Der Körper ist unbeschuppt, erscheint leblos, losgelöst oder sonst anormal, produziert das Hormon bei Stress, steht auf einer umgedrehten goldenen Krone, kommt allmählich zur Ruhe, wandelt Beta-Carotin nach Bedarf in Vitamin A um, versucht andauernd, sich anzupassen, reinigt sich somit selbst, muss funktionieren, reift langsam zur Gestalt eines Erwachsenen heran, schwitzt beim Sport, macht sich für eine mögliche Flucht bereit und will mich damit zum Stop zwingen.
+Der Körper verwendet die zugeführten Nährstoffe nach Bedeutung (Priorität), besitzt auf der Unterseite eine rote Behaarung, werden auf Verspannungen gescannt, beginnt sofort mit der Wundheilung, behindert also gewissermaßen die Selbstverwirklichung, passt sich für ca. 3 Monate an den neuen Zustand an, spricht dafür, erhält seine jugendliche Silhouette zurück, bleibt in sich geschlossen, trotzt dem Virus, lernt, mit weniger Kalorien die gleiche Arbeit zu leisten, kompensiert intelligent und signalisiert Unwohlsein.
+Der Körper lässt sich einfach noch ein wenig Zeit, wirkt fast flugbereit, scheidet nicht vollständig abgebaute Wirkstoffe wieder aus, aktiviert seine eigenen Kräfte, die zu Entspannung führen, benötigt schätzungsweise 0,6 g Natrium am Tag, ist in der epigastrischen Region, verfügt über einen Auslösemechanismus, formt die Materie, absorbiert schließlich das Blut von der Prellung, nimmt daher auch Nahrung verzögert auf, versteht sich als Einheit, muss sich im Gleichgewicht befinden und gibt laufend Wasser an die Umgebung ab.
+
+--- 14 Sätze ---
+
+Der Körper benötigt die Fette für vielerlei Prozesse, lagert weiter Harnsäure ab, besitzt über 100 Gelenke, arbeitet nur mit der eigenen Gewichtsbelastung, versucht, die Überhitzung auszugleichen, braucht Mobilität, wehrt sich gegen das fremde Eiweiß, kehrt nach dem Ende der Bedrohung in den Normalzustand zurück, leistet während der Schwangerschaft Schwerstarbeit, verschenkt ja nichts, erfährt einen deutlichen Wachstumsschub, meldet sich bei Überlastung in Form eines Muskelkaters, hält sich eben nicht unbedingt an genaue Vorgaben und nimmt zu, das Bewusstsein für Wichtiges nimmt ab.
+Der Körper ist gebaut, bildet immer weniger Östrogene (weibliche Geschlechtshormone), geht ohne erkennbaren Halsabschnitt in einen kleinen Kopf über, fängt nämlich gleichzeitig an schlechter zu funktionieren, benötigt Arginin, um die Thymusdrüse zu stimulieren, beginnt, sich viel zu oft zu beschweren, entwickelt sich langsam, produziert nicht viel T3, sondern vor allem T4, lernt, kein unnötiges Histamin mehr auszuschütten, reagiert mit einer vermehrten Kollagenbildung, gleitet auf die Erde, repräsentiert die sozialen Abdrücke der Seele, steht also im Mittelpunkt der karnevalesken Aufmerksamkeit und fordert etwa 2 mg Vitamin K pro Tag.
+Der Körper wehrt sich selbst gegen die lästigen Gewächse, baut langfristig Fettmasse ab, verhält sich ähnlich wie ein kaputter Handyakku, schaltet ab, reduziert sich auf ein Minimum, schreit nach einer anderen Behandlung, verwandelt überschüssige Kalorien in Fett, antwortet mit einer pseudoallergischen Reaktion, stellt auf kurz oder lang die eigene Produktion ein, produziert die benötigten Hormone selbst, reguliert seinen Blutdruck selbst, erfüllt bald Ventilfunktion für eine seelische Mangelsituation, passt sich permanent an die (belastungsmäßigen) Gegebenheiten an und beginnt zu schwitzen, um seine Temperatur auszugleichen.
+Der Körper braucht nach dem Absetzen der Pille Zeit, sich zu regenerieren, verliert gleichermaßen an Muskelmasse wie an Kondition, nimmt also die Regulation vor, wirkt wieder auf die Psyche, muss folglich mehr „heizen“ als gewöhnlich, sollte ein Gefühl der Leere fühlen, baut in der Stunde nur ca. 0,1 bis max. 0,15 Promille ab, macht mit immer krasseren Maßnahmen auf sich aufmerksam, zeigt Symptome, verändert sich gemäß der hormonellen Umstellung, erkrankt nur, wenn immer wieder massive Fehler vorkommen, hört auf, ohne ausreichenden Sauerstoff zu funktionieren, zerstört einen Teil von sich selbst zum eigenen Schaden und kontrolliert und reguliert den Hormonspiegel im Blut.
+Der Körper reagiert weniger empfindlich auf Insulin (Insulinresistenz), liegt entlastet, fast schwebend auf Amethystkristallen, erholt sich, spricht, die Worte folgen, arbeitet bereits im erweiterten Modus, wehrt sich gegen eingedrungene Krankheitserreger, befindet sich in einer entspannten, sitzenden Haltung, stellt seinen Stoffwechsel somit in „Fettverwertung“ um, kühlt dadurch schneller aus, muss eine physiologisch angemessene Funktionsweise einnehmen, holt sich aus den Kohlenhydraten die notwendige Menge, streckt sich buchstäblich, gewöhnt sich sehr schnell an die Ernährungsumstellung und zieht die Notbremse und verengt die Blutgefäße.
+Der Körper reagiert auf die Übersäuerung sofort, drückt aus, was die Seele krank macht (Psychosomatik), gerät in einen Zustand der Überaktivierung, speichert rund 4-6 mg Chrom, soll sich auf den Nachtschlaf konzentrieren, läuft letztendlich auf Sparflamme, schützt sich erfolgreich selbst, muss bei den Übungen über ausreichend Spannung verfügen, setzt einer Brustvergrößerung gewisse Grenzen, erhöht die Durchblutung, verfällt in eine Art Winterschlaf, wirft Stress ab, arbeitet daher der Drogenwirkung entgegen und stellt den Zyklus ein und verbraucht somit weniger Kalorien.
+
+--- 15 Sätze ---
+
+Der Körper tut, was notwendig ist, um zu überleben, reagiert auf das, was in unserer Psyche vorgeht, arbeitet im ersten Trimester besonders hart, produziert ein Enzym mit dem Namen Laktase, redet ein gewichtiges Wort mit, weist ein etwas längeres Wollkleid auf, das wie eine Decke wirkt, beinhaltet ein Endocannabinoid-System, kämpft um seinen Östrogenspiegel, trägt kleine Schuppen, fährt gewissermaßen auf Hochtouren, schaltet auf Alarmbereitschaft, verhält sich wie bei einer körperlichen Anstrengung, verfügt über natürliche Entgiftungssysteme, speichert die fettlöslichen Vitamine über Monate bis Jahre und fühlt sich gelähmt.
+Der Körper beginnt mit der Selbstheilung, sollte sich in aufrechter Position befinden, benötigt ausreichend Flüssigkeit, vor allem Wasser, registriert das eigene Blut als Reiz, schüttet als Reaktion entsprechend wenig Insulin aus, besteht aus Pilzhyphen, die verzweigte Filamente bilden, verzehrt sich quasi selbst, bremst sich also beim Abnehmen fatalerweise selbst aus, bricht in sich zusammen, muss nicht wie beim Joggen das ganze Körpergewicht abfedern, funktioniert nicht optimal, sagt etwas ganz anderes aus, als das Gesagte, braucht Glukose als Brennstoff, baut daher immer mehr Anspannungen auf und übt regelmäßig seine Funktion aus.
+Der Körper verstoffwechselt die verbleibenden Fettzellreste vollständig, verfügt über ein schmerzhemmendes System, besteht aus zwei Zellschichten, bildet beim Lachen „Glückshormone“, sogenannte Endorphine, benötigt B Vitamine, um Zucker zu verwerten, weicht stark vom Körperbau anderer Seegurken ab, versucht, sich an den veränderten Luftdruck anzupassen, lagert Wasser ein, fühlt sich an wie aufgequollen, baut die Kochsalzlösung bereits nach 24 Stunden wieder ab, verliert mehr Kalium, als die tägliche Nahrung liefert, schwitzt noch mehr als vorher, transportiert die funktionsunfähigen Zellen ab, läuft also mit einem bestimmten Programm, mobilisiert das B12 aus den Körperspeichern und aktualisiert ständig die roten Blutkörperchen.
+Der Körper stellt sich langsam auf den Sommer ein, weiß das alles auf natürliche Weise, erlebt ein gesteigertes Wohlbefinden, steht unter Stress, baut seine Fettzellen immer gleichmäßig ab, bleibt während der gesamten Übung unter Spannung, nimmt eine unmerkliche Verspannung ein, sollte einen schönen Bogen machen, verfügt über verschiedene Sinnesorgane, muss sich erst an die hormonelle Umstellung gewöhnen, verursacht keinen Wutanfall bei jemandem, arbeitet schließlich auf Hochtouren, löst sich nicht ständig auf, transportiert die Bruchstücke und versucht die verlorene Flüssigkeit wieder auszugleichen.
+Der Körper verändert sich, neues Leben entsteht, baut eher Muskeln ab als Fett, muss sich anpassen, gewöhnt sich an das Suchtmittel, darf niemals ein Schlachtfeld werden, führt die Verehrung aus, gelangt somit wieder ins Gleichgewicht, braucht Tageslicht, nutzt Kohlenhydrate als seine wichtigste Energiequelle, schüttet vermehrt Adrenalin aus, benötigt Energie für die Verdauung, übernimmt das Kommando, atmet auf, will die Nahrung schnellstmöglich wieder loswerden und verliert an Spannkraft und Geschmeidigkeit.
+Der Körper zeigt uns die Wege, reagiert auf jeden Stressor gleich mit einer Stressreaktion, liegt gestreckt im Wasser, parallel zur Wasseroberfläche, erhöht unter Stress die Muskelgrundspannung, achtet eigentlich auf den emotionalen Zustand, erwacht, mit all dem Unbehagen, der Faszination, verändert seine Farbe, startet die Abwehrreaktion, wiegt entsprechend das Doppelte bis Dreifache, beginnt sich zu regenerieren, weint rote Tränen, bekommt Probleme, den Blutdruck zu regulieren, resorbiert Mangan im Dünndarm, bildet mehr Blut und benutzt ein Geschwür als Auslaßventil für die Körpergifte.
+Der Körper gebraucht Blut nicht als Nahrung, verschwindet schnell, ist Begierde, bleibt trocken, greift auf alle Reserven zurück, werden mit der Massage gesalbt, befindet sich in einer Stresssituation, muss sich erst an die Schwerelosigkeit gewöhnen, verlangt Erfrischendes, deckt seinen Vitamin D Bedarf zu 80 % selbst ab, verwendet die Magnetfeld-Impulse zur Selbstheilung, mobilisiert Schutzmechanismen, produziert etwa 200 Billionen roter Blutkörperchen pro Tag, isst mit und lässt sich über einen Stellring stufenlos in der Höhe verstellen.
+
+--- 16 Sätze ---
+
+Der Körper wandelt sich, bekommt keine Informationen mehr über die Lage im Raum, benötigt außerdem genügend Ruhephasen, löst daraufhin eine Reihe von Anpassungen aus, braucht für eine maximale Leistung auch Kohlenhydrate, verschafft sich selbst eine dringend benötigte Pause, umgibt das Brustimplantat mit einer Gewebekapsel, durchblutet das empfindliche Stück mangelhaft, setzt die Fettsäure in Prostaglandine um, gewöhnt sich an die Belastung, das Laufen fällt immer leichter, wehrt sich regelrecht gegen den Gewichtsverlust, enthält 20 bis 50 mg Jod, nimmt daher Einflüsse von außen entgegen, spricht aus, was der Mensch nicht sieht oder nicht sehen will, strahlt ebenfalls ein Rauschsignal ab und bereitet mir seit zwei Wochen Probleme.
+Der Körper benötigt täglich etwa 4,5 Gramm Teufelskralle, zeigt zahlreiche ringförmige Einschnitte, reagiert mit Angriff, Erstarrung oder Flucht, entgiftet auch über die Haut, bewertet eine Regelblutung daher als unnötig, besteht aus 9 Organsystemen, passt sich dem sogar an, kommt mit der Bekämpfung der Krankheit nicht mehr hinterher, trägt zur Bildung von Antikörpern bei, schaltet einfach auf Sparmodus, parkt Emotionen u. a. auch im Muskel, verwendet strukturiertes Wasser sehr viel effizienter, braucht zum Leben Sauerstoff, investiert enorme Energie in das Immunsystem im Darm, verändert sich, ein Baby wächst heran und reguliert seine Temperatur auf Grund der Schweißproduktion.
+Der Körper gewinnt eine wichtige Rolle im suizidalen Erleben, besteht aus 105 Segmenten, erspürt in Übungen, wie sich die Biografie einer Figur auswirkt, erfährt einen gesunden Stress aufgrund der hohen Temperaturen, steht im Vordergrund, verändert sich in höchstem Maße, schaltet quasi auf „Sparflamme“, verliert unter Umständen bis zu 20 Liter Wasser am Tag, lagert während der Schwangerschaft sehr viel Flüssigkeit ein, tut alles, um die Erreger zu bekämpfen, verfügt ebenfalls über Abwehrmittel gegen die Pein, braucht das Eiweiß täglich, baut Muskeln ab statt auf, enthält 150 bis 300 Gramm Kochsalz, strahlt tagsüber Hormone aus und passt sich allmählich an den neuen hormonellen Hintergrund an.
+Der Körper stellt auf Fettverbrennung um, bildet Serotonin aus der Aminosäure Tryptophan, spricht also nicht gut genug auf die Schilddrüsenhormone an, produziert ja auch selbst Histamin, schützt sich mit verschiedenen Enzymen vor Radikalen, gewöhnt sich von allein langsam an den Schwindel, wehrt sich gegen Quecksilber, entspannt sich allmählich, leidet unter Hypoxie, wodurch ein Reflex geschieht, gleicht die gedrosselte Energiezufuhr nämlich sofort aus, reagiert mit einer Übersäuerung, benötigt ständig Energie, beginnt, immer mehr Insulin herzustellen, arbeitet auf hohem Niveau, versucht verzweifelt, genug Mineralstoffe zu sich zu nehmen und fährt herunter und kühlt noch mehr aus.
+Der Körper benötigt das Metall sogar, droht sich zu vergiften, findet wieder zu einer Einheit, bildet nur geringe Mengen an Pangamsäure, verbrennt mehr Fett, reagiert auf das Ungleichgewicht, kommt nicht mehr hinterher, braucht mindestens zwei Tage, um sich zu reinigen, verlangt mehr kühlendes Nass, verändert sich sehr schnell, wenn man mit dem Fahren aufhört, dehydriert schneller, spült Giftstoffe aus, versucht, den potentiell schädlichen Reiz zu bekämpfen, neigt dazu, Schäden selbst zu reparieren, wandelt das Provitamin A aus der Brombeere zu Vitamin A um und will mit Natrium versorgt werden.
+
+--- 17 Sätze ---
+
+Der Körper ist bemüht, seine Wärmeressourcen zu schonen, erhält quasi ein „Reset“ wie beim Computer, verliert die Fähigkeit, aktiv zu funktionieren, versucht über die Kontraktion der Muskeln, Wärme aufzubauen, weist den Weg zur Lösung, soll die Möglichkeit bekommen, sich selbst zu helfen, gewöhnt sich an das Medikament, bleibt weitgehend verschont, dient als Zugang zum „Selbst“, baut in der Folge das abgestorbene Material ab, besteht zu etwa 70% aus Wasser, braucht Cholesterin zur Herstellung der Gallensäure, dehydriert, trocknet also aus, verbrennt somit weniger Energie, lernt auf Verspannungen mit Entspannung zu reagieren, passt sich biochemisch an Blutverlust an und will überleben.
+Der Körper erhält Coenzym Q10 über die Nahrung nur in geringen Mengen, äußert sich mit unterschiedlichen Beschwerden, scheint regelrecht danach zu gieren, spricht, auch wenn man nicht verbal kommuniziert, reagiert mit immer mehr Auffälligkeiten, besteht zu etwa 70 Prozent aus Wasser, verfügt auch über Methoden der schnellen Energiebereitstellung, arbeitet über ein komplexes System, bildet Abwehrstoffe, die wiederum Fieber erzeugen, genießt mit allen Sinnen, baut die Ader in den folgenden Monaten ab, erholt sich also nach einem Rauchstopp wieder, steht senkrecht gerade, benötigt durchgängig eine Zufuhr von Kohlenhydraten, setzt sich zur Wehr, meint die biologischen Funktionen und schwitzt, um die körpereigene Klimaanlage zu betreiben.
+Der Körper besitzt natürliche Selbstheilungskräfte, bildet eine Linie, kommt in seinen harmonischen Ursprung zurück, reagiert ganzheitlich im Sinne einer angedeuteten Fluchtreaktion, unterliegt verschiedenen Anpassungsreaktionen, bewältigt leicht die episodische Nahrungsaufnahme, produziert nicht ausreichend Insulin, versucht, die kalte Flüssigkeit auf Körpertemperatur aufzuheizen, greift die Nieren an, ruft förmlich nach Erholung, besteht aus der Natur, den fünf Elementen, baut mit zunehmendem Alter ab, entspannt sich, ähnlich wie bei einem Saunagang, verwendet Hyaluron für viele Körperfunktionen, befindet sich in einem Zustand der Entspannung, gibt uns regelmäßig Signale und enthält zwei bis vier Gramm Eisen.
+Der Körper ist in der Lage, die aufgenommenen Fette zu speichern, spricht von ganz alleine, beginnt zu entgiften, schaltet in einen Ausnahmezustand, ruht in einer flachen Mulde, soll zur Findung der eigenen Balance angeregt werden, brennt nach dem Training nach, verfügt über erstaunliche Fähigkeiten zur Selbstheilung, besteht aus Milliarden von Zellen, gilt längst als Mittel der Kommunikation, versucht, andere Energiequellen zu nutzen, lernt wieder in einen Schlafzustand hineinzusinken, setzt viel Energie ein, um ein Überhitzen zu verhindern, benötigt nach dem Eingriff Zeit, um sich zu erholen, hört eines Tages auf zu funktionieren, die Seele nicht, zeigt spezielle Anpassungen an eine grabende Lebensweise und baut Reserven ab, um das Energiedefizit zu kompensieren.
+Der Körper befindet sich in einem schwebenden Gleichgewicht, bleibt während der ganzen Bewegung gestreckt, muss sich erst noch an die Übungen gewöhnen, spricht mehr als 1000 Worte, läuft in einen Fischschwanz aus, sieht die Wirklichkeit nie von allen Seiten, braucht ständig Wasser, verändert sich stetig, reagiert oft mit Verzögerung auf bestimmte Lebensmittel, sendet permanent Botschaften aus, empfindet das wie einen Mini-Jet-Lag, stellt auf Winter um, geht über in den Regenerations-Modus, erlebt sich unter Beschuss, signalisiert mit deutlichen Anzeichen die beginnende Geburt, kommt in die Entspannung und schaltet in der dunklen, kalten Jahreszeit auf Sparflamme.
+Der Körper benötigt 6-8 Stunden Schlaf täglich für eine optimale Leistung, kennt keine Schlacke, besitzt gewisse Speichermöglichkeiten für Vitamine, gilt als greifbarster Beweis für das Reale, produziert bei Verletzungen besondere Proteine, schaltet auf Überlebensmodus, stellt sich auf eine „Kampf- oder Fluchtsituation“ ein, entwickelt die Fähigkeit, Energieimpulse aufzunehmen, stößt daraufhin die Gebärmutterschleimhaut ab, greift sich also selbst an: Autoimmunerkrankung, lernt also immer mit, zeigt damit einen hochgradigen Stresslevel in der Schlafphase an, bildet bei konsequentem Training sogenannte Kollateralen, meldet keine beachtenswerten Schmerzen, verhielt sich also wie bei einer Überdosis weiblicher Hormone, kommt wieder ins „Lot“ und beginnt, Fettreserven anzugreifen.
+
+--- 18 Sätze ---
+
+
+--- 19 Sätze ---
+
+Der Körper produziert täglich ein Protein, sendet Signale aus, wächst auch aufgrund der Anreicherung der Mineralbasis, braucht für die Stoffwechselprozesse rund um die Uhr Flüssigkeit, benötigt hochwertige Fettsäuren zum Leben, schützt sich selbst vor starken Verletzungen mit einem Reflex, scheidet Giftstoffe über die Haut aus, bekommt eine straffere Form, gerät in einen Erregungszustand, erscheint ziemlich länglich, versucht, das Zuviel an Zucker über den Harn wieder loszuwerden, befindet sich in einer Ausnahmesituation, im Schockzustand, erkennt das eigene Blut als „fremd“ an, gewöhnt sich schnell an neue Rituale, lässt T-Zellen reifen, die den eigenen Körper angreifen, verbrennt demnach nur noch sehr wenig Energie, teilt sich in vier markante Regionen, enthält insgesamt ca. 150 Gramm Cholesterin und bereitet sich auf das Fliehen oder Kämpfen in Sekundenschnelle vor.
+
+--- 20 Sätze ---
+
+Der Körper versucht, die Fremdstoffe zu verarbeiten, beginnt unwillkürlich, den Kalorienbedarf runterzuschrauben, reagiert mit Entzündungen, die wiederum die Netzhaut zerstören, weist den Weg, der Geist folgt, braucht Fette, auch tierische, spricht genau das aus, was Krampfadern Behandlung Kartoffel fühlen, will damit auf einen Missstand aufmerksam machen, entspannt sich vom Stress, die Schmerzen ziehen sich zurück, lädt seine Energie bei 6-8 Stunden Schlaf pro Nacht optimal auf, bildet ebenfalls einige Eiweiße bzw. Aminosäuren, baut Fettmasse anstelle von Muskeln ab, fängt an, Melatonin nach Sonnenuntergang zu produzieren, hält Flüssigkeit zurück, was zu Schwellungen führt, wandelt Omega-3-Fettsäuren in entzündungshemmende Chemikalien um, zehrt mehr oder weniger vollkommen aus, kommt wieder in Einklang mit sich selbst, liegt im Gras, 20 Zentimeter weiter der Kopf, verträgt sich nicht mit Technik, befindet sich in der Schwangerschaft in ständiger Veränderung und „fährt“ wieder runter und damit auch der Puls.
+Der Körper steht unter Strom, um aktiv zu werden, verändert sich stark, enthält ca. 250 Gramm Salz, verfällt in Trance, die Zeit verfliegt, sollte kurz wirken, schreit um Hilfe, weil die Seele leidet, braucht Nährstoffe, auch zur Produktion von Haaren, reagiert zunehmend mit einer Verstärkung der Immunabwehr, baut seine Energiereserven sehr differenziert ab, beginnt die Knochensubstanz abzubauen, besitzt insgesamt 424 Skelettmuskeln, stellt sich um auf die entspannende Bauchatmung, nutzt Flüssigkeit, um Schleim in der Lunge zu produzieren, regelt die Kaliumwerte über das Hormon Aldosteron, entwickelt sich in den Phasen der Erholung, gelangt in eine tiefe Entspannung, der Geist kommt zur Ruhe, reguliert die Nahrungsaufnahme von selbst, scheidet die Kontrastmittel wieder vollständig aus, warnt damit, dass etwas in Ihrem Leben nicht stimmt und muß sich erst an die Schwangerschaftshormone gewöhnen.
+
+--- 21 Sätze ---
+
+Der Körper wiegt etwa 20 Gramm, reagiert heftig auf die Blüte einiger Pflanzen, speichert den Wärmeeffekt lange nach der Massage, trägt den Kopf eines Höhlenlöwen, passt sich an Bedingungen an, die real nicht bestehen, entspannt nicht mehr, auch wenn man sich die Zeit dafür nimmt, gewöhnt sich binnen einer Woche an den Rhythmus, gehorcht dem „Abzählbaren“, die Seele dem „Überzählbaren“, bezieht die Energie insbesondere aus den Fettdepots, zeigt schon recht früh erste Signale, muss seine Temperatur aufrechterhalten, um nicht auszukühlen, bleibt in seinem deformierten Zustand, kämpft jeden Tag gegen zahlreiche Giftstoffe, antwortet auf eine hohe Belastung mit einer Entzündungsreaktion, will sich seinen Sauerstoff mit Gewalt holen, fühlt sich matschig an, verarbeitet erst einmal den Alkohol, produziert Hormone, beginnt zu schmerzen, liegt quer im oberen Bauch und stellt Antikörper gegen das eingedrungene virale Antigen her.
+
+--- 22 Sätze ---
+
+Der Körper braucht die gesamte Vitalstoff-Palette, beginnt in verstärktem Maße, Sekrete abzusondern, setzt nämlich oft noch die Hormone der Zyklusregulation frei, zeigt Folgen schwerer Misshandlung, muss sich zum Frühling hin auf wärmere Grade einstellen, besteht zu ca. 60% aus Wasser, produziert bis zu zwei Gramm Cholesterin selbst, versucht den erhöhten Druck auf die Knochen auszugleichen, sollte nicht in der Matratze versinken, bekämpft also körpereigene Zellen, verändert sich also ebenfalls im Transformationsprozess, spricht, auch wenn die Stimme stumm bleibt, attackiert sich selbst, kühlt schneller aus, als man denkt, drückt das aus, was Worten schwer fällt, will uns damit bewegen, sofort mit dem Epilieren aufzuhören, liegt von Kopf bis Fuß auf einer Linie, baut die Hyaluronsäure nach einer gewissen Zeit wieder ab, kompensiert das normalerweise, regeneriert im Schlaf, wehrt sich dadurch gegen zu hohe Energieverluste und stellt auf anaerobe Energiegewinnung (ohne Sauerstoff) um.
+Der Körper gibt im Wasser mehr Wärme ab als an der Luft, verliert sonst zu viele Mineralstoffe, findet zurück zu einer inneren Balance, soll eigentlich unversehrt bestattet werden, enthält durchschnittlich etwa 4 g Eisen, fängt an zu jucken, nimmt das also sehr positiv auf, steht vielen großen Ideen behindernd im Weg, entwickelt Erkrankungen oder nicht deutbare Symptome, reguliert seine Temperatur, entgiftet sprichwörtlich, nutzt sofort die Kohlenhydrate Reserven, versucht, den Alkohol wieder loszuwerden, spricht immer, auch wenn der Mund schweigt, mag die Abwechslung, holt sich schon seinen Schlaf zurück, beginnt, sich selbst zu heilen, wehrt sich mit einer Entzündung gegen die Eindringlinge, passt sich stets dem Lebensstil an, befindet sich in einem chronischen Entzündungszustand, verwendet als primäre Energiequelle Glucose, also Zucker und schüttet entsprechend wenig Insulin aus.
+
+--- 23 Sätze ---
+
+
+--- 24 Sätze ---
+
+
+--- 25 Sätze ---
