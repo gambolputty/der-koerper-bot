@@ -56,7 +56,22 @@ export const generateTextWithWords = async (targetWord: string) => {
   return filteredTexts.join("\n");
 };
 
-const targetWords = ["ist", "gehört", "erfährt", "spielt"];
+// Load target words from frequencies.json
+const frequenciesUrl = new URL(
+  "../../lib/assets/frequencies.json",
+  import.meta.url
+);
+const frequenciesData = JSON.parse(fs.readFileSync(frequenciesUrl, "utf-8"));
+const allVerbs = frequenciesData.VERB;
+
+// Filter verbs with frequency <= 70
+const targetWords = Object.keys(allVerbs).filter(
+  (verb) => allVerbs[verb] <= 50
+);
+
+console.log(
+  `Processing ${targetWords.length} verbs (with frequency <= 70) from frequencies.json...`
+);
 
 for (const word of targetWords) {
   console.log(`Generating text with wanted word: ${word}...`);
